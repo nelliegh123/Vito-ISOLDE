@@ -10,8 +10,24 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 {
     G4NistManager *nist = G4NistManager::Instance();
 
+    //====================================================================================
+    //                              World
+    //====================================================================================
+    G4Material *worldMat = nist->FindOrBuildMaterial("G4_AIR");
 
-    // Here I am adding an aerogel, just what he did in the tutorial 
+    G4Box *solidWorld = new G4Box("solidWorld", 0.5*m, 0.5*m, 0.5*m);
+
+    G4LogicalVolume *logicWorld = new G4LogicalVolume(solidWorld, worldMat, "logicWorld");
+
+    G4VPhysicalVolume *physWorld = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.),
+    logicWorld, "physWorld", 0, false, 0, true);
+
+    
+
+    //====================================================================================
+    //                              Detector
+    //====================================================================================
+    //Material
     G4Material *SiO2 = new G4Material("SiO2", 2.021*g/cm3, 2);
     SiO2->AddElement(nist->FindOrBuildElement("Si"), 1);
     SiO2->AddElement(nist->FindOrBuildElement("O"), 2);
@@ -26,19 +42,8 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     Aerogel->AddMaterial(SiO2, 62.5*perCent);
     Aerogel->AddMaterial(H2O, 37.4*perCent);
     Aerogel->AddElement(C, 0.1*perCent);
-    //end of adding Aerogel
 
-
-    G4Material *worldMat = nist->FindOrBuildMaterial("G4_AIR");
-
-    G4Box *solidWorld = new G4Box("solidWorld", 0.5*m, 0.5*m, 0.5*m);
-
-    G4LogicalVolume *logicWorld = new G4LogicalVolume(solidWorld, worldMat, "logicWorld");
-
-    G4VPhysicalVolume *physWorld = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.),
-    logicWorld, "physWorld", 0, false, 0, true);
-
-
+    //Construction
     G4Box *solidRadiator = new G4Box("solidRadiator", 0.4*m, 0.4*m, 0.01*m);
 
     G4LogicalVolume *logicRadiator = new G4LogicalVolume(solidRadiator, 
@@ -46,6 +51,29 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 
     G4VPhysicalVolume *physRadiator = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.25*m), 
     logicRadiator, "physRadiator", logicWorld, false, 0, true);
+
+
+    //Properties
+    G4double energy[2] = {1.239841939*eV/0.9, 1.239841939*eV/0.2, };
+    G4double rindexAerogel[2] = {1.1, 1.1};
+
+    G4MaterialPropertiesTable *mptAerogel = new G4MaterialPropertiesTable();
+    mptAerogel->AddProperty("RINDEX", energy, rindexAerogel, 2);
+
+    Aerogel->SetMaterialPropertiesTable(mptAerogel);
+
+
+    //====================================================================================
+    //                              World properties
+    //====================================================================================
+    G4MaterialPropertiesTable *mptWorld = new G4MaterialPropertiesTable();
+    G4double rindexWorld[2] = {1.0, 1.0};
+    mptWorld->AddProperty("RINDEX", energy, rindexWorld, 2);
+    worldMat->SetMaterialPropertiesTable(mptWorld);
+    
+
+
+
 
 
     return physWorld;
