@@ -721,4 +721,28 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o: /home/ngustafs/ISOLDE/ISOLDE.cc \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NistMaterialBuilder.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Pow.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Exp.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SystemOfUnits.hh
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SystemOfUnits.hh \
+ /home/ngustafs/ISOLDE/physicsList.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VModularPhysicsList.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPhysicsConstructor.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PhysicsListHelper.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PhysicsListOrderingParameter.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ThreadLocalSingleton.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Cache.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4CacheDetails.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUPLSplitter.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserPhysicsList.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ProductionCutsTable.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4MaterialCutsCouple.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ProductionCuts.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4MCCIndexConversionTable.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4EmStandardPhysics.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4OpticalPhysics.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4OpticalParameters.hh \
+ /home/ngustafs/ISOLDE/action.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserActionInitialization.hh \
+ /home/ngustafs/ISOLDE/generator.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleGun.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPrimaryGenerator.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTable.hh
