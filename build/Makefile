@@ -166,6 +166,30 @@ ISOLDE.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/ISOLDE.cc.s
 .PHONY : ISOLDE.cc.s
 
+action.o: action.cc.o
+.PHONY : action.o
+
+# target to build an object file
+action.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/action.cc.o
+.PHONY : action.cc.o
+
+action.i: action.cc.i
+.PHONY : action.i
+
+# target to preprocess a source file
+action.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/action.cc.i
+.PHONY : action.cc.i
+
+action.s: action.cc.s
+.PHONY : action.s
+
+# target to generate assembly for a file
+action.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/action.cc.s
+.PHONY : action.cc.s
+
 construction.o: construction.cc.o
 .PHONY : construction.o
 
@@ -190,6 +214,54 @@ construction.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/construction.cc.s
 .PHONY : construction.cc.s
 
+generator.o: generator.cc.o
+.PHONY : generator.o
+
+# target to build an object file
+generator.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/generator.cc.o
+.PHONY : generator.cc.o
+
+generator.i: generator.cc.i
+.PHONY : generator.i
+
+# target to preprocess a source file
+generator.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/generator.cc.i
+.PHONY : generator.cc.i
+
+generator.s: generator.cc.s
+.PHONY : generator.s
+
+# target to generate assembly for a file
+generator.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/generator.cc.s
+.PHONY : generator.cc.s
+
+physicsList.o: physicsList.cc.o
+.PHONY : physicsList.o
+
+# target to build an object file
+physicsList.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/physicsList.cc.o
+.PHONY : physicsList.cc.o
+
+physicsList.i: physicsList.cc.i
+.PHONY : physicsList.i
+
+# target to preprocess a source file
+physicsList.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/physicsList.cc.i
+.PHONY : physicsList.cc.i
+
+physicsList.s: physicsList.cc.s
+.PHONY : physicsList.s
+
+# target to generate assembly for a file
+physicsList.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/physicsList.cc.s
+.PHONY : physicsList.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -203,9 +275,18 @@ help:
 	@echo "... ISOLDE.o"
 	@echo "... ISOLDE.i"
 	@echo "... ISOLDE.s"
+	@echo "... action.o"
+	@echo "... action.i"
+	@echo "... action.s"
 	@echo "... construction.o"
 	@echo "... construction.i"
 	@echo "... construction.s"
+	@echo "... generator.o"
+	@echo "... generator.i"
+	@echo "... generator.s"
+	@echo "... physicsList.o"
+	@echo "... physicsList.i"
+	@echo "... physicsList.s"
 .PHONY : help
 
 
