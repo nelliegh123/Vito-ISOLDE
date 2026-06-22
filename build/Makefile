@@ -214,6 +214,30 @@ construction.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/construction.cc.s
 .PHONY : construction.cc.s
 
+construction_works.o: construction_works.cc.o
+.PHONY : construction_works.o
+
+# target to build an object file
+construction_works.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/construction_works.cc.o
+.PHONY : construction_works.cc.o
+
+construction_works.i: construction_works.cc.i
+.PHONY : construction_works.i
+
+# target to preprocess a source file
+construction_works.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/construction_works.cc.i
+.PHONY : construction_works.cc.i
+
+construction_works.s: construction_works.cc.s
+.PHONY : construction_works.s
+
+# target to generate assembly for a file
+construction_works.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/construction_works.cc.s
+.PHONY : construction_works.cc.s
+
 generator.o: generator.cc.o
 .PHONY : generator.o
 
@@ -281,6 +305,9 @@ help:
 	@echo "... construction.o"
 	@echo "... construction.i"
 	@echo "... construction.s"
+	@echo "... construction_works.o"
+	@echo "... construction_works.i"
+	@echo "... construction_works.s"
 	@echo "... generator.o"
 	@echo "... generator.i"
 	@echo "... generator.s"

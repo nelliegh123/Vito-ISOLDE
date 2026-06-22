@@ -86,12 +86,12 @@ clean: CMakeFiles/Vito_ISOLDE.dir/clean
 CMakeFiles/ISOLDE.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ngustafs/ISOLDE/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target ISOLDE"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ngustafs/ISOLDE/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target ISOLDE"
 .PHONY : CMakeFiles/ISOLDE.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ISOLDE.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ngustafs/ISOLDE/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ngustafs/ISOLDE/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ISOLDE.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ngustafs/ISOLDE/build/CMakeFiles 0
 .PHONY : CMakeFiles/ISOLDE.dir/rule
@@ -103,7 +103,7 @@ ISOLDE: CMakeFiles/ISOLDE.dir/rule
 # codegen rule for target.
 CMakeFiles/ISOLDE.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ngustafs/ISOLDE/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target ISOLDE"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ngustafs/ISOLDE/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Finished codegen for target ISOLDE"
 .PHONY : CMakeFiles/ISOLDE.dir/codegen
 
 # clean rule for target.
@@ -123,7 +123,7 @@ CMakeFiles/Vito_ISOLDE.dir/all: CMakeFiles/ISOLDE.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Vito_ISOLDE.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ngustafs/ISOLDE/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ngustafs/ISOLDE/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Vito_ISOLDE.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ngustafs/ISOLDE/build/CMakeFiles 0
 .PHONY : CMakeFiles/Vito_ISOLDE.dir/rule

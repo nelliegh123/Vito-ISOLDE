@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ngustafs/ISOLDE/ISOLDE.cc" "CMakeFiles/ISOLDE.dir/ISOLDE.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/ISOLDE.cc.o.d"
   "/home/ngustafs/ISOLDE/action.cc" "CMakeFiles/ISOLDE.dir/action.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/action.cc.o.d"
   "/home/ngustafs/ISOLDE/construction.cc" "CMakeFiles/ISOLDE.dir/construction.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/construction.cc.o.d"
+  "/home/ngustafs/ISOLDE/construction_works.cc" "CMakeFiles/ISOLDE.dir/construction_works.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/construction_works.cc.o.d"
   "/home/ngustafs/ISOLDE/generator.cc" "CMakeFiles/ISOLDE.dir/generator.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/generator.cc.o.d"
   "/home/ngustafs/ISOLDE/physicsList.cc" "CMakeFiles/ISOLDE.dir/physicsList.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/physicsList.cc.o.d"
   "" "ISOLDE" "gcc" "CMakeFiles/ISOLDE.dir/link.d"
