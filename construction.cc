@@ -10,43 +10,45 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 {
     G4NistManager *nist = G4NistManager::Instance();
 
-
-    // Here I am adding an aerogel, just what he did in the tutorial 
-    G4Material *SiO2 = new G4Material("SiO2", 2.021*g/cm3, 2);
-    SiO2->AddElement(nist->FindOrBuildElement("Si"), 1);
-    SiO2->AddElement(nist->FindOrBuildElement("O"), 2);
-
-    G4Material *H2O = new G4Material("H2O", 1.000*g/cm3, 2);
-    H2O->AddElement(nist->FindOrBuildElement("H"), 2);
-    H2O->AddElement(nist->FindOrBuildElement("O"), 1);
-
-    G4Element *C = nist->FindOrBuildElement("C");
-
-    G4Material *Aerogel = new G4Material("Aerogel", 0.200*g/cm3, 3);
-    Aerogel->AddMaterial(SiO2, 62.5*perCent);
-    Aerogel->AddMaterial(H2O, 37.4*perCent);
-    Aerogel->AddElement(C, 0.1*perCent);
-    //end of adding Aerogel
-
-
+    //====================================================================================
+    //                              Defining World
+    //====================================================================================
     G4Material *worldMat = nist->FindOrBuildMaterial("G4_AIR");
 
-    G4Box *solidWorld = new G4Box("solidWorld", 0.5*m, 0.5*m, 0.5*m);
+    G4Box *solidWorld = new G4Box("solidWorld", 1.0*m, 1.0*m, 1.0*m);
 
     G4LogicalVolume *logicWorld = new G4LogicalVolume(solidWorld, worldMat, "logicWorld");
 
-    G4VPhysicalVolume *physWorld = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.),
-    logicWorld, "physWorld", 0, false, 0, true);
+    G4VPhysicalVolume *World = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.),
+    logicWorld, "World", 0, false, 0, true);
+
+    
+
+    //====================================================================================
+    //                              Defining Detector
+    //====================================================================================
+    G4Material *detectorMat = nist->FindOrBuildMaterial("G4_PLASTIC_SC_VINYLTOLUENE");
 
 
-    G4Box *solidRadiator = new G4Box("solidRadiator", 0.4*m, 0.4*m, 0.01*m);
+    G4double innerRadius = 0.*cm;
+    G4double outerRadius = 60.*cm;
+    G4double hz = 5.*cm;
+    G4double startingAngle = 0.*cm;
+    G4double spanningAngle = 360.*cm;
+    G4Tubs *solidDetector = new G4Tubs("solidDetector", innerRadius, outerRadius, hz,
+                                          startingAngle, spanningAngle);
 
-    G4LogicalVolume *logicRadiator = new G4LogicalVolume(solidRadiator, 
-    Aerogel, "logicalRadiator");
+    G4LogicalVolume *logicDetector = new G4LogicalVolume(solidDetector, detectorMat, "logicDetector");
 
-    G4VPhysicalVolume *physRadiator = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.25*m), 
-    logicRadiator, "physRadiator", logicWorld, false, 0, true);
+    G4double pos_x = 0.0*meter;
+    G4double pos_y = 0.0*meter;
+    G4double pos_z = 0.8*meter;
+    G4VPhysicalVolume *Detector = new G4PVPlacement(0, G4ThreeVector(pos_x, pos_y, pos_z), 
+                                    logicDetector, "Detector", logicWorld, false, 0, true);
 
+    G4VPhysicalVolume *Detector2 = new G4PVPlacement(0, G4ThreeVector(pos_x, pos_y, -pos_z), 
+                                    logicDetector, "Detector2", logicWorld, true, 0, true);
 
-    return physWorld;
+    
+    return World;
 }

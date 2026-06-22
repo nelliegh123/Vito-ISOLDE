@@ -5,6 +5,7 @@ ISOLDE: \
   CMakeFiles/ISOLDE.dir/ISOLDE.cc.o \
   CMakeFiles/ISOLDE.dir/action.cc.o \
   CMakeFiles/ISOLDE.dir/construction.cc.o \
+  CMakeFiles/ISOLDE.dir/construction_works.cc.o \
   CMakeFiles/ISOLDE.dir/generator.cc.o \
   CMakeFiles/ISOLDE.dir/physicsList.cc.o \
   /home/ngustafs/miniforge3/envs/geant4/lib/libG4Tree.so \
@@ -87,6 +88,8 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o:
 CMakeFiles/ISOLDE.dir/action.cc.o:
 
 CMakeFiles/ISOLDE.dir/construction.cc.o:
+
+CMakeFiles/ISOLDE.dir/construction_works.cc.o:
 
 CMakeFiles/ISOLDE.dir/generator.cc.o:
 

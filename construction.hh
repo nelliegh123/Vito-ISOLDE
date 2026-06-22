@@ -8,6 +8,8 @@
 #include "G4PVPlacement.hh"
 #include "G4NistManager.hh"
 #include "G4SystemOfUnits.hh"
+#include "G4GenericMessenger.hh" ///Needed?
+#include "G4Tubs.hh" //Needed?
 
 class MyDetectorConstruction : public G4VUserDetectorConstruction
 {

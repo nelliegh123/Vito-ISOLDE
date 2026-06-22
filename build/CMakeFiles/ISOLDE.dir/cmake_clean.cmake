@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ISOLDE.dir/action.cc.o.d"
   "CMakeFiles/ISOLDE.dir/construction.cc.o"
   "CMakeFiles/ISOLDE.dir/construction.cc.o.d"
+  "CMakeFiles/ISOLDE.dir/construction_works.cc.o"
+  "CMakeFiles/ISOLDE.dir/construction_works.cc.o.d"
   "CMakeFiles/ISOLDE.dir/generator.cc.o"
   "CMakeFiles/ISOLDE.dir/generator.cc.o.d"
   "CMakeFiles/ISOLDE.dir/physicsList.cc.o"
