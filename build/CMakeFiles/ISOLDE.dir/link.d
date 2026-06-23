@@ -5,9 +5,9 @@ ISOLDE: \
   CMakeFiles/ISOLDE.dir/ISOLDE.cc.o \
   CMakeFiles/ISOLDE.dir/action.cc.o \
   CMakeFiles/ISOLDE.dir/construction.cc.o \
-  CMakeFiles/ISOLDE.dir/construction_works.cc.o \
   CMakeFiles/ISOLDE.dir/generator.cc.o \
   CMakeFiles/ISOLDE.dir/physicsList.cc.o \
+  CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.o \
   /home/ngustafs/miniforge3/envs/geant4/lib/libG4Tree.so \
   /home/ngustafs/miniforge3/envs/geant4/lib/libG4FR.so \
   /home/ngustafs/miniforge3/envs/geant4/lib/libG4GMocren.so \
@@ -89,11 +89,11 @@ CMakeFiles/ISOLDE.dir/action.cc.o:
 
 CMakeFiles/ISOLDE.dir/construction.cc.o:
 
-CMakeFiles/ISOLDE.dir/construction_works.cc.o:
-
 CMakeFiles/ISOLDE.dir/generator.cc.o:
 
 CMakeFiles/ISOLDE.dir/physicsList.cc.o:
+
+CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.o:
 
 /home/ngustafs/miniforge3/envs/geant4/lib/libG4Tree.so:
 
