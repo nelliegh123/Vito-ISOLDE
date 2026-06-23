@@ -114,24 +114,10 @@ CMakeFiles/ISOLDE.dir/construction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ISOLDE.dir/construction.cc.s"
 	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ngustafs/ISOLDE/construction.cc -o CMakeFiles/ISOLDE.dir/construction.cc.s
 
-CMakeFiles/ISOLDE.dir/construction_works.cc.o: CMakeFiles/ISOLDE.dir/flags.make
-CMakeFiles/ISOLDE.dir/construction_works.cc.o: /home/ngustafs/ISOLDE/construction_works.cc
-CMakeFiles/ISOLDE.dir/construction_works.cc.o: CMakeFiles/ISOLDE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ngustafs/ISOLDE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ISOLDE.dir/construction_works.cc.o"
-	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ISOLDE.dir/construction_works.cc.o -MF CMakeFiles/ISOLDE.dir/construction_works.cc.o.d -o CMakeFiles/ISOLDE.dir/construction_works.cc.o -c /home/ngustafs/ISOLDE/construction_works.cc
-
-CMakeFiles/ISOLDE.dir/construction_works.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ISOLDE.dir/construction_works.cc.i"
-	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ngustafs/ISOLDE/construction_works.cc > CMakeFiles/ISOLDE.dir/construction_works.cc.i
-
-CMakeFiles/ISOLDE.dir/construction_works.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ISOLDE.dir/construction_works.cc.s"
-	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ngustafs/ISOLDE/construction_works.cc -o CMakeFiles/ISOLDE.dir/construction_works.cc.s
-
 CMakeFiles/ISOLDE.dir/generator.cc.o: CMakeFiles/ISOLDE.dir/flags.make
 CMakeFiles/ISOLDE.dir/generator.cc.o: /home/ngustafs/ISOLDE/generator.cc
 CMakeFiles/ISOLDE.dir/generator.cc.o: CMakeFiles/ISOLDE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ngustafs/ISOLDE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ISOLDE.dir/generator.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ngustafs/ISOLDE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ISOLDE.dir/generator.cc.o"
 	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ISOLDE.dir/generator.cc.o -MF CMakeFiles/ISOLDE.dir/generator.cc.o.d -o CMakeFiles/ISOLDE.dir/generator.cc.o -c /home/ngustafs/ISOLDE/generator.cc
 
 CMakeFiles/ISOLDE.dir/generator.cc.i: cmake_force
@@ -145,7 +131,7 @@ CMakeFiles/ISOLDE.dir/generator.cc.s: cmake_force
 CMakeFiles/ISOLDE.dir/physicsList.cc.o: CMakeFiles/ISOLDE.dir/flags.make
 CMakeFiles/ISOLDE.dir/physicsList.cc.o: /home/ngustafs/ISOLDE/physicsList.cc
 CMakeFiles/ISOLDE.dir/physicsList.cc.o: CMakeFiles/ISOLDE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ngustafs/ISOLDE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ISOLDE.dir/physicsList.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ngustafs/ISOLDE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ISOLDE.dir/physicsList.cc.o"
 	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ISOLDE.dir/physicsList.cc.o -MF CMakeFiles/ISOLDE.dir/physicsList.cc.o.d -o CMakeFiles/ISOLDE.dir/physicsList.cc.o -c /home/ngustafs/ISOLDE/physicsList.cc
 
 CMakeFiles/ISOLDE.dir/physicsList.cc.i: cmake_force
@@ -156,14 +142,28 @@ CMakeFiles/ISOLDE.dir/physicsList.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ISOLDE.dir/physicsList.cc.s"
 	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ngustafs/ISOLDE/physicsList.cc -o CMakeFiles/ISOLDE.dir/physicsList.cc.s
 
+CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.o: CMakeFiles/ISOLDE.dir/flags.make
+CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.o: /home/ngustafs/ISOLDE/sensitiveDetector.cc
+CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.o: CMakeFiles/ISOLDE.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ngustafs/ISOLDE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.o"
+	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.o -MF CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.o.d -o CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.o -c /home/ngustafs/ISOLDE/sensitiveDetector.cc
+
+CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.i"
+	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ngustafs/ISOLDE/sensitiveDetector.cc > CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.i
+
+CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.s"
+	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ngustafs/ISOLDE/sensitiveDetector.cc -o CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.s
+
 # Object files for target ISOLDE
 ISOLDE_OBJECTS = \
 "CMakeFiles/ISOLDE.dir/ISOLDE.cc.o" \
 "CMakeFiles/ISOLDE.dir/action.cc.o" \
 "CMakeFiles/ISOLDE.dir/construction.cc.o" \
-"CMakeFiles/ISOLDE.dir/construction_works.cc.o" \
 "CMakeFiles/ISOLDE.dir/generator.cc.o" \
-"CMakeFiles/ISOLDE.dir/physicsList.cc.o"
+"CMakeFiles/ISOLDE.dir/physicsList.cc.o" \
+"CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.o"
 
 # External object files for target ISOLDE
 ISOLDE_EXTERNAL_OBJECTS =
@@ -171,9 +171,9 @@ ISOLDE_EXTERNAL_OBJECTS =
 ISOLDE: CMakeFiles/ISOLDE.dir/ISOLDE.cc.o
 ISOLDE: CMakeFiles/ISOLDE.dir/action.cc.o
 ISOLDE: CMakeFiles/ISOLDE.dir/construction.cc.o
-ISOLDE: CMakeFiles/ISOLDE.dir/construction_works.cc.o
 ISOLDE: CMakeFiles/ISOLDE.dir/generator.cc.o
 ISOLDE: CMakeFiles/ISOLDE.dir/physicsList.cc.o
+ISOLDE: CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.o
 ISOLDE: CMakeFiles/ISOLDE.dir/build.make
 ISOLDE: CMakeFiles/ISOLDE.dir/compiler_depend.ts
 ISOLDE: /home/ngustafs/miniforge3/envs/geant4/lib/libG4Tree.so
