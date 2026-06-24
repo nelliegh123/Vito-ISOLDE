@@ -709,7 +709,7 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o: /home/ngustafs/ISOLDE/ISOLDE.cc \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIbatch.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIExecutive.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUIshell.hh \
- /home/ngustafs/ISOLDE/construction.hh \
+ /home/ngustafs/ISOLDE/include/construction.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserDetectorConstruction.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPhysicalVolume.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4LogicalVolume.hh \
@@ -730,7 +730,7 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o: /home/ngustafs/ISOLDE/ISOLDE.cc \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4CacheDetails.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4MagneticField.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Field.hh \
- /home/ngustafs/ISOLDE/physicsList.hh \
+ /home/ngustafs/ISOLDE/include/physicsList.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VModularPhysicsList.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPhysicsConstructor.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PhysicsListHelper.hh \
@@ -746,9 +746,15 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o: /home/ngustafs/ISOLDE/ISOLDE.cc \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4EmStandardPhysics.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4OpticalPhysics.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4OpticalParameters.hh \
- /home/ngustafs/ISOLDE/action.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4RadioactiveDecayPhysics.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DecayPhysics.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Decay.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VRestDiscreteProcess.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleChangeForDecay.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DecayProcessType.hh \
+ /home/ngustafs/ISOLDE/include/action.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserActionInitialization.hh \
- /home/ngustafs/ISOLDE/generator.hh \
+ /home/ngustafs/ISOLDE/include/generator.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleGun.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPrimaryGenerator.hh \

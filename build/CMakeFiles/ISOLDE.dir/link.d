@@ -3,12 +3,12 @@ ISOLDE: \
   /home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o \
   /home/ngustafs/miniforge3/envs/geant4/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o \
   CMakeFiles/ISOLDE.dir/ISOLDE.cc.o \
-  CMakeFiles/ISOLDE.dir/VITOMagneticField.cc.o \
-  CMakeFiles/ISOLDE.dir/action.cc.o \
-  CMakeFiles/ISOLDE.dir/construction.cc.o \
-  CMakeFiles/ISOLDE.dir/generator.cc.o \
-  CMakeFiles/ISOLDE.dir/physicsList.cc.o \
-  CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.o \
+  CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o \
+  CMakeFiles/ISOLDE.dir/src/action.cc.o \
+  CMakeFiles/ISOLDE.dir/src/construction.cc.o \
+  CMakeFiles/ISOLDE.dir/src/generator.cc.o \
+  CMakeFiles/ISOLDE.dir/src/physicsList.cc.o \
+  CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o \
   /home/ngustafs/miniforge3/envs/geant4/lib/libG4Tree.so \
   /home/ngustafs/miniforge3/envs/geant4/lib/libG4FR.so \
   /home/ngustafs/miniforge3/envs/geant4/lib/libG4GMocren.so \
@@ -86,17 +86,17 @@ ISOLDE: \
 
 CMakeFiles/ISOLDE.dir/ISOLDE.cc.o:
 
-CMakeFiles/ISOLDE.dir/VITOMagneticField.cc.o:
+CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o:
 
-CMakeFiles/ISOLDE.dir/action.cc.o:
+CMakeFiles/ISOLDE.dir/src/action.cc.o:
 
-CMakeFiles/ISOLDE.dir/construction.cc.o:
+CMakeFiles/ISOLDE.dir/src/construction.cc.o:
 
-CMakeFiles/ISOLDE.dir/generator.cc.o:
+CMakeFiles/ISOLDE.dir/src/generator.cc.o:
 
-CMakeFiles/ISOLDE.dir/physicsList.cc.o:
+CMakeFiles/ISOLDE.dir/src/physicsList.cc.o:
 
-CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.o:
+CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o:
 
 /home/ngustafs/miniforge3/envs/geant4/lib/libG4Tree.so:
 

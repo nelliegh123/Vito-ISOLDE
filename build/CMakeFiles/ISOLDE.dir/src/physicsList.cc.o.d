@@ -1,7 +1,7 @@
-CMakeFiles/ISOLDE.dir/physicsList.cc.o: \
- /home/ngustafs/ISOLDE/physicsList.cc \
+CMakeFiles/ISOLDE.dir/src/physicsList.cc.o: \
+ /home/ngustafs/ISOLDE/src/physicsList.cc \
  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/stdc-predef.h \
- /home/ngustafs/ISOLDE/physicsList.hh \
+ /home/ngustafs/ISOLDE/include/physicsList.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VModularPhysicsList.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPhysicsConstructor.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTable.hh \

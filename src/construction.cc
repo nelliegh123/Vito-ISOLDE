@@ -28,7 +28,26 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     G4VPhysicalVolume *World = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.),
     logicWorld, "World", 0, false, 0, true);
 
-    
+
+    //====================================================================================
+    //                              Defining Sample
+    //====================================================================================
+    G4Material *solidSampleMat = nist->FindOrBuildMaterial("G4_MAGNESIUM_OXIDE");
+
+    G4Tubs *solidSampleCylinder = new G4Tubs("solidSampleCylinder", 0., 0.5*cm, 0.5*mm, 0.*cm, 360.*cm);
+    G4Box *solidSampleSquare = new G4Box("solidSampleSquare", 0.5*cm, 0.5*cm, 0.5*mm);
+
+    G4LogicalVolume *logicSampleCylinder = new G4LogicalVolume(solidSampleCylinder, solidSampleMat, 
+                                                               "logicSampleCylinder");
+    G4LogicalVolume *logicSampleSquare = new G4LogicalVolume(solidSampleSquare, solidSampleMat, 
+                                                             "logicSampleSquare");
+
+    G4VPhysicalVolume *solidCylinder = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), logicSampleCylinder, 
+                                                              "solidCylinder", logicWorld, false, 0, true);
+    // G4VPhysicalVolume *solidSquare = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), logicSampleSquare, 
+                                                            //   "solidSquare", logicWorld, false, 0, true);
+
+
 
     //====================================================================================
     //                              Defining Detector
@@ -62,7 +81,6 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 
     sdManager->AddNewDetector(sd1);
     sdManager->AddNewDetector(sd2);
-//     G4Cache<G4MagneticField*> fFiwDetector(sd2);
 
     logicDetector1->SetSensitiveDetector(sd1);
     logicDetector2->SetSensitiveDetector(sd2);
@@ -71,10 +89,10 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     //====================================================================================
     //                             Activating the Magnetic Field
     //====================================================================================
-    G4MagneticField* magField = new VITOMagneticField("./field1Axial.txt",
-                                                      "./field1Radial.txt", 
-                                                      "./field2Axial.txt", 
-                                                      "./field2Radial.txt");
+    G4MagneticField* magField = new VITOMagneticField("field1Axial.txt",
+                                                      "field1Radial.txt", 
+                                                      "field2Axial.txt", 
+                                                      "field2Radial.txt");
     fField.Put(magField);
 
     G4FieldManager* pFieldMgr = G4TransportationManager::GetTransportationManager()->GetFieldManager();

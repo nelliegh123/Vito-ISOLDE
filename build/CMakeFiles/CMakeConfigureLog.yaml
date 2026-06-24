@@ -29410,3 +29410,2247 @@ events:
       CMAKE_SYSTEM_LIBRARY_PATH:
         - "/usr/lib/X11"
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/FindHDF5.cmake:409 (try_compile)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/FindHDF5.cmake:785 (_HDF5_test_regular_compiler_C)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:329 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    directories:
+      source: "/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-kojENK"
+      binary: "/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-kojENK"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: "-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/ngustafs/miniforge3/envs/geant4/include"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/ngustafs/miniforge3/envs/geant4/lib -Wl,-rpath-link,/home/ngustafs/miniforge3/envs/geant4/lib -L/home/ngustafs/miniforge3/envs/geant4/lib"
+      CMAKE_MODULE_PATH: "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-kojENK'
+        
+        Run Build Command(s): /home/ngustafs/miniforge3/envs/geant4/bin/cmake -E env VERBOSE=1 /home/ngustafs/miniforge3/envs/geant4/bin/make -f Makefile cmTC_bc23d/fast
+        /home/ngustafs/miniforge3/envs/geant4/bin/make  -f CMakeFiles/cmTC_bc23d.dir/build.make CMakeFiles/cmTC_bc23d.dir/build
+        make[1]: Entering directory '/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-kojENK'
+        Building C object CMakeFiles/cmTC_bc23d.dir/cmake_hdf5_test.c.o
+        /home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/ngustafs/miniforge3/envs/geant4/include  -o CMakeFiles/cmTC_bc23d.dir/cmake_hdf5_test.c.o -c /home/ngustafs/ISOLDE/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        Linking C executable cmTC_bc23d
+        /home/ngustafs/miniforge3/envs/geant4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bc23d.dir/link.txt --verbose=1
+        /home/ngustafs/miniforge3/envs/geant4/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: CMakeFiles/cmTC_bc23d.dir/cmake_hdf5_test.c.o: in function `main':
+        cmake_hdf5_test.c:(.text.startup.main+0x15): undefined reference to `H5check_version'
+        /home/ngustafs/miniforge3/envs/geant4/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: cmake_hdf5_test.c:(.text.startup.main+0x1b): undefined reference to `H5open'
+        /home/ngustafs/miniforge3/envs/geant4/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: cmake_hdf5_test.c:(.text.startup.main+0x31): undefined reference to `H5Fcreate'
+        collect2: error: ld returned 1 exit status
+        /home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/ngustafs/miniforge3/envs/geant4/include  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/ngustafs/miniforge3/envs/geant4/lib -Wl,-rpath-link,/home/ngustafs/miniforge3/envs/geant4/lib -L/home/ngustafs/miniforge3/envs/geant4/lib  CMakeFiles/cmTC_bc23d.dir/cmake_hdf5_test.c.o -o cmTC_bc23d
+        make[1]: *** [CMakeFiles/cmTC_bc23d.dir/build.make:102: cmTC_bc23d] Error 1
+        make[1]: Leaving directory '/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-kojENK'
+        make: *** [Makefile:134: cmTC_bc23d/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:5 (find_path)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:233 (include)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:372 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    mode: "path"
+    variable: "_qt5gui_OPENGL_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GL/gl.h"
+    candidate_directories:
+      - "/home/ngustafs/miniforge3/envs/geant4/include/"
+      - "/home/ngustafs/miniforge3/envs/geant4/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/ngustafs/miniforge3/envs/geant4/bin/"
+      - "/home/ngustafs/miniforge3/condabin/"
+      - "/home/ngustafs/.local/bin/"
+      - "/home/ngustafs/bin/"
+      - "/usr/sue/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/opt/puppetlabs/bin/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/usr/include/X11/"
+      - "/home/ngustafs/miniforge3/envs/geant4/include/"
+    found: "/home/ngustafs/miniforge3/envs/geant4/include/"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin"
+        - "/home/ngustafs/miniforge3/condabin"
+        - "/home/ngustafs/.local/bin"
+        - "/home/ngustafs/bin"
+        - "/usr/sue/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/opt/puppetlabs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:40 (find_library)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:85 (_qt5gui_find_extra_libs)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:233 (include)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:372 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    mode: "library"
+    variable: "Qt5Gui_EGL_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "EGL"
+    candidate_directories:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/ngustafs/miniforge3/envs/geant4/bin/"
+      - "/home/ngustafs/miniforge3/condabin/"
+      - "/usr/sue/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/opt/puppetlabs/bin/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+    searched_directories:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/ngustafs/miniforge3/envs/geant4/bin/"
+      - "/home/ngustafs/miniforge3/condabin/"
+      - "/usr/sue/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/opt/puppetlabs/bin/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+    found: false
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin"
+        - "/home/ngustafs/miniforge3/condabin"
+        - "/home/ngustafs/.local/bin"
+        - "/home/ngustafs/bin"
+        - "/usr/sue/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/opt/puppetlabs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:40 (find_library)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:87 (_qt5gui_find_extra_libs)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:233 (include)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:372 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    mode: "library"
+    variable: "Qt5Gui_GL_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GL"
+    candidate_directories:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/ngustafs/miniforge3/envs/geant4/bin/"
+      - "/home/ngustafs/miniforge3/condabin/"
+      - "/usr/sue/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/opt/puppetlabs/bin/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+    found: "/home/ngustafs/miniforge3/envs/geant4/lib/libGL.so"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin"
+        - "/home/ngustafs/miniforge3/condabin"
+        - "/home/ngustafs/.local/bin"
+        - "/home/ngustafs/bin"
+        - "/usr/sue/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/opt/puppetlabs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:68 (find_library)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:87 (_qt5gui_find_extra_libs)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:233 (include)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:372 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    mode: "library"
+    variable: "Qt5Gui_GL_LIBRARY_DEBUG"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GLd"
+    candidate_directories:
+      - "/home/ngustafs/ISOLDE/"
+    searched_directories:
+      - "/home/ngustafs/ISOLDE/"
+    found: false
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin"
+        - "/home/ngustafs/miniforge3/condabin"
+        - "/home/ngustafs/.local/bin"
+        - "/home/ngustafs/bin"
+        - "/usr/sue/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/opt/puppetlabs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/FindHDF5.cmake:409 (try_compile)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/FindHDF5.cmake:785 (_HDF5_test_regular_compiler_C)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:329 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    directories:
+      source: "/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-zMoa6c"
+      binary: "/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-zMoa6c"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: "-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/ngustafs/miniforge3/envs/geant4/include"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/ngustafs/miniforge3/envs/geant4/lib -Wl,-rpath-link,/home/ngustafs/miniforge3/envs/geant4/lib -L/home/ngustafs/miniforge3/envs/geant4/lib"
+      CMAKE_MODULE_PATH: "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-zMoa6c'
+        
+        Run Build Command(s): /home/ngustafs/miniforge3/envs/geant4/bin/cmake -E env VERBOSE=1 /home/ngustafs/miniforge3/envs/geant4/bin/make -f Makefile cmTC_370ed/fast
+        /home/ngustafs/miniforge3/envs/geant4/bin/make  -f CMakeFiles/cmTC_370ed.dir/build.make CMakeFiles/cmTC_370ed.dir/build
+        make[1]: Entering directory '/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-zMoa6c'
+        Building C object CMakeFiles/cmTC_370ed.dir/cmake_hdf5_test.c.o
+        /home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/ngustafs/miniforge3/envs/geant4/include  -o CMakeFiles/cmTC_370ed.dir/cmake_hdf5_test.c.o -c /home/ngustafs/ISOLDE/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        Linking C executable cmTC_370ed
+        /home/ngustafs/miniforge3/envs/geant4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_370ed.dir/link.txt --verbose=1
+        /home/ngustafs/miniforge3/envs/geant4/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: CMakeFiles/cmTC_370ed.dir/cmake_hdf5_test.c.o: in function `main':
+        cmake_hdf5_test.c:(.text.startup.main+0x15): undefined reference to `H5check_version'
+        /home/ngustafs/miniforge3/envs/geant4/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: cmake_hdf5_test.c:(.text.startup.main+0x1b): undefined reference to `H5open'
+        /home/ngustafs/miniforge3/envs/geant4/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: cmake_hdf5_test.c:(.text.startup.main+0x31): undefined reference to `H5Fcreate'
+        collect2: error: ld returned 1 exit status
+        /home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/ngustafs/miniforge3/envs/geant4/include  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/ngustafs/miniforge3/envs/geant4/lib -Wl,-rpath-link,/home/ngustafs/miniforge3/envs/geant4/lib -L/home/ngustafs/miniforge3/envs/geant4/lib  CMakeFiles/cmTC_370ed.dir/cmake_hdf5_test.c.o -o cmTC_370ed
+        make[1]: *** [CMakeFiles/cmTC_370ed.dir/build.make:102: cmTC_370ed] Error 1
+        make[1]: Leaving directory '/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-zMoa6c'
+        make: *** [Makefile:134: cmTC_370ed/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:5 (find_path)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:233 (include)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:372 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    mode: "path"
+    variable: "_qt5gui_OPENGL_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GL/gl.h"
+    candidate_directories:
+      - "/home/ngustafs/miniforge3/envs/geant4/include/"
+      - "/home/ngustafs/miniforge3/envs/geant4/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/ngustafs/miniforge3/envs/geant4/bin/"
+      - "/home/ngustafs/miniforge3/condabin/"
+      - "/home/ngustafs/.local/bin/"
+      - "/home/ngustafs/bin/"
+      - "/usr/sue/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/opt/puppetlabs/bin/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/usr/include/X11/"
+      - "/home/ngustafs/miniforge3/envs/geant4/include/"
+    found: "/home/ngustafs/miniforge3/envs/geant4/include/"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin"
+        - "/home/ngustafs/miniforge3/condabin"
+        - "/home/ngustafs/.local/bin"
+        - "/home/ngustafs/bin"
+        - "/usr/sue/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/opt/puppetlabs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:40 (find_library)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:85 (_qt5gui_find_extra_libs)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:233 (include)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:372 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    mode: "library"
+    variable: "Qt5Gui_EGL_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "EGL"
+    candidate_directories:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/ngustafs/miniforge3/envs/geant4/bin/"
+      - "/home/ngustafs/miniforge3/condabin/"
+      - "/usr/sue/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/opt/puppetlabs/bin/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+    searched_directories:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/ngustafs/miniforge3/envs/geant4/bin/"
+      - "/home/ngustafs/miniforge3/condabin/"
+      - "/usr/sue/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/opt/puppetlabs/bin/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+    found: false
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin"
+        - "/home/ngustafs/miniforge3/condabin"
+        - "/home/ngustafs/.local/bin"
+        - "/home/ngustafs/bin"
+        - "/usr/sue/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/opt/puppetlabs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:40 (find_library)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:87 (_qt5gui_find_extra_libs)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:233 (include)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:372 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    mode: "library"
+    variable: "Qt5Gui_GL_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GL"
+    candidate_directories:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/ngustafs/miniforge3/envs/geant4/bin/"
+      - "/home/ngustafs/miniforge3/condabin/"
+      - "/usr/sue/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/opt/puppetlabs/bin/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+    found: "/home/ngustafs/miniforge3/envs/geant4/lib/libGL.so"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin"
+        - "/home/ngustafs/miniforge3/condabin"
+        - "/home/ngustafs/.local/bin"
+        - "/home/ngustafs/bin"
+        - "/usr/sue/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/opt/puppetlabs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:68 (find_library)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:87 (_qt5gui_find_extra_libs)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:233 (include)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:372 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    mode: "library"
+    variable: "Qt5Gui_GL_LIBRARY_DEBUG"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GLd"
+    candidate_directories:
+      - "/home/ngustafs/ISOLDE/"
+    searched_directories:
+      - "/home/ngustafs/ISOLDE/"
+    found: false
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin"
+        - "/home/ngustafs/miniforge3/condabin"
+        - "/home/ngustafs/.local/bin"
+        - "/home/ngustafs/bin"
+        - "/usr/sue/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/opt/puppetlabs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/FindHDF5.cmake:409 (try_compile)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/FindHDF5.cmake:785 (_HDF5_test_regular_compiler_C)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:329 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    directories:
+      source: "/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-uGeKDi"
+      binary: "/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-uGeKDi"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: "-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/ngustafs/miniforge3/envs/geant4/include"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/ngustafs/miniforge3/envs/geant4/lib -Wl,-rpath-link,/home/ngustafs/miniforge3/envs/geant4/lib -L/home/ngustafs/miniforge3/envs/geant4/lib"
+      CMAKE_MODULE_PATH: "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-uGeKDi'
+        
+        Run Build Command(s): /home/ngustafs/miniforge3/envs/geant4/bin/cmake -E env VERBOSE=1 /home/ngustafs/miniforge3/envs/geant4/bin/make -f Makefile cmTC_90244/fast
+        /home/ngustafs/miniforge3/envs/geant4/bin/make  -f CMakeFiles/cmTC_90244.dir/build.make CMakeFiles/cmTC_90244.dir/build
+        make[1]: Entering directory '/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-uGeKDi'
+        Building C object CMakeFiles/cmTC_90244.dir/cmake_hdf5_test.c.o
+        /home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/ngustafs/miniforge3/envs/geant4/include  -o CMakeFiles/cmTC_90244.dir/cmake_hdf5_test.c.o -c /home/ngustafs/ISOLDE/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        Linking C executable cmTC_90244
+        /home/ngustafs/miniforge3/envs/geant4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90244.dir/link.txt --verbose=1
+        /home/ngustafs/miniforge3/envs/geant4/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: CMakeFiles/cmTC_90244.dir/cmake_hdf5_test.c.o: in function `main':
+        cmake_hdf5_test.c:(.text.startup.main+0x15): undefined reference to `H5check_version'
+        /home/ngustafs/miniforge3/envs/geant4/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: cmake_hdf5_test.c:(.text.startup.main+0x1b): undefined reference to `H5open'
+        /home/ngustafs/miniforge3/envs/geant4/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: cmake_hdf5_test.c:(.text.startup.main+0x31): undefined reference to `H5Fcreate'
+        collect2: error: ld returned 1 exit status
+        /home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/ngustafs/miniforge3/envs/geant4/include  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/ngustafs/miniforge3/envs/geant4/lib -Wl,-rpath-link,/home/ngustafs/miniforge3/envs/geant4/lib -L/home/ngustafs/miniforge3/envs/geant4/lib  CMakeFiles/cmTC_90244.dir/cmake_hdf5_test.c.o -o cmTC_90244
+        make[1]: *** [CMakeFiles/cmTC_90244.dir/build.make:102: cmTC_90244] Error 1
+        make[1]: Leaving directory '/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-uGeKDi'
+        make: *** [Makefile:134: cmTC_90244/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:5 (find_path)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:233 (include)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:372 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    mode: "path"
+    variable: "_qt5gui_OPENGL_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GL/gl.h"
+    candidate_directories:
+      - "/home/ngustafs/miniforge3/envs/geant4/include/"
+      - "/home/ngustafs/miniforge3/envs/geant4/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/ngustafs/miniforge3/envs/geant4/bin/"
+      - "/home/ngustafs/miniforge3/condabin/"
+      - "/home/ngustafs/.local/bin/"
+      - "/home/ngustafs/bin/"
+      - "/usr/sue/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/opt/puppetlabs/bin/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/usr/include/X11/"
+      - "/home/ngustafs/miniforge3/envs/geant4/include/"
+    found: "/home/ngustafs/miniforge3/envs/geant4/include/"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin"
+        - "/home/ngustafs/miniforge3/condabin"
+        - "/home/ngustafs/.local/bin"
+        - "/home/ngustafs/bin"
+        - "/usr/sue/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/opt/puppetlabs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:40 (find_library)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:85 (_qt5gui_find_extra_libs)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:233 (include)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:372 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    mode: "library"
+    variable: "Qt5Gui_EGL_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "EGL"
+    candidate_directories:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/ngustafs/miniforge3/envs/geant4/bin/"
+      - "/home/ngustafs/miniforge3/condabin/"
+      - "/usr/sue/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/opt/puppetlabs/bin/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+    searched_directories:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/ngustafs/miniforge3/envs/geant4/bin/"
+      - "/home/ngustafs/miniforge3/condabin/"
+      - "/usr/sue/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/opt/puppetlabs/bin/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+    found: false
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin"
+        - "/home/ngustafs/miniforge3/condabin"
+        - "/home/ngustafs/.local/bin"
+        - "/home/ngustafs/bin"
+        - "/usr/sue/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/opt/puppetlabs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:40 (find_library)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:87 (_qt5gui_find_extra_libs)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:233 (include)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:372 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    mode: "library"
+    variable: "Qt5Gui_GL_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GL"
+    candidate_directories:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/ngustafs/miniforge3/envs/geant4/bin/"
+      - "/home/ngustafs/miniforge3/condabin/"
+      - "/usr/sue/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/opt/puppetlabs/bin/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+    found: "/home/ngustafs/miniforge3/envs/geant4/lib/libGL.so"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin"
+        - "/home/ngustafs/miniforge3/condabin"
+        - "/home/ngustafs/.local/bin"
+        - "/home/ngustafs/bin"
+        - "/usr/sue/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/opt/puppetlabs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:68 (find_library)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:87 (_qt5gui_find_extra_libs)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:233 (include)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:372 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    mode: "library"
+    variable: "Qt5Gui_GL_LIBRARY_DEBUG"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GLd"
+    candidate_directories:
+      - "/home/ngustafs/ISOLDE/"
+    searched_directories:
+      - "/home/ngustafs/ISOLDE/"
+    found: false
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin"
+        - "/home/ngustafs/miniforge3/condabin"
+        - "/home/ngustafs/.local/bin"
+        - "/home/ngustafs/bin"
+        - "/usr/sue/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/opt/puppetlabs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/FindHDF5.cmake:409 (try_compile)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/FindHDF5.cmake:785 (_HDF5_test_regular_compiler_C)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:329 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    directories:
+      source: "/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-wyGrVd"
+      binary: "/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-wyGrVd"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: "-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/ngustafs/miniforge3/envs/geant4/include"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/ngustafs/miniforge3/envs/geant4/lib -Wl,-rpath-link,/home/ngustafs/miniforge3/envs/geant4/lib -L/home/ngustafs/miniforge3/envs/geant4/lib"
+      CMAKE_MODULE_PATH: "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-wyGrVd'
+        
+        Run Build Command(s): /home/ngustafs/miniforge3/envs/geant4/bin/cmake -E env VERBOSE=1 /home/ngustafs/miniforge3/envs/geant4/bin/make -f Makefile cmTC_9acee/fast
+        /home/ngustafs/miniforge3/envs/geant4/bin/make  -f CMakeFiles/cmTC_9acee.dir/build.make CMakeFiles/cmTC_9acee.dir/build
+        make[1]: Entering directory '/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-wyGrVd'
+        Building C object CMakeFiles/cmTC_9acee.dir/cmake_hdf5_test.c.o
+        /home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/ngustafs/miniforge3/envs/geant4/include  -o CMakeFiles/cmTC_9acee.dir/cmake_hdf5_test.c.o -c /home/ngustafs/ISOLDE/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        Linking C executable cmTC_9acee
+        /home/ngustafs/miniforge3/envs/geant4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9acee.dir/link.txt --verbose=1
+        /home/ngustafs/miniforge3/envs/geant4/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: CMakeFiles/cmTC_9acee.dir/cmake_hdf5_test.c.o: in function `main':
+        cmake_hdf5_test.c:(.text.startup.main+0x15): undefined reference to `H5check_version'
+        /home/ngustafs/miniforge3/envs/geant4/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: cmake_hdf5_test.c:(.text.startup.main+0x1b): undefined reference to `H5open'
+        /home/ngustafs/miniforge3/envs/geant4/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: cmake_hdf5_test.c:(.text.startup.main+0x31): undefined reference to `H5Fcreate'
+        collect2: error: ld returned 1 exit status
+        /home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/ngustafs/miniforge3/envs/geant4/include  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/ngustafs/miniforge3/envs/geant4/lib -Wl,-rpath-link,/home/ngustafs/miniforge3/envs/geant4/lib -L/home/ngustafs/miniforge3/envs/geant4/lib  CMakeFiles/cmTC_9acee.dir/cmake_hdf5_test.c.o -o cmTC_9acee
+        make[1]: *** [CMakeFiles/cmTC_9acee.dir/build.make:102: cmTC_9acee] Error 1
+        make[1]: Leaving directory '/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-wyGrVd'
+        make: *** [Makefile:134: cmTC_9acee/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:5 (find_path)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:233 (include)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:372 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    mode: "path"
+    variable: "_qt5gui_OPENGL_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GL/gl.h"
+    candidate_directories:
+      - "/home/ngustafs/miniforge3/envs/geant4/include/"
+      - "/home/ngustafs/miniforge3/envs/geant4/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/ngustafs/miniforge3/envs/geant4/bin/"
+      - "/home/ngustafs/miniforge3/condabin/"
+      - "/home/ngustafs/.local/bin/"
+      - "/home/ngustafs/bin/"
+      - "/usr/sue/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/opt/puppetlabs/bin/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/usr/include/X11/"
+      - "/home/ngustafs/miniforge3/envs/geant4/include/"
+    found: "/home/ngustafs/miniforge3/envs/geant4/include/"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin"
+        - "/home/ngustafs/miniforge3/condabin"
+        - "/home/ngustafs/.local/bin"
+        - "/home/ngustafs/bin"
+        - "/usr/sue/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/opt/puppetlabs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:40 (find_library)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:85 (_qt5gui_find_extra_libs)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:233 (include)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:372 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    mode: "library"
+    variable: "Qt5Gui_EGL_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "EGL"
+    candidate_directories:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/ngustafs/miniforge3/envs/geant4/bin/"
+      - "/home/ngustafs/miniforge3/condabin/"
+      - "/usr/sue/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/opt/puppetlabs/bin/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+    searched_directories:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/ngustafs/miniforge3/envs/geant4/bin/"
+      - "/home/ngustafs/miniforge3/condabin/"
+      - "/usr/sue/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/opt/puppetlabs/bin/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+    found: false
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin"
+        - "/home/ngustafs/miniforge3/condabin"
+        - "/home/ngustafs/.local/bin"
+        - "/home/ngustafs/bin"
+        - "/usr/sue/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/opt/puppetlabs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:40 (find_library)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:87 (_qt5gui_find_extra_libs)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:233 (include)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:372 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    mode: "library"
+    variable: "Qt5Gui_GL_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GL"
+    candidate_directories:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/ngustafs/miniforge3/envs/geant4/bin/"
+      - "/home/ngustafs/miniforge3/condabin/"
+      - "/usr/sue/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/opt/puppetlabs/bin/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+    found: "/home/ngustafs/miniforge3/envs/geant4/lib/libGL.so"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin"
+        - "/home/ngustafs/miniforge3/condabin"
+        - "/home/ngustafs/.local/bin"
+        - "/home/ngustafs/bin"
+        - "/usr/sue/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/opt/puppetlabs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:68 (find_library)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:87 (_qt5gui_find_extra_libs)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:233 (include)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:372 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    mode: "library"
+    variable: "Qt5Gui_GL_LIBRARY_DEBUG"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GLd"
+    candidate_directories:
+      - "/home/ngustafs/ISOLDE/"
+    searched_directories:
+      - "/home/ngustafs/ISOLDE/"
+    found: false
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin"
+        - "/home/ngustafs/miniforge3/condabin"
+        - "/home/ngustafs/.local/bin"
+        - "/home/ngustafs/bin"
+        - "/usr/sue/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/opt/puppetlabs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/FindHDF5.cmake:409 (try_compile)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/FindHDF5.cmake:785 (_HDF5_test_regular_compiler_C)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:329 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    directories:
+      source: "/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-YddEvJ"
+      binary: "/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-YddEvJ"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: "-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/ngustafs/miniforge3/envs/geant4/include"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/ngustafs/miniforge3/envs/geant4/lib -Wl,-rpath-link,/home/ngustafs/miniforge3/envs/geant4/lib -L/home/ngustafs/miniforge3/envs/geant4/lib"
+      CMAKE_MODULE_PATH: "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-YddEvJ'
+        
+        Run Build Command(s): /home/ngustafs/miniforge3/envs/geant4/bin/cmake -E env VERBOSE=1 /home/ngustafs/miniforge3/envs/geant4/bin/make -f Makefile cmTC_996f6/fast
+        /home/ngustafs/miniforge3/envs/geant4/bin/make  -f CMakeFiles/cmTC_996f6.dir/build.make CMakeFiles/cmTC_996f6.dir/build
+        make[1]: Entering directory '/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-YddEvJ'
+        Building C object CMakeFiles/cmTC_996f6.dir/cmake_hdf5_test.c.o
+        /home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/ngustafs/miniforge3/envs/geant4/include  -o CMakeFiles/cmTC_996f6.dir/cmake_hdf5_test.c.o -c /home/ngustafs/ISOLDE/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        Linking C executable cmTC_996f6
+        /home/ngustafs/miniforge3/envs/geant4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_996f6.dir/link.txt --verbose=1
+        /home/ngustafs/miniforge3/envs/geant4/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: CMakeFiles/cmTC_996f6.dir/cmake_hdf5_test.c.o: in function `main':
+        cmake_hdf5_test.c:(.text.startup.main+0x15): undefined reference to `H5check_version'
+        /home/ngustafs/miniforge3/envs/geant4/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: cmake_hdf5_test.c:(.text.startup.main+0x1b): undefined reference to `H5open'
+        /home/ngustafs/miniforge3/envs/geant4/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: cmake_hdf5_test.c:(.text.startup.main+0x31): undefined reference to `H5Fcreate'
+        collect2: error: ld returned 1 exit status
+        /home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/ngustafs/miniforge3/envs/geant4/include  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/ngustafs/miniforge3/envs/geant4/lib -Wl,-rpath-link,/home/ngustafs/miniforge3/envs/geant4/lib -L/home/ngustafs/miniforge3/envs/geant4/lib  CMakeFiles/cmTC_996f6.dir/cmake_hdf5_test.c.o -o cmTC_996f6
+        make[1]: *** [CMakeFiles/cmTC_996f6.dir/build.make:102: cmTC_996f6] Error 1
+        make[1]: Leaving directory '/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-YddEvJ'
+        make: *** [Makefile:134: cmTC_996f6/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:5 (find_path)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:233 (include)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:372 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    mode: "path"
+    variable: "_qt5gui_OPENGL_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GL/gl.h"
+    candidate_directories:
+      - "/home/ngustafs/miniforge3/envs/geant4/include/"
+      - "/home/ngustafs/miniforge3/envs/geant4/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/ngustafs/miniforge3/envs/geant4/bin/"
+      - "/home/ngustafs/miniforge3/condabin/"
+      - "/home/ngustafs/.local/bin/"
+      - "/home/ngustafs/bin/"
+      - "/usr/sue/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/opt/puppetlabs/bin/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/usr/include/X11/"
+      - "/home/ngustafs/miniforge3/envs/geant4/include/"
+    found: "/home/ngustafs/miniforge3/envs/geant4/include/"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin"
+        - "/home/ngustafs/miniforge3/condabin"
+        - "/home/ngustafs/.local/bin"
+        - "/home/ngustafs/bin"
+        - "/usr/sue/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/opt/puppetlabs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:40 (find_library)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:85 (_qt5gui_find_extra_libs)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:233 (include)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:372 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    mode: "library"
+    variable: "Qt5Gui_EGL_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "EGL"
+    candidate_directories:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/ngustafs/miniforge3/envs/geant4/bin/"
+      - "/home/ngustafs/miniforge3/condabin/"
+      - "/usr/sue/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/opt/puppetlabs/bin/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+    searched_directories:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/ngustafs/miniforge3/envs/geant4/bin/"
+      - "/home/ngustafs/miniforge3/condabin/"
+      - "/usr/sue/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/opt/puppetlabs/bin/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+    found: false
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin"
+        - "/home/ngustafs/miniforge3/condabin"
+        - "/home/ngustafs/.local/bin"
+        - "/home/ngustafs/bin"
+        - "/usr/sue/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/opt/puppetlabs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:40 (find_library)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:87 (_qt5gui_find_extra_libs)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:233 (include)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:372 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    mode: "library"
+    variable: "Qt5Gui_GL_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GL"
+    candidate_directories:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/ngustafs/miniforge3/envs/geant4/bin/"
+      - "/home/ngustafs/miniforge3/condabin/"
+      - "/usr/sue/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/opt/puppetlabs/bin/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+    found: "/home/ngustafs/miniforge3/envs/geant4/lib/libGL.so"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin"
+        - "/home/ngustafs/miniforge3/condabin"
+        - "/home/ngustafs/.local/bin"
+        - "/home/ngustafs/bin"
+        - "/usr/sue/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/opt/puppetlabs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:68 (find_library)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:87 (_qt5gui_find_extra_libs)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:233 (include)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:372 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    mode: "library"
+    variable: "Qt5Gui_GL_LIBRARY_DEBUG"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GLd"
+    candidate_directories:
+      - "/home/ngustafs/ISOLDE/"
+    searched_directories:
+      - "/home/ngustafs/ISOLDE/"
+    found: false
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin"
+        - "/home/ngustafs/miniforge3/condabin"
+        - "/home/ngustafs/.local/bin"
+        - "/home/ngustafs/bin"
+        - "/usr/sue/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/opt/puppetlabs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/FindHDF5.cmake:409 (try_compile)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/FindHDF5.cmake:785 (_HDF5_test_regular_compiler_C)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:329 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    directories:
+      source: "/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-v8iIyh"
+      binary: "/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-v8iIyh"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: "-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/ngustafs/miniforge3/envs/geant4/include"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/ngustafs/miniforge3/envs/geant4/lib -Wl,-rpath-link,/home/ngustafs/miniforge3/envs/geant4/lib -L/home/ngustafs/miniforge3/envs/geant4/lib"
+      CMAKE_MODULE_PATH: "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-v8iIyh'
+        
+        Run Build Command(s): /home/ngustafs/miniforge3/envs/geant4/bin/cmake -E env VERBOSE=1 /home/ngustafs/miniforge3/envs/geant4/bin/make -f Makefile cmTC_5505f/fast
+        /home/ngustafs/miniforge3/envs/geant4/bin/make  -f CMakeFiles/cmTC_5505f.dir/build.make CMakeFiles/cmTC_5505f.dir/build
+        make[1]: Entering directory '/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-v8iIyh'
+        Building C object CMakeFiles/cmTC_5505f.dir/cmake_hdf5_test.c.o
+        /home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/ngustafs/miniforge3/envs/geant4/include  -o CMakeFiles/cmTC_5505f.dir/cmake_hdf5_test.c.o -c /home/ngustafs/ISOLDE/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        Linking C executable cmTC_5505f
+        /home/ngustafs/miniforge3/envs/geant4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5505f.dir/link.txt --verbose=1
+        /home/ngustafs/miniforge3/envs/geant4/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: CMakeFiles/cmTC_5505f.dir/cmake_hdf5_test.c.o: in function `main':
+        cmake_hdf5_test.c:(.text.startup.main+0x15): undefined reference to `H5check_version'
+        /home/ngustafs/miniforge3/envs/geant4/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: cmake_hdf5_test.c:(.text.startup.main+0x1b): undefined reference to `H5open'
+        /home/ngustafs/miniforge3/envs/geant4/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: cmake_hdf5_test.c:(.text.startup.main+0x31): undefined reference to `H5Fcreate'
+        collect2: error: ld returned 1 exit status
+        /home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/ngustafs/miniforge3/envs/geant4/include  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/ngustafs/miniforge3/envs/geant4/lib -Wl,-rpath-link,/home/ngustafs/miniforge3/envs/geant4/lib -L/home/ngustafs/miniforge3/envs/geant4/lib  CMakeFiles/cmTC_5505f.dir/cmake_hdf5_test.c.o -o cmTC_5505f
+        make[1]: *** [CMakeFiles/cmTC_5505f.dir/build.make:102: cmTC_5505f] Error 1
+        make[1]: Leaving directory '/home/ngustafs/ISOLDE/build/CMakeFiles/CMakeScratch/TryCompile-v8iIyh'
+        make: *** [Makefile:134: cmTC_5505f/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:5 (find_path)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:233 (include)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:372 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    mode: "path"
+    variable: "_qt5gui_OPENGL_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GL/gl.h"
+    candidate_directories:
+      - "/home/ngustafs/miniforge3/envs/geant4/include/"
+      - "/home/ngustafs/miniforge3/envs/geant4/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/ngustafs/miniforge3/envs/geant4/bin/"
+      - "/home/ngustafs/miniforge3/condabin/"
+      - "/home/ngustafs/.local/bin/"
+      - "/home/ngustafs/bin/"
+      - "/usr/sue/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/opt/puppetlabs/bin/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/usr/include/X11/"
+      - "/home/ngustafs/miniforge3/envs/geant4/include/"
+    found: "/home/ngustafs/miniforge3/envs/geant4/include/"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin"
+        - "/home/ngustafs/miniforge3/condabin"
+        - "/home/ngustafs/.local/bin"
+        - "/home/ngustafs/bin"
+        - "/usr/sue/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/opt/puppetlabs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:40 (find_library)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:85 (_qt5gui_find_extra_libs)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:233 (include)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:372 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    mode: "library"
+    variable: "Qt5Gui_EGL_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "EGL"
+    candidate_directories:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/ngustafs/miniforge3/envs/geant4/bin/"
+      - "/home/ngustafs/miniforge3/condabin/"
+      - "/usr/sue/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/opt/puppetlabs/bin/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+    searched_directories:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/ngustafs/miniforge3/envs/geant4/bin/"
+      - "/home/ngustafs/miniforge3/condabin/"
+      - "/usr/sue/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/opt/puppetlabs/bin/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+    found: false
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin"
+        - "/home/ngustafs/miniforge3/condabin"
+        - "/home/ngustafs/.local/bin"
+        - "/home/ngustafs/bin"
+        - "/usr/sue/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/opt/puppetlabs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:40 (find_library)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:87 (_qt5gui_find_extra_libs)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:233 (include)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:372 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    mode: "library"
+    variable: "Qt5Gui_GL_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GL"
+    candidate_directories:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/lib/"
+      - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/ngustafs/miniforge3/envs/geant4/bin/"
+      - "/home/ngustafs/miniforge3/condabin/"
+      - "/usr/sue/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/opt/puppetlabs/bin/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+    found: "/home/ngustafs/miniforge3/envs/geant4/lib/libGL.so"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin"
+        - "/home/ngustafs/miniforge3/condabin"
+        - "/home/ngustafs/.local/bin"
+        - "/home/ngustafs/bin"
+        - "/usr/sue/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/opt/puppetlabs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:68 (find_library)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:87 (_qt5gui_find_extra_libs)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:233 (include)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/home/ngustafs/miniforge3/envs/geant4/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4/Geant4Config.cmake:372 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    mode: "library"
+    variable: "Qt5Gui_GL_LIBRARY_DEBUG"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GLd"
+    candidate_directories:
+      - "/home/ngustafs/ISOLDE/"
+    searched_directories:
+      - "/home/ngustafs/ISOLDE/"
+    found: false
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin"
+        - "/home/ngustafs/miniforge3/condabin"
+        - "/home/ngustafs/.local/bin"
+        - "/home/ngustafs/bin"
+        - "/usr/sue/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/opt/puppetlabs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/ngustafs/miniforge3/envs/geant4"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+...
