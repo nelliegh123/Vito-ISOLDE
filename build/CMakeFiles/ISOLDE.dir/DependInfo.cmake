@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ngustafs/ISOLDE/ISOLDE.cc" "CMakeFiles/ISOLDE.dir/ISOLDE.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/ISOLDE.cc.o.d"
+  "/home/ngustafs/ISOLDE/VITOMagneticField.cc" "CMakeFiles/ISOLDE.dir/VITOMagneticField.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/VITOMagneticField.cc.o.d"
   "/home/ngustafs/ISOLDE/action.cc" "CMakeFiles/ISOLDE.dir/action.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/action.cc.o.d"
   "/home/ngustafs/ISOLDE/construction.cc" "CMakeFiles/ISOLDE.dir/construction.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/construction.cc.o.d"
   "/home/ngustafs/ISOLDE/generator.cc" "CMakeFiles/ISOLDE.dir/generator.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/generator.cc.o.d"

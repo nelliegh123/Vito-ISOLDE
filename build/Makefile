@@ -166,6 +166,30 @@ ISOLDE.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/ISOLDE.cc.s
 .PHONY : ISOLDE.cc.s
 
+VITOMagneticField.o: VITOMagneticField.cc.o
+.PHONY : VITOMagneticField.o
+
+# target to build an object file
+VITOMagneticField.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/VITOMagneticField.cc.o
+.PHONY : VITOMagneticField.cc.o
+
+VITOMagneticField.i: VITOMagneticField.cc.i
+.PHONY : VITOMagneticField.i
+
+# target to preprocess a source file
+VITOMagneticField.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/VITOMagneticField.cc.i
+.PHONY : VITOMagneticField.cc.i
+
+VITOMagneticField.s: VITOMagneticField.cc.s
+.PHONY : VITOMagneticField.s
+
+# target to generate assembly for a file
+VITOMagneticField.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/VITOMagneticField.cc.s
+.PHONY : VITOMagneticField.cc.s
+
 action.o: action.cc.o
 .PHONY : action.o
 
@@ -299,6 +323,9 @@ help:
 	@echo "... ISOLDE.o"
 	@echo "... ISOLDE.i"
 	@echo "... ISOLDE.s"
+	@echo "... VITOMagneticField.o"
+	@echo "... VITOMagneticField.i"
+	@echo "... VITOMagneticField.s"
 	@echo "... action.o"
 	@echo "... action.i"
 	@echo "... action.s"

@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ISOLDE.dir/link.d"
   "CMakeFiles/ISOLDE.dir/ISOLDE.cc.o"
   "CMakeFiles/ISOLDE.dir/ISOLDE.cc.o.d"
+  "CMakeFiles/ISOLDE.dir/VITOMagneticField.cc.o"
+  "CMakeFiles/ISOLDE.dir/VITOMagneticField.cc.o.d"
   "CMakeFiles/ISOLDE.dir/action.cc.o"
   "CMakeFiles/ISOLDE.dir/action.cc.o.d"
   "CMakeFiles/ISOLDE.dir/construction.cc.o"
