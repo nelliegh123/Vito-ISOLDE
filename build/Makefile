@@ -166,149 +166,149 @@ ISOLDE.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/ISOLDE.cc.s
 .PHONY : ISOLDE.cc.s
 
-VITOMagneticField.o: VITOMagneticField.cc.o
-.PHONY : VITOMagneticField.o
+src/VITOMagneticField.o: src/VITOMagneticField.cc.o
+.PHONY : src/VITOMagneticField.o
 
 # target to build an object file
-VITOMagneticField.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/VITOMagneticField.cc.o
-.PHONY : VITOMagneticField.cc.o
+src/VITOMagneticField.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o
+.PHONY : src/VITOMagneticField.cc.o
 
-VITOMagneticField.i: VITOMagneticField.cc.i
-.PHONY : VITOMagneticField.i
+src/VITOMagneticField.i: src/VITOMagneticField.cc.i
+.PHONY : src/VITOMagneticField.i
 
 # target to preprocess a source file
-VITOMagneticField.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/VITOMagneticField.cc.i
-.PHONY : VITOMagneticField.cc.i
+src/VITOMagneticField.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.i
+.PHONY : src/VITOMagneticField.cc.i
 
-VITOMagneticField.s: VITOMagneticField.cc.s
-.PHONY : VITOMagneticField.s
+src/VITOMagneticField.s: src/VITOMagneticField.cc.s
+.PHONY : src/VITOMagneticField.s
 
 # target to generate assembly for a file
-VITOMagneticField.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/VITOMagneticField.cc.s
-.PHONY : VITOMagneticField.cc.s
+src/VITOMagneticField.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.s
+.PHONY : src/VITOMagneticField.cc.s
 
-action.o: action.cc.o
-.PHONY : action.o
+src/action.o: src/action.cc.o
+.PHONY : src/action.o
 
 # target to build an object file
-action.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/action.cc.o
-.PHONY : action.cc.o
+src/action.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/action.cc.o
+.PHONY : src/action.cc.o
 
-action.i: action.cc.i
-.PHONY : action.i
+src/action.i: src/action.cc.i
+.PHONY : src/action.i
 
 # target to preprocess a source file
-action.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/action.cc.i
-.PHONY : action.cc.i
+src/action.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/action.cc.i
+.PHONY : src/action.cc.i
 
-action.s: action.cc.s
-.PHONY : action.s
+src/action.s: src/action.cc.s
+.PHONY : src/action.s
 
 # target to generate assembly for a file
-action.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/action.cc.s
-.PHONY : action.cc.s
+src/action.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/action.cc.s
+.PHONY : src/action.cc.s
 
-construction.o: construction.cc.o
-.PHONY : construction.o
+src/construction.o: src/construction.cc.o
+.PHONY : src/construction.o
 
 # target to build an object file
-construction.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/construction.cc.o
-.PHONY : construction.cc.o
+src/construction.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/construction.cc.o
+.PHONY : src/construction.cc.o
 
-construction.i: construction.cc.i
-.PHONY : construction.i
+src/construction.i: src/construction.cc.i
+.PHONY : src/construction.i
 
 # target to preprocess a source file
-construction.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/construction.cc.i
-.PHONY : construction.cc.i
+src/construction.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/construction.cc.i
+.PHONY : src/construction.cc.i
 
-construction.s: construction.cc.s
-.PHONY : construction.s
+src/construction.s: src/construction.cc.s
+.PHONY : src/construction.s
 
 # target to generate assembly for a file
-construction.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/construction.cc.s
-.PHONY : construction.cc.s
+src/construction.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/construction.cc.s
+.PHONY : src/construction.cc.s
 
-generator.o: generator.cc.o
-.PHONY : generator.o
+src/generator.o: src/generator.cc.o
+.PHONY : src/generator.o
 
 # target to build an object file
-generator.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/generator.cc.o
-.PHONY : generator.cc.o
+src/generator.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/generator.cc.o
+.PHONY : src/generator.cc.o
 
-generator.i: generator.cc.i
-.PHONY : generator.i
+src/generator.i: src/generator.cc.i
+.PHONY : src/generator.i
 
 # target to preprocess a source file
-generator.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/generator.cc.i
-.PHONY : generator.cc.i
+src/generator.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/generator.cc.i
+.PHONY : src/generator.cc.i
 
-generator.s: generator.cc.s
-.PHONY : generator.s
+src/generator.s: src/generator.cc.s
+.PHONY : src/generator.s
 
 # target to generate assembly for a file
-generator.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/generator.cc.s
-.PHONY : generator.cc.s
+src/generator.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/generator.cc.s
+.PHONY : src/generator.cc.s
 
-physicsList.o: physicsList.cc.o
-.PHONY : physicsList.o
+src/physicsList.o: src/physicsList.cc.o
+.PHONY : src/physicsList.o
 
 # target to build an object file
-physicsList.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/physicsList.cc.o
-.PHONY : physicsList.cc.o
+src/physicsList.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/physicsList.cc.o
+.PHONY : src/physicsList.cc.o
 
-physicsList.i: physicsList.cc.i
-.PHONY : physicsList.i
+src/physicsList.i: src/physicsList.cc.i
+.PHONY : src/physicsList.i
 
 # target to preprocess a source file
-physicsList.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/physicsList.cc.i
-.PHONY : physicsList.cc.i
+src/physicsList.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/physicsList.cc.i
+.PHONY : src/physicsList.cc.i
 
-physicsList.s: physicsList.cc.s
-.PHONY : physicsList.s
+src/physicsList.s: src/physicsList.cc.s
+.PHONY : src/physicsList.s
 
 # target to generate assembly for a file
-physicsList.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/physicsList.cc.s
-.PHONY : physicsList.cc.s
+src/physicsList.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/physicsList.cc.s
+.PHONY : src/physicsList.cc.s
 
-sensitiveDetector.o: sensitiveDetector.cc.o
-.PHONY : sensitiveDetector.o
+src/sensitiveDetector.o: src/sensitiveDetector.cc.o
+.PHONY : src/sensitiveDetector.o
 
 # target to build an object file
-sensitiveDetector.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.o
-.PHONY : sensitiveDetector.cc.o
+src/sensitiveDetector.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o
+.PHONY : src/sensitiveDetector.cc.o
 
-sensitiveDetector.i: sensitiveDetector.cc.i
-.PHONY : sensitiveDetector.i
+src/sensitiveDetector.i: src/sensitiveDetector.cc.i
+.PHONY : src/sensitiveDetector.i
 
 # target to preprocess a source file
-sensitiveDetector.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.i
-.PHONY : sensitiveDetector.cc.i
+src/sensitiveDetector.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.i
+.PHONY : src/sensitiveDetector.cc.i
 
-sensitiveDetector.s: sensitiveDetector.cc.s
-.PHONY : sensitiveDetector.s
+src/sensitiveDetector.s: src/sensitiveDetector.cc.s
+.PHONY : src/sensitiveDetector.s
 
 # target to generate assembly for a file
-sensitiveDetector.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.s
-.PHONY : sensitiveDetector.cc.s
+src/sensitiveDetector.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.s
+.PHONY : src/sensitiveDetector.cc.s
 
 # Help Target
 help:
@@ -323,24 +323,24 @@ help:
 	@echo "... ISOLDE.o"
 	@echo "... ISOLDE.i"
 	@echo "... ISOLDE.s"
-	@echo "... VITOMagneticField.o"
-	@echo "... VITOMagneticField.i"
-	@echo "... VITOMagneticField.s"
-	@echo "... action.o"
-	@echo "... action.i"
-	@echo "... action.s"
-	@echo "... construction.o"
-	@echo "... construction.i"
-	@echo "... construction.s"
-	@echo "... generator.o"
-	@echo "... generator.i"
-	@echo "... generator.s"
-	@echo "... physicsList.o"
-	@echo "... physicsList.i"
-	@echo "... physicsList.s"
-	@echo "... sensitiveDetector.o"
-	@echo "... sensitiveDetector.i"
-	@echo "... sensitiveDetector.s"
+	@echo "... src/VITOMagneticField.o"
+	@echo "... src/VITOMagneticField.i"
+	@echo "... src/VITOMagneticField.s"
+	@echo "... src/action.o"
+	@echo "... src/action.i"
+	@echo "... src/action.s"
+	@echo "... src/construction.o"
+	@echo "... src/construction.i"
+	@echo "... src/construction.s"
+	@echo "... src/generator.o"
+	@echo "... src/generator.i"
+	@echo "... src/generator.s"
+	@echo "... src/physicsList.o"
+	@echo "... src/physicsList.i"
+	@echo "... src/physicsList.s"
+	@echo "... src/sensitiveDetector.o"
+	@echo "... src/sensitiveDetector.i"
+	@echo "... src/sensitiveDetector.s"
 .PHONY : help
 
 

@@ -31,6 +31,8 @@ int main(int argc, char** argv)
     UImanager->ApplyCommand("/vis/viewer/set/autoRefresh true");
     UImanager->ApplyCommand("/vis/scene/add/trajectories smooth");
     UImanager->ApplyCommand("/vis/scene/endOfEventAction accumulate");
+    UImanager->ApplyCommand("/control/execute gps_solid_circle.mac");
+    
 
     // int numberOfEvent = 3;
     // runManager->BeamOn(numberOfEvent);

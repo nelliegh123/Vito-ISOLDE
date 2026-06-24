@@ -9,12 +9,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ngustafs/ISOLDE/ISOLDE.cc" "CMakeFiles/ISOLDE.dir/ISOLDE.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/ISOLDE.cc.o.d"
-  "/home/ngustafs/ISOLDE/VITOMagneticField.cc" "CMakeFiles/ISOLDE.dir/VITOMagneticField.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/VITOMagneticField.cc.o.d"
-  "/home/ngustafs/ISOLDE/action.cc" "CMakeFiles/ISOLDE.dir/action.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/action.cc.o.d"
-  "/home/ngustafs/ISOLDE/construction.cc" "CMakeFiles/ISOLDE.dir/construction.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/construction.cc.o.d"
-  "/home/ngustafs/ISOLDE/generator.cc" "CMakeFiles/ISOLDE.dir/generator.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/generator.cc.o.d"
-  "/home/ngustafs/ISOLDE/physicsList.cc" "CMakeFiles/ISOLDE.dir/physicsList.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/physicsList.cc.o.d"
-  "/home/ngustafs/ISOLDE/sensitiveDetector.cc" "CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.o.d"
+  "/home/ngustafs/ISOLDE/src/VITOMagneticField.cc" "CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o.d"
+  "/home/ngustafs/ISOLDE/src/action.cc" "CMakeFiles/ISOLDE.dir/src/action.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/src/action.cc.o.d"
+  "/home/ngustafs/ISOLDE/src/construction.cc" "CMakeFiles/ISOLDE.dir/src/construction.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/src/construction.cc.o.d"
+  "/home/ngustafs/ISOLDE/src/generator.cc" "CMakeFiles/ISOLDE.dir/src/generator.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/src/generator.cc.o.d"
+  "/home/ngustafs/ISOLDE/src/physicsList.cc" "CMakeFiles/ISOLDE.dir/src/physicsList.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/src/physicsList.cc.o.d"
+  "/home/ngustafs/ISOLDE/src/sensitiveDetector.cc" "CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o.d"
   "" "ISOLDE" "gcc" "CMakeFiles/ISOLDE.dir/link.d"
   )
 

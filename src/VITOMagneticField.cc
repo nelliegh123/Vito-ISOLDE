@@ -12,7 +12,6 @@ VITOMagneticField::VITOMagneticField(const G4String& f1Axial, const G4String& f1
                                      G4bool symmetric)
     : fSymmetric(symmetric), fLoadedSuccessfully(true)
 {
-    // Load Region 1 files
     if (!LoadFieldFile(f1Axial, fRegion1Axial)) {
         G4cerr << "VITOMagneticField: Error loading Region 1 Axial file: " << f1Axial << G4endl;
         fLoadedSuccessfully = false;
@@ -57,12 +56,27 @@ G4bool VITOMagneticField::LoadFieldFile(const G4String& filename, GridData& grid
         G4cerr << "VITOMagneticField: File is empty: " << filename << G4endl;
         return false;
     }
+    std::string header_line = line;
 
     std::vector<std::string> header_tokens;
-    std::stringstream header_ss(line);
+    std::stringstream header_ss(header_line);
     std::string token;
-    while (header_ss >> token) {
-        header_tokens.push_back(token);
+    while (std::getline(header_ss, token, '\t')) {
+        // Strip trailing \r, spaces, or tabs
+        while (!token.empty() && (token.back() == '\r' || token.back() == ' ' || token.back() == '\t')) {
+            token.pop_back();
+        }
+        // Strip leading spaces or tabs
+        size_t start_pos = 0;
+        while (start_pos < token.size() && (token[start_pos] == ' ' || token[start_pos] == '\t')) {
+            start_pos++;
+        }
+        if (start_pos > 0) {
+            token = token.substr(start_pos);
+        }
+        if (!token.empty()) {
+            header_tokens.push_back(token);
+        }
     }
 
     std::vector<double> z_list;
@@ -97,6 +111,16 @@ G4bool VITOMagneticField::LoadFieldFile(const G4String& filename, GridData& grid
     for (size_t i = 1; i < values_grid.size(); ++i) {
         if (values_grid[i].size() != num_cols) {
             values_grid[i].resize(num_cols, 0.0);
+        }
+    }
+
+    // If tab splitting didn't yield enough tokens, fallback to splitting by whitespace
+    if (header_tokens.size() < num_cols) {
+        header_tokens.clear();
+        std::stringstream header_ss2(header_line);
+        std::string tok;
+        while (header_ss2 >> tok) {
+            header_tokens.push_back(tok);
         }
     }
 
