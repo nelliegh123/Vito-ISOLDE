@@ -752,4 +752,13 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o: /home/ngustafs/ISOLDE/ISOLDE.cc \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleGun.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPrimaryGenerator.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSource.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SingleParticleSource.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SPSPosDistribution.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SPSRandomGenerator.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DataInterpolation.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SPSAngDistribution.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SPSEneDistribution.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSourceMessenger.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSourceData.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTable.hh
