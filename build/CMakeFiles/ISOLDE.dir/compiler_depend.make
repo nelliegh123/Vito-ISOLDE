@@ -144,6 +144,7 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o: /home/ngustafs/ISOLDE/ISOLDE.cc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Exception.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ExceptionSeverity.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Exp.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Field.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ForceCondition.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GMocrenFile.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GPILSelection.hh \
@@ -167,6 +168,7 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o: /home/ngustafs/ISOLDE/ISOLDE.cc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4LogicalVolume.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4LorentzVector.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4MCCIndexConversionTable.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4MagneticField.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Material.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4MaterialCutsCouple.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4MaterialPropertiesIndex.hh \
@@ -748,6 +750,307 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o: /home/ngustafs/ISOLDE/ISOLDE.cc \
   /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/wchar.h \
   /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/wctype.h
 
+CMakeFiles/ISOLDE.dir/VITOMagneticField.cc.o: /home/ngustafs/ISOLDE/VITOMagneticField.cc \
+  /home/ngustafs/ISOLDE/VITOMagneticField.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Units/SystemOfUnits.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Units/defs.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4EnvironmentUtils.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Exception.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ExceptionSeverity.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Field.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GlobalConfig.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4MagneticField.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4String.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4String.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SystemOfUnits.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Types.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ios.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/globals.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/templates.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tls.hh \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/algorithm \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward/binders.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bit \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/algorithmfwd.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/alloc_traits.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/allocator.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/basic_ios.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/basic_ios.tcc \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/basic_string.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/basic_string.tcc \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/char_traits.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/charconv.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/chrono.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/codecvt.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/concept_check.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/cpp_type_traits.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/cxxabi_forced.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/cxxabi_init_exception.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/erase_if.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/exception.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/exception_defines.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/exception_ptr.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/fstream.tcc \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/functexcept.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/functional_hash.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/hash_bytes.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/invoke.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/ios_base.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/istream.tcc \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/locale_classes.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/locale_classes.tcc \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/locale_conv.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/locale_facets.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/locale_facets.tcc \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/locale_facets_nonio.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/locale_facets_nonio.tcc \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/localefwd.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/memory_resource.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/memoryfwd.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/move.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/nested_exception.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/new_allocator.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/node_handle.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/ostream.tcc \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/ostream_insert.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/parse_numbers.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/postypes.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/predefined_ops.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/ptr_traits.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/quoted_string.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/range_access.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/refwrap.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/requires_hosted.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/specfun.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/sstream.tcc \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/std_abs.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/std_mutex.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_algo.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_algobase.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_bvector.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_construct.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_function.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_heap.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_iterator.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_iterator_base_funcs.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_iterator_base_types.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_map.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_multimap.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_pair.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_tempbuf.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_tree.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_uninitialized.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_vector.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/streambuf.tcc \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/streambuf_iterator.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/string_view.tcc \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stringfwd.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/uniform_int_dist.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/unique_lock.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/uses_allocator.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/uses_allocator_args.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/utility.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/vector.tcc \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/version.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/cctype \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/cerrno \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/climits \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/clocale \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/cmath \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/complex \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/concepts \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/cstddef \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/cstdint \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/cstdio \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/cstdlib \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/cstring \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/ctime \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/cwchar \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/cwctype \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/debug/assertions.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/debug/debug.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/exception \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/ext/aligned_buffer.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/ext/alloc_traits.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/ext/atomicity.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/ext/numeric_traits.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/ext/string_conversions.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/ext/type_traits.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/fstream \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/initializer_list \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/iomanip \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/ios \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/iosfwd \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/iostream \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/istream \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/limits \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/locale \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/map \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/mutex \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/new \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/ostream \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/pstl/execution_defs.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/pstl/glue_algorithm_defs.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/pstl/pstl_config.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/ratio \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/sstream \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/stdexcept \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/streambuf \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/string \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/string_view \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/system_error \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/tr1/bessel_function.tcc \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/tr1/beta_function.tcc \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/tr1/ell_integral.tcc \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/tr1/exp_integral.tcc \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/tr1/gamma.tcc \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/tr1/hypergeometric.tcc \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/tr1/legendre_function.tcc \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/tr1/modified_bessel_func.tcc \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/tr1/poly_hermite.tcc \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/tr1/poly_laguerre.tcc \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/tr1/riemann_zeta.tcc \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/tr1/special_function_util.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/tuple \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/type_traits \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/typeinfo \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/vector \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu/bits/atomic_word.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu/bits/basic_file.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu/bits/c++allocator.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu/bits/c++config.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu/bits/c++io.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu/bits/c++locale.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu/bits/cpu_defines.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu/bits/ctype_base.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu/bits/ctype_inline.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu/bits/error_constants.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu/bits/gthr-default.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu/bits/gthr.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu/bits/messages_members.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu/bits/os_defines.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu/bits/time_members.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/limits.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/stdarg.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/stddef.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/stdint.h \
+  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/syslimits.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/alloca.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/asm-generic/errno-base.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/asm-generic/errno.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/asm/errno.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/byteswap.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/cpu-set.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/endian.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/endianness.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/errno.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/floatn-common.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/floatn.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/flt-eval-method.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/fp-fast.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/fp-logb.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/iscanonical.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/libc-header-start.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/libm-simd-decl-stubs.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/local_lim.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/locale.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/long-double.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/math-vector.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/mathcalls-helper-functions.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/mathcalls-narrow.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/mathcalls.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/posix1_lim.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/posix2_lim.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/pthread_stack_min-dynamic.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/pthreadtypes-arch.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/pthreadtypes.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/sched.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/select.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/select2.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/setjmp.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/stdint-intn.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/stdint-uintn.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/stdio.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/stdio2-decl.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/stdio2.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/stdio_lim.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/stdlib-bsearch.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/stdlib-float.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/stdlib.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/string_fortified.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/strings_fortified.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/struct_mutex.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/struct_rwlock.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/thread-shared-types.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/time.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/time64.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/timesize.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/timex.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/FILE.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/__FILE.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/__fpos64_t.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/__fpos_t.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/__locale_t.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/__mbstate_t.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/__sigset_t.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/clock_t.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/clockid_t.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/cookie_io_functions_t.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/error_t.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/locale_t.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/mbstate_t.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/sigset_t.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/struct_FILE.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/struct___jmp_buf_tag.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/struct_itimerspec.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/struct_sched_param.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/struct_timespec.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/struct_timeval.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/struct_tm.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/time_t.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/timer_t.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/wint_t.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/typesizes.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/uintn-identity.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/uio_lim.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/waitflags.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/waitstatus.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/wchar.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/wchar2-decl.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/wchar2.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/wctype-wchar.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/wordsize.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/xopen_lim.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/ctype.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/endian.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/errno.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/features-time64.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/features.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/gnu/stubs-64.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/gnu/stubs.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/libintl.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/limits.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/linux/errno.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/linux/limits.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/locale.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/math.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/pthread.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/sched.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/stdc-predef.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/stdint.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/stdio.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/stdlib.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/string.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/strings.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/sys/cdefs.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/sys/select.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/sys/single_threaded.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/sys/types.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/time.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/wchar.h \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/wctype.h
+
 CMakeFiles/ISOLDE.dir/action.cc.o: /home/ngustafs/ISOLDE/action.cc \
   /home/ngustafs/ISOLDE/action.hh \
   /home/ngustafs/ISOLDE/generator.hh \
@@ -1085,6 +1388,7 @@ CMakeFiles/ISOLDE.dir/action.cc.o: /home/ngustafs/ISOLDE/action.cc \
   /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/wctype.h
 
 CMakeFiles/ISOLDE.dir/construction.cc.o: /home/ngustafs/ISOLDE/construction.cc \
+  /home/ngustafs/ISOLDE/VITOMagneticField.hh \
   /home/ngustafs/ISOLDE/construction.hh \
   /home/ngustafs/ISOLDE/sensitiveDetector.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Geometry/BasicVector3D.h \
@@ -1125,9 +1429,15 @@ CMakeFiles/ISOLDE.dir/construction.cc.o: /home/ngustafs/ISOLDE/construction.cc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AnyType.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ApplicationState.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AutoLock.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AuxiliaryNavServices.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AuxiliaryNavServices.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4BlockingList.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4BlockingList.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Box.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Box.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4CSGSolid.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Cache.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4CacheDetails.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4CollectionNameVector.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DataVector.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DataVector.icc \
@@ -1142,6 +1452,9 @@ CMakeFiles/ISOLDE.dir/construction.cc.o: /home/ngustafs/ISOLDE/construction.cc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Exception.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ExceptionSeverity.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Exp.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Field.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4FieldManager.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4FieldManager.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GenericMessenger.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeomConfig.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeomSplitter.hh \
@@ -1158,6 +1471,7 @@ CMakeFiles/ISOLDE.dir/construction.cc.o: /home/ngustafs/ISOLDE/construction.cc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4LogicalVolume.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4LogicalVolume.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4LorentzVector.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4MagneticField.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Material.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4MaterialPropertiesIndex.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4MaterialPropertiesTable.hh \
@@ -1170,13 +1484,20 @@ CMakeFiles/ISOLDE.dir/construction.cc.o: /home/ngustafs/ISOLDE/construction.cc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NavigationLevel.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NavigationLevelRep.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NavigationLevelRep.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NavigationLogger.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Navigator.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Navigator.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NistElementBuilder.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NistManager.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NistMaterialBuilder.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Normal3D.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NormalNavigation.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NormalNavigation.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4OrderedTable.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PDefManager.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PVPlacement.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParameterisedNavigation.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParameterisedNavigation.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleDefinition.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleDefinition.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleMomentum.hh \
@@ -1191,11 +1512,21 @@ CMakeFiles/ISOLDE.dir/construction.cc.o: /home/ngustafs/ISOLDE/construction.cc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ReferenceCountedHandle.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Region.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Region.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4RegularNavigation.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ReplicaNavigation.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ReplicaNavigation.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4RotationMatrix.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SDManager.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SDStructure.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SafetyHelper.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SandiaTable.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SensitiveVolumeList.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SmartVoxelHeader.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SmartVoxelHeader.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SmartVoxelNode.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SmartVoxelNode.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SmartVoxelProxy.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SmartVoxelProxy.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Step.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Step.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4StepPoint.hh \
@@ -1215,6 +1546,8 @@ CMakeFiles/ISOLDE.dir/construction.cc.o: /home/ngustafs/ISOLDE/construction.cc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TrackStatus.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TrackVector.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Transform3D.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TransportationManager.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TransportationManager.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Tubs.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Tubs.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TwoVector.hh \
@@ -1223,8 +1556,11 @@ CMakeFiles/ISOLDE.dir/construction.cc.o: /home/ngustafs/ISOLDE/construction.cc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIdirectory.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UImessenger.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIparameter.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VExternalNavigation.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VHit.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VHitsCollection.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VNavigation.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPVParameterisation.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPhysicalVolume.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPhysicalVolume.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VReadOutGeometry.hh \
@@ -1235,8 +1571,11 @@ CMakeFiles/ISOLDE.dir/construction.cc.o: /home/ngustafs/ISOLDE/construction.cc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VTouchable.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserDetectorConstruction.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserTrackInformation.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VVolumeMaterialScanner.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Visible.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Visible.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VoxelNavigation.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VoxelNavigation.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ios.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/HepPolyhedron.h \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/geomdefs.hh \
@@ -2742,6 +3081,7 @@ ISOLDE: /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.
   /home/ngustafs/miniforge3/envs/geant4/lib/libxerces-c.so \
   /home/ngustafs/miniforge3/envs/geant4/lib/libz.so \
   CMakeFiles/ISOLDE.dir/ISOLDE.cc.o \
+  CMakeFiles/ISOLDE.dir/VITOMagneticField.cc.o \
   CMakeFiles/ISOLDE.dir/action.cc.o \
   CMakeFiles/ISOLDE.dir/construction.cc.o \
   CMakeFiles/ISOLDE.dir/generator.cc.o \
@@ -2768,8 +3108,6 @@ CMakeFiles/ISOLDE.dir/action.cc.o:
 /home/ngustafs/miniforge3/envs/geant4/lib/libG4physicslists.so:
 
 /home/ngustafs/miniforge3/envs/geant4/lib/libG4modeling.so:
-
-/home/ngustafs/miniforge3/envs/geant4/lib/libG4mctruth.so:
 
 /home/ngustafs/miniforge3/envs/geant4/lib/libG4interfaces.so:
 
@@ -2805,13 +3143,23 @@ CMakeFiles/ISOLDE.dir/action.cc.o:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VReadOutGeometry.hh:
 
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TransportationManager.hh:
+
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SensitiveVolumeList.hh:
+
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SafetyHelper.hh:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SDStructure.hh:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4HCtable.hh:
 
 /home/ngustafs/ISOLDE/construction.cc:
+
+/home/ngustafs/ISOLDE/VITOMagneticField.hh:
+
+/home/ngustafs/miniforge3/envs/geant4/lib/libG4mctruth.so:
+
+/home/ngustafs/ISOLDE/VITOMagneticField.cc:
 
 /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/sys/types.h:
 
@@ -2882,6 +3230,8 @@ CMakeFiles/ISOLDE.dir/action.cc.o:
 /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/__mbstate_t.h:
 
 /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/__locale_t.h:
+
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4FieldManager.hh:
 
 /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/__fpos64_t.h:
 
@@ -3055,6 +3405,8 @@ CMakeFiles/ISOLDE.dir/generator.cc.o:
 
 /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/debug/assertions.h:
 
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TransportationManager.icc:
+
 /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/cwchar:
 
 /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/ctime:
@@ -3066,6 +3418,8 @@ CMakeFiles/ISOLDE.dir/generator.cc.o:
 /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/cstdio:
 
 /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/concepts:
+
+/home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/compare:
 
 /home/ngustafs/miniforge3/envs/geant4/lib/libG4gdml.so:
 
@@ -3271,6 +3625,8 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GraphicsSystemList.hh:
 
+CMakeFiles/ISOLDE.dir/VITOMagneticField.cc.o:
+
 /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_uninitialized.h:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GMocrenFile.hh:
@@ -3278,6 +3634,8 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o:
 /home/ngustafs/miniforge3/envs/geant4/lib/libG4visHepRep.so:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ForceCondition.hh:
+
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VSceneHandler.hh:
 
 /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/LorentzVector.h:
 
@@ -3362,12 +3720,6 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o:
 /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandSkewNormal.icc:
 
 /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandFlat.icc:
-
-/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4CollectionNameVector.hh:
-
-/home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu/bits/error_constants.h:
-
-/home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/sstream.tcc:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DAWNFILE.hh:
 
@@ -3476,6 +3828,12 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o:
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Plane3D.hh:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GenericMessenger.hh:
+
+/home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/localefwd.h:
+
+/home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/vector.tcc:
+
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4IonisParamElm.hh:
 
 /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/pthreadtypes.h:
 
@@ -3681,10 +4039,6 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AllocatorPool.hh:
 
-/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4RegularNavigation.hh:
-
-/home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/uniform_int_dist.h:
-
 /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/exception.h:
 
 /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Units/defs.h:
@@ -3845,6 +4199,16 @@ CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.o:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DataVector.hh:
 
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4CollectionNameVector.hh:
+
+/home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu/bits/error_constants.h:
+
+/home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/sstream.tcc:
+
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4RegularNavigation.hh:
+
+/home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/uniform_int_dist.h:
+
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4RotationMatrix.hh:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4StepPoint.hh:
@@ -3862,6 +4226,8 @@ CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.o:
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Trd.hh:
 
 /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/ptr_traits.h:
+
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4MagneticField.hh:
 
 /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/locale_classes.tcc:
 
@@ -4083,14 +4449,6 @@ CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.o:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/templates.hh:
 
-/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VSceneHandler.hh:
-
-/home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/vector.tcc:
-
-/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4IonisParamElm.hh:
-
-/home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/localefwd.h:
-
 /home/ngustafs/ISOLDE/sensitiveDetector.cc:
 
 /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/stdio2-decl.h:
@@ -4201,6 +4559,8 @@ CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.o:
 
 /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_multiset.h:
 
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4FieldManager.icc:
+
 /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types/struct_sched_param.h:
 
 /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/types.h:
@@ -4305,6 +4665,8 @@ CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.o:
 
 /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/locale_facets.tcc:
 
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Field.hh:
+
 /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandGauss.h:
 
 /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/RotationX.icc:
@@ -4394,5 +4756,3 @@ CMakeFiles/ISOLDE.dir/sensitiveDetector.cc.o:
 /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/stdint.h:
 
 /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/cmath:
-
-/home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/compare:

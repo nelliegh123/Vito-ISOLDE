@@ -726,6 +726,10 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o: /home/ngustafs/ISOLDE/ISOLDE.cc \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AnyMethod.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AnyType.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Tubs.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Cache.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4CacheDetails.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4MagneticField.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Field.hh \
  /home/ngustafs/ISOLDE/physicsList.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VModularPhysicsList.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPhysicsConstructor.hh \
@@ -733,7 +737,6 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o: /home/ngustafs/ISOLDE/ISOLDE.cc \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PhysicsListOrderingParameter.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ThreadLocalSingleton.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Cache.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4CacheDetails.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUPLSplitter.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserPhysicsList.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ProductionCutsTable.hh \

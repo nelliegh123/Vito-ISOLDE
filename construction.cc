@@ -1,4 +1,10 @@
 #include "construction.hh"
+#include "sensitiveDetector.hh"
+
+#include "VITOMagneticField.hh"
+#include "G4SDManager.hh"
+#include "G4TransportationManager.hh"
+#include "G4FieldManager.hh"
 
 MyDetectorConstruction::MyDetectorConstruction()
 {}
@@ -15,7 +21,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     //====================================================================================
     G4Material *worldMat = nist->FindOrBuildMaterial("G4_AIR");
 
-    G4Box *solidWorld = new G4Box("solidWorld", 1.0*m, 1.0*m, 1.0*m);
+    G4Box *solidWorld = new G4Box("solidWorld", 0.7*m, 0.7*m, 0.7*m);
 
     G4LogicalVolume *logicWorld = new G4LogicalVolume(solidWorld, worldMat, "logicWorld");
 
@@ -29,26 +35,54 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     //====================================================================================
     G4Material *detectorMat = nist->FindOrBuildMaterial("G4_PLASTIC_SC_VINYLTOLUENE");
 
+    //Defining the front detector
+    G4Tubs *solidDetector1 = new G4Tubs("solidDetector1", 7.*mm, 8.5*cm, 1.*cm,
+                                          0.*cm, 360.*cm);
+    //Defining the back detector                                  
+    G4Tubs *solidDetector2 = new G4Tubs("solidDetector2", 0.*cm, 2*cm, 1.*cm,
+                                          0.*cm, 360.*cm);
 
-    G4double innerRadius = 0.*cm;
-    G4double outerRadius = 60.*cm;
-    G4double hz = 5.*cm;
-    G4double startingAngle = 0.*cm;
-    G4double spanningAngle = 360.*cm;
-    G4Tubs *solidDetector = new G4Tubs("solidDetector", innerRadius, outerRadius, hz,
-                                          startingAngle, spanningAngle);
+    G4LogicalVolume *logicDetector1 = new G4LogicalVolume(solidDetector1, detectorMat, "logicDetector1");
+    G4LogicalVolume *logicDetector2 = new G4LogicalVolume(solidDetector2, detectorMat, "logicDetector2");
 
-    G4LogicalVolume *logicDetector = new G4LogicalVolume(solidDetector, detectorMat, "logicDetector");
 
-    G4double pos_x = 0.0*meter;
-    G4double pos_y = 0.0*meter;
-    G4double pos_z = 0.8*meter;
-    G4VPhysicalVolume *Detector = new G4PVPlacement(0, G4ThreeVector(pos_x, pos_y, pos_z), 
-                                    logicDetector, "Detector", logicWorld, false, 0, true);
+    G4VPhysicalVolume *Detector = new G4PVPlacement(0, G4ThreeVector(0.0*meter, 0.0*meter, -600.*mm), 
+                                    logicDetector1, "Detector1", logicWorld, false, 0, true);
 
-    G4VPhysicalVolume *Detector2 = new G4PVPlacement(0, G4ThreeVector(pos_x, pos_y, -pos_z), 
-                                    logicDetector, "Detector2", logicWorld, true, 0, true);
+    G4VPhysicalVolume *Detector2 = new G4PVPlacement(0, G4ThreeVector(0.0*meter, 0.0*meter, 270.*mm), 
+                                    logicDetector2, "Detector2", logicWorld, true, 1, true);
+
+    //====================================================================================
+    //                             Making Detectors Sensitive
+    //====================================================================================
+    auto sdManager = G4SDManager::GetSDMpointer();
+
+    auto sd1 = new MySensitiveDetector("Detector1SD");
+    auto sd2 = new MySensitiveDetector("Detector2SD");
+
+    sdManager->AddNewDetector(sd1);
+    sdManager->AddNewDetector(sd2);
+//     G4Cache<G4MagneticField*> fFiwDetector(sd2);
+
+    logicDetector1->SetSensitiveDetector(sd1);
+    logicDetector2->SetSensitiveDetector(sd2);
 
     
+    //====================================================================================
+    //                             Activating the Magnetic Field
+    //====================================================================================
+    G4MagneticField* magField = new VITOMagneticField("./field1Axial.txt",
+                                                      "./field1Radial.txt", 
+                                                      "./field2Axial.txt", 
+                                                      "./field2Radial.txt");
+    fField.Put(magField);
+
+    G4FieldManager* pFieldMgr = G4TransportationManager::GetTransportationManager()->GetFieldManager();
+    pFieldMgr->SetDetectorField(fField.Get());
+    pFieldMgr->CreateChordFinder(fField.Get());
+
+
+
+
     return World;
 }
