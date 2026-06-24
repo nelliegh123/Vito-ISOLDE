@@ -287,7 +287,7 @@ CMakeFiles/ISOLDE.dir/VITOMagneticField.cc.o: \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/parse_numbers.h \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/std_mutex.h \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/unique_lock.h \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/globals.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4String.hh \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/vector \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_uninitialized.h \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_vector.h \
@@ -296,10 +296,7 @@ CMakeFiles/ISOLDE.dir/VITOMagneticField.cc.o: \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SystemOfUnits.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Units/SystemOfUnits.h \
  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Units/defs.h \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ThreeVector.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/ThreeVector.h \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/defs.h \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/ThreeVector.icc \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ios.hh \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/fstream \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu/bits/basic_file.h \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu/bits/c++io.h \

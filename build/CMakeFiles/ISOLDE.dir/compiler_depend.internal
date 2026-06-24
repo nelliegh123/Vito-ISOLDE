@@ -756,9 +756,6 @@ CMakeFiles/ISOLDE.dir/VITOMagneticField.cc.o
  /home/ngustafs/ISOLDE/VITOMagneticField.hh
  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Units/SystemOfUnits.h
  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Units/defs.h
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/ThreeVector.h
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/ThreeVector.icc
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/defs.h
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4EnvironmentUtils.hh
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Exception.hh
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ExceptionSeverity.hh
@@ -768,7 +765,6 @@ CMakeFiles/ISOLDE.dir/VITOMagneticField.cc.o
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4String.hh
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4String.icc
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SystemOfUnits.hh
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ThreeVector.hh
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Types.hh
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ios.hh
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/globals.hh

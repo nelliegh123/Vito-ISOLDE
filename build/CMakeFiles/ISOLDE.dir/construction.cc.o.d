@@ -479,7 +479,7 @@ CMakeFiles/ISOLDE.dir/construction.cc.o: \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SensitiveVolumeList.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VSDFilter.hh \
  /home/ngustafs/ISOLDE/VITOMagneticField.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/globals.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4String.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SDManager.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4HCtable.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SDStructure.hh \
