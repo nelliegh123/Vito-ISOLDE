@@ -9,40 +9,55 @@
 #include "action.hh"
 
 #define USE_GPS
-
+// #define USE_GUI
 int main(int argc, char** argv)
 {
-    G4RunManager *runManager = new G4RunManager();
+    bool useGUI = false;
+
+    for (int i = 1; i < argc; i++) {
+        if (std::string(argv[i]) == "--gui") {
+            useGUI = true;
+        }
+    }
+
+    G4RunManager* runManager = new G4RunManager();
     runManager->SetUserInitialization(new MyDetectorConstruction());
     runManager->SetUserInitialization(new MyPhysicsList());
     runManager->SetUserInitialization(new MyActionInitialization());
-
     runManager->Initialize();
 
-    G4UIExecutive *ui = new G4UIExecutive(argc, argv);
+    G4UImanager* UImanager = G4UImanager::GetUIpointer();
 
-    G4VisManager *visManager = new G4VisExecutive();
-    visManager->Initialize();
+    G4UIExecutive* ui = nullptr;
+    G4VisManager* visManager = nullptr;
 
-    G4UImanager *UImanager = G4UImanager::GetUIpointer();
+    if (useGUI) {
+        ui = new G4UIExecutive(argc, argv);
 
-    UImanager->ApplyCommand("/vis/open OGL");
-    UImanager->ApplyCommand("/vis/viewer/set/viewpointVector 1 1 1"); //Makes the initial angle in GUI different
-    UImanager->ApplyCommand("/vis/drawVolume");
-    UImanager->ApplyCommand("/vis/viewer/set/autoRefresh true");
-    UImanager->ApplyCommand("/vis/scene/add/trajectories smooth");
-    UImanager->ApplyCommand("/vis/scene/endOfEventAction accumulate");
+        visManager = new G4VisExecutive();
+        visManager->Initialize();
 
-    #ifdef USE_GPS
-        UImanager->ApplyCommand("/control/execute gps_solid_circle.mac");
-        // UImanager->ApplyCommand("/control/execute gps_solid_square.mac");
-    
-    #else
-        int numberOfEvent = 100;
-        runManager->BeamOn(numberOfEvent);
-    #endif
+        UImanager->ApplyCommand("/vis/open OGL");
+        UImanager->ApplyCommand("/vis/viewer/set/viewpointVector 1 1 1");
+        UImanager->ApplyCommand("/vis/drawVolume");
+        UImanager->ApplyCommand("/vis/viewer/set/autoRefresh true");
+        UImanager->ApplyCommand("/vis/scene/add/trajectories smooth");
+        UImanager->ApplyCommand("/vis/scene/endOfEventAction accumulate");
+    }
 
-    ui->SessionStart();
-    // delete runManager;
+#ifdef USE_GPS
+    UImanager->ApplyCommand("/control/execute gps_solid_circle.mac");
+#else
+    runManager->BeamOn(100);
+#endif
+
+    if (useGUI && ui) {
+        ui->SessionStart();
+    }
+
+    delete visManager;
+    delete ui;
+    delete runManager;
+
     return 0;
 }

@@ -2,6 +2,7 @@
 #define SENSITIVEDETECTOR_HH
 
 #include "G4VSensitiveDetector.hh"
+#include <TFile.h>
 
 class MySensitiveDetector : public G4VSensitiveDetector
 {
@@ -14,6 +15,8 @@ public:
     G4bool ProcessHits(G4Step* step, G4TouchableHistory*) override;
 
     void EndOfEvent(G4HCofThisEvent*) override;
+
+    std::unique_ptr<TFile> detector1;
 
 private:
     int fCounter = 0;

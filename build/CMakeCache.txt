@@ -144,6 +144,9 @@ CMAKE_OBJCOPY:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-li
 //Path to a program.
 CMAKE_OBJDUMP:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-objdump
 
+//No help, variable specified on the command line.
+CMAKE_PREFIX_PATH:UNINITIALIZED=/home/ngustafs/miniforge3/envs/geant4
+
 //Value Computed by CMake
 CMAKE_PROJECT_COMPAT_VERSION:STATIC=
 
@@ -245,6 +248,12 @@ FREETYPE_LIBRARY_DEBUG:FILEPATH=FREETYPE_LIBRARY_DEBUG-NOTFOUND
 //Path to a library.
 FREETYPE_LIBRARY_RELEASE:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libfreetype.so
 
+//Path to a file.
+Fontconfig_INCLUDE_DIR:PATH=/home/ngustafs/miniforge3/envs/geant4/include
+
+//Path to a library.
+Fontconfig_LIBRARY:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libfontconfig.so
+
 //The directory containing a CMake configuration file for Geant4.
 Geant4_DIR:PATH=/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Geant4
 
@@ -282,7 +291,7 @@ HDF5_DIFF_EXECUTABLE:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/bin/h5diff
 HDF5_DIR:PATH=HDF5_DIR-NOTFOUND
 
 //Path to a file.
-OPENGL_EGL_INCLUDE_DIR:PATH=OPENGL_EGL_INCLUDE_DIR-NOTFOUND
+OPENGL_EGL_INCLUDE_DIR:PATH=/home/ngustafs/miniforge3/envs/geant4/include
 
 //Path to a file.
 OPENGL_GLES2_INCLUDE_DIR:PATH=OPENGL_GLES2_INCLUDE_DIR-NOTFOUND
@@ -300,7 +309,7 @@ OPENGL_GLX_INCLUDE_DIR:PATH=/home/ngustafs/miniforge3/envs/geant4/include
 OPENGL_INCLUDE_DIR:PATH=/home/ngustafs/miniforge3/envs/geant4/include
 
 //Path to a library.
-OPENGL_egl_LIBRARY:FILEPATH=OPENGL_egl_LIBRARY-NOTFOUND
+OPENGL_egl_LIBRARY:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libEGL.so
 
 //Path to a library.
 OPENGL_gl_LIBRARY:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libGL.so
@@ -364,6 +373,114 @@ Qt5OpenGL_DIR:PATH=/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5OpenGL
 
 //The directory containing a CMake configuration file for Qt5Widgets.
 Qt5Widgets_DIR:PATH=/home/ngustafs/miniforge3/envs/geant4/lib/cmake/Qt5Widgets
+
+//Path to a library.
+ROOT_Core_LIBRARY:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libCore.so
+
+//The directory containing a CMake configuration file for ROOT.
+ROOT_DIR:PATH=/home/ngustafs/miniforge3/envs/geant4/cmake
+
+//Path to a program.
+ROOT_GMAKE_PROGRAM:FILEPATH=ROOT_GMAKE_PROGRAM-NOTFOUND
+
+//Path to a library.
+ROOT_Gpad_LIBRARY:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libGpad.so
+
+//Path to a library.
+ROOT_Graf3d_LIBRARY:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libGraf3d.so
+
+//Path to a library.
+ROOT_Graf_LIBRARY:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libGraf.so
+
+//Path to a library.
+ROOT_Hist_LIBRARY:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libHist.so
+
+//Path to a library.
+ROOT_Imt_LIBRARY:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libImt.so
+
+//Path to a library.
+ROOT_MathCore_LIBRARY:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libMathCore.so
+
+//Path to a library.
+ROOT_Matrix_LIBRARY:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libMatrix.so
+
+//Path to a library.
+ROOT_MultiProc_LIBRARY:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libMultiProc.so
+
+//Path to a library.
+ROOT_Net_LIBRARY:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libNet.so
+
+//Path to a library.
+ROOT_Physics_LIBRARY:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libPhysics.so
+
+//Path to a library.
+ROOT_Postscript_LIBRARY:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libPostscript.so
+
+//Path to a library.
+ROOT_RIO_LIBRARY:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libRIO.so
+
+//Path to a library.
+ROOT_ROOTDataFrame_LIBRARY:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libROOTDataFrame.so
+
+//Path to a library.
+ROOT_ROOTVecOps_LIBRARY:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libROOTVecOps.so
+
+//Path to a library.
+ROOT_Rint_LIBRARY:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libRint.so
+
+//Path to a library.
+ROOT_Thread_LIBRARY:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libThread.so
+
+//Path to a library.
+ROOT_TreePlayer_LIBRARY:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libTreePlayer.so
+
+//Path to a library.
+ROOT_Tree_LIBRARY:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libTree.so
+
+//Path to a program.
+ROOT_genmap_CMD:FILEPATH=ROOT_genmap_CMD-NOTFOUND
+
+//Path to a program.
+ROOT_genreflex_CMD:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/bin/genreflex
+
+//Path to a program.
+ROOT_hadd_CMD:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/bin/hadd
+
+//Path to a program.
+ROOT_root_CMD:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/bin/root
+
+//Path to a program.
+ROOT_rootbrowse_CMD:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/bin/rootbrowse
+
+//Path to a program.
+ROOT_rootcint_CMD:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/bin/rootcint
+
+//Path to a program.
+ROOT_rootcling_CMD:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/bin/rootcling
+
+//Path to a program.
+ROOT_rootcp_CMD:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/bin/rootcp
+
+//Path to a program.
+ROOT_rootdraw_CMD:FILEPATH=ROOT_rootdraw_CMD-NOTFOUND
+
+//Path to a program.
+ROOT_rootls_CMD:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/bin/rootls
+
+//Path to a program.
+ROOT_rootmkdir_CMD:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/bin/rootmkdir
+
+//Path to a program.
+ROOT_rootmv_CMD:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/bin/rootmv
+
+//Path to a program.
+ROOT_rootrm_CMD:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/bin/rootrm
+
+//Path to a file.
+VDT_INCLUDE_DIR:PATH=/home/ngustafs/miniforge3/envs/geant4/include
+
+//Path to a library.
+VDT_LIBRARY:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libvdt.so
 
 //Value Computed by CMake
 Vito_ISOLDE_BINARY_DIR:STATIC=/home/ngustafs/ISOLDE/build
@@ -468,10 +585,10 @@ X11_Xfixes_INCLUDE_PATH:PATH=/home/ngustafs/miniforge3/envs/geant4/include
 X11_Xfixes_LIB:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libXfixes.so
 
 //Path to a file.
-X11_Xft_INCLUDE_PATH:PATH=X11_Xft_INCLUDE_PATH-NOTFOUND
+X11_Xft_INCLUDE_PATH:PATH=/home/ngustafs/miniforge3/envs/geant4/include
 
 //Path to a library.
-X11_Xft_LIB:FILEPATH=X11_Xft_LIB-NOTFOUND
+X11_Xft_LIB:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libXft.so
 
 //Path to a file.
 X11_Xi_INCLUDE_PATH:PATH=/home/ngustafs/miniforge3/envs/geant4/include
@@ -480,10 +597,10 @@ X11_Xi_INCLUDE_PATH:PATH=/home/ngustafs/miniforge3/envs/geant4/include
 X11_Xi_LIB:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libXi.so
 
 //Path to a file.
-X11_Xinerama_INCLUDE_PATH:PATH=X11_Xinerama_INCLUDE_PATH-NOTFOUND
+X11_Xinerama_INCLUDE_PATH:PATH=/home/ngustafs/miniforge3/envs/geant4/include
 
 //Path to a library.
-X11_Xinerama_LIB:FILEPATH=X11_Xinerama_LIB-NOTFOUND
+X11_Xinerama_LIB:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libXinerama.so
 
 //Path to a file.
 X11_Xkb_INCLUDE_PATH:PATH=/home/ngustafs/miniforge3/envs/geant4/include
@@ -501,10 +618,10 @@ X11_Xmu_INCLUDE_PATH:PATH=/home/ngustafs/miniforge3/envs/geant4/include
 X11_Xmu_LIB:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libXmu.so
 
 //Path to a file.
-X11_Xpm_INCLUDE_PATH:PATH=X11_Xpm_INCLUDE_PATH-NOTFOUND
+X11_Xpm_INCLUDE_PATH:PATH=/home/ngustafs/miniforge3/envs/geant4/include
 
 //Path to a library.
-X11_Xpm_LIB:FILEPATH=X11_Xpm_LIB-NOTFOUND
+X11_Xpm_LIB:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libXpm.so
 
 //Path to a file.
 X11_Xpresent_INCLUDE_PATH:PATH=X11_Xpresent_INCLUDE_PATH-NOTFOUND
@@ -806,6 +923,9 @@ ZLIB_LIBRARY_RELEASE:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libz.so
 //Path to a library.
 pkgcfg_lib_PC_EXPAT_expat:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libexpat.so
 
+//Path to a library.
+pkgcfg_lib_PKG_FONTCONFIG_fontconfig:FILEPATH=/home/ngustafs/miniforge3/envs/geant4/lib/libfontconfig.so
+
 
 ########################
 # INTERNAL cache entries
@@ -990,6 +1110,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_HDF5:INTERNAL=[/home/ngustafs/miniforge3/envs/geant
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/home/ngustafs/miniforge3/envs/geant4/lib/libGL.so][/home/ngustafs/miniforge3/envs/geant4/include][ ][v()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//Details about finding Vdt
+FIND_PACKAGE_MESSAGE_DETAILS_Vdt:INTERNAL=[/home/ngustafs/miniforge3/envs/geant4/include][/home/ngustafs/miniforge3/envs/geant4/lib/libvdt.so][v0.4()]
 //Details about finding X11
 FIND_PACKAGE_MESSAGE_DETAILS_X11:INTERNAL=[/home/ngustafs/miniforge3/envs/geant4/include][/home/ngustafs/miniforge3/envs/geant4/lib/libX11.so][ ][v()]
 //Details about finding XercesC
@@ -1004,6 +1126,10 @@ FREETYPE_INCLUDE_DIR_ft2build-ADVANCED:INTERNAL=1
 FREETYPE_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: FREETYPE_LIBRARY_RELEASE
 FREETYPE_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Fontconfig_INCLUDE_DIR
+Fontconfig_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Fontconfig_LIBRARY
+Fontconfig_LIBRARY-ADVANCED:INTERNAL=1
 //Have symbol H5_HAVE_THREADSAFE
 GEANT4_HAVE_H5_HAVE_THREADSAFE:INTERNAL=1
 //ADVANCED property for variable: HDF5_C_COMPILER_EXECUTABLE
@@ -1081,6 +1207,105 @@ PC_EXPAT_expat_VERSION:INTERNAL=
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
+PKG_FONTCONFIG_CFLAGS:INTERNAL=-I/home/ngustafs/miniforge3/envs/geant4/include;-I/home/ngustafs/miniforge3/envs/geant4/include/freetype2
+PKG_FONTCONFIG_CFLAGS_I:INTERNAL=
+PKG_FONTCONFIG_CFLAGS_OTHER:INTERNAL=
+PKG_FONTCONFIG_FOUND:INTERNAL=1
+PKG_FONTCONFIG_INCLUDEDIR:INTERNAL=/home/ngustafs/miniforge3/envs/geant4/include
+PKG_FONTCONFIG_INCLUDE_DIRS:INTERNAL=/home/ngustafs/miniforge3/envs/geant4/include;/home/ngustafs/miniforge3/envs/geant4/include/freetype2
+PKG_FONTCONFIG_LDFLAGS:INTERNAL=-L/home/ngustafs/miniforge3/envs/geant4/lib;-lfontconfig
+PKG_FONTCONFIG_LDFLAGS_OTHER:INTERNAL=
+PKG_FONTCONFIG_LIBDIR:INTERNAL=/home/ngustafs/miniforge3/envs/geant4/lib
+PKG_FONTCONFIG_LIBRARIES:INTERNAL=fontconfig
+PKG_FONTCONFIG_LIBRARY_DIRS:INTERNAL=/home/ngustafs/miniforge3/envs/geant4/lib
+PKG_FONTCONFIG_LIBS:INTERNAL=
+PKG_FONTCONFIG_LIBS_L:INTERNAL=
+PKG_FONTCONFIG_LIBS_OTHER:INTERNAL=
+PKG_FONTCONFIG_LIBS_PATHS:INTERNAL=
+PKG_FONTCONFIG_MODULE_NAME:INTERNAL=fontconfig
+PKG_FONTCONFIG_PREFIX:INTERNAL=/home/ngustafs/miniforge3/envs/geant4
+PKG_FONTCONFIG_STATIC_CFLAGS:INTERNAL=-I/home/ngustafs/miniforge3/envs/geant4/include;-I/home/ngustafs/miniforge3/envs/geant4/include/freetype2;-DXML_STATIC
+PKG_FONTCONFIG_STATIC_CFLAGS_I:INTERNAL=
+PKG_FONTCONFIG_STATIC_CFLAGS_OTHER:INTERNAL=-DXML_STATIC
+PKG_FONTCONFIG_STATIC_INCLUDE_DIRS:INTERNAL=/home/ngustafs/miniforge3/envs/geant4/include;/home/ngustafs/miniforge3/envs/geant4/include/freetype2
+PKG_FONTCONFIG_STATIC_LDFLAGS:INTERNAL=-L/home/ngustafs/miniforge3/envs/geant4/lib;-lfontconfig;-pthread;-lm;-L/home/ngustafs/miniforge3/envs/geant4/lib;-lfreetype;-lexpat;-lm
+PKG_FONTCONFIG_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
+PKG_FONTCONFIG_STATIC_LIBDIR:INTERNAL=
+PKG_FONTCONFIG_STATIC_LIBRARIES:INTERNAL=fontconfig;m;freetype;expat;m
+PKG_FONTCONFIG_STATIC_LIBRARY_DIRS:INTERNAL=/home/ngustafs/miniforge3/envs/geant4/lib;/home/ngustafs/miniforge3/envs/geant4/lib
+PKG_FONTCONFIG_STATIC_LIBS:INTERNAL=
+PKG_FONTCONFIG_STATIC_LIBS_L:INTERNAL=
+PKG_FONTCONFIG_STATIC_LIBS_OTHER:INTERNAL=
+PKG_FONTCONFIG_STATIC_LIBS_PATHS:INTERNAL=
+PKG_FONTCONFIG_VERSION:INTERNAL=2.18.1
+PKG_FONTCONFIG_fontconfig_INCLUDEDIR:INTERNAL=
+PKG_FONTCONFIG_fontconfig_LIBDIR:INTERNAL=
+PKG_FONTCONFIG_fontconfig_PREFIX:INTERNAL=
+PKG_FONTCONFIG_fontconfig_VERSION:INTERNAL=
+//ADVANCED property for variable: ROOT_Core_LIBRARY
+ROOT_Core_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_Gpad_LIBRARY
+ROOT_Gpad_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_Graf3d_LIBRARY
+ROOT_Graf3d_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_Graf_LIBRARY
+ROOT_Graf_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_Hist_LIBRARY
+ROOT_Hist_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_Imt_LIBRARY
+ROOT_Imt_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_MathCore_LIBRARY
+ROOT_MathCore_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_Matrix_LIBRARY
+ROOT_Matrix_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_MultiProc_LIBRARY
+ROOT_MultiProc_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_Net_LIBRARY
+ROOT_Net_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_Physics_LIBRARY
+ROOT_Physics_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_Postscript_LIBRARY
+ROOT_Postscript_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_RIO_LIBRARY
+ROOT_RIO_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_ROOTDataFrame_LIBRARY
+ROOT_ROOTDataFrame_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_ROOTVecOps_LIBRARY
+ROOT_ROOTVecOps_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_Rint_LIBRARY
+ROOT_Rint_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_Thread_LIBRARY
+ROOT_Thread_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_TreePlayer_LIBRARY
+ROOT_TreePlayer_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_Tree_LIBRARY
+ROOT_Tree_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_genreflex_CMD
+ROOT_genreflex_CMD-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_hadd_CMD
+ROOT_hadd_CMD-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_root_CMD
+ROOT_root_CMD-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_rootbrowse_CMD
+ROOT_rootbrowse_CMD-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_rootcint_CMD
+ROOT_rootcint_CMD-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_rootcling_CMD
+ROOT_rootcling_CMD-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_rootcp_CMD
+ROOT_rootcp_CMD-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_rootls_CMD
+ROOT_rootls_CMD-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_rootmkdir_CMD
+ROOT_rootmkdir_CMD-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_rootmv_CMD
+ROOT_rootmv_CMD-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ROOT_rootrm_CMD
+ROOT_rootrm_CMD-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: VDT_INCLUDE_DIR
+VDT_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: VDT_LIBRARY
+VDT_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: X11_ICE_INCLUDE_PATH
 X11_ICE_INCLUDE_PATH-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: X11_ICE_LIB
@@ -1368,8 +1593,12 @@ ZLIB_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ZLIB_LIBRARY_RELEASE
 ZLIB_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 __pkg_config_arguments_PC_EXPAT:INTERNAL=QUIET;expat
+__pkg_config_arguments_PKG_FONTCONFIG:INTERNAL=QUIET;fontconfig
 __pkg_config_checked_PC_EXPAT:INTERNAL=1
+__pkg_config_checked_PKG_FONTCONFIG:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_PC_EXPAT_expat
 pkgcfg_lib_PC_EXPAT_expat-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_PKG_FONTCONFIG_fontconfig
+pkgcfg_lib_PKG_FONTCONFIG_fontconfig-ADVANCED:INTERNAL=1
 prefix_result:INTERNAL=/home/ngustafs/miniforge3/envs/geant4/lib
 
