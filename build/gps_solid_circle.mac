@@ -7,10 +7,12 @@
 
 /gps/pos/centre 0 0 -0.5 mm
 
-/gps/direction 0 0 -1
+/gps/direction 0 0.5 -1
+
 
 
 /gps/ene/type Mono
-/gps/ene/mono 1 MeV
+/gps/ene/mono 3 MeV
 
 /run/beamOn 100
+

@@ -38,6 +38,7 @@ ISOLDE: \
   /home/ngustafs/miniforge3/envs/geant4/lib/libG4geometry.so \
   /home/ngustafs/miniforge3/envs/geant4/lib/libG4materials.so \
   /home/ngustafs/miniforge3/envs/geant4/lib/libG4graphics_reps.so \
+  /home/ngustafs/miniforge3/envs/geant4/lib/libRIO.so.6.40.02 \
   /home/ngustafs/miniforge3/envs/geant4/lib/libQt5Widgets.so.5.15.15 \
   /home/ngustafs/miniforge3/envs/geant4/lib/libQt5Gui.so.5.15.15 \
   /home/ngustafs/miniforge3/envs/geant4/lib/libQt5Core.so.5.15.15 \
@@ -51,12 +52,15 @@ ISOLDE: \
   /home/ngustafs/miniforge3/envs/geant4/lib/libG4global.so \
   /home/ngustafs/miniforge3/envs/geant4/lib/libG4ptl.so.3.0.0 \
   /home/ngustafs/miniforge3/envs/geant4/lib/libCLHEP-2.4.7.1.so \
+  /home/ngustafs/miniforge3/envs/geant4/lib/libThread.so.6.40.02 \
+  /home/ngustafs/miniforge3/envs/geant4/lib/libCore.so.6.40.02 \
+  /home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/libpthread.so \
+  /home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/libpthread.so \
+  /home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/libpthread.so \
+  /home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/lib64/libpthread.so.0 \
+  /home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib64/libpthread_nonshared.a \
   /home/ngustafs/miniforge3/envs/geant4/lib/libstdc++.so \
   /home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/libm.so \
-  /home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/libm.so \
-  /home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/libm.so \
-  /home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/lib64/libm.so.6 \
-  /home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/lib64/libmvec.so.1 \
   /home/ngustafs/miniforge3/envs/geant4/lib/libgcc_s.so \
   /home/ngustafs/miniforge3/envs/geant4/lib/libgcc_s.so \
   /home/ngustafs/miniforge3/envs/geant4/lib/libgcc_s.so \
@@ -156,6 +160,8 @@ CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o:
 
 /home/ngustafs/miniforge3/envs/geant4/lib/libG4graphics_reps.so:
 
+/home/ngustafs/miniforge3/envs/geant4/lib/libRIO.so.6.40.02:
+
 /home/ngustafs/miniforge3/envs/geant4/lib/libQt5Widgets.so.5.15.15:
 
 /home/ngustafs/miniforge3/envs/geant4/lib/libQt5Gui.so.5.15.15:
@@ -182,17 +188,23 @@ CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o:
 
 /home/ngustafs/miniforge3/envs/geant4/lib/libCLHEP-2.4.7.1.so:
 
+/home/ngustafs/miniforge3/envs/geant4/lib/libThread.so.6.40.02:
+
+/home/ngustafs/miniforge3/envs/geant4/lib/libCore.so.6.40.02:
+
+/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/libpthread.so:
+
+/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/libpthread.so:
+
+/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/libpthread.so:
+
+/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/lib64/libpthread.so.0:
+
+/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib64/libpthread_nonshared.a:
+
 /home/ngustafs/miniforge3/envs/geant4/lib/libstdc++.so:
 
 /home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/libm.so:
-
-/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/libm.so:
-
-/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/libm.so:
-
-/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/lib64/libm.so.6:
-
-/home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/lib64/libmvec.so.1:
 
 /home/ngustafs/miniforge3/envs/geant4/lib/libgcc_s.so:
 

@@ -221,6 +221,7 @@ ISOLDE: /home/ngustafs/miniforge3/envs/geant4/lib/libG4particles.so
 ISOLDE: /home/ngustafs/miniforge3/envs/geant4/lib/libG4geometry.so
 ISOLDE: /home/ngustafs/miniforge3/envs/geant4/lib/libG4materials.so
 ISOLDE: /home/ngustafs/miniforge3/envs/geant4/lib/libG4graphics_reps.so
+ISOLDE: /home/ngustafs/miniforge3/envs/geant4/lib/libRIO.so.6.40.02
 ISOLDE: /home/ngustafs/miniforge3/envs/geant4/lib/libQt5Widgets.so.5.15.15
 ISOLDE: /home/ngustafs/miniforge3/envs/geant4/lib/libQt5Gui.so.5.15.15
 ISOLDE: /home/ngustafs/miniforge3/envs/geant4/lib/libQt5Core.so.5.15.15
@@ -234,6 +235,8 @@ ISOLDE: /home/ngustafs/miniforge3/envs/geant4/lib/libG4intercoms.so
 ISOLDE: /home/ngustafs/miniforge3/envs/geant4/lib/libG4global.so
 ISOLDE: /home/ngustafs/miniforge3/envs/geant4/lib/libG4ptl.so.3.0.0
 ISOLDE: /home/ngustafs/miniforge3/envs/geant4/lib/libCLHEP-2.4.7.1.so
+ISOLDE: /home/ngustafs/miniforge3/envs/geant4/lib/libThread.so.6.40.02
+ISOLDE: /home/ngustafs/miniforge3/envs/geant4/lib/libCore.so.6.40.02
 ISOLDE: CMakeFiles/ISOLDE.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ngustafs/ISOLDE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable ISOLDE"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ISOLDE.dir/link.txt --verbose=$(VERBOSE)

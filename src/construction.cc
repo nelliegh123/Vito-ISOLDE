@@ -19,7 +19,8 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     //====================================================================================
     //                              Defining World
     //====================================================================================
-    G4Material *worldMat = nist->FindOrBuildMaterial("G4_AIR");
+    // G4Material *worldMat = nist->FindOrBuildMaterial("G4_AIR");
+    G4Material *worldMat = nist->FindOrBuildMaterial("G4_Galactic");
 
     G4Box *solidWorld = new G4Box("solidWorld", 0.7*m, 0.7*m, 0.7*m);
 
