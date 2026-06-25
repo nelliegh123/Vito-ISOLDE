@@ -152,6 +152,7 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o: /home/ngustafs/ISOLDE/ISOLDE.cc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ForceCondition.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GMocrenFile.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GPILSelection.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Geantino.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSource.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSourceData.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSourceMessenger.hh \
@@ -166,8 +167,10 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o: /home/ngustafs/ISOLDE/ISOLDE.cc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4HepRepFileXMLWriter.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4HitFilterFactories.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ICRU90StoppingData.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4IonTable.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4IonisParamElm.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4IonisParamMat.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Ions.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Isotope.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4IsotopeVector.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Log.hh \
@@ -1115,12 +1118,15 @@ CMakeFiles/ISOLDE.dir/src/action.cc.o: /home/ngustafs/ISOLDE/src/action.cc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Event.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Exception.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ExceptionSeverity.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Geantino.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSource.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSourceData.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSourceMessenger.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeomSplitter.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GlobalConfig.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4HCofThisEvent.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4IonTable.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Ions.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Log.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4LogicalVolume.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4LogicalVolume.icc \
@@ -2082,12 +2088,15 @@ CMakeFiles/ISOLDE.dir/src/generator.cc.o: /home/ngustafs/ISOLDE/src/generator.cc
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Event.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Exception.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ExceptionSeverity.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Geantino.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSource.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSourceData.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSourceMessenger.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeomSplitter.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GlobalConfig.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4HCofThisEvent.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4IonTable.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Ions.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Log.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4LogicalVolume.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4LogicalVolume.icc \
@@ -3687,8 +3696,6 @@ CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o:
 
 /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/setjmp.h:
 
-/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/select2.h:
-
 /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/sched.h:
 
 /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/mathcalls.h:
@@ -3863,6 +3870,10 @@ CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o:
 
 /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/uniform_int_dist.h:
 
+/home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/this_thread_sleep.h:
+
+/home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/string_view.tcc:
+
 /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RanluxppEngine.h:
 
 /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/move.h:
@@ -3945,10 +3956,6 @@ CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NullModel.hh:
 
-/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ProcessVector.icc:
-
-/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VFilter.hh:
-
 /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu/bits/os_defines.h:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NormalNavigation.icc:
@@ -3989,6 +3996,8 @@ CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4MaterialPropertyVector.hh:
 
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4IonTable.hh:
+
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4MaterialPropertiesTable.hh:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PhysicsVector.hh:
@@ -4024,6 +4033,8 @@ CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o:
 /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandEngine.h:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4HepRepFileXMLWriter.hh:
+
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Geantino.hh:
 
 CMakeFiles/ISOLDE.dir/ISOLDE.cc.o:
 
@@ -4228,14 +4239,6 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o:
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DAWNFILE.hh:
 
 /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandGaussZiggurat.h:
-
-/home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/cstdint:
-
-/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PVPlacement.hh:
-
-/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ProcessType.hh:
-
-/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SubEventTrackStack.hh:
 
 /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandGeneral.icc:
 
@@ -4497,8 +4500,6 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VHitsCollection.hh:
 
-/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ProcessVector.hh:
-
 /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/TripleRand.h:
 
 /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/RotationInterfaces.icc:
@@ -4560,6 +4561,10 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o:
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTableIterator.hh:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GlobalConfig.hh:
+
+/home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/select2.h:
+
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Ions.hh:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Normal3D.hh:
 
@@ -4651,6 +4656,20 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DataVector.hh:
 
+/home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/cstdint:
+
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PVPlacement.hh:
+
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ProcessType.hh:
+
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SubEventTrackStack.hh:
+
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ProcessVector.hh:
+
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ProcessVector.icc:
+
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VFilter.hh:
+
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ProductionCutsTable.hh:
 
 /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/assert.h:
@@ -4684,8 +4703,6 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o:
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4RunManager.hh:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TwoVector.hh:
-
-/home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/this_thread_sleep.h:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4RunManagerKernel.hh:
 
@@ -5210,5 +5227,3 @@ CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o:
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NavigationHistory.hh:
 
 /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_set.h:
-
-/home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/string_view.tcc:

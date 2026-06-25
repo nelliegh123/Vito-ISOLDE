@@ -767,4 +767,7 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o: /home/ngustafs/ISOLDE/ISOLDE.cc \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SPSEneDistribution.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSourceMessenger.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSourceData.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTable.hh
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTable.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Geantino.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4IonTable.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Ions.hh
