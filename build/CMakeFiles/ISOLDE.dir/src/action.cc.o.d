@@ -452,4 +452,8 @@ CMakeFiles/ISOLDE.dir/src/action.cc.o: \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SystemOfUnits.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTable.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTableIterator.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTable.icc
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTable.icc \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Geantino.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4IonTable.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Ions.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTable.hh

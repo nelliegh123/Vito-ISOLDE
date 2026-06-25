@@ -8,13 +8,14 @@
 #include "physicsList.hh"
 #include "action.hh"
 
+#define USE_GPS
+
 int main(int argc, char** argv)
 {
     G4RunManager *runManager = new G4RunManager();
     runManager->SetUserInitialization(new MyDetectorConstruction());
     runManager->SetUserInitialization(new MyPhysicsList());
     runManager->SetUserInitialization(new MyActionInitialization());
-    
 
     runManager->Initialize();
 
@@ -31,11 +32,15 @@ int main(int argc, char** argv)
     UImanager->ApplyCommand("/vis/viewer/set/autoRefresh true");
     UImanager->ApplyCommand("/vis/scene/add/trajectories smooth");
     UImanager->ApplyCommand("/vis/scene/endOfEventAction accumulate");
-    UImanager->ApplyCommand("/control/execute gps_solid_circle.mac");
-    
 
-    // int numberOfEvent = 3;
-    // runManager->BeamOn(numberOfEvent);
+    #ifdef USE_GPS
+        UImanager->ApplyCommand("/control/execute gps_solid_circle.mac");
+        // UImanager->ApplyCommand("/control/execute gps_solid_square.mac");
+    
+    #else
+        int numberOfEvent = 100;
+        runManager->BeamOn(numberOfEvent);
+    #endif
 
     ui->SessionStart();
     // delete runManager;

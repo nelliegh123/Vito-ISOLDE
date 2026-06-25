@@ -18,6 +18,6 @@ G4bool MySensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory*)
 
 void MySensitiveDetector::EndOfEvent(G4HCofThisEvent*)
 {
-        // G4cout << G4endl << "-------->Sensitive Detector " << SensitiveDetectorName
-        //    << " counted " << fCounter << G4endl;
+        G4cout << G4endl << "-------->Sensitive Detector " << SensitiveDetectorName
+           << " counted " << fCounter << G4endl;
 }

@@ -7,6 +7,8 @@
 #include "G4GeneralParticleSource.hh"
 #include "G4SystemOfUnits.hh"
 #include "G4ParticleTable.hh"
+#include "G4Geantino.hh"
+#include "G4IonTable.hh"
 
 class MyPrimaryGenerator : public G4VUserPrimaryGeneratorAction
 {
@@ -17,7 +19,8 @@ public:
     virtual void GeneratePrimaries(G4Event*);
 
 private: 
-    G4GeneralParticleSource *fParticleGun;
+    G4ParticleGun *fParticleGun;
+    G4GeneralParticleSource *fGPS;
 };
 
 #endif
