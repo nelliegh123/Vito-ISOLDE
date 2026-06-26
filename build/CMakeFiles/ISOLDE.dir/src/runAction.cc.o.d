@@ -1,13 +1,8 @@
-CMakeFiles/ISOLDE.dir/src/action.cc.o: \
- /home/ngustafs/ISOLDE/src/action.cc \
+CMakeFiles/ISOLDE.dir/src/runAction.cc.o: \
+ /home/ngustafs/ISOLDE/src/runAction.cc \
  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/stdc-predef.h \
- /home/ngustafs/ISOLDE/include/action.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserActionInitialization.hh \
- /home/ngustafs/ISOLDE/include/generator.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleGun.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/globals.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ios.hh \
+ /home/ngustafs/ISOLDE/include/runAction.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UserRunAction.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Types.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GlobalConfig.hh \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/complex \
@@ -199,6 +194,14 @@ CMakeFiles/ISOLDE.dir/src/action.cc.o: \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/istream.tcc \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/sstream.tcc \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tls.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AnalysisManager.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GenericAnalysisManager.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ToolsAnalysisManager.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VAnalysisManager.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AnalysisManagerState.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AnalysisVerbose.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/globals.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ios.hh \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/iostream \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/algorithm \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_algo.h \
@@ -255,14 +258,7 @@ CMakeFiles/ISOLDE.dir/src/action.cc.o: \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/parse_numbers.h \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/std_mutex.h \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/unique_lock.h \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPrimaryGenerator.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ThreeVector.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/ThreeVector.h \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/defs.h \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/ThreeVector.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleDefinition.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PDefManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AutoLock.hh \
+ /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/array \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Threading.hh \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/chrono \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/vector \
@@ -278,7 +274,6 @@ CMakeFiles/ISOLDE.dir/src/action.cc.o: \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/align.h \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/chrono_io.h \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/format \
- /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/array \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/charconv \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/optional \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/enable_special_members.h \
@@ -315,151 +310,17 @@ CMakeFiles/ISOLDE.dir/src/action.cc.o: \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/atomic_futex.h \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/std_function.h \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/thread \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/pwdefs.hh \
- /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/stdlib.h \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Units/PhysicalConstants.h \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Units/defs.h \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Units/SystemOfUnits.h \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleDefinition.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PrimaryVertex.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Allocator.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AllocatorPool.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PrimaryParticle.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleMomentum.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSource.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Event.hh \
- /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/set \
- /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_set.h \
- /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_multiset.h \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/evtdefs.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4HCofThisEvent.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VHitsCollection.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DCofThisEvent.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VDigiCollection.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TrajectoryContainer.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VTrajectory.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserEventInformation.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SingleParticleSource.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SPSPosDistribution.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Navigator.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/geomdefs.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AffineTransform.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4RotationMatrix.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/Rotation.h \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/RotationInterfaces.h \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/LorentzVector.h \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/LorentzVector.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/ZMxpv.h \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/AxisAngle.h \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/AxisAngle.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/RotationInterfaces.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/RotationX.h \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/RotationX.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/RotationY.h \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/RotationY.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/RotationZ.h \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/RotationZ.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/Rotation.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Transform3D.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Geometry/Transform3D.h \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Geometry/defs.h \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Geometry/Transform3D.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Geometry/Point3D.h \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Geometry/BasicVector3D.h \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Geometry/Vector3D.h \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Geometry/Normal3D.h \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AffineTransform.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4LogicalVolume.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AnalysisUtilities.hh \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/memory \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_raw_storage_iter.h \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/shared_ptr_atomic.h \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward/auto_ptr.h \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/ranges_uninitialized.h \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/pstl/glue_memory_defs.h \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Region.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeomSplitter.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/geomwdefs.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Region.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPhysicalVolume.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPhysicalVolume.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4LogicalVolume.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TouchableHandle.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VTouchable.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TouchableHistory.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NavigationHistory.hh \
- /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/assert.h \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NavigationLevel.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NavigationLevelRep.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NavigationLevelRep.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NavigationLevel.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NavigationHistoryPool.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NavigationHistory.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TouchableHistory.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ReferenceCountedHandle.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NormalNavigation.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VNavigation.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VSolid.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VSolid.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AuxiliaryNavServices.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AuxiliaryNavServices.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NormalNavigation.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VoxelNavigation.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NavigationLogger.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4BlockingList.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4BlockingList.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SmartVoxelProxy.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SmartVoxelProxy.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SmartVoxelNode.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SmartVoxelNode.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SmartVoxelHeader.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SmartVoxelHeader.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VoxelNavigation.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParameterisedNavigation.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPVParameterisation.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VVolumeMaterialScanner.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParameterisedNavigation.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ReplicaNavigation.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ReplicaNavigation.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4RegularNavigation.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VExternalNavigation.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Navigator.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SPSRandomGenerator.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PhysicsFreeVector.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PhysicsVector.hh \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/fstream \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu/bits/basic_file.h \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu/bits/c++io.h \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/fstream.tcc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Log.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PhysicsVectorType.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PhysicsVector.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DataInterpolation.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Cache.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4CacheDetails.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SPSAngDistribution.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SPSEneDistribution.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSourceMessenger.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UImessenger.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIdirectory.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIcommand.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ApplicationState.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIparameter.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSourceData.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SystemOfUnits.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTable.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTableIterator.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTable.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Geantino.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4IonTable.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Ions.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTable.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AnalysisManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GenericAnalysisManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ToolsAnalysisManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VAnalysisManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AnalysisManagerState.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AnalysisVerbose.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AnalysisUtilities.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VTBaseHnManager.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4HnInformation.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4BinScheme.hh \
@@ -469,6 +330,9 @@ CMakeFiles/ISOLDE.dir/src/action.cc.o: \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VAnalysisManager.icc \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4HnManager.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4BaseAnalysisManager.hh \
+ /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/set \
+ /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_set.h \
+ /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_multiset.h \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NtupleBookingManager.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/ntuple_booking \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/cids \
@@ -484,7 +348,17 @@ CMakeFiles/ISOLDE.dir/src/action.cc.o: \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4THnToolsManager.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4THnManager.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4THnManager.icc \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AutoLock.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4THnMessenger.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UImessenger.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIdirectory.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIcommand.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ApplicationState.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ThreeVector.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/ThreeVector.h \
+ /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/defs.h \
+ /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/ThreeVector.icc \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIparameter.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4THnToolsManager.icc \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4THnMessenger.icc \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Tokenizer.hh \

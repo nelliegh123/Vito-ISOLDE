@@ -10,6 +10,19 @@ include(${Geant4_USE_FILE})
 file(GLOB sources ${PROJECT_SOURCE_DIR}/src/*.cc)
 file(GLOB headers ${PROJECT_SOURCE_DIR}/include/*.hh)
 
+
+# set(sources
+#     ISOLDE.cc
+#     src/actionInitialization.cc
+#     src/construction.cc
+#     src/eventAction.cc
+#     src/physicsList.cc
+#     src/primaryGeneratorAction.cc
+#     src/runAction.cc
+#     src/sensitiveDetector.cc
+#     src/VITOMagneticField.cc
+# )
+
 add_executable(ISOLDE ISOLDE.cc ${sources} ${headers})
 
 target_include_directories(ISOLDE PRIVATE

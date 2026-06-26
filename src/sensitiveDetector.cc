@@ -1,6 +1,5 @@
 #include "sensitiveDetector.hh"
-
-#include <TFile.h>
+//Responsible for counting hits
 
 MySensitiveDetector::MySensitiveDetector(const G4String& name):G4VSensitiveDetector(name)
 {
@@ -19,17 +18,14 @@ G4bool MySensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory*)
         return false;
 
     fCounter++;
-    std::cout << fCounter << std::endl;
     return true;
 }
 
 void MySensitiveDetector::EndOfEvent(G4HCofThisEvent*)
 {
-    detector1->WriteObject(&fCounter, "hit1");
-    G4cout << G4endl << "-------->Sensitive Detector " << SensitiveDetectorName << " counted " << fCounter << G4endl;
+    // detector1->WriteObject(&fCounter, "hit1");
+    // G4cout << SensitiveDetectorName << " counted " << fCounter << G4endl;
 }
 
 
 
-
-// detector1->Close();
