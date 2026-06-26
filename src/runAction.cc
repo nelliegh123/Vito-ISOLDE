@@ -4,23 +4,20 @@
 runAction::runAction() {
     auto analysisManager = G4AnalysisManager::Instance();
     analysisManager->SetVerboseLevel(1);
-    
-    analysisManager->CreateNtuple("HitsTree", "Simulation Results");
-    analysisManager->CreateNtupleDColumn("Energy");   
-    analysisManager->CreateNtupleIColumn("Det1Hits");  
-    analysisManager->CreateNtupleIColumn("Det2Hits");  
-    analysisManager->FinishNtuple();
+
+    analysisManager->CreateH1("Detector1_Scan", "Detector 1 Hits vs Energy;Energy (MeV);Total Hits", 10, 0.5, 10.5);
+    analysisManager->CreateH1("Detector2_Scan", "Detector 2 Hits vs Energy;Energy (MeV);Total Hits", 10, 0.5, 10.5);
 }
 
-void runAction::BeginOfRunAction(const G4Run*) {
-    auto analysisManager = G4AnalysisManager::Instance();
+void runAction::BeginOfRunAction(const G4Run*) { //Now running this from macro
+    // auto analysisManager = G4AnalysisManager::Instance();
 
-    analysisManager->OpenFile("SimulationResults.root");
+    // analysisManager->OpenFile("SimulationResults.root");
 }
 
-void runAction::EndOfRunAction(const G4Run*) {
-    auto analysisManager = G4AnalysisManager::Instance();
+void runAction::EndOfRunAction(const G4Run*) { //Now running this from macro
+    // auto analysisManager = G4AnalysisManager::Instance();
 
-    analysisManager->Write();
-    analysisManager->CloseFile();
+    // analysisManager->Write();
+    // analysisManager->CloseFile();
 }

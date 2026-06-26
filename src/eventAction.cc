@@ -31,9 +31,6 @@ void eventAction::EndOfEventAction(const G4Event* event) {
     }
 
     auto analysisManager = G4AnalysisManager::Instance();
-    analysisManager->FillNtupleDColumn(0, energy);
-    analysisManager->FillNtupleIColumn(1, det1->GetCount());
-    analysisManager->FillNtupleIColumn(2, det2->GetCount());
-    analysisManager->AddNtupleRow(); 
-
+    analysisManager->FillH1(0, energy, det1->GetCount());
+    analysisManager->FillH1(1, energy, det2->GetCount());
 }

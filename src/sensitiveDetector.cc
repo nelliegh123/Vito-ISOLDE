@@ -22,10 +22,7 @@ G4bool MySensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory*)
 }
 
 void MySensitiveDetector::EndOfEvent(G4HCofThisEvent*)
-{
-    // detector1->WriteObject(&fCounter, "hit1");
-    // G4cout << SensitiveDetectorName << " counted " << fCounter << G4endl;
-}
+{}
 
 
 
