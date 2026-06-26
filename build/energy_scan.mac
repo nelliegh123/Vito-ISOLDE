@@ -1,0 +1,15 @@
+/gps/particle e-
+/gps/pos/type Plane
+/gps/pos/shape Circle
+/gps/pos/radius 0.5 cm
+/gps/pos/centre 0 0 -0.5 mm
+/gps/direction 0 1 1
+/gps/ene/type Mono
+
+/analysis/openFile TotalEnergyScan.root
+
+
+/control/loop energy_scan_step.mac energy 1000 10000 500
+
+/analysis/write
+/analysis/closeFile

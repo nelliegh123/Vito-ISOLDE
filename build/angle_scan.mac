@@ -1,0 +1,16 @@
+/gps/particle e-
+/gps/pos/type Plane
+/gps/pos/shape Circle
+/gps/pos/radius 0.5 cm
+/gps/pos/centre 0 0 -0.5 mm
+/gps/ene/type Mono
+/gps/ene/mono 5 MeV
+
+/analysis/openFile TotalAngleScan.root
+
+
+/control/loop angle_scan_step.mac pos 0 10 1
+/control/loop angle_scan_step2.mac pos 10 1 1
+
+/analysis/write
+/analysis/closeFile

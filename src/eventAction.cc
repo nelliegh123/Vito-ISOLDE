@@ -5,6 +5,7 @@
 #include "G4Event.hh"
 #include "G4AnalysisManager.hh"
 #include "G4RunManager.hh"
+#include "primaryGeneratorAction.hh"
 
 //At end of event, it should fetch data from sensitiveDetector and fill histograms
 
@@ -30,7 +31,31 @@ void eventAction::EndOfEventAction(const G4Event* event) {
         energy = event->GetPrimaryVertex(0)->GetPrimary(0)->GetKineticEnergy();
     }
 
+
     auto analysisManager = G4AnalysisManager::Instance();
+    //////////////////////////////////
+    auto runManager = G4RunManager::GetRunManager();
+    auto genAction = static_cast<const MyPrimaryGenerator*>(runManager->GetUserPrimaryGeneratorAction());
+    
+    G4double angle = 0.0;
+    if (genAction) {
+        angle = genAction->GetCurrentAngle();
+    }
+
+
+    
+    // Fill Histogram (e.g., H1 index 4 is Counts vs Angle)
+    // x = angle, weight = detector counts
+    analysisManager->FillH1(2, angle, det1->GetCount());
+    analysisManager->FillH1(3, angle, det2->GetCount());
+    //////////////////////////
+
+
+
+
     analysisManager->FillH1(0, energy, det1->GetCount());
     analysisManager->FillH1(1, energy, det2->GetCount());
+    // analysisManager->FillH1(2, energy, det1->GetCount());
+    // analysisManager->FillH1(3, energy, det2->GetCount());
+
 }

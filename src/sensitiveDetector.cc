@@ -2,10 +2,7 @@
 //Responsible for counting hits
 
 MySensitiveDetector::MySensitiveDetector(const G4String& name):G4VSensitiveDetector(name)
-{
-    detector1 = std::unique_ptr<TFile>(TFile::Open("detector1_Hits.root", "RECREATE"));
-    // auto detector2 = std::unique_ptr<TFile>(TFile::Open("detector2_Hits.root", "RECREATE"));
-}
+{}
 
 void MySensitiveDetector::Initialize(G4HCofThisEvent*)
 {

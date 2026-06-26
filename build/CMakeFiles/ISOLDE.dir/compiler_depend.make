@@ -2169,6 +2169,7 @@ CMakeFiles/ISOLDE.dir/src/construction.cc.o: /home/ngustafs/ISOLDE/src/construct
 
 CMakeFiles/ISOLDE.dir/src/eventAction.cc.o: /home/ngustafs/ISOLDE/src/eventAction.cc \
   /home/ngustafs/ISOLDE/include/eventAction.hh \
+  /home/ngustafs/ISOLDE/include/primaryGeneratorAction.hh \
   /home/ngustafs/ISOLDE/include/sensitiveDetector.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Bytes.h \
   /home/ngustafs/miniforge3/envs/geant4/include/Byteswap.h \
@@ -2281,9 +2282,12 @@ CMakeFiles/ISOLDE.dir/src/eventAction.cc.o: /home/ngustafs/ISOLDE/src/eventActio
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4BinScheme.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4BlockingList.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4BlockingList.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Cache.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4CacheDetails.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ClassificationOfNewTrack.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4CollectionNameVector.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DCofThisEvent.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DataInterpolation.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DataVector.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DataVector.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DensityEffectCalculator.hh \
@@ -2301,6 +2305,10 @@ CMakeFiles/ISOLDE.dir/src/eventAction.cc.o: /home/ngustafs/ISOLDE/src/eventActio
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Fcn.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ForceCondition.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GPILSelection.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Geantino.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSource.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSourceData.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSourceMessenger.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GenericAnalysisManager.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GenericAnalysisManager.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GenericFileManager.hh \
@@ -2311,8 +2319,10 @@ CMakeFiles/ISOLDE.dir/src/eventAction.cc.o: /home/ngustafs/ISOLDE/src/eventActio
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4HCtable.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4HnInformation.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4HnManager.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4IonTable.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4IonisParamElm.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4IonisParamMat.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Ions.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Isotope.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4IsotopeVector.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Log.hh \
@@ -2347,6 +2357,7 @@ CMakeFiles/ISOLDE.dir/src/eventAction.cc.o: /home/ngustafs/ISOLDE/src/eventActio
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleChange.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleDefinition.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleDefinition.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleGun.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleMomentum.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTable.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTable.icc \
@@ -2377,8 +2388,13 @@ CMakeFiles/ISOLDE.dir/src/eventAction.cc.o: /home/ngustafs/ISOLDE/src/eventActio
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4RunManagerKernel.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SDManager.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SDStructure.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SPSAngDistribution.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SPSEneDistribution.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SPSPosDistribution.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SPSRandomGenerator.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SandiaTable.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SensitiveVolumeList.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SingleParticleSource.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SmartTrackStack.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SmartVoxelHeader.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SmartVoxelHeader.icc \
@@ -2399,6 +2415,7 @@ CMakeFiles/ISOLDE.dir/src/eventAction.cc.o: /home/ngustafs/ISOLDE/src/eventActio
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4String.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SubEvent.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SubEventTrackStack.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SystemOfUnits.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TH1ToolsManager.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TH2ToolsManager.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TH3ToolsManager.hh \
@@ -2450,6 +2467,7 @@ CMakeFiles/ISOLDE.dir/src/eventAction.cc.o: /home/ngustafs/ISOLDE/src/eventActio
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VParticleChange.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPhysicalVolume.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPhysicalVolume.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPrimaryGenerator.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VProcess.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VReadOutGeometry.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VSDFilter.hh \
@@ -2462,6 +2480,7 @@ CMakeFiles/ISOLDE.dir/src/eventAction.cc.o: /home/ngustafs/ISOLDE/src/eventActio
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VTouchable.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VTrajectory.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserEventInformation.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserTrackInformation.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VVolumeMaterialScanner.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VoxelNavigation.hh \
@@ -3518,6 +3537,7 @@ CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.o: /home/ngustafs/ISOLDE/src
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TrajectoryContainer.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Transform3D.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Types.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIcmdWithADouble.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIcommand.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIdirectory.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UImessenger.hh \
@@ -4851,6 +4871,8 @@ CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o:
 /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/lib64/ld-linux-x86-64.so.2:
 
 /home/ngustafs/ISOLDE/src/runAction.cc:
+
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIcmdWithADouble.hh:
 
 /home/ngustafs/ISOLDE/src/physicsList.cc:
 

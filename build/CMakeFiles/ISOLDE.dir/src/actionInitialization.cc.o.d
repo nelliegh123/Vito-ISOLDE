@@ -344,7 +344,11 @@ CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.o: \
  /home/ngustafs/miniforge3/envs/geant4/include/TBits.h \
  /home/ngustafs/ISOLDE/include/primaryGeneratorAction.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleGun.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UImessenger.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIdirectory.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIcommand.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ApplicationState.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ThreeVector.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/globals.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ios.hh \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/iostream \
@@ -371,11 +375,12 @@ CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.o: \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/locale_facets_nonio.tcc \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/locale_conv.h \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/quoted_string.h \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPrimaryGenerator.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ThreeVector.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/ThreeVector.h \
  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/defs.h \
  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/ThreeVector.icc \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIparameter.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleGun.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPrimaryGenerator.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleDefinition.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PDefManager.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AutoLock.hh \
@@ -518,10 +523,6 @@ CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.o: \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SPSEneDistribution.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSourceMessenger.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UImessenger.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIdirectory.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIcommand.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ApplicationState.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIparameter.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSourceData.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SystemOfUnits.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTable.hh \

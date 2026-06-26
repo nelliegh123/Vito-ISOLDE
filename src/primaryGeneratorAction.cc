@@ -1,9 +1,13 @@
 #define USE_GPS
 #include "primaryGeneratorAction.hh"
+#include "G4UIcmdWithADouble.hh"   //
 
 
-MyPrimaryGenerator::MyPrimaryGenerator()
+MyPrimaryGenerator::MyPrimaryGenerator() : fCurrentAngle(0.0)//
 {
+    fAngleCmd = new G4UIcmdWithADouble("/mygen/setAngle", this);//
+    fAngleCmd->SetGuidance("Set the current run angle in degrees or radians");//
+
     #ifdef USE_GPS
         fGPS = new G4GeneralParticleSource();   
 
@@ -25,6 +29,7 @@ MyPrimaryGenerator::MyPrimaryGenerator()
 
 MyPrimaryGenerator::~MyPrimaryGenerator()
 {
+    delete fAngleCmd; //
     #ifdef USE_GPS
         delete fGPS;
     
@@ -59,3 +64,11 @@ void MyPrimaryGenerator::GeneratePrimaries(G4Event *anEvent)
         fParticleGun->GeneratePrimaryVertex(anEvent);
     #endif
 }
+
+//////////////////////
+void MyPrimaryGenerator::SetNewValue(G4UIcommand* command, G4String newValue) {
+    if (command == fAngleCmd) {
+        fCurrentAngle = G4UIcmdWithADouble::GetNewDoubleValue(newValue);
+    }
+}
+/////////////////////

@@ -712,4 +712,25 @@ CMakeFiles/ISOLDE.dir/src/eventAction.cc.o: \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/rundefs.hh \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/list \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_list.h \
- /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/list.tcc
+ /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/list.tcc \
+ /home/ngustafs/ISOLDE/include/primaryGeneratorAction.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UImessenger.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleGun.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPrimaryGenerator.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSource.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SingleParticleSource.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SPSPosDistribution.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SPSRandomGenerator.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DataInterpolation.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Cache.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4CacheDetails.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SPSAngDistribution.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SPSEneDistribution.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSourceMessenger.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSourceData.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SystemOfUnits.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTable.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Geantino.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4IonTable.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Ions.hh

@@ -48,7 +48,8 @@ int main(int argc, char** argv)
     }
 
 #ifdef USE_GPS
-    UImanager->ApplyCommand("/control/execute gps_solid_circle.mac");
+    // UImanager->ApplyCommand("/control/execute energy_scan.mac");
+    UImanager->ApplyCommand("/control/execute angle_scan.mac");
 #else
     runManager->BeamOn(100);
 #endif
