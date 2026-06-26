@@ -190,29 +190,29 @@ src/VITOMagneticField.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.s
 .PHONY : src/VITOMagneticField.cc.s
 
-src/action.o: src/action.cc.o
-.PHONY : src/action.o
+src/actionInitialization.o: src/actionInitialization.cc.o
+.PHONY : src/actionInitialization.o
 
 # target to build an object file
-src/action.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/action.cc.o
-.PHONY : src/action.cc.o
+src/actionInitialization.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.o
+.PHONY : src/actionInitialization.cc.o
 
-src/action.i: src/action.cc.i
-.PHONY : src/action.i
+src/actionInitialization.i: src/actionInitialization.cc.i
+.PHONY : src/actionInitialization.i
 
 # target to preprocess a source file
-src/action.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/action.cc.i
-.PHONY : src/action.cc.i
+src/actionInitialization.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.i
+.PHONY : src/actionInitialization.cc.i
 
-src/action.s: src/action.cc.s
-.PHONY : src/action.s
+src/actionInitialization.s: src/actionInitialization.cc.s
+.PHONY : src/actionInitialization.s
 
 # target to generate assembly for a file
-src/action.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/action.cc.s
-.PHONY : src/action.cc.s
+src/actionInitialization.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.s
+.PHONY : src/actionInitialization.cc.s
 
 src/construction.o: src/construction.cc.o
 .PHONY : src/construction.o
@@ -238,29 +238,29 @@ src/construction.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/construction.cc.s
 .PHONY : src/construction.cc.s
 
-src/generator.o: src/generator.cc.o
-.PHONY : src/generator.o
+src/eventAction.o: src/eventAction.cc.o
+.PHONY : src/eventAction.o
 
 # target to build an object file
-src/generator.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/generator.cc.o
-.PHONY : src/generator.cc.o
+src/eventAction.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/eventAction.cc.o
+.PHONY : src/eventAction.cc.o
 
-src/generator.i: src/generator.cc.i
-.PHONY : src/generator.i
+src/eventAction.i: src/eventAction.cc.i
+.PHONY : src/eventAction.i
 
 # target to preprocess a source file
-src/generator.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/generator.cc.i
-.PHONY : src/generator.cc.i
+src/eventAction.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/eventAction.cc.i
+.PHONY : src/eventAction.cc.i
 
-src/generator.s: src/generator.cc.s
-.PHONY : src/generator.s
+src/eventAction.s: src/eventAction.cc.s
+.PHONY : src/eventAction.s
 
 # target to generate assembly for a file
-src/generator.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/generator.cc.s
-.PHONY : src/generator.cc.s
+src/eventAction.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/eventAction.cc.s
+.PHONY : src/eventAction.cc.s
 
 src/physicsList.o: src/physicsList.cc.o
 .PHONY : src/physicsList.o
@@ -285,6 +285,54 @@ src/physicsList.s: src/physicsList.cc.s
 src/physicsList.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/physicsList.cc.s
 .PHONY : src/physicsList.cc.s
+
+src/primaryGeneratorAction.o: src/primaryGeneratorAction.cc.o
+.PHONY : src/primaryGeneratorAction.o
+
+# target to build an object file
+src/primaryGeneratorAction.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.o
+.PHONY : src/primaryGeneratorAction.cc.o
+
+src/primaryGeneratorAction.i: src/primaryGeneratorAction.cc.i
+.PHONY : src/primaryGeneratorAction.i
+
+# target to preprocess a source file
+src/primaryGeneratorAction.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.i
+.PHONY : src/primaryGeneratorAction.cc.i
+
+src/primaryGeneratorAction.s: src/primaryGeneratorAction.cc.s
+.PHONY : src/primaryGeneratorAction.s
+
+# target to generate assembly for a file
+src/primaryGeneratorAction.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.s
+.PHONY : src/primaryGeneratorAction.cc.s
+
+src/runAction.o: src/runAction.cc.o
+.PHONY : src/runAction.o
+
+# target to build an object file
+src/runAction.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/runAction.cc.o
+.PHONY : src/runAction.cc.o
+
+src/runAction.i: src/runAction.cc.i
+.PHONY : src/runAction.i
+
+# target to preprocess a source file
+src/runAction.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/runAction.cc.i
+.PHONY : src/runAction.cc.i
+
+src/runAction.s: src/runAction.cc.s
+.PHONY : src/runAction.s
+
+# target to generate assembly for a file
+src/runAction.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/runAction.cc.s
+.PHONY : src/runAction.cc.s
 
 src/sensitiveDetector.o: src/sensitiveDetector.cc.o
 .PHONY : src/sensitiveDetector.o
@@ -326,18 +374,24 @@ help:
 	@echo "... src/VITOMagneticField.o"
 	@echo "... src/VITOMagneticField.i"
 	@echo "... src/VITOMagneticField.s"
-	@echo "... src/action.o"
-	@echo "... src/action.i"
-	@echo "... src/action.s"
+	@echo "... src/actionInitialization.o"
+	@echo "... src/actionInitialization.i"
+	@echo "... src/actionInitialization.s"
 	@echo "... src/construction.o"
 	@echo "... src/construction.i"
 	@echo "... src/construction.s"
-	@echo "... src/generator.o"
-	@echo "... src/generator.i"
-	@echo "... src/generator.s"
+	@echo "... src/eventAction.o"
+	@echo "... src/eventAction.i"
+	@echo "... src/eventAction.s"
 	@echo "... src/physicsList.o"
 	@echo "... src/physicsList.i"
 	@echo "... src/physicsList.s"
+	@echo "... src/primaryGeneratorAction.o"
+	@echo "... src/primaryGeneratorAction.i"
+	@echo "... src/primaryGeneratorAction.s"
+	@echo "... src/runAction.o"
+	@echo "... src/runAction.i"
+	@echo "... src/runAction.s"
 	@echo "... src/sensitiveDetector.o"
 	@echo "... src/sensitiveDetector.i"
 	@echo "... src/sensitiveDetector.s"

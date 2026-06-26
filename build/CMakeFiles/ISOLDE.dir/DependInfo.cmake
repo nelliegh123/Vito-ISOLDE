@@ -10,10 +10,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ngustafs/ISOLDE/ISOLDE.cc" "CMakeFiles/ISOLDE.dir/ISOLDE.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/ISOLDE.cc.o.d"
   "/home/ngustafs/ISOLDE/src/VITOMagneticField.cc" "CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o.d"
-  "/home/ngustafs/ISOLDE/src/action.cc" "CMakeFiles/ISOLDE.dir/src/action.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/src/action.cc.o.d"
+  "/home/ngustafs/ISOLDE/src/actionInitialization.cc" "CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.o.d"
   "/home/ngustafs/ISOLDE/src/construction.cc" "CMakeFiles/ISOLDE.dir/src/construction.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/src/construction.cc.o.d"
-  "/home/ngustafs/ISOLDE/src/generator.cc" "CMakeFiles/ISOLDE.dir/src/generator.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/src/generator.cc.o.d"
+  "/home/ngustafs/ISOLDE/src/eventAction.cc" "CMakeFiles/ISOLDE.dir/src/eventAction.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/src/eventAction.cc.o.d"
   "/home/ngustafs/ISOLDE/src/physicsList.cc" "CMakeFiles/ISOLDE.dir/src/physicsList.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/src/physicsList.cc.o.d"
+  "/home/ngustafs/ISOLDE/src/primaryGeneratorAction.cc" "CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.o.d"
+  "/home/ngustafs/ISOLDE/src/runAction.cc" "CMakeFiles/ISOLDE.dir/src/runAction.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/src/runAction.cc.o.d"
   "/home/ngustafs/ISOLDE/src/sensitiveDetector.cc" "CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o.d"
   "" "ISOLDE" "gcc" "CMakeFiles/ISOLDE.dir/link.d"
   )

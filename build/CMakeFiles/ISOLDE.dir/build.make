@@ -100,19 +100,19 @@ CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.s"
 	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ngustafs/ISOLDE/src/VITOMagneticField.cc -o CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.s
 
-CMakeFiles/ISOLDE.dir/src/action.cc.o: CMakeFiles/ISOLDE.dir/flags.make
-CMakeFiles/ISOLDE.dir/src/action.cc.o: /home/ngustafs/ISOLDE/src/action.cc
-CMakeFiles/ISOLDE.dir/src/action.cc.o: CMakeFiles/ISOLDE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ngustafs/ISOLDE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ISOLDE.dir/src/action.cc.o"
-	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ISOLDE.dir/src/action.cc.o -MF CMakeFiles/ISOLDE.dir/src/action.cc.o.d -o CMakeFiles/ISOLDE.dir/src/action.cc.o -c /home/ngustafs/ISOLDE/src/action.cc
+CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.o: CMakeFiles/ISOLDE.dir/flags.make
+CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.o: /home/ngustafs/ISOLDE/src/actionInitialization.cc
+CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.o: CMakeFiles/ISOLDE.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ngustafs/ISOLDE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.o"
+	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.o -MF CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.o.d -o CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.o -c /home/ngustafs/ISOLDE/src/actionInitialization.cc
 
-CMakeFiles/ISOLDE.dir/src/action.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ISOLDE.dir/src/action.cc.i"
-	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ngustafs/ISOLDE/src/action.cc > CMakeFiles/ISOLDE.dir/src/action.cc.i
+CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.i"
+	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ngustafs/ISOLDE/src/actionInitialization.cc > CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.i
 
-CMakeFiles/ISOLDE.dir/src/action.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ISOLDE.dir/src/action.cc.s"
-	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ngustafs/ISOLDE/src/action.cc -o CMakeFiles/ISOLDE.dir/src/action.cc.s
+CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.s"
+	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ngustafs/ISOLDE/src/actionInitialization.cc -o CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.s
 
 CMakeFiles/ISOLDE.dir/src/construction.cc.o: CMakeFiles/ISOLDE.dir/flags.make
 CMakeFiles/ISOLDE.dir/src/construction.cc.o: /home/ngustafs/ISOLDE/src/construction.cc
@@ -128,19 +128,19 @@ CMakeFiles/ISOLDE.dir/src/construction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ISOLDE.dir/src/construction.cc.s"
 	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ngustafs/ISOLDE/src/construction.cc -o CMakeFiles/ISOLDE.dir/src/construction.cc.s
 
-CMakeFiles/ISOLDE.dir/src/generator.cc.o: CMakeFiles/ISOLDE.dir/flags.make
-CMakeFiles/ISOLDE.dir/src/generator.cc.o: /home/ngustafs/ISOLDE/src/generator.cc
-CMakeFiles/ISOLDE.dir/src/generator.cc.o: CMakeFiles/ISOLDE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ngustafs/ISOLDE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ISOLDE.dir/src/generator.cc.o"
-	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ISOLDE.dir/src/generator.cc.o -MF CMakeFiles/ISOLDE.dir/src/generator.cc.o.d -o CMakeFiles/ISOLDE.dir/src/generator.cc.o -c /home/ngustafs/ISOLDE/src/generator.cc
+CMakeFiles/ISOLDE.dir/src/eventAction.cc.o: CMakeFiles/ISOLDE.dir/flags.make
+CMakeFiles/ISOLDE.dir/src/eventAction.cc.o: /home/ngustafs/ISOLDE/src/eventAction.cc
+CMakeFiles/ISOLDE.dir/src/eventAction.cc.o: CMakeFiles/ISOLDE.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ngustafs/ISOLDE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ISOLDE.dir/src/eventAction.cc.o"
+	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ISOLDE.dir/src/eventAction.cc.o -MF CMakeFiles/ISOLDE.dir/src/eventAction.cc.o.d -o CMakeFiles/ISOLDE.dir/src/eventAction.cc.o -c /home/ngustafs/ISOLDE/src/eventAction.cc
 
-CMakeFiles/ISOLDE.dir/src/generator.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ISOLDE.dir/src/generator.cc.i"
-	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ngustafs/ISOLDE/src/generator.cc > CMakeFiles/ISOLDE.dir/src/generator.cc.i
+CMakeFiles/ISOLDE.dir/src/eventAction.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ISOLDE.dir/src/eventAction.cc.i"
+	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ngustafs/ISOLDE/src/eventAction.cc > CMakeFiles/ISOLDE.dir/src/eventAction.cc.i
 
-CMakeFiles/ISOLDE.dir/src/generator.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ISOLDE.dir/src/generator.cc.s"
-	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ngustafs/ISOLDE/src/generator.cc -o CMakeFiles/ISOLDE.dir/src/generator.cc.s
+CMakeFiles/ISOLDE.dir/src/eventAction.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ISOLDE.dir/src/eventAction.cc.s"
+	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ngustafs/ISOLDE/src/eventAction.cc -o CMakeFiles/ISOLDE.dir/src/eventAction.cc.s
 
 CMakeFiles/ISOLDE.dir/src/physicsList.cc.o: CMakeFiles/ISOLDE.dir/flags.make
 CMakeFiles/ISOLDE.dir/src/physicsList.cc.o: /home/ngustafs/ISOLDE/src/physicsList.cc
@@ -156,10 +156,38 @@ CMakeFiles/ISOLDE.dir/src/physicsList.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ISOLDE.dir/src/physicsList.cc.s"
 	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ngustafs/ISOLDE/src/physicsList.cc -o CMakeFiles/ISOLDE.dir/src/physicsList.cc.s
 
+CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.o: CMakeFiles/ISOLDE.dir/flags.make
+CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.o: /home/ngustafs/ISOLDE/src/primaryGeneratorAction.cc
+CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.o: CMakeFiles/ISOLDE.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ngustafs/ISOLDE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.o"
+	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.o -MF CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.o.d -o CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.o -c /home/ngustafs/ISOLDE/src/primaryGeneratorAction.cc
+
+CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.i"
+	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ngustafs/ISOLDE/src/primaryGeneratorAction.cc > CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.i
+
+CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.s"
+	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ngustafs/ISOLDE/src/primaryGeneratorAction.cc -o CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.s
+
+CMakeFiles/ISOLDE.dir/src/runAction.cc.o: CMakeFiles/ISOLDE.dir/flags.make
+CMakeFiles/ISOLDE.dir/src/runAction.cc.o: /home/ngustafs/ISOLDE/src/runAction.cc
+CMakeFiles/ISOLDE.dir/src/runAction.cc.o: CMakeFiles/ISOLDE.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ngustafs/ISOLDE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ISOLDE.dir/src/runAction.cc.o"
+	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ISOLDE.dir/src/runAction.cc.o -MF CMakeFiles/ISOLDE.dir/src/runAction.cc.o.d -o CMakeFiles/ISOLDE.dir/src/runAction.cc.o -c /home/ngustafs/ISOLDE/src/runAction.cc
+
+CMakeFiles/ISOLDE.dir/src/runAction.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ISOLDE.dir/src/runAction.cc.i"
+	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ngustafs/ISOLDE/src/runAction.cc > CMakeFiles/ISOLDE.dir/src/runAction.cc.i
+
+CMakeFiles/ISOLDE.dir/src/runAction.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ISOLDE.dir/src/runAction.cc.s"
+	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ngustafs/ISOLDE/src/runAction.cc -o CMakeFiles/ISOLDE.dir/src/runAction.cc.s
+
 CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o: CMakeFiles/ISOLDE.dir/flags.make
 CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o: /home/ngustafs/ISOLDE/src/sensitiveDetector.cc
 CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o: CMakeFiles/ISOLDE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ngustafs/ISOLDE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ngustafs/ISOLDE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o"
 	/home/ngustafs/miniforge3/envs/geant4/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o -MF CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o.d -o CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o -c /home/ngustafs/ISOLDE/src/sensitiveDetector.cc
 
 CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.i: cmake_force
@@ -174,10 +202,12 @@ CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.s: cmake_force
 ISOLDE_OBJECTS = \
 "CMakeFiles/ISOLDE.dir/ISOLDE.cc.o" \
 "CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o" \
-"CMakeFiles/ISOLDE.dir/src/action.cc.o" \
+"CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.o" \
 "CMakeFiles/ISOLDE.dir/src/construction.cc.o" \
-"CMakeFiles/ISOLDE.dir/src/generator.cc.o" \
+"CMakeFiles/ISOLDE.dir/src/eventAction.cc.o" \
 "CMakeFiles/ISOLDE.dir/src/physicsList.cc.o" \
+"CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.o" \
+"CMakeFiles/ISOLDE.dir/src/runAction.cc.o" \
 "CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o"
 
 # External object files for target ISOLDE
@@ -185,10 +215,12 @@ ISOLDE_EXTERNAL_OBJECTS =
 
 ISOLDE: CMakeFiles/ISOLDE.dir/ISOLDE.cc.o
 ISOLDE: CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o
-ISOLDE: CMakeFiles/ISOLDE.dir/src/action.cc.o
+ISOLDE: CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.o
 ISOLDE: CMakeFiles/ISOLDE.dir/src/construction.cc.o
-ISOLDE: CMakeFiles/ISOLDE.dir/src/generator.cc.o
+ISOLDE: CMakeFiles/ISOLDE.dir/src/eventAction.cc.o
 ISOLDE: CMakeFiles/ISOLDE.dir/src/physicsList.cc.o
+ISOLDE: CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.o
+ISOLDE: CMakeFiles/ISOLDE.dir/src/runAction.cc.o
 ISOLDE: CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o
 ISOLDE: CMakeFiles/ISOLDE.dir/build.make
 ISOLDE: CMakeFiles/ISOLDE.dir/compiler_depend.ts
@@ -238,7 +270,7 @@ ISOLDE: /home/ngustafs/miniforge3/envs/geant4/lib/libCLHEP-2.4.7.1.so
 ISOLDE: /home/ngustafs/miniforge3/envs/geant4/lib/libThread.so.6.40.02
 ISOLDE: /home/ngustafs/miniforge3/envs/geant4/lib/libCore.so.6.40.02
 ISOLDE: CMakeFiles/ISOLDE.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ngustafs/ISOLDE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable ISOLDE"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ngustafs/ISOLDE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable ISOLDE"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ISOLDE.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -6,10 +6,12 @@
 
 #include "construction.hh"
 #include "physicsList.hh"
-#include "action.hh"
+#include "actionInitialization.hh"
+#include "eventAction.hh"
 
 #define USE_GPS
-// #define USE_GUI
+
+
 int main(int argc, char** argv)
 {
     bool useGUI = false;

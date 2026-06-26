@@ -1,5 +1,6 @@
 #define USE_GPS
-#include "generator.hh"
+#include "primaryGeneratorAction.hh"
+
 
 MyPrimaryGenerator::MyPrimaryGenerator()
 {

@@ -4,10 +4,12 @@ ISOLDE: \
   /home/ngustafs/miniforge3/envs/geant4/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o \
   CMakeFiles/ISOLDE.dir/ISOLDE.cc.o \
   CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o \
-  CMakeFiles/ISOLDE.dir/src/action.cc.o \
+  CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.o \
   CMakeFiles/ISOLDE.dir/src/construction.cc.o \
-  CMakeFiles/ISOLDE.dir/src/generator.cc.o \
+  CMakeFiles/ISOLDE.dir/src/eventAction.cc.o \
   CMakeFiles/ISOLDE.dir/src/physicsList.cc.o \
+  CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.o \
+  CMakeFiles/ISOLDE.dir/src/runAction.cc.o \
   CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o \
   /home/ngustafs/miniforge3/envs/geant4/lib/libG4Tree.so \
   /home/ngustafs/miniforge3/envs/geant4/lib/libG4FR.so \
@@ -92,13 +94,17 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o:
 
 CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o:
 
-CMakeFiles/ISOLDE.dir/src/action.cc.o:
+CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.o:
 
 CMakeFiles/ISOLDE.dir/src/construction.cc.o:
 
-CMakeFiles/ISOLDE.dir/src/generator.cc.o:
+CMakeFiles/ISOLDE.dir/src/eventAction.cc.o:
 
 CMakeFiles/ISOLDE.dir/src/physicsList.cc.o:
+
+CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.o:
+
+CMakeFiles/ISOLDE.dir/src/runAction.cc.o:
 
 CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o:
 

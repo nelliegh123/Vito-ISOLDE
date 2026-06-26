@@ -1,9 +1,7 @@
-CMakeFiles/ISOLDE.dir/src/action.cc.o: \
- /home/ngustafs/ISOLDE/src/action.cc \
+CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.o: \
+ /home/ngustafs/ISOLDE/src/primaryGeneratorAction.cc \
  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/stdc-predef.h \
- /home/ngustafs/ISOLDE/include/action.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserActionInitialization.hh \
- /home/ngustafs/ISOLDE/include/generator.hh \
+ /home/ngustafs/ISOLDE/include/primaryGeneratorAction.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleGun.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/globals.hh \
@@ -452,66 +450,4 @@ CMakeFiles/ISOLDE.dir/src/action.cc.o: \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Geantino.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4IonTable.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Ions.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTable.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AnalysisManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GenericAnalysisManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ToolsAnalysisManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VAnalysisManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AnalysisManagerState.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AnalysisVerbose.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AnalysisUtilities.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VTBaseHnManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4HnInformation.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4BinScheme.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Fcn.hh \
- /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/utility \
- /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_relops.h \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VAnalysisManager.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4HnManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4BaseAnalysisManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NtupleBookingManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/ntuple_booking \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/cids \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/cid \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/typedefs \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/forit \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NtupleBookingManager.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VNtupleManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VFileManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4BaseFileManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VTHnFileManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TH1ToolsManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4THnToolsManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4THnManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4THnManager.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4THnMessenger.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4THnToolsManager.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4THnMessenger.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Tokenizer.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TH2ToolsManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TH3ToolsManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TP1ToolsManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TP2ToolsManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/h1d \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/h1 \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/b1 \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/base_histo \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/histo_data \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/axes \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/axis \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/eqT \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/h2d \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/h2 \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/b2 \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/h3d \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/h3 \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/b3 \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/p1d \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/p1 \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/profile_data \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/p2d \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/p2 \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ToolsAnalysisManager.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GenericAnalysisManager.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GenericFileManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GenericFileManager.icc
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTable.hh

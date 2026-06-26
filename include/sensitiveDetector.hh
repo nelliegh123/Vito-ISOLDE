@@ -16,10 +16,12 @@ public:
 
     void EndOfEvent(G4HCofThisEvent*) override;
 
+    G4int GetCount() const {return fCounter;}
+
     std::unique_ptr<TFile> detector1;
 
 private:
-    int fCounter = 0;
+    G4int fCounter = 0;
 };
 
 #endif
