@@ -20,17 +20,14 @@ public:
     ~MyPrimaryGenerator();
 
     virtual void GeneratePrimaries(G4Event*);
-
-    virtual void SetNewValue(G4UIcommand* command, G4String newValue) override; //
-
-    G4double GetCurrentAngle() const { return fCurrentAngle; } //
+    virtual void SetNewValue(G4UIcommand*, G4String) override;
+    G4double GetAngle() const { return fAngle; }
 
 private: 
     G4ParticleGun *fParticleGun;
     G4GeneralParticleSource *fGPS;
-
-    G4double fCurrentAngle; //
-    G4UIcmdWithADouble* fAngleCmd;//
+    G4UIcmdWithADouble *fAngleCmd;
+    G4double fAngle;
 };
 
 #endif

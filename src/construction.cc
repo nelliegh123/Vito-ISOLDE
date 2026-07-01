@@ -86,6 +86,8 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     logicDetector2->SetSensitiveDetector(sd2);
 
     
+
+    
     //====================================================================================
     //                             Activating the Magnetic Field
     //====================================================================================

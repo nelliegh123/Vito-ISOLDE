@@ -31,31 +31,18 @@ void eventAction::EndOfEventAction(const G4Event* event) {
         energy = event->GetPrimaryVertex(0)->GetPrimary(0)->GetKineticEnergy();
     }
 
-
-    auto analysisManager = G4AnalysisManager::Instance();
-    //////////////////////////////////
-    auto runManager = G4RunManager::GetRunManager();
-    auto genAction = static_cast<const MyPrimaryGenerator*>(runManager->GetUserPrimaryGeneratorAction());
-    
+    auto generatorAction = static_cast<const MyPrimaryGenerator*>(
+        G4RunManager::GetRunManager()->GetUserPrimaryGeneratorAction());
     G4double angle = 0.0;
-    if (genAction) {
-        angle = genAction->GetCurrentAngle();
+    if (generatorAction) {
+        angle = generatorAction->GetAngle();
     }
 
-
-    
-    // Fill Histogram (e.g., H1 index 4 is Counts vs Angle)
-    // x = angle, weight = detector counts
-    analysisManager->FillH1(2, angle, det1->GetCount());
-    analysisManager->FillH1(3, angle, det2->GetCount());
-    //////////////////////////
-
-
-
+    auto analysisManager = G4AnalysisManager::Instance();
 
     analysisManager->FillH1(0, energy, det1->GetCount());
     analysisManager->FillH1(1, energy, det2->GetCount());
-    // analysisManager->FillH1(2, energy, det1->GetCount());
-    // analysisManager->FillH1(3, energy, det2->GetCount());
-
+    // G4cout << det2->GetCount() << G4endl;
+    analysisManager->FillH1(2, angle, det1->GetCount());
+    analysisManager->FillH1(3, angle, det2->GetCount());
 }

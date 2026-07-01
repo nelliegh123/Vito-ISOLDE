@@ -10,7 +10,12 @@
 
 
 /control/loop angle_scan_step.mac pos 0 10 1
-/control/loop angle_scan_step2.mac pos 10 1 1
+
+/control/loop angle_scan_step2.mac pos 9 0 1
+
+/control/loop angle_scan_step3.mac pos -1 -10 1
+
+/control/loop angle_scan_step4.mac pos 9 0 1
 
 /analysis/write
 /analysis/closeFile

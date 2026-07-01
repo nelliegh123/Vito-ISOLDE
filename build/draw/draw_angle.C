@@ -3,15 +3,15 @@
 #include <TCanvas.h>
 #include <TStyle.h>
 
-void draw() {
-    TFile *f = TFile::Open("TotalEnergyScan.root");
+void draw_angle() {
+    TFile *f = TFile::Open("TotalAngleScan.root");
     if (!f || f->IsZombie()) {
-        printf("Error: Could not open TotalEnergyScan.root\n");
+        printf("Error: Could not open TotalAngleScan.root\n");
         return;
     }
 
-    TH1D *h1 = (TH1D*)f->Get("Detector1_Scan");
-    TH1D *h2 = (TH1D*)f->Get("Detector2_Scan");
+    TH1D *h1 = (TH1D*)f->Get("Detector1_Scan_Angle");
+    TH1D *h2 = (TH1D*)f->Get("Detector2_Scan_Angle");
 
     if (!h1 || !h2) {
         printf("Error: Could not find the histograms inside the file!\n");
@@ -30,7 +30,7 @@ void draw() {
     h2->SetLineColor(kBlack);
     h2->SetLineWidth(2);
     h2->GetXaxis()->CenterTitle();
-    h2->GetXaxis()->SetTitle("Energy [MeV]");
+    h2->GetXaxis()->SetTitle("Angle [deg]");
     h2->GetYaxis()->CenterTitle();
     h2->GetYaxis()->SetTitle("Counts");
 

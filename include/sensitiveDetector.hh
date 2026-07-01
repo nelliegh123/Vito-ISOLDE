@@ -3,6 +3,7 @@
 
 #include "G4VSensitiveDetector.hh"
 #include <TFile.h>
+#include <set>
 
 class MySensitiveDetector : public G4VSensitiveDetector
 {
@@ -22,6 +23,8 @@ public:
 
 private:
     G4int fCounter = 0;
+    G4String particleName;
+    std::set<G4int> seenTracks;
 };
 
 #endif
