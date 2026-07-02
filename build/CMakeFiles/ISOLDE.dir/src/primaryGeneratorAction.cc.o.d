@@ -3,7 +3,11 @@ CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.o: \
  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/stdc-predef.h \
  /home/ngustafs/ISOLDE/include/primaryGeneratorAction.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleGun.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UImessenger.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIdirectory.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIcommand.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ApplicationState.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ThreeVector.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/globals.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ios.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Types.hh \
@@ -253,21 +257,22 @@ CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.o: \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/parse_numbers.h \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/std_mutex.h \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/unique_lock.h \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPrimaryGenerator.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ThreeVector.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/ThreeVector.h \
  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/defs.h \
  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/ThreeVector.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleDefinition.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PDefManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AutoLock.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Threading.hh \
- /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/chrono \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIparameter.hh \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/vector \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_uninitialized.h \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_vector.h \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_bvector.h \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/vector.tcc \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleGun.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPrimaryGenerator.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleDefinition.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PDefManager.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AutoLock.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Threading.hh \
+ /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/chrono \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/shared_ptr.h \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/shared_ptr_base.h \
  /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/allocated_ptr.h \
@@ -438,10 +443,6 @@ CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.o: \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SPSEneDistribution.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSourceMessenger.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UImessenger.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIdirectory.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIcommand.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ApplicationState.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIparameter.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSourceData.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SystemOfUnits.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTable.hh \

@@ -12,7 +12,10 @@ public:
     virtual ~runAction() override = default;
 
     virtual void BeginOfRunAction(const G4Run*) override;
-    virtual void EndOfRunAction(const G4Run*) override;
+    virtual void EndOfRunAction(const G4Run* run) override;
+
+private:
+    // G4int fNEvents = 0;
 };
 
 #endif
