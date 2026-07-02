@@ -1,3 +1,2 @@
 /gps/direction 0 10 {pos}  
-/mygen/setAngle {pos}
 /run/beamOn 1000

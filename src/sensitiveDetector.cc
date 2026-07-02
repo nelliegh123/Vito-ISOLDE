@@ -30,12 +30,6 @@ G4bool MySensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory*)
     seenTracks.insert(id);
 
     fCounter++;
-
-    
-    // G4cout << "==============================" << G4endl;
-    // std::cout << particleName << std::endl;
-    // G4cout << "==============================" << G4endl;
-
     return true;
 
 }

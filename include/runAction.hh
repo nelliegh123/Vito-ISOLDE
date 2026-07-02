@@ -15,7 +15,7 @@ public:
     virtual void EndOfRunAction(const G4Run* run) override;
 
 private:
-    G4int fNEvents = 0;
+    // G4int fNEvents = 0;
 };
 
 #endif

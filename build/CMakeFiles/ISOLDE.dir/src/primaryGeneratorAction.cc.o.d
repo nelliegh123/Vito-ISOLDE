@@ -451,5 +451,4 @@ CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.o: \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Geantino.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4IonTable.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Ions.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTable.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIcmdWithADouble.hh
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTable.hh
