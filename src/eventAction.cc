@@ -38,7 +38,7 @@ void eventAction::EndOfEventAction(const G4Event* event) {
             angle = dir.theta() * 180.0 / 3.14159265358979323846;
         }
     }
-    //////////////////////
+    
 
 
 
