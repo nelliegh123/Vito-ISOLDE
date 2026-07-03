@@ -8,9 +8,10 @@
 
 /analysis/openFile TotalAngleScan.root
 
-#/control/foreach angle_scan_step.mac pos "0.5 9.5"
+/control/foreach angle_scan_step2.mac pos "0.5 0.5"
 
-/control/loop angle_scan_step.mac pos 0 10 0.5
+
+#/control/loop angle_scan_step.mac pos 0 10 0.5
 #/control/loop angle_scan_step2.mac pos 1 9 1
 #/control/loop angle_scan_step3.mac pos -1 -10 -1
 #/control/loop angle_scan_step4.mac pos 9 0 -1

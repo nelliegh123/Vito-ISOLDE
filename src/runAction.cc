@@ -11,10 +11,10 @@ runAction::runAction() {
     // analysisManager->CreateH1("Detector2_Scan", "", 19, 0.75, 10.25);
     analysisManager->CreateH1("Detector1_Scan", "", 10, 0.5, 10.5);
     analysisManager->CreateH1("Detector2_Scan", "", 10, 0.5, 10.5);
-    analysisManager->CreateH1("Detector1_Scan_Angle", "Detector 1 angle", 40, 2.5, 182.5);
-    analysisManager->CreateH1("Detector2_Scan_Angle", "Detector 2 angle", 40, 2.5, 182.5);
-    // analysisManager->CreateH1("Detector2_Scan_Angle", "Detector 2 angle", 38, 2.5, 182.5);
-    // analysisManager->CreateH1("Detector2_Scan_Angle", "Detector 2 angle", 38, 2.5, 182.5);
+    // analysisManager->CreateH1("Detector1_Scan_Angle", "Detector 1 angle", 38, 1.956521739, 182);
+    // analysisManager->CreateH1("Detector2_Scan_Angle", "Detector 2 angle", 38, 2, 181.956521739);
+    analysisManager->CreateH1("Detector1_Scan_Angle", "Detector 2 angle", 50, -2, 182);
+    analysisManager->CreateH1("Detector2_Scan_Angle", "Detector 2 angle", 50, -2, 182);
     
 }
 

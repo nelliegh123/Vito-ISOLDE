@@ -25,6 +25,8 @@ void draw_angle() {
     h1->GetXaxis()->SetTitle("Energy [MeV]");
     h1->GetYaxis()->CenterTitle();
     h1->GetYaxis()->SetTitle("Counts");
+    h1->Scale(1.0 / 1000.0);
+
 
  
     h2->SetLineColor(kBlack);
@@ -33,6 +35,8 @@ void draw_angle() {
     h2->GetXaxis()->SetTitle("Angle [deg]");
     h2->GetYaxis()->CenterTitle();
     h2->GetYaxis()->SetTitle("Counts");
+    h2->Scale(1.0 / 1000.0);
+
 
 
    
