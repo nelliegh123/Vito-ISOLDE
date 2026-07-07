@@ -1,6 +1,6 @@
 TH2D *h2 = new TH2D("h2", "Angle vs Energy",
                      46, 0, 180,   // x-axis = angle
-                     10, 0, 10);
+                     19, 0, 10);
 
 
 #include <TFile.h>
@@ -29,18 +29,25 @@ void draw_angle_energy() {
     TCanvas *c1 = new TCanvas("c1", "Detector 1 Energy Scan", 700, 500);
     h1->GetXaxis()->CenterTitle();
     h1->GetXaxis()->SetTitle("Angle [deg]");
+    h1->GetXaxis()->SetTitleOffset(1.5);
     h1->GetYaxis()->CenterTitle();
     h1->GetYaxis()->SetTitle("Energy [MeV]");
+    h1->GetYaxis()->SetTitleOffset(1.5);
     h1->Scale(1.0 / 100.0);
-    h1->Draw("LEGO");
+    h1->SetBarWidth(1.0);
+
+    h1->Draw("LEGO2");
 
     TCanvas *c2 = new TCanvas("c2", "Detector 2 Energy Scan", 700, 500);
     h2->GetXaxis()->CenterTitle();
     h2->GetXaxis()->SetTitle("Angle [deg]");
+    h2->GetXaxis()->SetTitleOffset(1.5);
     h2->GetYaxis()->CenterTitle();
     h2->GetYaxis()->SetTitle("Energy [MeV]");
+    h2->GetYaxis()->SetTitleOffset(1.5);
+    h2->SetBarWidth(1.0);
     h2->Scale(1.0 / 100.0);
-    h2->Draw("LEGO");
+    h2->Draw("LEGO2");
 
 
 
