@@ -5,7 +5,7 @@
 
 void draw_angle() {
     gStyle->SetOptStat(0);
-    
+
     TFile *f = TFile::Open("TotalAngleScan.root");
     if (!f || f->IsZombie()) {
         printf("Error: Could not open TotalAngleScan.root\n");
@@ -46,23 +46,33 @@ void draw_angle() {
 
 
 
-    TH1 *hsum = (TH1*)h1->Clone("hsum");
-    hsum->Add(h2);
-    hsum->SetLineColor(kBlack);
-    hsum->SetLineWidth(3);
-    hsum->SetLineStyle(9);
-    hsum->Draw("HIST SAME");
-
-
     auto legend = new TLegend(0.68, 0.55, 0.89, 0.68);
     legend->SetHeader("Energy = 10 MeV"); // option "C" allows to center the header
     legend->AddEntry(h1,"Front Detector");
     legend->AddEntry(h2,"Rear Detector");
     legend->Draw();
 
+
+
+    // TCanvas *c2 = new TCanvas("c2", "Detector 2 Energy Scan", 700, 500);
+    TH1 *hsum = (TH1*)h1->Clone("hsum");
+    hsum->Add(h2); 
+    // hsum->Divide(h2); 
+    hsum->SetLineColor(kBlack);
+    hsum->SetLineWidth(3);
+    hsum->SetLineStyle(9);
+    hsum->Draw("HIST same");
     
-    c1->SaveAs("AngleScan.pdf");
+    // c1->SaveAs("AngleScan.pdf");
     
+
+
+
+
+
+
+
+
 
     for (int i = 1; i <= hsum->GetNbinsX(); i++) {
             if (hsum->GetBinContent(i) > 1.0) {

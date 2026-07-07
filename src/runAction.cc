@@ -5,16 +5,30 @@
 
 runAction::runAction() {
     auto analysisManager = G4AnalysisManager::Instance();
-    analysisManager->SetVerboseLevel(1);
+    analysisManager->SetVerboseLevel(2);
+    
 
+    // ----------Energy Scan--------------
     // analysisManager->CreateH1("Detector1_Scan", "", 19, 0.75, 10.25);
     // analysisManager->CreateH1("Detector2_Scan", "", 19, 0.75, 10.25);
     analysisManager->CreateH1("Detector1_Scan", "", 10, 0.5, 10.5);
     analysisManager->CreateH1("Detector2_Scan", "", 10, 0.5, 10.5);
-    // analysisManager->CreateH1("Detector1_Scan_Angle", "Detector 1 angle", 38, 1.956521739, 182);
-    // analysisManager->CreateH1("Detector2_Scan_Angle", "Detector 2 angle", 38, 2, 181.956521739);
-    analysisManager->CreateH1("Detector1_Scan_Angle", "Detector 2 angle", 50, -2, 182);
-    analysisManager->CreateH1("Detector2_Scan_Angle", "Detector 2 angle", 50, -2, 182);
+
+    // ----------Angle Scan--------------
+    analysisManager->CreateH1("Detector1_Scan_Angle", "Detector 2 angle", 46, -2, 182);
+    analysisManager->CreateH1("Detector2_Scan_Angle", "Detector 2 angle", 46, -2, 182);
+
+
+    // ----------Energy and Angle Scan--------------
+    G4int id1 = analysisManager->CreateH2("Detector_E_vs_Angle_1", "Energy vs Angle Det 1",
+    46, -2, 182,       // x-axis (angle)
+    10, 0.5, 10.5);    // y-axis (energy)
+    G4int id2 = analysisManager->CreateH2("Detector_E_vs_Angle_2", "Energy vs Angle Det 2",
+    46, -2, 182,       // x-axis (angle)
+    10, 0.5, 10.5);    // y-axis (energy)
+
+    G4cout << "--------------------------------------H2 IDs------------------: " << id1 << " " << id2 << G4endl;
+    
     
 }
 

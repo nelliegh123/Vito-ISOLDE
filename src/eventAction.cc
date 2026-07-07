@@ -28,7 +28,6 @@ void eventAction::EndOfEventAction(const G4Event* event) {
 
     G4double energy = 0.0;
 
-    //////////////////
     G4double angle = 0.0;
     if (event->GetNumberOfPrimaryVertex() > 0) {
         auto primaryParticle = event->GetPrimaryVertex(0)->GetPrimary(0);
@@ -40,20 +39,6 @@ void eventAction::EndOfEventAction(const G4Event* event) {
     }
     
 
-
-
-
-    // if (event->GetNumberOfPrimaryVertex() > 0) {
-    //     energy = event->GetPrimaryVertex(0)->GetPrimary(0)->GetKineticEnergy();
-    // }
-
-    // auto generatorAction = static_cast<const MyPrimaryGenerator*>(
-    //     G4RunManager::GetRunManager()->GetUserPrimaryGeneratorAction());
-    // G4double angle = 0.0;
-    // if (generatorAction) {
-    //     angle = generatorAction->GetAngle();
-    // }
-
     auto analysisManager = G4AnalysisManager::Instance();
 
     analysisManager->FillH1(0, energy, det1->GetCount());
@@ -61,4 +46,10 @@ void eventAction::EndOfEventAction(const G4Event* event) {
 
     analysisManager->FillH1(2, angle, det1->GetCount());
     analysisManager->FillH1(3, angle, det2->GetCount());
+
+    analysisManager->FillH2(0, angle, energy, det1->GetCount());
+    analysisManager->FillH2(1, angle, energy, det2->GetCount());
+
+
+    
 }
