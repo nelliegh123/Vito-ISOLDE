@@ -1,13 +1,17 @@
 #!/bin/bash
 
-numberOfParticles=10
+numberOfParticles=100
 macroFile=angle_scan_full.mac
 
 cd ..
 
 make 
 
-python angle_python.py $numberOfParticles  
+cd runScripts
+
+python angle_python.py $numberOfParticles 
+
+cd ..
 
 ./ISOLDE $macroFile 
 

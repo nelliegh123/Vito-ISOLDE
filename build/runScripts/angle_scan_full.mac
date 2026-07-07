@@ -7,96 +7,96 @@
 /gps/ene/mono 5 MeV
 /analysis/openFile TotalAngleScan.root
 /gps/direction 0 0.000000 1.000000
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.069756 0.997564
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.139173 0.990268
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.207912 0.978148
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.275637 0.961262
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.342020 0.939693
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.406737 0.913545
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.469472 0.882948
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.529919 0.848048
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.587785 0.809017
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.642788 0.766044
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.694658 0.719340
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.743145 0.669131
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.788011 0.615661
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.829038 0.559193
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.866025 0.500000
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.898794 0.438371
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.927184 0.374607
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.951057 0.309017
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.970296 0.241922
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.984808 0.173648
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.994522 0.104528
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.999391 0.034899
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.999391 -0.034899
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.994522 -0.104528
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.984808 -0.173648
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.970296 -0.241922
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.951057 -0.309017
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.927184 -0.374607
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.898794 -0.438371
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.866025 -0.500000
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.829038 -0.559193
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.788011 -0.615661
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.743145 -0.669131
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.694658 -0.719340
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.642788 -0.766044
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.587785 -0.809017
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.529919 -0.848048
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.469472 -0.882948
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.406737 -0.913545
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.342020 -0.939693
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.275637 -0.961262
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.207912 -0.978148
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.139173 -0.990268
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.069756 -0.997564
-/run/beamOn 10
+/run/beamOn 100
 /gps/direction 0 0.000000 -1.000000
-/run/beamOn 10
+/run/beamOn 100
 /analysis/write
 /analysis/closeFile

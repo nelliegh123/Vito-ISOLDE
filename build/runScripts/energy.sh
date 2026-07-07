@@ -1,13 +1,17 @@
 #!/bin/bash
 
-numberOfParticles=1000
+numberOfParticles=100
 macroFile=energy_scan_full.mac
 
 cd ..
 
 make 
 
-python energy_scan.py $numberOfParticles  
+cd runScripts
+
+python energy_scan.py $numberOfParticles 
+
+cd ..
 
 ./ISOLDE $macroFile 
 

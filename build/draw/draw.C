@@ -56,6 +56,9 @@ void draw() {
     legend2->AddEntry(h2,"Rear Detector");
     legend2->Draw();
 
+    c1->SaveAs("Plots/EnergyScan1.pdf");
+    c2->SaveAs("Plots/EnergyScan2.pdf");
+
 }
 
 

@@ -63,7 +63,8 @@ void draw_angle() {
     hsum->SetLineStyle(9);
     hsum->Draw("HIST same");
     
-    // c1->SaveAs("AngleScan.pdf");
+    c1->SaveAs("Plots/AngleScan1.pdf");
+    
     
 
 
