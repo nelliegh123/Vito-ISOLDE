@@ -3,4 +3,12 @@
 numberOfParticles=1
 macroFile=energy_angle_scan_full.mac
 
-cd .. && make && python energy_angle_scan.py $numberOfParticles  && ./ISOLDE $macroFile && root draw/draw_angle_energy.C
+cd ..
+
+make 
+
+python energy_angle_scan.py $numberOfParticles  
+
+./ISOLDE $macroFile 
+
+root draw/draw_angle_energy.C
