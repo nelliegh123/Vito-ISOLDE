@@ -73,8 +73,6 @@ void draw_angle() {
 
 
 
-
-
     for (int i = 1; i <= hsum->GetNbinsX(); i++) {
             if (hsum->GetBinContent(i) > 1.0) {
             std::cout << "Larger than 1 at " << hsum->GetBinCenter(i) << std::endl;
