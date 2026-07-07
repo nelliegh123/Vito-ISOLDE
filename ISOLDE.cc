@@ -51,7 +51,9 @@ int main(int argc, char** argv)
     // UImanager->ApplyCommand("/control/macroPath macros");
     // UImanager->ApplyCommand("/control/execute energy_scan.mac");
     // UImanager->ApplyCommand("/control/execute angle_scan.mac");
-    UImanager->ApplyCommand("/control/execute angle_scan_full.mac");
+
+    // UImanager->ApplyCommand("/control/execute angle_scan_full.mac");
+    UImanager->ApplyCommand("/control/execute energy_angle_scan_full.mac");
 #else
     runManager->BeamOn(100);
 #endif
