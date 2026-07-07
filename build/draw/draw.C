@@ -7,10 +7,19 @@
 
 void draw() {
     TFile *f = TFile::Open("TotalEnergyScan.root");
-    // TCanvas *c1 = new TCanvas("c1", "c1", 600, 400);
-    // TCanvas *c2 = new TCanvas("c2", "c2", 600, 400);
+    if (!f || f->IsZombie()) {
+        printf("Error: Could not open TotalEnergyScan.root\n");
+        return;
+    }
+
     TH1D *h1 = (TH1D*)f->Get("Detector1_Scan");
     TH1D *h2 = (TH1D*)f->Get("Detector2_Scan");
+
+    if (!h1 || !h2) {
+        printf("Error: Could not find the histograms inside the file!\n");
+        return;
+    }
+
 
     h1->SetLineWidth(2);
     h1->GetXaxis()->CenterTitle();

@@ -50,11 +50,10 @@ int main(int argc, char** argv)
 #ifdef USE_GPS
     // UImanager->ApplyCommand("/control/macroPath macros");
     // UImanager->ApplyCommand("/control/execute energy_scan.mac");
-    // UImanager->ApplyCommand("/control/execute angle_scan.mac");
 
-    // UImanager->ApplyCommand("/control/execute angle_scan_full.mac");
-    // UImanager->ApplyCommand("/control/execute " + macroFile);
+
     
+
     if (argc > 1) {
         G4String macroFile = argv[1];
 
