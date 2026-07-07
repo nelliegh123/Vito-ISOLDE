@@ -2,6 +2,9 @@
 
 numberOfParticles=100
 macroFile=energy_scan_full.mac
+angle=0
+
+outputFile="TotalAngleScan.root"
 
 cd ..
 
@@ -9,7 +12,7 @@ make
 
 cd runScripts
 
-python energy_scan.py $numberOfParticles 
+python energy_scan.py $numberOfParticles $angle $outputFile
 
 cd ..
 
