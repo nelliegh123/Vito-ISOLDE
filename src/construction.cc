@@ -91,10 +91,10 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     //====================================================================================
     //                             Activating the Magnetic Field
     //====================================================================================
-    G4MagneticField* magField = new VITOMagneticField("field1Axial.txt",
-                                                      "field1Radial.txt", 
-                                                      "field2Axial.txt", 
-                                                      "field2Radial.txt");
+    G4MagneticField* magField = new VITOMagneticField("Field/field1Axial.txt",
+                                                      "Field/field1Radial.txt", 
+                                                      "Field/field2Axial.txt", 
+                                                      "Field/field2Radial.txt");
     fField.Put(magField);
 
     G4FieldManager* pFieldMgr = G4TransportationManager::GetTransportationManager()->GetFieldManager();

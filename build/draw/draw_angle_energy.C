@@ -60,7 +60,8 @@ void draw_angle_energy() {
 
 
     
-    // c1->SaveAs("AngleScanenergy.pdf");
+    c1->SaveAs("Plots/AngleScanenergy.pdf");
+    c2->SaveAs("Plots/AngleScanEnergyD2.pdf");
     
 
 

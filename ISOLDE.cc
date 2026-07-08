@@ -57,7 +57,7 @@ int main(int argc, char** argv)
     if (argc > 1) {
         G4String macroFile = argv[1];
 
-        UImanager->ApplyCommand("/control/macroPath macros");
+        UImanager->ApplyCommand("/control/macroPath runScripts");
         UImanager->ApplyCommand("/control/execute " + macroFile);
     }
     else {
