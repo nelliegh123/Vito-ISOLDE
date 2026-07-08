@@ -8,7 +8,7 @@ TH2D *h2 = new TH2D("h2", "Angle vs Energy",
 #include <TCanvas.h>
 #include <TStyle.h>
 
-void draw_angle_energy() {
+void draw_angle_energy(double numberOfParticles=1.0) {
     gStyle->SetOptStat(0);
 
     TFile *f = TFile::Open("TotalAngleScan.root");
@@ -33,7 +33,7 @@ void draw_angle_energy() {
     h1->GetYaxis()->CenterTitle();
     h1->GetYaxis()->SetTitle("Energy [MeV]");
     h1->GetYaxis()->SetTitleOffset(1.5);
-    h1->Scale(1.0 / 100.0);
+    h1->Scale(1.0 / numberOfParticles);
     h1->SetBarWidth(1.0);
 
     h1->Draw("LEGO2");
@@ -46,27 +46,19 @@ void draw_angle_energy() {
     h2->GetYaxis()->SetTitle("Energy [MeV]");
     h2->GetYaxis()->SetTitleOffset(1.5);
     h2->SetBarWidth(1.0);
-    h2->Scale(1.0 / 100.0);
+    h2->Scale(1.0 / numberOfParticles);
     h2->Draw("LEGO2");
+    gPad->SetPhi(gPad->GetPhi() + 290);   // rotate view by 90° around Z
+    c2->Modified();
+    c2->Update();
 
+        
+    // c1->SaveAs("Plots/AngleScanenergy.pdf");
+    // c2->SaveAs("Plots/AngleScanEnergyD2.pdf");
 
-
-
-    // auto legend = new TLegend(0.68, 0.55, 0.89, 0.68);
-    // legend->SetHeader("Energy = 10 MeV"); // option "C" allows to center the header
-    // legend->AddEntry(h1,"Front Detector");
-    // legend->AddEntry(h2,"Rear Detector");
-    // legend->Draw();
-
-
+    c1->SaveAs("Plots/AngleScanEnergyD1_100.pdf");
+    c2->SaveAs("Plots/AngleScanEnergyD2_100.pdf");
     
-    c1->SaveAs("Plots/AngleScanenergy.pdf");
-    c2->SaveAs("Plots/AngleScanEnergyD2.pdf");
-    
-
-
-
-
 
 
 }

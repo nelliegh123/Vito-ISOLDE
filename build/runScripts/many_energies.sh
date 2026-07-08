@@ -21,4 +21,4 @@ do
     ./ISOLDE "$macroFile"
 done
 
-root draw/draw_many_energies.C
+root "draw/draw_many_energies.C($numberOfParticles)"
