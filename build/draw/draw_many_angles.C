@@ -3,7 +3,7 @@
 #include <TCanvas.h>
 #include <TStyle.h>
 
-void draw_many_angles() {
+void draw_many_angles(double numberOfParticles = 1) {
     gStyle->SetOptStat(0);
     std::vector<double> energies = {1, 3, 5, 7, 9}; 
     std::vector<int> colors = {kRed, kBlue, kGreen+2, kMagenta, kOrange+1};
@@ -15,7 +15,7 @@ void draw_many_angles() {
         TFile *f = TFile::Open(Form("rootFiles/Scan_%gMeV.root", energies[i]));
         TH1D *h = (TH1D*)f->Get("Detector1_Scan_Angle");
         h->SetDirectory(0);   // detach from file so it survives after f->Close()
-        h->Scale(1.0/100.0);
+        h->Scale(1.0/numberOfParticles);
         h->SetLineWidth(2);
         h->SetLineColor(colors[i]);
         h->GetXaxis()->SetTitle("Angle [Degrees]");
@@ -35,7 +35,7 @@ void draw_many_angles() {
         TFile *f = TFile::Open(Form("rootFiles/Scan_%gMeV.root", energies[i]));
         TH1D *h2 = (TH1D*)f->Get("Detector2_Scan_Angle");
         h2->SetDirectory(0);   // detach from file so it survives after f->Close()
-        h2->Scale(1.0/100.0);
+        h2->Scale(1.0/numberOfParticles);
         h2->SetLineWidth(2);
         h2->SetLineColor(colors[i]);
         h2->GetXaxis()->SetTitle("Angle [Degrees]");

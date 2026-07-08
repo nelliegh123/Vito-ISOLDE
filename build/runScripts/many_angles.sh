@@ -1,7 +1,7 @@
 #!/bin/bash
 
-numberOfParticles=100
-macroFile=angle_scan_full.mac
+numberOfParticles=10
+macroFile=angle_scan_full.mac0
 
 energies=(1 3 5 7 9)
 
@@ -21,4 +21,4 @@ do
     ./ISOLDE "$macroFile"
 done
 
-root draw/draw_many_angles.C
+root "draw/draw_many_angles.C($numberOfParticles)"

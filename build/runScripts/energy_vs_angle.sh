@@ -1,6 +1,6 @@
 #!/bin/bash
 
-numberOfParticles=10
+numberOfParticles=100
 macroFile=energy_angle_scan_full.mac
 
 cd ..
@@ -15,4 +15,4 @@ cd ..
 
 ./ISOLDE $macroFile 
 
-root draw/draw_angle_energy.C
+root "draw/draw_angle_energy.C($numberOfParticles)"
