@@ -1,6 +1,6 @@
 #!/bin/bash
 
-numberOfParticles=10
+numberOfParticles=1000
 macroFile=energy_scan_full.mac
 
 angles=(0 40 80 120 160)
