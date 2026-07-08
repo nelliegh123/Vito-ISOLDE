@@ -11,7 +11,7 @@ void draw_many_energies() {
     auto legend1 = new TLegend(0.65, 0.6, 0.89, 0.88);
 
     for (size_t i = 0; i < angles.size(); i++) {
-        TFile *f = TFile::Open(Form("Scan_%gDegrees.root", angles[i]));
+        TFile *f = TFile::Open(Form("rootFiles/Scan_%gDegrees.root", angles[i]));
         TH1D *h = (TH1D*)f->Get("Detector1_Scan");
         h->SetDirectory(0);   // detach from file so it survives after f->Close()
         h->Scale(1.0/1000.0);
@@ -28,7 +28,7 @@ void draw_many_energies() {
     auto legend2 = new TLegend(0.65, 0.6, 0.89, 0.88);
 
     for (size_t i = 0; i < angles.size(); i++) {
-        TFile *f = TFile::Open(Form("Scan_%gDegrees.root", angles[i]));
+        TFile *f = TFile::Open(Form("rootFiles/Scan_%gDegrees.root", angles[i]));
         TH1D *h2 = (TH1D*)f->Get("Detector2_Scan");
         h2->SetDirectory(0);   // detach from file so it survives after f->Close()
         h2->Scale(1.0/1000.0);

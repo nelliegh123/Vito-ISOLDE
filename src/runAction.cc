@@ -15,7 +15,7 @@ runAction::runAction() {
     // analysisManager->CreateH1("Detector2_Scan", "", 10, 0.5, 10.5);
 
     // ----------Angle Scan--------------
-    analysisManager->CreateH1("Detector1_Scan_Angle", "Detector 2 angle", 46, -2, 182);
+    analysisManager->CreateH1("Detector1_Scan_Angle", "Detector 1 angle", 46, -2, 182);
     analysisManager->CreateH1("Detector2_Scan_Angle", "Detector 2 angle", 46, -2, 182);
 
 

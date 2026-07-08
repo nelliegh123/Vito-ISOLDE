@@ -1,6 +1,6 @@
 #!/bin/bash
 
-numberOfParticles=1000
+numberOfParticles=10
 macroFile=energy_scan_full.mac
 
 angles=(0 40 80 120 160)
@@ -13,7 +13,7 @@ for angle in "${angles[@]}"
 do
     cd runScripts
 
-    outputFile="Scan_${angle}Degrees.root"
+    outputFile="rootFiles/Scan_${angle}Degrees.root"
     python energy_scan.py "$numberOfParticles" "$angle" "$outputFile"
 
     cd ..
