@@ -6,7 +6,8 @@
 #include "G4TransportationManager.hh"
 #include "G4FieldManager.hh"
 
-MyDetectorConstruction::MyDetectorConstruction()
+MyDetectorConstruction::MyDetectorConstruction(std::string sampleType, double sampleThickness) 
+: fSampleType(sampleType), fSampleThickness(sampleThickness)
 {}
 
 MyDetectorConstruction::~MyDetectorConstruction()
@@ -29,25 +30,55 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     logicWorld, "World", 0, false, 0, true);
 
 
+
+    if(fSampleType == "solid"){
     //====================================================================================
-    //                              Defining Sample
+    //                              Defining Solid Sample
     //====================================================================================
-    G4Material *solidSampleMat = nist->FindOrBuildMaterial("G4_MAGNESIUM_OXIDE");
+        G4Material *solidSampleMat = nist->FindOrBuildMaterial("G4_MAGNESIUM_OXIDE");
 
-    G4Tubs *solidSampleCylinder = new G4Tubs("solidSampleCylinder", 0., 0.5*cm, 0.5*mm, 0.*cm, 360.*cm);
-    G4Box *solidSampleSquare = new G4Box("solidSampleSquare", 0.5*cm, 0.5*cm, 0.5*mm);
+        G4Tubs *solidSampleCylinder = new G4Tubs("solidSampleCylinder", 0., 0.5*cm, fSampleThickness/2*mm, 0.*deg, 360.*deg);
+        G4Box *solidSampleSquare = new G4Box("solidSampleSquare", 0.5*cm, 0.5*cm, fSampleThickness/2*mm);
 
-    G4LogicalVolume *logicSampleCylinder = new G4LogicalVolume(solidSampleCylinder, solidSampleMat, 
-                                                               "logicSampleCylinder");
-    G4LogicalVolume *logicSampleSquare = new G4LogicalVolume(solidSampleSquare, solidSampleMat, 
-                                                             "logicSampleSquare");
+        G4LogicalVolume *logicSampleCylinder = new G4LogicalVolume(solidSampleCylinder, solidSampleMat, 
+                                                                "logicSampleCylinder");
+        G4LogicalVolume *logicSampleSquare = new G4LogicalVolume(solidSampleSquare, solidSampleMat, 
+                                                                "logicSampleSquare");
 
-    G4VPhysicalVolume *solidCylinder = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), logicSampleCylinder, 
-                                                              "solidCylinder", logicWorld, false, 0, true);
-    // G4VPhysicalVolume *solidSquare = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), logicSampleSquare, 
-                                                            //   "solidSquare", logicWorld, false, 0, true);
+        G4VPhysicalVolume *solidCylinder = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), logicSampleCylinder, 
+                                                                "solidCylinder", logicWorld, false, 0, true);
+        // G4VPhysicalVolume *solidSquare = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), logicSampleSquare, 
+                                                                //   "solidSquare", logicWorld, false, 0, true);
+    }
+    
+    else if(fSampleType == "liquid"){
+    //====================================================================================
+    //                              Defining Liquid Sample
+    //====================================================================================
+    //-------------Make muscovite mica disc------------------
+    G4Element* K = nist->FindOrBuildElement("K");
+    G4Element* Al = nist->FindOrBuildElement("Al");
+    G4Element* Si = nist->FindOrBuildElement("Si");
+    G4Element* O = nist->FindOrBuildElement("O");
+    G4Element* H = nist->FindOrBuildElement("H");
+    
+    G4Material* mica = new G4Material("Mica", 2.83*g/cm, 5);
+
+    mica->AddElement(K, 1);
+    mica->AddElement(Al, 3);
+    mica->AddElement(Si, 3);
+    mica->AddElement(O, 12);
+    mica->AddElement(H, 2);
 
 
+
+    }
+
+    else {
+        G4Exception("MyDetectorConstruction::Construct()", "InvalidSampleType", FatalException, ("Unknown sampleType: " + fSampleType).c_str());
+    }
+    
+    
 
     //====================================================================================
     //                              Defining Detector

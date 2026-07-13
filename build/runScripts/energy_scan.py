@@ -1,7 +1,7 @@
 import numpy as np
 import sys
 
-energy_start, energy_stop, n_steps = 1, 10, 19
+energy_start, energy_stop, n_steps = 1, 1, 19
 
 if len(sys.argv) > 1:
     numberOfParticles = int(sys.argv[1])

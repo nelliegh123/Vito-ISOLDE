@@ -2,7 +2,7 @@
 
 numberOfParticles=100
 macroFile=energy_scan_full.mac
-angle=0
+angle=45
 
 outputFile="TotalAngleScan.root"
 
