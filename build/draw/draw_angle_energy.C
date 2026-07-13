@@ -1,8 +1,3 @@
-TH2D *h2 = new TH2D("h2", "Angle vs Energy",
-                     46, 0, 180,   // x-axis = angle
-                     19, 0, 10);
-
-
 #include <TFile.h>
 #include <TH1D.h>
 #include <TCanvas.h>

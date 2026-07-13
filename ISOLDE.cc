@@ -22,8 +22,11 @@ int main(int argc, char** argv)
         }
     }
 
+    std::string sampleType = argv[2];
+    double sampleThickness = std::stod(argv[3]);
+
     G4RunManager* runManager = new G4RunManager();
-    runManager->SetUserInitialization(new MyDetectorConstruction());
+    runManager->SetUserInitialization(new MyDetectorConstruction(sampleType, sampleThickness));
     runManager->SetUserInitialization(new MyPhysicsList());
     runManager->SetUserInitialization(new MyActionInitialization());
     runManager->Initialize();
@@ -53,7 +56,6 @@ int main(int argc, char** argv)
 
 
     
-
     if (argc > 1) {
         G4String macroFile = argv[1];
 
@@ -63,6 +65,7 @@ int main(int argc, char** argv)
     else {
         G4cerr << "No macro file provided!" << G4endl;
     }
+
 
 
 #else
