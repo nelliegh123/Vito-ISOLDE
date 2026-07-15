@@ -1,9 +1,6 @@
 import numpy as np
 import sys 
 
-theta_start, theta_stop, n_steps = 0, 180, 46
-energy_min, energy_max, n_energy_steps = 1, 10, 19
-
 if len(sys.argv) > 1:
     numberOfParticles = int(sys.argv[1])
 else:
@@ -11,9 +8,11 @@ else:
 sampleType = str(sys.argv[2])
 sampleThickness = float(sys.argv[3])
 liquidThickness = float(sys.argv[4])
+angle = float(sys.argv[5])
+energy = float(sys.argv[6])
 
 
-with open("energy_angle_scan_full.mac", "w") as f:
+with open("oneEnergyOneAngle.mac", "w") as f:
     if sampleType=="solid":
         f.write("/gps/pos/type Plane\n")
         f.write(f"/gps/pos/centre 0 0 {-sampleThickness/2.0:.6f} mm\n")
@@ -22,16 +21,17 @@ with open("energy_angle_scan_full.mac", "w") as f:
     elif sampleType=="liquid":
         z_center = -(sampleThickness / 2.0 + liquidThickness / 2.0)
         theta = np.radians(45.0)
-        # y_new = -z_center * np.sin(theta)
-        # z_new = z_center * np.cos(theta)
-        y_new = z_center * np.sin(theta) #Not sure which one to use
-        z_new = -z_center * np.cos(theta)
+        y_new = -z_center * np.sin(theta)
+        z_new = z_center * np.cos(theta)
+        # y_new = z_center * np.sin(theta) #Not sure which one to use
+        # z_new = -z_center * np.cos(theta)
 
         f.write("/gps/pos/type Volume\n")
         f.write("/gps/pos/shape Cylinder\n")
-        f.write(f"/gps/pos/centre 0 0 {z_center:.6f} mm\n")
+        # f.write(f"/gps/pos/centre 0 0 {z_center:.6f} mm\n")
 
         f.write(f"/gps/pos/halfz {liquidThickness/2.0:.6f} mm\n")
+        f.write(f"/gps/pos/centre 0 {y_new:.6f} {z_new:.6f} mm\n")
 
         f.write("/gps/pos/rot1 1 0 0\n")
         f.write("/gps/pos/rot2 0 0.707107 0.707107\n")
@@ -45,15 +45,13 @@ with open("energy_angle_scan_full.mac", "w") as f:
     f.write("/gps/ene/type Mono\n")
     f.write("/analysis/openFile TotalAngleScan.root\n")
 
-    for theta_deg in np.linspace(theta_start, theta_stop, n_steps):
-        for energy in np.linspace(energy_min, energy_max, n_energy_steps):
 
-            theta_rad = np.radians(theta_deg)
-            y, z = np.sin(theta_rad), np.cos(theta_rad)
-            f.write(f"/gps/direction 0 {y:.6f} {z:.6f}\n")
+    theta_rad = np.radians(angle)
+    y, z = np.sin(theta_rad), np.cos(theta_rad)
+    f.write(f"/gps/direction 0 {y:.6f} {z:.6f}\n")
 
-            f.write(f"/gps/ene/mono {energy:g} MeV\n")
-            f.write(f"/run/beamOn {numberOfParticles:g}\n")
+    f.write(f"/gps/ene/mono {energy:g} MeV\n")
+    f.write(f"/run/beamOn {numberOfParticles:g}\n")
 
     f.write("/analysis/write\n")
     f.write("/analysis/closeFile\n")
