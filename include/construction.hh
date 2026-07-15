@@ -17,7 +17,7 @@
 class MyDetectorConstruction : public G4VUserDetectorConstruction
 {
 public:
-    MyDetectorConstruction(std::string sampleType, double sampleThickness);
+    MyDetectorConstruction(std::string sampleType, double sampleThickness, double liquidThickness);
     ~MyDetectorConstruction();
 
     virtual G4VPhysicalVolume *Construct();
@@ -26,6 +26,7 @@ private:
     G4Cache<G4MagneticField*> fField; 
     std::string fSampleType;
     double fSampleThickness;
+    double fLiquidThickness;
 
 };
 

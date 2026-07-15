@@ -24,9 +24,10 @@ int main(int argc, char** argv)
 
     std::string sampleType = argv[2];
     double sampleThickness = std::stod(argv[3]);
+    double liquidThickness = std::stod(argv[4]);
 
     G4RunManager* runManager = new G4RunManager();
-    runManager->SetUserInitialization(new MyDetectorConstruction(sampleType, sampleThickness));
+    runManager->SetUserInitialization(new MyDetectorConstruction(sampleType, sampleThickness, liquidThickness));
     runManager->SetUserInitialization(new MyPhysicsList());
     runManager->SetUserInitialization(new MyActionInitialization());
     runManager->Initialize();

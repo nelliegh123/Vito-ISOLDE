@@ -1,8 +1,9 @@
+/gps/pos/type Volume
+/gps/pos/shape Cylinder
+/gps/pos/centre 0 0 -2.550000 mm
+/gps/pos/halfz 2.500000 mm
 /gps/particle e-
-/gps/pos/type Plane
-/gps/pos/shape Circle
 /gps/pos/radius 0.5 cm
-/gps/pos/centre 0 0 -0.5 mm
 /gps/ene/type Mono
 /analysis/openFile TotalAngleScan.root
 /gps/direction 0 0.000000 1.000000
