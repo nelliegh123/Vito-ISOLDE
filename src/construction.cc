@@ -75,7 +75,13 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
         G4LogicalVolume *logicSampleDisc = new G4LogicalVolume(liquidSampleDisc, mica,  
                                                                     "logicSampleDisc");
 
-        G4VPhysicalVolume *liquidDisc = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), logicSampleDisc, 
+        G4RotationMatrix* rot = new G4RotationMatrix();
+        rot->rotateX(-45.*deg);
+        G4double d = fSampleThickness/2.0 + fLiquidThickness/2.0;
+        G4double y = d * std::sin(45.*deg);
+        G4double z = -d * std::cos(45.*deg);
+        
+        G4VPhysicalVolume *liquidDisc = new G4PVPlacement(rot, G4ThreeVector(0., 0., 0.), logicSampleDisc, 
                                                                     "liquidDisc", logicWorld, false, 0, true);
 
 
@@ -95,8 +101,8 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
                                             0.*deg, 360.*deg);
         G4LogicalVolume *logicSampleEMIM = new G4LogicalVolume(liquidSampleEMIM, EMIMDCA,  
                                                                     "logicSampleEMIM");
-
-        G4VPhysicalVolume *liquidEMIM = new G4PVPlacement(0, G4ThreeVector(0., 0., -fSampleThickness/2.0-fLiquidThickness/2.0), logicSampleEMIM, 
+                                                            
+        G4VPhysicalVolume *liquidEMIM = new G4PVPlacement(rot, G4ThreeVector(0., y, z), logicSampleEMIM, 
                                                                     "liquidEMIM", logicWorld, false, 0, true);
 
     }

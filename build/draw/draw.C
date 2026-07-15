@@ -6,7 +6,7 @@
 
 
 void draw() {
-    TFile *f = TFile::Open("TotalEnergyScan.root");
+    TFile *f = TFile::Open("TotalAngleScan.root");
     if (!f || f->IsZombie()) {
         printf("Error: Could not open TotalEnergyScan.root\n");
         return;

@@ -1,0 +1,15 @@
+/gps/pos/type Volume
+/gps/pos/shape Cylinder
+/gps/pos/halfz 0.050000 mm
+/gps/pos/centre 0 0.070711 -0.070711 mm
+/gps/pos/rot1 1 0 0
+/gps/pos/rot2 0 0.707107 0.707107
+/gps/particle e-
+/gps/pos/radius 0.5 cm
+/gps/ene/type Mono
+/analysis/openFile TotalAngleScan.root
+/gps/direction 0 0.000000 -1.000000
+/gps/ene/mono 10 MeV
+/run/beamOn 10000
+/analysis/write
+/analysis/closeFile
