@@ -1,7 +1,6 @@
 #ifndef CONSTRUCTION_HH
 #define CONSTRUCTION_HH
 
-
 #include "G4VUserDetectorConstruction.hh"
 #include "G4VPhysicalVolume.hh"
 #include "G4LogicalVolume.hh"
@@ -13,6 +12,8 @@
 #include "G4Tubs.hh" 
 #include "G4Cache.hh"
 #include "G4MagneticField.hh"
+#include "G4RotationMatrix.hh"
+
 
 class MyDetectorConstruction : public G4VUserDetectorConstruction
 {
@@ -27,6 +28,7 @@ private:
     std::string fSampleType;
     double fSampleThickness;
     double fLiquidThickness;
+    G4RotationMatrix* fRot;
 
 };
 

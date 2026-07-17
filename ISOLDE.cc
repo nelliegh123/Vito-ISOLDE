@@ -14,6 +14,11 @@
 
 int main(int argc, char** argv)
 {
+    if (argc < 5) {
+    std::cerr << "Usage: " << argv[0] << " <macroFile> <sampleType> <sampleThickness> <liquidThickness> [--gui]" << std::endl;
+    return 1;
+    }
+
     bool useGUI = false;
 
     for (int i = 1; i < argc; i++) {

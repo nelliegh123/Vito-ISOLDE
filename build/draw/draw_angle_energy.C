@@ -52,8 +52,8 @@ void draw_angle_energy(double numberOfParticles=1.0) {
     // c2->SaveAs("Plots/AngleScanEnergyD2.pdf");
 
     
-    c1->SaveAs("Plots/AngleScanEnergyD1_100.pdf");
-    c2->SaveAs("Plots/AngleScanEnergyD2_100.pdf");
+    c1->SaveAs("Plots/AngleScanEnergyD1_10000.pdf");
+    c2->SaveAs("Plots/AngleScanEnergyD2_10000.pdf");
     
 
 

@@ -22,20 +22,17 @@ with open("energy_angle_scan_full.mac", "w") as f:
     elif sampleType=="liquid":
         z_center = -(sampleThickness / 2.0 + liquidThickness / 2.0)
         theta = np.radians(45.0)
-        # y_new = -z_center * np.sin(theta)
-        # z_new = z_center * np.cos(theta)
-        y_new = z_center * np.sin(theta) #Not sure which one to use
-        z_new = -z_center * np.cos(theta)
+        y_new = -z_center * np.sin(theta)
+        z_new = z_center * np.cos(theta)
 
         f.write("/gps/pos/type Volume\n")
         f.write("/gps/pos/shape Cylinder\n")
-        f.write(f"/gps/pos/centre 0 0 {z_center:.6f} mm\n")
+        f.write(f"/gps/pos/centre 0 {y_new:.6f} {z_new:.6f} mm\n")  
 
         f.write(f"/gps/pos/halfz {liquidThickness/2.0:.6f} mm\n")
 
         f.write("/gps/pos/rot1 1 0 0\n")
         f.write("/gps/pos/rot2 0 0.707107 0.707107\n")
-        # f.write("/gps/pos/confine liquidEMIM\n")
     
     else: 
         print("---------------Wrong sample-type, use liquid or solid!!------------")
@@ -45,15 +42,18 @@ with open("energy_angle_scan_full.mac", "w") as f:
     f.write("/gps/ene/type Mono\n")
     f.write("/analysis/openFile TotalAngleScan.root\n")
 
-    for theta_deg in np.linspace(theta_start, theta_stop, n_steps):
-        for energy in np.linspace(energy_min, energy_max, n_energy_steps):
+    f.write("/mygen/scanMode true\n")
+    f.write(f"/mygen/numParticlesPerPoint {numberOfParticles}\n")
+    f.write(f"/mygen/nAngleSteps {n_steps}\n")
+    f.write(f"/mygen/nEnergySteps {n_energy_steps}\n")
+    f.write(f"/mygen/thetaMin {theta_start}\n")
+    f.write(f"/mygen/thetaMax {theta_stop}\n")
+    f.write(f"/mygen/energyMin {energy_min}\n")
+    f.write(f"/mygen/energyMax {energy_max}\n")
 
-            theta_rad = np.radians(theta_deg)
-            y, z = np.sin(theta_rad), np.cos(theta_rad)
-            f.write(f"/gps/direction 0 {y:.6f} {z:.6f}\n")
-
-            f.write(f"/gps/ene/mono {energy:g} MeV\n")
-            f.write(f"/run/beamOn {numberOfParticles:g}\n")
+    # Run all events in a single run!
+    total_events = numberOfParticles * n_steps * n_energy_steps
+    f.write(f"/run/beamOn {total_events}\n")
 
     f.write("/analysis/write\n")
     f.write("/analysis/closeFile\n")

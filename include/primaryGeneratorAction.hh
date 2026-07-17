@@ -11,23 +11,30 @@
 #include "G4Geantino.hh"
 #include "G4IonTable.hh"
 
-class G4UIcmdWithADouble;
+class G4GenericMessenger;
 
-class MyPrimaryGenerator : public G4VUserPrimaryGeneratorAction, public G4UImessenger
+class MyPrimaryGenerator : public G4VUserPrimaryGeneratorAction
 {
 public: 
     MyPrimaryGenerator();
     ~MyPrimaryGenerator();
 
     virtual void GeneratePrimaries(G4Event*);
-    // virtual void SetNewValue(G4UIcommand*, G4String) override;
-    // G4double GetAngle() const { return fAngle; }
+
 
 private: 
     G4ParticleGun *fParticleGun;
     G4GeneralParticleSource *fGPS;
-    // G4UIcmdWithADouble *fAngleCmd;
-    // G4double fAngle;
+
+    G4GenericMessenger *fMessenger;
+    G4bool fScanMode;
+    G4int fNumParticlesPerPoint;
+    G4int fNAngleSteps;
+    G4int fNEnergySteps;
+    G4double fThetaMin;
+    G4double fThetaMax;
+    G4double fEnergyMin;
+    G4double fEnergyMax;
 };
 
 #endif

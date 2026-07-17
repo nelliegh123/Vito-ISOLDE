@@ -422,6 +422,7 @@ CMakeFiles/ISOLDE.dir/src/construction.cc.o: \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4CacheDetails.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4MagneticField.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Field.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4RotationMatrix.hh \
  /home/ngustafs/ISOLDE/include/sensitiveDetector.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VSensitiveDetector.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4CollectionNameVector.hh \
