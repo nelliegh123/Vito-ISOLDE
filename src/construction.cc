@@ -1,5 +1,6 @@
 #include "construction.hh"
 #include "sensitiveDetector.hh"
+#include "G4RotationMatrix.hh"
 
 #include "VITOMagneticField.hh"
 #include "G4SDManager.hh"
@@ -7,11 +8,13 @@
 #include "G4FieldManager.hh"
 
 MyDetectorConstruction::MyDetectorConstruction(std::string sampleType, double sampleThickness, double liquidThickness) 
-: fSampleType(sampleType), fSampleThickness(sampleThickness), fLiquidThickness(liquidThickness)
+: fSampleType(sampleType), fSampleThickness(sampleThickness), fLiquidThickness(liquidThickness), fRot(nullptr)
 {}
 
 MyDetectorConstruction::~MyDetectorConstruction()
-{}
+{
+    delete fRot;
+}
 
 G4VPhysicalVolume *MyDetectorConstruction::Construct()
 {
@@ -75,13 +78,13 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
         G4LogicalVolume *logicSampleDisc = new G4LogicalVolume(liquidSampleDisc, mica,  
                                                                     "logicSampleDisc");
 
-        G4RotationMatrix* rot = new G4RotationMatrix();
-        rot->rotateX(-45.*deg);
+        fRot = new G4RotationMatrix();
+        fRot->rotateX(-45.*deg);
         G4double d = fSampleThickness/2.0 + fLiquidThickness/2.0;
         G4double y = d * std::sin(45.*deg);
         G4double z = -d * std::cos(45.*deg);
         
-        G4VPhysicalVolume *liquidDisc = new G4PVPlacement(rot, G4ThreeVector(0., 0., 0.), logicSampleDisc, 
+        G4VPhysicalVolume *liquidDisc = new G4PVPlacement(fRot, G4ThreeVector(0., 0., 0.), logicSampleDisc, 
                                                                     "liquidDisc", logicWorld, false, 0, true);
 
 
@@ -102,7 +105,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
         G4LogicalVolume *logicSampleEMIM = new G4LogicalVolume(liquidSampleEMIM, EMIMDCA,  
                                                                     "logicSampleEMIM");
                                                             
-        G4VPhysicalVolume *liquidEMIM = new G4PVPlacement(rot, G4ThreeVector(0., y, z), logicSampleEMIM, 
+        G4VPhysicalVolume *liquidEMIM = new G4PVPlacement(fRot, G4ThreeVector(0., y, z), logicSampleEMIM, 
                                                                     "liquidEMIM", logicWorld, false, 0, true);
 
     }

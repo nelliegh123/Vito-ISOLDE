@@ -723,6 +723,7 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o: /home/ngustafs/ISOLDE/ISOLDE.cc \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4CacheDetails.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4MagneticField.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Field.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4RotationMatrix.hh \
  /home/ngustafs/ISOLDE/include/physicsList.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VModularPhysicsList.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPhysicsConstructor.hh \

@@ -53,6 +53,8 @@ private:
         G4double r_max = 0.0;
         G4double z_step = 0.0;
         G4double r_step = 0.0;
+        G4double z_inv_step = 0.0;
+        G4double r_inv_step = 0.0;
         G4bool is_uniform = false;
     };
 

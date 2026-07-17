@@ -2,8 +2,6 @@
 
 #include "G4Electron.hh"
 
-static std::set<G4int> globalSeenTracks;
-
 MySensitiveDetector::MySensitiveDetector(const G4String& name)
 : G4VSensitiveDetector(name)
 {}
@@ -11,7 +9,7 @@ MySensitiveDetector::MySensitiveDetector(const G4String& name)
 void MySensitiveDetector::Initialize(G4HCofThisEvent*)
 {
     fCounter = 0;
-    globalSeenTracks.clear();  
+    seenTracks.clear();  
 }
 
 G4bool MySensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory*)
@@ -29,11 +27,11 @@ G4bool MySensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory*)
 
     G4int id = track->GetTrackID();
 
-    if (globalSeenTracks.find(id) != globalSeenTracks.end())
+    if (seenTracks.find(id) != seenTracks.end())
         
         return false;
 
-    globalSeenTracks.insert(id);
+    seenTracks.insert(id);
 
     fCounter++;
     return true;

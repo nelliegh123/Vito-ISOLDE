@@ -17,7 +17,7 @@ cd runScripts
 python oneEnergyOneAngle.py $numberOfParticles $sampleType $sampleThickness $liquidThickness $angle $energy
 cd ..
 ./ISOLDE $macroFile $sampleType $sampleThickness $liquidThickness #--gui
-root draw/draw.C
+root "draw/draw_oneEnergyOneAngle.C($numberOfParticles)"
 
 
 

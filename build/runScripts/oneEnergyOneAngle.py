@@ -23,12 +23,9 @@ with open("oneEnergyOneAngle.mac", "w") as f:
         theta = np.radians(45.0)
         y_new = -z_center * np.sin(theta)
         z_new = z_center * np.cos(theta)
-        # y_new = z_center * np.sin(theta) #Not sure which one to use
-        # z_new = -z_center * np.cos(theta)
 
         f.write("/gps/pos/type Volume\n")
         f.write("/gps/pos/shape Cylinder\n")
-        # f.write(f"/gps/pos/centre 0 0 {z_center:.6f} mm\n")
 
         f.write(f"/gps/pos/halfz {liquidThickness/2.0:.6f} mm\n")
         f.write(f"/gps/pos/centre 0 {y_new:.6f} {z_new:.6f} mm\n")
@@ -43,7 +40,7 @@ with open("oneEnergyOneAngle.mac", "w") as f:
     f.write("/gps/particle e-\n")
     f.write("/gps/pos/radius 0.5 cm\n")
     f.write("/gps/ene/type Mono\n")
-    f.write("/analysis/openFile TotalAngleScan.root\n")
+    f.write("/analysis/openFile oneEnergyOneAngle.root\n")
 
 
     theta_rad = np.radians(angle)

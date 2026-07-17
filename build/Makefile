@@ -129,19 +129,6 @@ ISOLDE/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/build
 .PHONY : ISOLDE/fast
 
-#=============================================================================
-# Target rules for targets named Vito_ISOLDE
-
-# Build rule for target.
-Vito_ISOLDE: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Vito_ISOLDE
-.PHONY : Vito_ISOLDE
-
-# fast build rule for target.
-Vito_ISOLDE/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vito_ISOLDE.dir/build.make CMakeFiles/Vito_ISOLDE.dir/build
-.PHONY : Vito_ISOLDE/fast
-
 ISOLDE.o: ISOLDE.cc.o
 .PHONY : ISOLDE.o
 
@@ -366,7 +353,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Vito_ISOLDE"
 	@echo "... ISOLDE"
 	@echo "... ISOLDE.o"
 	@echo "... ISOLDE.i"
