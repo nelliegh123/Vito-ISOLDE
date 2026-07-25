@@ -12,8 +12,8 @@ void draw_angle_energy(double numberOfParticles=1.0) {
         return;
     }
 
-    TH1D *h1 = (TH1D*)f->Get("Detector_E_vs_Angle_1");
-    TH1D *h2 = (TH1D*)f->Get("Detector_E_vs_Angle_2");
+    TH2D *h1 = (TH2D*)f->Get("Detector_E_vs_Angle_1");
+    TH2D *h2 = (TH2D*)f->Get("Detector_E_vs_Angle_2");
 
     if (!h1 || !h2) {
         printf("Error: Could not find the histograms inside the file!\n");
@@ -52,8 +52,8 @@ void draw_angle_energy(double numberOfParticles=1.0) {
     // c2->SaveAs("Plots/AngleScanEnergyD2.pdf");
 
     
-    c1->SaveAs("Plots/AngleScanEnergyD1_10000.pdf");
-    c2->SaveAs("Plots/AngleScanEnergyD2_10000.pdf");
+    // c1->SaveAs("Plots/AngleScanEnergyD1_10000.pdf");
+    // c2->SaveAs("Plots/AngleScanEnergyD2_10000.pdf");
     
 
 

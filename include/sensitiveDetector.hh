@@ -21,10 +21,13 @@ public:
 
     std::unique_ptr<TFile> detector1;
 
+    G4double GetHitTime() const { return fHitTime; }
+
 private:
     G4int fCounter = 0;
     G4String particleName;
     std::set<G4int> seenTracks;
+    G4double fHitTime = -1.0;
 };
 
 #endif

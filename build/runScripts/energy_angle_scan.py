@@ -38,7 +38,7 @@ with open("energy_angle_scan_full.mac", "w") as f:
         print("---------------Wrong sample-type, use liquid or solid!!------------")
 
     f.write("/gps/particle e-\n")
-    f.write("/gps/pos/radius 0.5 cm\n")
+    f.write("/gps/pos/radius 0.4 cm\n")
     f.write("/gps/ene/type Mono\n")
     f.write("/analysis/openFile TotalAngleScan.root\n")
 
@@ -51,7 +51,6 @@ with open("energy_angle_scan_full.mac", "w") as f:
     f.write(f"/mygen/energyMin {energy_min}\n")
     f.write(f"/mygen/energyMax {energy_max}\n")
 
-    # Run all events in a single run!
     total_events = numberOfParticles * n_steps * n_energy_steps
     f.write(f"/run/beamOn {total_events}\n")
 
