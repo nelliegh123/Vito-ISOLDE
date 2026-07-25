@@ -40,7 +40,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     //====================================================================================
         G4Material *solidSampleMat = nist->FindOrBuildMaterial("G4_MAGNESIUM_OXIDE");
 
-        G4Tubs *solidSampleCylinder = new G4Tubs("solidSampleCylinder", 0., 0.5*cm, fSampleThickness/2.0*mm, 0.*deg, 360.*deg);
+        G4Tubs *solidSampleCylinder = new G4Tubs("solidSampleCylinder", 0., 0.4*cm, fSampleThickness/2.0*mm, 0.*deg, 360.*deg);
         G4Box *solidSampleSquare = new G4Box("solidSampleSquare", 0.5*cm, 0.5*cm, fSampleThickness/2.0*mm);
 
         G4LogicalVolume *logicSampleCylinder = new G4LogicalVolume(solidSampleCylinder, solidSampleMat, 
@@ -73,7 +73,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
         mica->AddElement(O, 12);
         mica->AddElement(H, 2);
 
-        G4Tubs *liquidSampleDisc = new G4Tubs("liquidSampleDisc", 0., 0.5*cm, fSampleThickness/2.0*mm,
+        G4Tubs *liquidSampleDisc = new G4Tubs("liquidSampleDisc", 0., 0.4*cm, fSampleThickness/2.0*mm,
                                             0.*deg, 360.*deg);
         G4LogicalVolume *logicSampleDisc = new G4LogicalVolume(liquidSampleDisc, mica,  
                                                                     "logicSampleDisc");
@@ -100,7 +100,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
         EMIMDCA->AddElement(N, 5);
 
 
-        G4Tubs *liquidSampleEMIM = new G4Tubs("liquidSampleEMIM", 0., 0.5*cm, fLiquidThickness/2.0*mm,
+        G4Tubs *liquidSampleEMIM = new G4Tubs("liquidSampleEMIM", 0., 0.4*cm, fLiquidThickness/2.0*mm,
                                             0.*deg, 360.*deg);
         G4LogicalVolume *logicSampleEMIM = new G4LogicalVolume(liquidSampleEMIM, EMIMDCA,  
                                                                     "logicSampleEMIM");

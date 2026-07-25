@@ -26,14 +26,12 @@ G4bool MySensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory*)
         return false;
 
     G4int id = track->GetTrackID();
-
     if (seenTracks.find(id) != seenTracks.end())
-        
         return false;
-
     seenTracks.insert(id);
 
     fCounter++;
+    fHitTime = step->GetPreStepPoint()->GetGlobalTime();
     return true;
 }
 
