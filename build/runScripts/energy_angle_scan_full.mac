@@ -10,12 +10,12 @@
 /analysis/openFile TotalAngleScan.root
 /mygen/scanMode true
 /mygen/numParticlesPerPoint 100
-/mygen/nAngleSteps 46
-/mygen/nEnergySteps 19
+/mygen/nAngleSteps 2
+/mygen/nEnergySteps 2
 /mygen/thetaMin 0
 /mygen/thetaMax 180
 /mygen/energyMin 1
 /mygen/energyMax 10
-/run/beamOn 87400
+/run/beamOn 400
 /analysis/write
 /analysis/closeFile
