@@ -12,3 +12,4 @@ python energy_angle_scan.py $numberOfParticles $sampleType $sampleThickness $liq
 cd ..
 ./ISOLDE $macroFile $sampleType $sampleThickness $liquidThickness 
 # python "draw/draw_from_TTree.py"
+# python "runScripts/calculateAsym.py"
