@@ -1,7 +1,7 @@
 import ROOT
 ROOT.gROOT.SetBatch(True) 
 
-f = ROOT.TFile("../TotalAngleScan.root")
+f = ROOT.TFile("../output.root")
 f.ls()
 tree = f.Get("hits")
 

@@ -6,7 +6,7 @@ A = -1/3 #Experimental asymmetry parameter
 P = 1    #Polarization factor
 
 ROOT.gROOT.SetBatch(True) 
-f = ROOT.TFile("../TotalAngleScan.root")
+f = ROOT.TFile("../runs/solid_0.1mm_10p_20260727_194220/output.root")
 df = ROOT.RDataFrame("hits", f)
 
 data = df.AsNumpy(columns=["energy", "angle", "detector"])
