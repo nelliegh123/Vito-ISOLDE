@@ -345,6 +345,30 @@ src/sensitiveDetector.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.s
 .PHONY : src/sensitiveDetector.cc.s
 
+src/steppingAction.o: src/steppingAction.cc.o
+.PHONY : src/steppingAction.o
+
+# target to build an object file
+src/steppingAction.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/steppingAction.cc.o
+.PHONY : src/steppingAction.cc.o
+
+src/steppingAction.i: src/steppingAction.cc.i
+.PHONY : src/steppingAction.i
+
+# target to preprocess a source file
+src/steppingAction.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/steppingAction.cc.i
+.PHONY : src/steppingAction.cc.i
+
+src/steppingAction.s: src/steppingAction.cc.s
+.PHONY : src/steppingAction.s
+
+# target to generate assembly for a file
+src/steppingAction.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/steppingAction.cc.s
+.PHONY : src/steppingAction.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -381,6 +405,9 @@ help:
 	@echo "... src/sensitiveDetector.o"
 	@echo "... src/sensitiveDetector.i"
 	@echo "... src/sensitiveDetector.s"
+	@echo "... src/steppingAction.o"
+	@echo "... src/steppingAction.i"
+	@echo "... src/steppingAction.s"
 .PHONY : help
 
 

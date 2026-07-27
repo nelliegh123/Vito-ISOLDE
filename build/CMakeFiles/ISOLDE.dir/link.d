@@ -11,6 +11,7 @@ ISOLDE: \
   CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.o \
   CMakeFiles/ISOLDE.dir/src/runAction.cc.o \
   CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o \
+  CMakeFiles/ISOLDE.dir/src/steppingAction.cc.o \
   /home/ngustafs/miniforge3/envs/geant4/lib/libG4Tree.so \
   /home/ngustafs/miniforge3/envs/geant4/lib/libG4FR.so \
   /home/ngustafs/miniforge3/envs/geant4/lib/libG4GMocren.so \
@@ -107,6 +108,8 @@ CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.o:
 CMakeFiles/ISOLDE.dir/src/runAction.cc.o:
 
 CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o:
+
+CMakeFiles/ISOLDE.dir/src/steppingAction.cc.o:
 
 /home/ngustafs/miniforge3/envs/geant4/lib/libG4Tree.so:
 

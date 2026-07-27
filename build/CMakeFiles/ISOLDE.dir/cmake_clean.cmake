@@ -18,6 +18,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ISOLDE.dir/src/runAction.cc.o.d"
   "CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o"
   "CMakeFiles/ISOLDE.dir/src/sensitiveDetector.cc.o.d"
+  "CMakeFiles/ISOLDE.dir/src/steppingAction.cc.o"
+  "CMakeFiles/ISOLDE.dir/src/steppingAction.cc.o.d"
   "ISOLDE"
   "ISOLDE.pdb"
 )

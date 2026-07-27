@@ -2,6 +2,7 @@
 #include "runAction.hh"               
 #include "eventAction.hh"        
 #include "primaryGeneratorAction.hh" 
+#include "steppingAction.hh"
 
 MyActionInitialization::MyActionInitialization() : G4VUserActionInitialization() {}
 
@@ -17,6 +18,10 @@ void MyActionInitialization::Build() const {
     SetUserAction(new eventAction());
 
     SetUserAction(new MyPrimaryGenerator());
+
+    auto evtAction = new eventAction();
+    SetUserAction(evtAction);
+    SetUserAction(new steppingAction(evtAction));
 } 
 
 

@@ -1,10 +1,10 @@
 import numpy as np
 import sys 
 
-# theta_start, theta_stop, n_steps = 0, 180, 46
-# energy_min, energy_max, n_energy_steps = 1, 10, 19
-theta_start, theta_stop, n_steps = 0, 180, 2
-energy_min, energy_max, n_energy_steps = 1, 10, 2
+theta_start, theta_stop, n_steps = 0, 180, 20
+energy_min, energy_max, n_energy_steps = 1, 10, 20
+# theta_start, theta_stop, n_steps = 0, 180, 2
+# energy_min, energy_max, n_energy_steps = 1, 10, 2
 
 
 if len(sys.argv) > 1:
@@ -44,6 +44,10 @@ with open("energy_angle_scan_full.mac", "w") as f:
     f.write("/gps/pos/radius 0.4 cm\n")
     f.write("/gps/ene/type Mono\n")
     f.write("/analysis/openFile TotalAngleScan.root\n")
+
+
+    f.write("/run/printProgress 10000\n")
+
 
     f.write("/mygen/scanMode true\n")
     f.write(f"/mygen/numParticlesPerPoint {numberOfParticles}\n")

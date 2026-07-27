@@ -4,6 +4,7 @@
 #include "G4UserEventAction.hh"
 #include <TFile.h>
 #include <TTree.h>
+#include <chrono>
 
 class G4Event;
 
@@ -15,6 +16,11 @@ public:
 
     virtual void BeginOfEventAction(const G4Event*);
     virtual void EndOfEventAction(const G4Event*);
+
+    std::chrono::steady_clock::time_point GetStartTime() const { return fStartTime; }
+
+private:
+    std::chrono::steady_clock::time_point fStartTime;
 };
 
 #endif 
