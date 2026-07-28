@@ -16,4 +16,4 @@
 /mygen/energyMax 10
 /run/beamOn 4000
 /analysis/write
-/analysis/closeFile
+/analysis/closeFile  
