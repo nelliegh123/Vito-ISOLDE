@@ -1,5 +1,5 @@
-#ifndef CONSTRUCTION_HH
-#define CONSTRUCTION_HH
+#ifndef DETECTORCONSTRUCTION_HH
+#define DETECTORCONSTRUCTION_HH
 
 #include "G4VUserDetectorConstruction.hh"
 #include "G4VPhysicalVolume.hh"
@@ -18,7 +18,7 @@
 class MyDetectorConstruction : public G4VUserDetectorConstruction
 {
 public:
-    MyDetectorConstruction(std::string sampleType, double sampleThickness, double liquidThickness);
+    MyDetectorConstruction(std::string sampleType, double sampleThickness, double liquidThickness, std::string detector);
     ~MyDetectorConstruction();
 
     virtual G4VPhysicalVolume *Construct();
@@ -29,6 +29,8 @@ private:
     double fSampleThickness;
     double fLiquidThickness;
     G4RotationMatrix* fRot;
+
+    std::string fDetector;
 
 };
 

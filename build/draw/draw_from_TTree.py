@@ -1,7 +1,7 @@
 import ROOT
 ROOT.gROOT.SetBatch(True) 
 
-f = ROOT.TFile("../runs/test/output.root")
+f = ROOT.TFile("../Results/test/output.root")
 f.ls()
 tree = f.Get("hits")
 

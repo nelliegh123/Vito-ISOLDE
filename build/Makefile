@@ -201,29 +201,77 @@ src/actionInitialization.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.s
 .PHONY : src/actionInitialization.cc.s
 
-src/construction.o: src/construction.cc.o
-.PHONY : src/construction.o
+src/detectorConstruction.o: src/detectorConstruction.cc.o
+.PHONY : src/detectorConstruction.o
 
 # target to build an object file
-src/construction.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/construction.cc.o
-.PHONY : src/construction.cc.o
+src/detectorConstruction.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/detectorConstruction.cc.o
+.PHONY : src/detectorConstruction.cc.o
 
-src/construction.i: src/construction.cc.i
-.PHONY : src/construction.i
+src/detectorConstruction.i: src/detectorConstruction.cc.i
+.PHONY : src/detectorConstruction.i
 
 # target to preprocess a source file
-src/construction.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/construction.cc.i
-.PHONY : src/construction.cc.i
+src/detectorConstruction.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/detectorConstruction.cc.i
+.PHONY : src/detectorConstruction.cc.i
 
-src/construction.s: src/construction.cc.s
-.PHONY : src/construction.s
+src/detectorConstruction.s: src/detectorConstruction.cc.s
+.PHONY : src/detectorConstruction.s
 
 # target to generate assembly for a file
-src/construction.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/construction.cc.s
-.PHONY : src/construction.cc.s
+src/detectorConstruction.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/detectorConstruction.cc.s
+.PHONY : src/detectorConstruction.cc.s
+
+src/detectorGeometryDeVITO.o: src/detectorGeometryDeVITO.cc.o
+.PHONY : src/detectorGeometryDeVITO.o
+
+# target to build an object file
+src/detectorGeometryDeVITO.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/detectorGeometryDeVITO.cc.o
+.PHONY : src/detectorGeometryDeVITO.cc.o
+
+src/detectorGeometryDeVITO.i: src/detectorGeometryDeVITO.cc.i
+.PHONY : src/detectorGeometryDeVITO.i
+
+# target to preprocess a source file
+src/detectorGeometryDeVITO.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/detectorGeometryDeVITO.cc.i
+.PHONY : src/detectorGeometryDeVITO.cc.i
+
+src/detectorGeometryDeVITO.s: src/detectorGeometryDeVITO.cc.s
+.PHONY : src/detectorGeometryDeVITO.s
+
+# target to generate assembly for a file
+src/detectorGeometryDeVITO.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/detectorGeometryDeVITO.cc.s
+.PHONY : src/detectorGeometryDeVITO.cc.s
+
+src/detectorGeometryDefault.o: src/detectorGeometryDefault.cc.o
+.PHONY : src/detectorGeometryDefault.o
+
+# target to build an object file
+src/detectorGeometryDefault.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/detectorGeometryDefault.cc.o
+.PHONY : src/detectorGeometryDefault.cc.o
+
+src/detectorGeometryDefault.i: src/detectorGeometryDefault.cc.i
+.PHONY : src/detectorGeometryDefault.i
+
+# target to preprocess a source file
+src/detectorGeometryDefault.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/detectorGeometryDefault.cc.i
+.PHONY : src/detectorGeometryDefault.cc.i
+
+src/detectorGeometryDefault.s: src/detectorGeometryDefault.cc.s
+.PHONY : src/detectorGeometryDefault.s
+
+# target to generate assembly for a file
+src/detectorGeometryDefault.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/detectorGeometryDefault.cc.s
+.PHONY : src/detectorGeometryDefault.cc.s
 
 src/eventAction.o: src/eventAction.cc.o
 .PHONY : src/eventAction.o
@@ -387,9 +435,15 @@ help:
 	@echo "... src/actionInitialization.o"
 	@echo "... src/actionInitialization.i"
 	@echo "... src/actionInitialization.s"
-	@echo "... src/construction.o"
-	@echo "... src/construction.i"
-	@echo "... src/construction.s"
+	@echo "... src/detectorConstruction.o"
+	@echo "... src/detectorConstruction.i"
+	@echo "... src/detectorConstruction.s"
+	@echo "... src/detectorGeometryDeVITO.o"
+	@echo "... src/detectorGeometryDeVITO.i"
+	@echo "... src/detectorGeometryDeVITO.s"
+	@echo "... src/detectorGeometryDefault.o"
+	@echo "... src/detectorGeometryDefault.i"
+	@echo "... src/detectorGeometryDefault.s"
 	@echo "... src/eventAction.o"
 	@echo "... src/eventAction.i"
 	@echo "... src/eventAction.s"
