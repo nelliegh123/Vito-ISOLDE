@@ -2,10 +2,7 @@ import numpy as np
 import sys 
 
 theta_start, theta_stop, n_steps = 0, 180, 20
-energy_min, energy_max, n_energy_steps = 1, 10, 20
-# theta_start, theta_stop, n_steps = 0, 180, 2
-# energy_min, energy_max, n_energy_steps = 1, 10, 2
-
+energy_min, energy_max, n_energy_steps = 0, 10, 20
 
 if len(sys.argv) > 1:
     numberOfParticles = int(sys.argv[1])

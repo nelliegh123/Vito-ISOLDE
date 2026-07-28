@@ -1,0 +1,12 @@
+numberOfParticles=10
+sampleType=solid
+sampleThickness=0.1
+liquidThickness=0.01
+timestamp=20260728_112941
+gitCommit=0cc33a9259153ef6b7023acd2eb953c421e02466
+theta_start=0
+theta_stop=180
+n_steps=20
+energy_min=0
+energy_max=10
+n_energy_steps=20

@@ -17,12 +17,12 @@ liquidThickness=$liquidThickness
 timestamp=$timestamp
 gitCommit=$(git rev-parse HEAD 2>/dev/null || echo "n/a")
 EOF
-
 python3 - <<'PYEOF' >> "${runDir}/params.txt"
 import re
 
 with open("energy_angle_scan.py") as f:
     src = f.read()
+
 ns = {}
 for line in re.findall(
     r'^\s*(theta_start\s*,\s*theta_stop\s*,\s*n_steps\s*=.*|'
@@ -30,6 +30,7 @@ for line in re.findall(
     src, re.MULTILINE
 ):
     exec(line, ns)
+
 for k in ["theta_start", "theta_stop", "n_steps",
           "energy_min", "energy_max", "n_energy_steps"]:
     print(f"{k}={ns[k]}")
@@ -42,7 +43,8 @@ make
 cd runScripts
 python energy_angle_scan.py $numberOfParticles $sampleType $sampleThickness $liquidThickness
 cd ..
-./ISOLDE $sampleType $sampleThickness $liquidThickness 
+./ISOLDE $sampleType $sampleThickness $liquidThickness \
+    2>&1 | tee "${runDir}/stdout.log"
 
 mv output.root "$runDir/output.root"
 echo "Run complete. Results in $runDir"
