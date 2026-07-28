@@ -1,5 +1,8 @@
-#include "construction.hh"
-#include "sensitiveDetector.hh"
+#include "detectorConstruction.hh"
+// #include "sensitiveDetector.hh"
+#include "detectorGeometryDefault.hh"
+#include "detectorGeometryDeVITO.hh"
+
 #include "G4RotationMatrix.hh"
 
 #include "VITOMagneticField.hh"
@@ -7,8 +10,8 @@
 #include "G4TransportationManager.hh"
 #include "G4FieldManager.hh"
 
-MyDetectorConstruction::MyDetectorConstruction(std::string sampleType, double sampleThickness, double liquidThickness) 
-: fSampleType(sampleType), fSampleThickness(sampleThickness), fLiquidThickness(liquidThickness), fRot(nullptr)
+MyDetectorConstruction::MyDetectorConstruction(std::string sampleType, double sampleThickness, double liquidThickness, std::string detector) 
+: fSampleType(sampleType), fSampleThickness(sampleThickness), fLiquidThickness(liquidThickness), fDetector(detector), fRot(nullptr)
 {}
 
 MyDetectorConstruction::~MyDetectorConstruction()
@@ -119,39 +122,16 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     //====================================================================================
     //                              Defining Detector
     //====================================================================================
-    G4Material *detectorMat = nist->FindOrBuildMaterial("G4_PLASTIC_SC_VINYLTOLUENE");
+    std::unique_ptr<DetectorGeometryDefault> detectorGeom;
 
-    //Defining the front detector
-    G4Tubs *solidDetector1 = new G4Tubs("solidDetector1", 7.*mm, 8.5*cm, 1.*cm,
-                                          0.*cm, 360.*cm);
-    //Defining the back detector                                  
-    G4Tubs *solidDetector2 = new G4Tubs("solidDetector2", 0.*cm, 2*cm, 1.*cm,
-                                          0.*cm, 360.*cm);
+    if (fDetector == "default") {
+        detectorGeom = std::make_unique<DetectorGeometryDefault>();
+    }
+    else if (fDetector == "DeVITO") {
+        detectorGeom = std::make_unique<DetectorGeometryDeVITO>();
+    }
 
-    G4LogicalVolume *logicDetector1 = new G4LogicalVolume(solidDetector1, detectorMat, "logicDetector1");
-    G4LogicalVolume *logicDetector2 = new G4LogicalVolume(solidDetector2, detectorMat, "logicDetector2");
-
-
-    G4VPhysicalVolume *Detector = new G4PVPlacement(0, G4ThreeVector(0.0*meter, 0.0*meter, -600.*mm), 
-                                    logicDetector1, "Detector1", logicWorld, false, 0, true);
-
-    G4VPhysicalVolume *Detector2 = new G4PVPlacement(0, G4ThreeVector(0.0*meter, 0.0*meter, 270.*mm), 
-                                    logicDetector2, "Detector2", logicWorld, true, 1, true);
-
-    //====================================================================================
-    //                             Making Detectors Sensitive
-    //====================================================================================
-    auto sdManager = G4SDManager::GetSDMpointer();
-
-    auto sd1 = new MySensitiveDetector("Detector1SD");
-    auto sd2 = new MySensitiveDetector("Detector2SD");
-
-    sdManager->AddNewDetector(sd1);
-    sdManager->AddNewDetector(sd2);
-
-    logicDetector1->SetSensitiveDetector(sd1);
-    logicDetector2->SetSensitiveDetector(sd2);
-
+    detectorGeom->Build(logicWorld);
     
 
     

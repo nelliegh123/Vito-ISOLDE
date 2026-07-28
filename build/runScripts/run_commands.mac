@@ -1,5 +1,5 @@
 /gps/pos/type Plane
-/gps/pos/centre 0 0 -0.050000 mm
+/gps/pos/centre 0 0 -0.500000 mm
 /gps/pos/shape Circle
 /gps/particle e-
 /gps/pos/radius 0.4 cm
@@ -7,13 +7,13 @@
 /analysis/openFile output.root
 /run/printProgress 10000
 /mygen/scanMode true
-/mygen/numParticlesPerPoint 1000
+/mygen/numParticlesPerPoint 1
 /mygen/nAngleSteps 20
 /mygen/nEnergySteps 20
 /mygen/thetaMin 0
 /mygen/thetaMax 180
 /mygen/energyMin 0
 /mygen/energyMax 20
-/run/beamOn 400000
+/run/beamOn 400
 /analysis/write
 /analysis/closeFile

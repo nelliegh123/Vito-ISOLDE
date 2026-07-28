@@ -1,9 +1,9 @@
-numberOfParticles=1000
+numberOfParticles=10000
 sampleType=solid
-sampleThickness=0.1
+sampleThickness=1
 liquidThickness=0.01
-timestamp=20260728_145445
-gitCommit=2ca492b7731cff5251e990d3ad285956eb36830f
+timestamp=20260728_150221
+gitCommit=077b4d29cfb6b6c6e7db5cf3c440834329b6e3e0
 theta_start=0
 theta_stop=180
 n_steps=20

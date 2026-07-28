@@ -702,7 +702,7 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o: /home/ngustafs/ISOLDE/ISOLDE.cc \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIbatch.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UIExecutive.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUIshell.hh \
- /home/ngustafs/ISOLDE/include/construction.hh \
+ /home/ngustafs/ISOLDE/include/detectorConstruction.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserDetectorConstruction.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPhysicalVolume.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4LogicalVolume.hh \
