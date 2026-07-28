@@ -1,5 +1,4 @@
 #include "sensitiveDetector.hh"
-
 #include "G4Electron.hh"
 
 MySensitiveDetector::MySensitiveDetector(const G4String& name)

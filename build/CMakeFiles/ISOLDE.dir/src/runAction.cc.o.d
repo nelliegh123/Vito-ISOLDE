@@ -392,24 +392,14 @@ CMakeFiles/ISOLDE.dir/src/runAction.cc.o: \
  /home/ngustafs/ISOLDE/include/primaryGeneratorAction.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UImessenger.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleGun.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPrimaryGenerator.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleDefinition.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PDefManager.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/pwdefs.hh \
- /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/stdlib.h \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Units/PhysicalConstants.h \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Units/defs.h \
- /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Units/SystemOfUnits.h \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleDefinition.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PrimaryVertex.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Allocator.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AllocatorPool.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PrimaryParticle.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleMomentum.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSource.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Event.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/evtdefs.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Allocator.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AllocatorPool.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PrimaryVertex.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PrimaryParticle.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/pwdefs.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4HCofThisEvent.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VHitsCollection.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DCofThisEvent.hh \
@@ -418,6 +408,15 @@ CMakeFiles/ISOLDE.dir/src/runAction.cc.o: \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VTrajectory.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserEventInformation.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SingleParticleSource.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPrimaryGenerator.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleMomentum.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleDefinition.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PDefManager.hh \
+ /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/stdlib.h \
+ /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Units/PhysicalConstants.h \
+ /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Units/defs.h \
+ /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Units/SystemOfUnits.h \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleDefinition.icc \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SPSPosDistribution.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Navigator.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/geomdefs.hh \
@@ -509,11 +508,4 @@ CMakeFiles/ISOLDE.dir/src/runAction.cc.o: \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSourceMessenger.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeneralParticleSourceData.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SystemOfUnits.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTable.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTableIterator.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTable.icc \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Geantino.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4IonTable.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Ions.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleTable.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Run.hh

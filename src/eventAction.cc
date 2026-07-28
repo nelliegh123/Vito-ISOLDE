@@ -25,7 +25,6 @@ void eventAction::EndOfEventAction(const G4Event* event) {
     if (!det1 || !det2) return;
 
     G4double energy = 0.0;
-
     G4double angle = 0.0;
     if (event->GetNumberOfPrimaryVertex() > 0) {
         auto primaryParticle = event->GetPrimaryVertex(0)->GetPrimary(0);
@@ -35,16 +34,8 @@ void eventAction::EndOfEventAction(const G4Event* event) {
             angle = dir.theta() * 180.0 / 3.14159265358979323846;
         }
     }
-    
 
     auto analysisManager = G4AnalysisManager::Instance();
-
-    //-------------Filling TH2D hist for visualization----------
-    analysisManager->FillH2(0, angle, energy, det1->GetCount());
-    analysisManager->FillH2(1, angle, energy, det2->GetCount());
-
-    
-    //------------------Filling TTree---------------------
     G4int nHit1 = det1->GetCount();
     G4int nHit2 = det2->GetCount();
 
@@ -70,14 +61,6 @@ void eventAction::EndOfEventAction(const G4Event* event) {
         analysisManager->FillNtupleIColumn(2, 1);
         analysisManager->AddNtupleRow();
     }
-
-
-    // //////////////COULD PROBABLY REMOVE////////////////
-    // analysisManager->FillH1(0, energy, det1->GetCount());
-    // analysisManager->FillH1(1, energy, det2->GetCount());
-    // analysisManager->FillH1(2, angle, det1->GetCount());
-    // analysisManager->FillH1(3, angle, det2->GetCount());
-    ////////////////////////////////////////////////////
 
     
 }
