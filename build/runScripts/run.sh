@@ -1,8 +1,8 @@
 #!/bin/bash
-numberOfParticles=10           #Nr of particles fired per step 
+numberOfParticles=100           #Nr of particles fired per step 
 sampleType=solid                #Either solid or liquid
-sampleThickness=0.1              #Thickness of solid sample (solid) or mica disc (liquid) in mm
-liquidThickness=0.01                #Liquid sample thickness in mm
+sampleThickness=0.1             #Thickness of solid sample (solid) or mica disc (liquid) in mm
+liquidThickness=0.01            #Liquid sample thickness in mm
 
 runTag="${sampleType}_${sampleThickness}mm_${numberOfParticles}p"
 timestamp=$(date +%Y%m%d_%H%M%S)
@@ -21,7 +21,7 @@ EOF
 python3 - <<'PYEOF' >> "${runDir}/params.txt"
 import re
 
-with open("energy_angle_scan.py") as f:
+with open("make_macro.py") as f:
     src = f.read()
 ns = {}
 for line in re.findall(
@@ -40,7 +40,7 @@ cp "$0" "$runDir/"
 cd ..
 make 
 cd runScripts
-python energy_angle_scan.py $numberOfParticles $sampleType $sampleThickness $liquidThickness
+python make_macro.py $numberOfParticles $sampleType $sampleThickness $liquidThickness
 cd ..
 ./ISOLDE $sampleType $sampleThickness $liquidThickness 
 
