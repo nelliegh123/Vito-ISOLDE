@@ -15,7 +15,7 @@
 int main(int argc, char** argv)
 {
     if (argc < 5) {
-    std::cerr << "Usage: " << argv[0] << " <macroFile> <sampleType> <sampleThickness> <liquidThickness> [--gui]" << std::endl;
+    std::cerr << "Usage: " << argv[0] << " <macroFile> <sampleType> <sampleThickness> [--gui]" << std::endl;
     return 1;
     }
 
@@ -30,6 +30,7 @@ int main(int argc, char** argv)
     std::string sampleType = argv[2];
     double sampleThickness = std::stod(argv[3]);
     double liquidThickness = std::stod(argv[4]);
+    // std::string outputFile = argv[5];
 
     G4RunManager* runManager = new G4RunManager();
     runManager->SetUserInitialization(new MyDetectorConstruction(sampleType, sampleThickness, liquidThickness));

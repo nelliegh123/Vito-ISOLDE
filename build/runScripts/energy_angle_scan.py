@@ -43,7 +43,7 @@ with open("energy_angle_scan_full.mac", "w") as f:
     f.write("/gps/particle e-\n")
     f.write("/gps/pos/radius 0.4 cm\n")
     f.write("/gps/ene/type Mono\n")
-    f.write("/analysis/openFile TotalAngleScan.root\n")
+    f.write("/analysis/openFile output.root\n")
 
 
     f.write("/run/printProgress 10000\n")
