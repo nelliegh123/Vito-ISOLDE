@@ -13,7 +13,7 @@ sampleThickness = float(sys.argv[3])
 liquidThickness = float(sys.argv[4])
 
 
-with open("energy_angle_scan_full.mac", "w") as f:
+with open("run_commands.mac", "w") as f:
     if sampleType=="solid":
         f.write("/gps/pos/type Plane\n")
         f.write(f"/gps/pos/centre 0 0 {-sampleThickness/2.0:.6f} mm\n")

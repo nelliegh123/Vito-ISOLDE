@@ -57,7 +57,7 @@ int main(int argc, char** argv)
     }
     
     UImanager->ApplyCommand("/control/macroPath runScripts");
-    UImanager->ApplyCommand("/control/execute energy_angle_scan_full.mac");
+    UImanager->ApplyCommand("/control/execute run_commands.mac");
 
 
     if (useGUI && ui) {
