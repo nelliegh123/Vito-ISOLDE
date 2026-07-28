@@ -738,14 +738,6 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o: /home/ngustafs/ISOLDE/ISOLDE.cc \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ProductionCuts.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4MCCIndexConversionTable.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4EmStandardPhysics.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4OpticalPhysics.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4OpticalParameters.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4RadioactiveDecayPhysics.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DecayPhysics.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Decay.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VRestDiscreteProcess.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleChangeForDecay.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DecayProcessType.hh \
  /home/ngustafs/ISOLDE/include/actionInitialization.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserActionInitialization.hh \
  /home/ngustafs/ISOLDE/include/eventAction.hh \
