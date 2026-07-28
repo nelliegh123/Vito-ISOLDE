@@ -1,8 +1,8 @@
 #!/bin/bash
-numberOfParticles=100           #Nr of particles fired per step 
+numberOfParticles=1000      #Nr of particles fired per step 
 sampleType=solid                #Either solid or liquid
-sampleThickness=0.1              #Thickness of solid sample (solid) or mica disc (liquid) in mm
-liquidThickness=0.01                #Liquid sample thickness in mm
+sampleThickness=0.1             #Thickness of solid sample (solid) or mica disc (liquid) in mm
+liquidThickness=0.01            #Liquid sample thickness in mm
 
 runTag="${sampleType}_${sampleThickness}mm_${numberOfParticles}p"
 timestamp=$(date +%Y%m%d_%H%M%S)
