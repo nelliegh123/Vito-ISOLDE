@@ -12,7 +12,7 @@
 /mygen/nEnergySteps 20
 /mygen/thetaMin 0
 /mygen/thetaMax 180
-/mygen/energyMin 1
+/mygen/energyMin 0
 /mygen/energyMax 10
 /run/beamOn 4000
 /analysis/write

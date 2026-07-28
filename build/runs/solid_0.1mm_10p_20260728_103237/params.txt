@@ -1,7 +1,0 @@
-numberOfParticles=10
-macroFile=energy_angle_scan_full.mac
-sampleType=solid
-sampleThickness=0.1
-liquidThickness=0.01
-timestamp=20260728_103237
-gitCommit=8690f3cc870135a5cdeb7b06de44f32a6f6cf088
