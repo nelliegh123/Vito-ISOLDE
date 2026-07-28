@@ -1,6 +1,0 @@
-numberOfParticles=10
-sampleType=solid
-sampleThickness=0.1
-liquidThickness=0.01
-timestamp=20260728_112535
-# gitCommit=0cc33a9259153ef6b7023acd2eb953c421e02466
