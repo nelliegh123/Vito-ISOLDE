@@ -6,7 +6,20 @@ A = -1/3 #Experimental asymmetry parameter
 P = 1    #Polarization factor
 
 ROOT.gROOT.SetBatch(True) 
-f = ROOT.TFile("../Results/test/output.root")
+#---No Sample---
+# f = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/solid_0mm_10000p_default_20260731_162120/output.root")
+
+#---Solid---
+# f = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/solid_0.5mm_10000p_default_20260731_144917/output.root")
+# f = ROOT.TFile("../Results/solid_1mm_10000p_default_20260731_142706/output.root")
+# f = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/solid_2mm_10000p_default_20260731_151314/output.root")
+f = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/solid_4mm_10000p_default_20260731_153728/output.root")
+
+
+# f = ROOT.TFile("../Results/solid_1mm_10000_DeVITOp_20260730_164711/output.root")
+
+
+
 df = ROOT.RDataFrame("hits", f)
 
 data = df.AsNumpy(columns=["energy", "angle", "detector"])
@@ -17,21 +30,22 @@ def W(E, theta, A, P):
     vc = np.sqrt(1-((0.511)/(E+0.511))**2)
     return 1 + vc*A*P*np.cos(np.radians(theta))
 
-def S(E):
+def S(E): ##need to double check which energy to use, and also if E0 should be +m_e
     alpha = 1/137
-    Ezero = 16 #Q-E_recoil 
-    Z = -1
-    m_e=0.511
+    m_e = 0.511
+    Energy = E + m_e
+    Ezero = 16 + m_e #Q-E_recoil 
+    Z = 1 ##is it?
     
-    p = np.sqrt(E**2 - m_e**2)
-    eta = Z*alpha*E/(p)
+    
+    p = np.sqrt(Energy**2 - m_e**2)
+    eta = Z*alpha*Energy/(p)
     F = (2*np.pi*eta)/(1-np.exp(-2*np.pi*eta))
-    return p*E*(Ezero - E)**2 * F
+    return p*Energy*(Ezero - Energy)**2 * F
 
 def asymmetry_np(A):
     w = W(E, theta, A, P)
     s = S(E)
-    s = s/s.max()
 
     weight = w * s
 
@@ -40,4 +54,5 @@ def asymmetry_np(A):
     return (NF - NR) / (NF + NR)
 
 # for A in np.linspace(-1, 1, 21):
-print(A, asymmetry_np(A))
+print(f)
+print(asymmetry_np(A))

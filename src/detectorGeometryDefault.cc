@@ -7,8 +7,9 @@
 #include "G4SDManager.hh"
 #include "G4SystemOfUnits.hh"
 
-void DetectorGeometryDefault ::Build(G4LogicalVolume* logicWorld)
+void DetectorGeometryDefault::Build(G4LogicalVolume* logicWorld)
 {
+
     G4NistManager *nist = G4NistManager::Instance();
     G4Material *detectorMat = nist->FindOrBuildMaterial("G4_PLASTIC_SC_VINYLTOLUENE");
 
