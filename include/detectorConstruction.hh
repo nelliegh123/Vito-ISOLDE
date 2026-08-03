@@ -18,7 +18,7 @@
 class MyDetectorConstruction : public G4VUserDetectorConstruction
 {
 public:
-    MyDetectorConstruction(std::string sampleType, double sampleThickness, double liquidThickness, std::string detector, std::string magField);
+    MyDetectorConstruction(std::string sampleType, double sampleThickness, double liquidThickness,  double sampleDiameter, std::string detector, std::string magField);
     ~MyDetectorConstruction();
 
     virtual G4VPhysicalVolume *Construct();
@@ -28,6 +28,7 @@ private:
     std::string fSampleType;
     double fSampleThickness;
     double fLiquidThickness;
+    double fSampleDiameter;
     G4RotationMatrix* fRot;
 
     std::string fDetector;

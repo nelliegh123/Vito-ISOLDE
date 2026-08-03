@@ -11,6 +11,7 @@ else:
 sampleType = str(sys.argv[2])
 sampleThickness = float(sys.argv[3])
 liquidThickness = float(sys.argv[4])
+sampleDiameter = float(sys.argv[5])
 
 
 with open("run_commands.mac", "w") as f:
@@ -38,7 +39,7 @@ with open("run_commands.mac", "w") as f:
         print("---------------Wrong sample-type, use liquid or solid!!------------")
 
     f.write("/gps/particle e-\n")
-    f.write("/gps/pos/radius 0.4 cm\n")
+    f.write(f"/gps/pos/radius {sampleDiameter/2.0:.6f} mm\n")
     f.write("/gps/ene/type Mono\n")
     f.write("/analysis/openFile output.root\n")
 
