@@ -2,6 +2,7 @@
 // #include "sensitiveDetector.hh"
 #include "detectorGeometryDefault.hh"
 #include "detectorGeometryDeVITO.hh"
+#include "DeVITOMagneticField.hh"
 
 #include "G4RotationMatrix.hh"
 #include "G4Exception.hh"
@@ -159,8 +160,14 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
         pFieldMgr->CreateChordFinder(fField.Get());
     }
 
+
     else if (fMagField == "devito") {
-        //implement devito field
+        G4MagneticField* magField = new DeVITOMagneticField("Field/Field-Map_DeVITO.txt");
+        fField.Put(magField);
+
+        G4FieldManager* pFieldMgr = G4TransportationManager::GetTransportationManager()->GetFieldManager();
+        pFieldMgr->SetDetectorField(fField.Get());
+        pFieldMgr->CreateChordFinder(fField.Get());
     }
 
     else {G4Exception("MyDetectorConstruction::Construct()",
