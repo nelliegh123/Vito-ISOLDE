@@ -2,7 +2,7 @@
 /gps/pos/centre 0 0 0.250000 mm
 /gps/pos/shape Circle
 /gps/particle e-
-/gps/pos/radius 0.4 cm
+/gps/pos/radius 40.000000 mm
 /gps/ene/type Mono
 /analysis/openFile output.root
 /run/printProgress 10000
