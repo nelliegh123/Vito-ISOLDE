@@ -519,4 +519,19 @@ CMakeFiles/ISOLDE.dir/src/detectorGeometryDeVITO.cc.o: \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4HCtable.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SDStructure.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VSensitiveDetector.hh \
- /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SystemOfUnits.hh
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SystemOfUnits.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PhysicalConstants.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Box.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Box.icc \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SubtractionSolid.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4BooleanSolid.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DisplacedSolid.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VBooleanProcessor.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4BooleanSolid.icc \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4RotationMatrix.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VisAttributes.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/graphics_reps_defs.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Colour.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Color.hh \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VisAttributes.icc \
+ /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Colour.hh

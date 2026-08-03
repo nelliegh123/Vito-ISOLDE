@@ -1,10 +1,10 @@
-numberOfParticles=10000
+numberOfParticles=1000
 sampleType=solid
 sampleThickness=1
 liquidThickness=0.01
-detector=DeVITO
-timestamp=20260730_164711
-gitCommit=4df21c613b3a170bba941d33fe77727c1133fda9
+detector=default
+timestamp=20260803_093852
+gitCommit=fac8195931769b5eee455845dc7761b40ddf09e6
 theta_start=0
 theta_stop=180
 n_steps=20

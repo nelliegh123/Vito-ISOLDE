@@ -803,6 +803,9 @@ CMakeFiles/ISOLDE.dir/ISOLDE.cc.o: /home/ngustafs/ISOLDE/ISOLDE.cc \
   /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/wctype.h \
   /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/xlocale.h
 
+CMakeFiles/ISOLDE.dir/src/DeVITOMagneticField.cc.o: /home/ngustafs/ISOLDE/src/DeVITOMagneticField.cc \
+  /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/stdc-predef.h
+
 CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o: /home/ngustafs/ISOLDE/src/VITOMagneticField.cc \
   /home/ngustafs/ISOLDE/include/VITOMagneticField.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Units/SystemOfUnits.h \
@@ -2145,11 +2148,18 @@ CMakeFiles/ISOLDE.dir/src/detectorGeometryDeVITO.cc.o: /home/ngustafs/ISOLDE/src
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Allocator.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AllocatorPool.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AutoLock.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4BooleanSolid.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4BooleanSolid.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Box.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Box.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4CSGSolid.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4CollectionNameVector.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Color.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Colour.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DataVector.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DataVector.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DensityEffectCalculator.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DisplacedSolid.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DynamicParticle.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DynamicParticle.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ElectronOccupancy.hh \
@@ -2197,6 +2207,7 @@ CMakeFiles/ISOLDE.dir/src/detectorGeometryDeVITO.cc.o: /home/ngustafs/ISOLDE/src
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleDefinition.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleDefinition.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParticleMomentum.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PhysicalConstants.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PhysicsFreeVector.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PhysicsModelCatalog.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PhysicsVector.hh \
@@ -2221,6 +2232,7 @@ CMakeFiles/ISOLDE.dir/src/detectorGeometryDeVITO.cc.o: /home/ngustafs/ISOLDE/src
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SteppingControl.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4String.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4String.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SubtractionSolid.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SystemOfUnits.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Threading.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ThreeVector.hh \
@@ -2236,6 +2248,7 @@ CMakeFiles/ISOLDE.dir/src/detectorGeometryDeVITO.cc.o: /home/ngustafs/ISOLDE/src
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Tubs.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TwoVector.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Types.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VBooleanProcessor.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VHit.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VHitsCollection.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPhysicalVolume.hh \
@@ -2247,6 +2260,8 @@ CMakeFiles/ISOLDE.dir/src/detectorGeometryDeVITO.cc.o: /home/ngustafs/ISOLDE/src
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VSolid.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VTouchable.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserTrackInformation.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VisAttributes.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VisAttributes.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Visible.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Visible.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ios.hh \
@@ -2254,6 +2269,7 @@ CMakeFiles/ISOLDE.dir/src/detectorGeometryDeVITO.cc.o: /home/ngustafs/ISOLDE/src
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/geomdefs.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/geomwdefs.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/globals.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/graphics_reps_defs.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/pwdefs.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/templates.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tls.hh \
@@ -6345,6 +6361,7 @@ ISOLDE: /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.
   /home/ngustafs/miniforge3/envs/geant4/lib/libxerces-c.so \
   /home/ngustafs/miniforge3/envs/geant4/lib/libz.so \
   CMakeFiles/ISOLDE.dir/ISOLDE.cc.o \
+  CMakeFiles/ISOLDE.dir/src/DeVITOMagneticField.cc.o \
   CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o \
   CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.o \
   CMakeFiles/ISOLDE.dir/src/detectorConstruction.cc.o \
@@ -6359,8 +6376,6 @@ ISOLDE: /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.
 
 
 CMakeFiles/ISOLDE.dir/src/physicsList.cc.o:
-
-CMakeFiles/ISOLDE.dir/src/eventAction.cc.o:
 
 CMakeFiles/ISOLDE.dir/src/detectorGeometryDefault.cc.o:
 
@@ -6482,6 +6497,18 @@ CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o:
 
 /home/ngustafs/ISOLDE/src/eventAction.cc:
 
+CMakeFiles/ISOLDE.dir/src/eventAction.cc.o:
+
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VBooleanProcessor.hh:
+
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PhysicalConstants.hh:
+
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4DisplacedSolid.hh:
+
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4BooleanSolid.icc:
+
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4BooleanSolid.hh:
+
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VReadOutGeometry.hh:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TransportationManager.hh:
@@ -6513,6 +6540,8 @@ CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o:
 /home/ngustafs/ISOLDE/include/primaryGeneratorAction.hh:
 
 /home/ngustafs/ISOLDE/include/VITOMagneticField.hh:
+
+/home/ngustafs/ISOLDE/src/DeVITOMagneticField.cc:
 
 /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/syscall.h:
 
@@ -7468,6 +7497,8 @@ CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.o:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4IonisParamElm.hh:
 
+CMakeFiles/ISOLDE.dir/src/DeVITOMagneticField.cc.o:
+
 /home/ngustafs/miniforge3/envs/geant4/x86_64-conda-linux-gnu/sysroot/usr/include/bits/pthreadtypes.h:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Cons.icc:
@@ -7581,6 +7612,8 @@ CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.o:
 /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Geometry/Vector3D.h:
 
 /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AllocatorPool.hh:
+
+/home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SubtractionSolid.hh:
 
 /home/ngustafs/miniforge3/envs/geant4/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/exception.h:
 

@@ -4,14 +4,15 @@
 #include "detectorGeometryDeVITO.hh"
 
 #include "G4RotationMatrix.hh"
+#include "G4Exception.hh"
 
 #include "VITOMagneticField.hh"
 #include "G4SDManager.hh"
 #include "G4TransportationManager.hh"
 #include "G4FieldManager.hh"
 
-MyDetectorConstruction::MyDetectorConstruction(std::string sampleType, double sampleThickness, double liquidThickness, std::string detector) 
-: fSampleType(sampleType), fSampleThickness(sampleThickness), fLiquidThickness(liquidThickness), fDetector(detector), fRot(nullptr)
+MyDetectorConstruction::MyDetectorConstruction(std::string sampleType, double sampleThickness, double liquidThickness, std::string detector, std::string magField) 
+: fSampleType(sampleType), fSampleThickness(sampleThickness), fLiquidThickness(liquidThickness), fDetector(detector), fRot(nullptr), fMagField(magField)
 {}
 
 MyDetectorConstruction::~MyDetectorConstruction()
@@ -127,9 +128,16 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     if (fDetector == "default") {
         detectorGeom = std::make_unique<DetectorGeometryDefault>();
     }
-    else if (fDetector == "DeVITO") {
+    else if (fDetector == "devito") {
         detectorGeom = std::make_unique<DetectorGeometryDeVITO>();
     }
+
+    else {G4Exception("MyDetectorConstruction::Construct()",
+                "Wrong Detector",
+                FatalException,
+                "Choose detector default or devito in run.sh"); 
+        }
+
 
     detectorGeom->Build(logicWorld);
     
@@ -138,15 +146,29 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     //====================================================================================
     //                             Activating the Magnetic Field
     //====================================================================================
-    G4MagneticField* magField = new VITOMagneticField("Field/field1Axial.txt",
+    
+    if (fMagField == "vito") {
+        G4MagneticField* magField = new VITOMagneticField("Field/field1Axial.txt",
                                                       "Field/field1Radial.txt", 
                                                       "Field/field2Axial.txt", 
                                                       "Field/field2Radial.txt");
-    fField.Put(magField);
+        fField.Put(magField);
 
-    G4FieldManager* pFieldMgr = G4TransportationManager::GetTransportationManager()->GetFieldManager();
-    pFieldMgr->SetDetectorField(fField.Get());
-    pFieldMgr->CreateChordFinder(fField.Get());
+        G4FieldManager* pFieldMgr = G4TransportationManager::GetTransportationManager()->GetFieldManager();
+        pFieldMgr->SetDetectorField(fField.Get());
+        pFieldMgr->CreateChordFinder(fField.Get());
+    }
+
+    else if (fMagField == "devito") {
+        //implement devito field
+    }
+
+    else {G4Exception("MyDetectorConstruction::Construct()",
+                "Wrong MagField",
+                FatalException,
+                "Choose magnetic field vito or devito in run.sh"); 
+    }
+    
 
 
 

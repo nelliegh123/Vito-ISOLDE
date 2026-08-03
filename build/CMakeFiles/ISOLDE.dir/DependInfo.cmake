@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ngustafs/ISOLDE/ISOLDE.cc" "CMakeFiles/ISOLDE.dir/ISOLDE.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/ISOLDE.cc.o.d"
+  "/home/ngustafs/ISOLDE/src/DeVITOMagneticField.cc" "CMakeFiles/ISOLDE.dir/src/DeVITOMagneticField.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/src/DeVITOMagneticField.cc.o.d"
   "/home/ngustafs/ISOLDE/src/VITOMagneticField.cc" "CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o.d"
   "/home/ngustafs/ISOLDE/src/actionInitialization.cc" "CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.o.d"
   "/home/ngustafs/ISOLDE/src/detectorConstruction.cc" "CMakeFiles/ISOLDE.dir/src/detectorConstruction.cc.o" "gcc" "CMakeFiles/ISOLDE.dir/src/detectorConstruction.cc.o.d"

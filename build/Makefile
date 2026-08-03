@@ -153,6 +153,30 @@ ISOLDE.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/ISOLDE.cc.s
 .PHONY : ISOLDE.cc.s
 
+src/DeVITOMagneticField.o: src/DeVITOMagneticField.cc.o
+.PHONY : src/DeVITOMagneticField.o
+
+# target to build an object file
+src/DeVITOMagneticField.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/DeVITOMagneticField.cc.o
+.PHONY : src/DeVITOMagneticField.cc.o
+
+src/DeVITOMagneticField.i: src/DeVITOMagneticField.cc.i
+.PHONY : src/DeVITOMagneticField.i
+
+# target to preprocess a source file
+src/DeVITOMagneticField.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/DeVITOMagneticField.cc.i
+.PHONY : src/DeVITOMagneticField.cc.i
+
+src/DeVITOMagneticField.s: src/DeVITOMagneticField.cc.s
+.PHONY : src/DeVITOMagneticField.s
+
+# target to generate assembly for a file
+src/DeVITOMagneticField.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/DeVITOMagneticField.cc.s
+.PHONY : src/DeVITOMagneticField.cc.s
+
 src/VITOMagneticField.o: src/VITOMagneticField.cc.o
 .PHONY : src/VITOMagneticField.o
 
@@ -429,6 +453,9 @@ help:
 	@echo "... ISOLDE.o"
 	@echo "... ISOLDE.i"
 	@echo "... ISOLDE.s"
+	@echo "... src/DeVITOMagneticField.o"
+	@echo "... src/DeVITOMagneticField.i"
+	@echo "... src/DeVITOMagneticField.s"
 	@echo "... src/VITOMagneticField.o"
 	@echo "... src/VITOMagneticField.i"
 	@echo "... src/VITOMagneticField.s"
