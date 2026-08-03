@@ -3,6 +3,7 @@ ISOLDE: \
   /home/ngustafs/miniforge3/envs/geant4/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o \
   /home/ngustafs/miniforge3/envs/geant4/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o \
   CMakeFiles/ISOLDE.dir/ISOLDE.cc.o \
+  CMakeFiles/ISOLDE.dir/src/DeVITOMagneticField.cc.o \
   CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o \
   CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.o \
   CMakeFiles/ISOLDE.dir/src/detectorConstruction.cc.o \
@@ -94,6 +95,8 @@ ISOLDE: \
 /home/ngustafs/miniforge3/envs/geant4/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o:
 
 CMakeFiles/ISOLDE.dir/ISOLDE.cc.o:
+
+CMakeFiles/ISOLDE.dir/src/DeVITOMagneticField.cc.o:
 
 CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o:
 

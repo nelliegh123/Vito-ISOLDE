@@ -16,7 +16,7 @@ liquidThickness = float(sys.argv[4])
 with open("run_commands.mac", "w") as f:
     if sampleType=="solid":
         f.write("/gps/pos/type Plane\n")
-        f.write(f"/gps/pos/centre 0 0 {-sampleThickness/2.0:.6f} mm\n")
+        f.write(f"/gps/pos/centre 0 0 {sampleThickness/2.0:.6f} mm\n")
         f.write("/gps/pos/shape Circle\n")
 
     elif sampleType=="liquid":
