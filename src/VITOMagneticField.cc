@@ -290,9 +290,17 @@ void VITOMagneticField::GetFieldValue(const G4double Point[4], G4double* Bfield)
         return;
     }
 
-    // Convert coordinates from Geant4 internal units (mm) to meters
+    // 1. Transform world coordinates into rotated field frame (180 deg around Y-axis)
+    // x_field = -x_world, y_field = y_world, z_field = -z_world
+
+    // // Field pointing -z 
+    // double x_m = -Point[0] / CLHEP::m;
+    // double y_m =  Point[1] / CLHEP::m;
+    // double z_m = -Point[2] / CLHEP::m;
+
+    //Field pointing +z
     double x_m = Point[0] / CLHEP::m;
-    double y_m = Point[1] / CLHEP::m;
+    double y_m =  Point[1] / CLHEP::m;
     double z_m = Point[2] / CLHEP::m;
 
     double r_m = std::sqrt(x_m * x_m + y_m * y_m);
@@ -326,11 +334,24 @@ void VITOMagneticField::GetFieldValue(const G4double Point[4], G4double* Bfield)
             Br_internal = -Br_internal;
         }
 
-        // Project radial field onto Cartesian coordinates (x, y)
+        // 2. Compute field components in unrotated field frame
+        double Bx_field = 0.0;
+        double By_field = 0.0;
+
         if (r_m > 0.0) {
-            Bfield[0] = Br_internal * (x_m / r_m);
-            Bfield[1] = Br_internal * (y_m / r_m);
-        } else {
+            Bx_field = Br_internal * (x_m / r_m);
+            By_field = Br_internal * (y_m / r_m);
+        }
+
+        
+
+        // // Field pointing -z 
+        // Bfield[0] = -Bx_field;
+        // Bfield[1] =  By_field;
+        // Bfield[2] = -Bz_internal;
+
+        // Field pointing +z
+        else {
             Bfield[0] = 0.0;
             Bfield[1] = 0.0;
         }

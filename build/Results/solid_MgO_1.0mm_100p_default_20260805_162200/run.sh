@@ -1,9 +1,17 @@
 #!/bin/bash
-numberOfParticles=1000   #Nr of particles fired per step 
-sampleType=solid            #Either solid or liquid
-sampleThickness=0.001       #Thickness of solid sample (solid) or mica disc (liquid) in mm
-liquidThickness=0.01        #Liquid sample thickness in mm
-detector=default             #Choose default, DeVITO, 
+numberOfParticles=100   #Nr of particles fired per step
+
+sampleType=solid_MgO #solid_KCl         #Either solid_MgO, solid_KCl or liquid
+sampleThickness=1.0 #2          #Thickness of solid sample (solid) or mica disc (liquid) in mm
+liquidThickness=0.01         #Liquid sample thickness in mm
+sampleDiameter=8.0  #20.0          #Sample diameter in mm
+
+detector=default #devitoCircle2024             #Choose default,devito, devitoCircle2023, devitoCircle2024
+magField=vito              #Choose vito, devito
+
+
+
+
 
 runTag="${sampleType}_${sampleThickness}mm_${numberOfParticles}p_${detector}"
 timestamp=$(date +%Y%m%d_%H%M%S)
@@ -40,11 +48,12 @@ cp "$0" "$runDir/"
 
 
 cd ..
+cmake ..
 make 
 cd runScripts
-python make_macro.py $numberOfParticles $sampleType $sampleThickness $liquidThickness 
+python make_macro.py $numberOfParticles $sampleType $sampleThickness $liquidThickness $sampleDiameter
 cd ..
-./ISOLDE $sampleType $sampleThickness $liquidThickness $detector #--gui
+./ISOLDE $sampleType $sampleThickness $liquidThickness $sampleDiameter $detector $magField #--gui
 
 mv output.root "$runDir/output.root"
 echo "Run complete. Results in $runDir"

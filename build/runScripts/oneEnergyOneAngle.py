@@ -5,18 +5,20 @@ if len(sys.argv) > 1:
     numberOfParticles = int(sys.argv[1])
 else:
     numberOfParticles = 1
+
 sampleType = str(sys.argv[2])
 sampleThickness = float(sys.argv[3])
-liquidThickness = float(sys.argv[4])
-angle = float(sys.argv[5])
-energy = float(sys.argv[6])
+sampleDiameter = float(sys.argv[4])
+liquidThickness = float(sys.argv[5])
+angle = float(sys.argv[6])
+energy = float(sys.argv[7])
 
-
-with open("oneEnergyOneAngle.mac", "w") as f:
-    if sampleType=="solid":
+with open("run_commands.mac", "w") as f:
+    if sampleType == "solid_MgO" or sampleType == "solid_KCl":
         f.write("/gps/pos/type Plane\n")
-        f.write(f"/gps/pos/centre 0 0 {-sampleThickness/2.0:.6f} mm\n")
+        f.write(f"/gps/pos/centre 0 0 -{sampleThickness/2.0:.6f} mm\n")
         f.write("/gps/pos/shape Circle\n")
+    
 
     elif sampleType=="liquid":
         z_center = -(sampleThickness / 2.0 + liquidThickness / 2.0)
@@ -38,9 +40,9 @@ with open("oneEnergyOneAngle.mac", "w") as f:
         print("---------------Wrong sample-type, use liquid or solid!!------------")
 
     f.write("/gps/particle e-\n")
-    f.write("/gps/pos/radius 0.5 cm\n")
+    f.write(f"/gps/pos/radius {sampleDiameter/2.0:.6f} mm\n")
     f.write("/gps/ene/type Mono\n")
-    f.write("/analysis/openFile oneEnergyOneAngle.root\n")
+    f.write("/analysis/openFile output.root\n")
 
 
     theta_rad = np.radians(angle)
@@ -49,6 +51,7 @@ with open("oneEnergyOneAngle.mac", "w") as f:
 
     f.write(f"/gps/ene/mono {energy:g} MeV\n")
     f.write(f"/run/beamOn {numberOfParticles:g}\n")
+    f.write("/vis/scene/add/axes 0 0 0 0.1 m \n")
 
     f.write("/analysis/write\n")
     f.write("/analysis/closeFile\n")

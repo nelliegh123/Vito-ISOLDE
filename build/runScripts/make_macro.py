@@ -15,10 +15,15 @@ sampleDiameter = float(sys.argv[5])
 
 
 with open("run_commands.mac", "w") as f:
-    if sampleType=="solid":
+    if sampleType=="solid_MgO":
         f.write("/gps/pos/type Plane\n")
-        f.write(f"/gps/pos/centre 0 0 {sampleThickness/2.0:.6f} mm\n")
+        f.write(f"/gps/pos/centre 0 0 -{sampleThickness/2.0:.6f} mm\n")
         f.write("/gps/pos/shape Circle\n")
+
+    elif sampleType=="solid_KCl":
+            f.write("/gps/pos/type Plane\n")
+            f.write(f"/gps/pos/centre 0 0 -{sampleThickness/2.0:.6f} mm\n")
+            f.write("/gps/pos/shape Circle\n")
 
     elif sampleType=="liquid":
         z_center = -(sampleThickness / 2.0 + liquidThickness / 2.0)
@@ -35,8 +40,8 @@ with open("run_commands.mac", "w") as f:
         f.write("/gps/pos/rot1 1 0 0\n")
         f.write("/gps/pos/rot2 0 0.707107 0.707107\n")
     
-    else: 
-        print("---------------Wrong sample-type, use liquid or solid!!------------")
+    else:
+        raise ValueError("Wrong sample-type, use liquid or solid!")
 
     f.write("/gps/particle e-\n")
     f.write(f"/gps/pos/radius {sampleDiameter/2.0:.6f} mm\n")

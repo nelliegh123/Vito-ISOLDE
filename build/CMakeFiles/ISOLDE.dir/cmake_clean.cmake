@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ISOLDE.dir/src/detectorConstruction.cc.o.d"
   "CMakeFiles/ISOLDE.dir/src/detectorGeometryDeVITO.cc.o"
   "CMakeFiles/ISOLDE.dir/src/detectorGeometryDeVITO.cc.o.d"
+  "CMakeFiles/ISOLDE.dir/src/detectorGeometryDeVitoCircle.cc.o"
+  "CMakeFiles/ISOLDE.dir/src/detectorGeometryDeVitoCircle.cc.o.d"
   "CMakeFiles/ISOLDE.dir/src/detectorGeometryDefault.cc.o"
   "CMakeFiles/ISOLDE.dir/src/detectorGeometryDefault.cc.o.d"
   "CMakeFiles/ISOLDE.dir/src/eventAction.cc.o"

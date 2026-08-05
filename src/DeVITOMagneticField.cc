@@ -28,7 +28,7 @@ G4bool DeVITOMagneticField::LoadFieldFile(const G4String& filename) {
     }
 
     char line_buf[256];
-    
+
     // Read the first line for nx, ny, nz
     if (!std::fgets(line_buf, sizeof(line_buf), file)) {
         G4cerr << "DeVITOMagneticField: Error reading first line of " << filename << G4endl;
@@ -36,9 +36,16 @@ G4bool DeVITOMagneticField::LoadFieldFile(const G4String& filename) {
         return false;
     }
 
+    // NOTE: empirically, this field-map format stores the header
+    // dimensions in REVERSE order: "NZ NY NX format_id", not
+    // "NX NY NZ format_id". Confirmed by cross-checking where each
+    // coordinate actually changes value in the data:
+    //   - Z changes every line               -> Z count = 1st header number
+    //   - Y changes every (1st number) lines  -> Y count = 2nd header number
+    //   - X changes every (1st*2nd) lines     -> X count = 3rd header number
     size_t nx = 0, ny = 0, nz = 0;
     int format_id = 0;
-    if (std::sscanf(line_buf, "%zu %zu %zu %d", &nx, &ny, &nz, &format_id) < 3) {
+    if (std::sscanf(line_buf, "%zu %zu %zu %d", &nz, &ny, &nx, &format_id) < 3) {
         G4cerr << "DeVITOMagneticField: Error parsing grid dimensions from header: " << line_buf << G4endl;
         std::fclose(file);
         return false;
@@ -76,8 +83,10 @@ G4bool DeVITOMagneticField::LoadFieldFile(const G4String& filename) {
     fBy.assign(expected_total, 0.0);
     fBz.assign(expected_total, 0.0);
 
-    G4cout << "DeVITOMagneticField: Loading " << expected_total << " points on a " 
+    G4cout << "DeVITOMagneticField: Loading " << expected_total << " points on a "
            << nx << " x " << ny << " x " << nz << " grid..." << G4endl;
+
+    const double kCoordTol = 1e-3; // mm, tolerance for grid-order consistency check
 
     size_t m = 0;
     while (m < expected_total && std::fgets(line_buf, sizeof(line_buf), file)) {
@@ -95,20 +104,48 @@ G4bool DeVITOMagneticField::LoadFieldFile(const G4String& filename) {
         double z = std::strtod(ptr, &next); if (ptr == next) continue; ptr = next;
         double bx = std::strtod(ptr, &next); if (ptr == next) continue; ptr = next;
         double by = std::strtod(ptr, &next); if (ptr == next) continue; ptr = next;
-        double bz = std::strtod(ptr, &next);
+        double bz = std::strtod(ptr, &next); if (ptr == next) continue; // FIX 1: bz now guarded like the rest
 
         size_t i = m / (ny * nz);
         size_t j = (m / nz) % ny;
         size_t k = m % nz;
 
+        // FIX 2: instead of blindly trusting that the file order matches the
+        // assumed X-slowest / Y / Z-fastest layout, verify it. On the first
+        // occurrence of each index we record the coordinate; on every later
+        // occurrence we check the point actually matches, and abort loudly
+        // if the file's ordering doesn't match what the code assumes.
         if (j == 0 && k == 0) {
             fXCoords[i] = x;
+        } else if (std::abs(fXCoords[i] - x) > kCoordTol) {
+            G4cerr << "DeVITOMagneticField: ERROR: Unexpected X value at point " << m
+                   << " (i=" << i << ", j=" << j << ", k=" << k << "). Expected X="
+                   << fXCoords[i] << " but read X=" << x
+                   << ". File is not ordered as X-slowest/Y/Z-fastest." << G4endl;
+            std::fclose(file);
+            return false;
         }
+
         if (i == 0 && k == 0) {
             fYCoords[j] = y;
+        } else if (std::abs(fYCoords[j] - y) > kCoordTol) {
+            G4cerr << "DeVITOMagneticField: ERROR: Unexpected Y value at point " << m
+                   << " (i=" << i << ", j=" << j << ", k=" << k << "). Expected Y="
+                   << fYCoords[j] << " but read Y=" << y
+                   << ". File is not ordered as X-slowest/Y/Z-fastest." << G4endl;
+            std::fclose(file);
+            return false;
         }
+
         if (i == 0 && j == 0) {
             fZCoords[k] = z;
+        } else if (std::abs(fZCoords[k] - z) > kCoordTol) {
+            G4cerr << "DeVITOMagneticField: ERROR: Unexpected Z value at point " << m
+                   << " (i=" << i << ", j=" << j << ", k=" << k << "). Expected Z="
+                   << fZCoords[k] << " but read Z=" << z
+                   << ". File is not ordered as X-slowest/Y/Z-fastest." << G4endl;
+            std::fclose(file);
+            return false;
         }
 
         fBx[m] = bx;
@@ -166,12 +203,26 @@ void DeVITOMagneticField::GetFieldValue(const G4double Point[4], G4double* Bfiel
         return;
     }
 
-    // Point coordinates in mm
-    double x = Point[0];
-    double y = Point[1];
-    double z = Point[2];
+    // World-frame point
+    double xw = Point[0];
+    double yw = Point[1];
+    double zw = Point[2];
 
-    // Check bounds
+    // --- Rotate point from world frame into the field's native (local) frame ---
+    // This undoes a +90 deg rotation about Y that we want to APPLY to the field.
+    // local = R(-90, Y) * world
+    
+    // //Pointing in -z direction
+    // double x = -zw;
+    // double y =  yw;
+    // double z =  xw;
+
+    //Pointing in +z direction
+    double x = zw;
+    double y = yw;
+    double z = -xw;
+
+    // Check bounds (in local/native frame)
     if (x < fXMin || x > fXMax || y < fYMin || y > fYMax || z < fZMin || z > fZMax) {
         return;
     }
@@ -244,12 +295,23 @@ void DeVITOMagneticField::GetFieldValue(const G4double Point[4], G4double* Bfiel
         return c0 * (1.0 - w) + c1 * w;
     };
 
-    double bx_val = interpolate(fBx);
-    double by_val = interpolate(fBy);
-    double bz_val = interpolate(fBz);
+    double bx_local = interpolate(fBx);
+    double by_local = interpolate(fBy);
+    double bz_local = interpolate(fBz);
+
+    // --- Rotate the field VECTOR back from local frame into world frame ---
+    // //Field pointing -z
+    // double bx_world =  bz_local;
+    // double by_world =  by_local;
+    // double bz_world = -bx_local;
+
+    //Field pointing +z
+    double bx_world = -bz_local;
+    double by_world = by_local;
+    double bz_world = bx_local;
 
     // Convert field values from Tesla (T) to Geant4 internal units
-    Bfield[0] = bx_val * CLHEP::tesla;
-    Bfield[1] = by_val * CLHEP::tesla;
-    Bfield[2] = bz_val * CLHEP::tesla;
+    Bfield[0] = bx_world * CLHEP::tesla;
+    Bfield[1] = by_world * CLHEP::tesla;
+    Bfield[2] = bz_world * CLHEP::tesla;
 }

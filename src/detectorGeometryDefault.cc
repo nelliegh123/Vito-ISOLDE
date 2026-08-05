@@ -15,19 +15,19 @@ void DetectorGeometryDefault::Build(G4LogicalVolume* logicWorld)
 
     //Defining the front detector
     G4Tubs *solidDetector1 = new G4Tubs("solidDetector1", 7.*mm, 8.5*cm, 1.*cm,
-                                          0.*cm, 360.*cm);
+                                          0.*deg, 360.*deg);
     //Defining the back detector                                  
     G4Tubs *solidDetector2 = new G4Tubs("solidDetector2", 0.*cm, 2*cm, 1.*cm,
-                                          0.*cm, 360.*cm);
+                                          0.*deg, 360.*deg);
 
     G4LogicalVolume *logicDetector1 = new G4LogicalVolume(solidDetector1, detectorMat, "logicDetector1");
     G4LogicalVolume *logicDetector2 = new G4LogicalVolume(solidDetector2, detectorMat, "logicDetector2");
 
 
-    G4VPhysicalVolume *Detector = new G4PVPlacement(0, G4ThreeVector(0.0*meter, 0.0*meter, -600.*mm), 
+    new G4PVPlacement(0, G4ThreeVector(0.0*meter, 0.0*meter, -600.*mm), 
                                     logicDetector1, "Detector1", logicWorld, false, 0, true);
 
-    G4VPhysicalVolume *Detector2 = new G4PVPlacement(0, G4ThreeVector(0.0*meter, 0.0*meter, 270.*mm), 
+    new G4PVPlacement(0, G4ThreeVector(0.0*meter, 0.0*meter, 270.*mm), 
                                     logicDetector2, "Detector2", logicWorld, true, 1, true);
 
     auto sdManager = G4SDManager::GetSDMpointer();
