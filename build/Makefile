@@ -273,6 +273,30 @@ src/detectorGeometryDeVITO.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/detectorGeometryDeVITO.cc.s
 .PHONY : src/detectorGeometryDeVITO.cc.s
 
+src/detectorGeometryDeVitoCircle.o: src/detectorGeometryDeVitoCircle.cc.o
+.PHONY : src/detectorGeometryDeVitoCircle.o
+
+# target to build an object file
+src/detectorGeometryDeVitoCircle.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/detectorGeometryDeVitoCircle.cc.o
+.PHONY : src/detectorGeometryDeVitoCircle.cc.o
+
+src/detectorGeometryDeVitoCircle.i: src/detectorGeometryDeVitoCircle.cc.i
+.PHONY : src/detectorGeometryDeVitoCircle.i
+
+# target to preprocess a source file
+src/detectorGeometryDeVitoCircle.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/detectorGeometryDeVitoCircle.cc.i
+.PHONY : src/detectorGeometryDeVitoCircle.cc.i
+
+src/detectorGeometryDeVitoCircle.s: src/detectorGeometryDeVitoCircle.cc.s
+.PHONY : src/detectorGeometryDeVitoCircle.s
+
+# target to generate assembly for a file
+src/detectorGeometryDeVitoCircle.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISOLDE.dir/build.make CMakeFiles/ISOLDE.dir/src/detectorGeometryDeVitoCircle.cc.s
+.PHONY : src/detectorGeometryDeVitoCircle.cc.s
+
 src/detectorGeometryDefault.o: src/detectorGeometryDefault.cc.o
 .PHONY : src/detectorGeometryDefault.o
 
@@ -468,6 +492,9 @@ help:
 	@echo "... src/detectorGeometryDeVITO.o"
 	@echo "... src/detectorGeometryDeVITO.i"
 	@echo "... src/detectorGeometryDeVITO.s"
+	@echo "... src/detectorGeometryDeVitoCircle.o"
+	@echo "... src/detectorGeometryDeVitoCircle.i"
+	@echo "... src/detectorGeometryDeVitoCircle.s"
 	@echo "... src/detectorGeometryDefault.o"
 	@echo "... src/detectorGeometryDefault.i"
 	@echo "... src/detectorGeometryDefault.s"

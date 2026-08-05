@@ -7,6 +7,16 @@
 
 MyPrimaryGenerator::MyPrimaryGenerator() 
 {
+    fScanMode = false;
+    fNumParticlesPerPoint = 1;
+    fNAngleSteps = 1;
+    fNEnergySteps = 1;
+    fThetaMin = 0;
+    fThetaMax = 0;
+    fEnergyMin = 0;
+    fEnergyMax = 0;
+
+
     fMessenger = new G4GenericMessenger(this, "/mygen/", "Primary generator scan control");
     fMessenger->DeclareProperty("scanMode", fScanMode, "Enable/disablke grid scan mode");
     fMessenger->DeclareProperty("numParticlesPerPoint", fNumParticlesPerPoint, "Number of particles per grid point");

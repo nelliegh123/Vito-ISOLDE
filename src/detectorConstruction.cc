@@ -1,7 +1,7 @@
 #include "detectorConstruction.hh"
-// #include "sensitiveDetector.hh"
 #include "detectorGeometryDefault.hh"
 #include "detectorGeometryDeVITO.hh"
+#include "detectorGeometryDeVITOCircle.hh"
 #include "DeVITOMagneticField.hh"
 
 #include "G4RotationMatrix.hh"
@@ -39,31 +39,42 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 
 
 
-    if(fSampleType == "solid"){
+    if(fSampleType == "solid_MgO"){
     //====================================================================================
     //                              Defining Solid Sample
     //====================================================================================
+    //---------------MgO---------------------------
         G4Material *solidSampleMat = nist->FindOrBuildMaterial("G4_MAGNESIUM_OXIDE");
-
         G4Tubs *solidSampleCylinder = new G4Tubs("solidSampleCylinder", 0., fSampleDiameter/2.0*mm, fSampleThickness/2.0*mm, 0.*deg, 360.*deg);
-        // G4Box *solidSampleSquare = new G4Box("solidSampleSquare", 0.5*cm, 0.5*cm, fSampleThickness/2.0*mm);
-
         G4LogicalVolume *logicSampleCylinder = new G4LogicalVolume(solidSampleCylinder, solidSampleMat, 
                                                                 "logicSampleCylinder");
-        // G4LogicalVolume *logicSampleSquare = new G4LogicalVolume(solidSampleSquare, solidSampleMat, 
-        //                                                         "logicSampleSquare");
+        G4VPhysicalVolume *solidCylinder = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), logicSampleCylinder, 
+                                                                "solidCylinder", logicWorld, false, 0, true);                                                      
+    }
 
+    //---------------KCl----------------------
+    else if (fSampleType == "solid_KCl") {
+        G4cout << "----------------------KCl-----------------" << G4endl;
+        G4Element* K = nist->FindOrBuildElement("K");
+        G4Element* Cl = nist->FindOrBuildElement("Cl");
+        G4double density = 1.984 * g/cm3;  
+        G4Material* KCl = new G4Material("KCl", density, 2);
+        KCl->AddElement(K, 1);
+        KCl->AddElement(Cl, 1);
+
+        G4Tubs *solidSampleCylinder = new G4Tubs("solidSampleCylinder", 0., fSampleDiameter/2.0*mm, fSampleThickness/2.0*mm, 0.*deg, 360.*deg);
+        G4LogicalVolume *logicSampleCylinder = new G4LogicalVolume(solidSampleCylinder, KCl, 
+                                                                "logicSampleCylinder");
         G4VPhysicalVolume *solidCylinder = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), logicSampleCylinder, 
                                                                 "solidCylinder", logicWorld, false, 0, true);
-        // G4VPhysicalVolume *solidSquare = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), logicSampleSquare, 
-                                                                //   "solidSquare", logicWorld, false, 0, true);
     }
     
-    else if(fSampleType == "liquid"){
+    
     //====================================================================================
     //                              Defining Liquid Sample
     //====================================================================================
     //-------------Make muscovite mica disc------------------
+    else if(fSampleType == "liquid"){
         G4Element* K = nist->FindOrBuildElement("K");
         G4Element* Al = nist->FindOrBuildElement("Al");
         G4Element* Si = nist->FindOrBuildElement("Si");
@@ -129,8 +140,13 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     if (fDetector == "default") {
         detectorGeom = std::make_unique<DetectorGeometryDefault>();
     }
-    else if (fDetector == "devito") {
-        detectorGeom = std::make_unique<DetectorGeometryDeVITO>();
+
+    // else if (fDetector == "devito") {
+    //     detectorGeom = std::make_unique<DetectorGeometryDeVITO>();
+    // }
+
+    else if (fDetector == "devito2023" || fDetector == "devito2024" || fDetector == "devitoCircle2023" || fDetector == "devitoCircle2024") {
+        detectorGeom = std::make_unique<DetectorGeometryDeVITOCircle>(fDetector);
     }
 
     else {G4Exception("MyDetectorConstruction::Construct()",

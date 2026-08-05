@@ -426,6 +426,7 @@ CMakeFiles/ISOLDE.dir/src/detectorConstruction.cc.o: \
  /home/ngustafs/ISOLDE/include/detectorGeometryDefault.hh \
  /home/ngustafs/ISOLDE/include/detectorGeometryDeVITO.hh \
  /home/ngustafs/ISOLDE/include/detectorGeometryDefault.hh \
+ /home/ngustafs/ISOLDE/include/detectorGeometryDeVITOCircle.hh \
  /home/ngustafs/ISOLDE/include/DeVITOMagneticField.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4String.hh \
  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Exception.hh \

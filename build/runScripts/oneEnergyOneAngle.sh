@@ -3,21 +3,25 @@
 angle=180
 energy=10
 
-numberOfParticles=10000
-macroFile=oneEnergyOneAngle.mac
-sampleType=liquid
-sampleThickness=0.1
-liquidThickness=0.1
+numberOfParticles=100   #Nr of particles fired per step
 
-outputFile="oneEnergyOneAngle.root"
+sampleType=solid_KCl         #Either solid_MgO, solid_KCl or liquid
+sampleThickness=0.5          #Thickness of solid sample (solid) or mica disc (liquid) in mm
+liquidThickness=0.01         #Liquid sample thickness in mm
+sampleDiameter=12.0          #Sample diameter in mm
+
+detector=devitoCircle2023    #Choose default,devito, devitoCircle2023, devitoCircle2024
+magField=devito              #Choose vito, devito
+
+
+# outputFile="oneEnergyOneAngle.root"
 
 cd ..
 make 
 cd runScripts
-python oneEnergyOneAngle.py $numberOfParticles $sampleType $sampleThickness $liquidThickness $angle $energy
+python oneEnergyOneAngle.py $numberOfParticles $sampleType $sampleThickness $sampleDiameter $liquidThickness $angle $energy
 cd ..
-./ISOLDE $macroFile $sampleType $sampleThickness $liquidThickness #--gui
-root "draw/draw_oneEnergyOneAngle.C($numberOfParticles)"
-
+./ISOLDE $sampleType $sampleThickness $liquidThickness $sampleDiameter $detector $magField --gui
+# root "draw/draw_oneEnergyOneAngle.C($numberOfParticles)"
 
 

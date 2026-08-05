@@ -1,38 +1,30 @@
-import ROOT
-import numpy as np 
+import numpy as np
 import matplotlib.pyplot as plt
+from scipy.interpolate import interp1d
+import ROOT
 
-A = -1/3 #Experimental asymmetry parameter
+A = -1/3 #Asymmetry parameter for Li8
+# A = -0.67 #Asymmetry parameter for 2599 transition in K47
+# A = 0.33 #Asymmetry parameter for 2578 transition in K47
+
 P = -1    #Polarization factor
 
 ROOT.gROOT.SetBatch(True) 
-# #---No Sample---
-# # f = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/solid_0mm_10000p_default_20260731_162120/output.root")
-
-# #---Solid---
-# # f = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/solid_0.5mm_10000p_default_20260731_144917/output.root")
-# # f = ROOT.TFile("../Results/solid_1mm_10000p_default_20260731_142706/output.root")
-# # f = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/solid_1.5mm_10000p_default_20260731_183018/output.root")
-# # f = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/solid_2mm_10000p_default_20260731_151314/output.root")
-# # f = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/solid_4mm_10000p_default_20260731_153728/output.root")
-
-# # f = ROOT.TFile("../Results/solid_1mm_10000_DeVITOp_20260730_164711/output.root")
-
-
 
 
 
 #----Solid right place for emission??-----
-f = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/solid_0.001mm_1000p_default_20260803_094509/output.root")
-# f = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/solid_0.5mm_1000p_default_20260803_093312/output.root")
-# f = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/solid_1mm_1000p_default_20260803_093852/output.root")
-# f = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/solid_2mm_1000p_default_20260803_094147/output.root")
+# f = ROOT.TFile("/output.root")
+f = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/solid_MgO_0.5mm_100p_default_20260805_162700/output.root")
+# f = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/solid_MgO_1.0mm_100p_default_20260805_162200/output.root")
+# f = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/solid_MgO_2.0mm_100p_default_20260805_162321/output.root")
 
-
+#----DeVITO-----
+# f = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/solid_KCl_0.5mm_1000p_devitoCircle2023_20260804_172034/output.root")
+# f = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/solid_KCl_0.5mm_1000p_devito2023_20260804_172239/output.root")
 
 
 df = ROOT.RDataFrame("hits", f)
-
 data = df.AsNumpy(columns=["energy", "angle", "detector"])
 E, theta, det = data["energy"], data["angle"], data["detector"]
 
@@ -41,18 +33,11 @@ def W(E, theta, A, P):
     vc = np.sqrt(1-((0.511)/(E+0.511))**2)
     return 1 + vc*A*P*np.cos(np.radians(theta))
 
-def S(E): ##need to double check which energy to use, and also if E0 should be +m_e
-    alpha = 1/137
-    m_e = 0.511
-    Energy = E + m_e
-    Ezero = 16 + m_e #Q-E_recoil 
-    Z = 1 ##is it?
-    
-    
-    p = np.sqrt(Energy**2 - m_e**2)
-    eta = Z*alpha*Energy/(p)
-    F = (2*np.pi*eta)/(1-np.exp(-2*np.pi*eta))
-    return p*Energy*(Ezero - Energy)**2 * F
+E_data, dNdE_data, _ = np.loadtxt("/home/ngustafs/ISOLDE/build/EnergyDistributions/Li8.txt", unpack=True)
+def S(E):
+    func = interp1d(E_data, dNdE_data, kind="cubic", bounds_error=False, fill_value=0.0)
+    return(func(E*1000))      #I take E*1000 since data is in keV
+
 
 def asymmetry_np(A):
     w = W(E, theta, A, P)
@@ -62,8 +47,11 @@ def asymmetry_np(A):
 
     NF = weight[det == 0].sum()
     NR = weight[det == 1].sum()
-    return (NF - NR) / (NF + NR)
+    return (NF - NR) / (NF + NR), NF, NR
 
 # for A in np.linspace(-1, 1, 21):
 print(f)
-print(asymmetry_np(A))
+print()
+print("The counts are ", asymmetry_np(A)[1], "in the front detector and", asymmetry_np(A)[2], "in the back detector")
+print()
+print("The experimental asymmetry parameter is", asymmetry_np(A)[0])
