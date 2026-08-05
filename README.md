@@ -11,7 +11,8 @@ What to change for runs, for example set the magnetic field, the sample type, th
 
 ### New Detector Geometry
 - Make new files _detectorGeometryNew.cc_ and _detectorGeometryNew.hh_ in src and include directories. Define the detector geometry (you can look at _detectorGeometryDeVITO_ for inspiration). 
-- In detectorConstruction.cc you include your new header file and call your new function. 
+- In detectorConstruction.cc you include your new header file and call your new function.
+- Update run.sh to use your new geometry. 
 - Run as normal. 
 
 ### New Sample
