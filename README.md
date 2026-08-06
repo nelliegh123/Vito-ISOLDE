@@ -2,7 +2,7 @@
 Sample simulations for the Vito-ISOLDE beamline. Part of the CERN summer student projects 2026.
 
 # Purpose:
-The purpose of this code is to easily be able to calculate the experimental asymmetry parameter for $\beta$-NMR using different samples, detector setups and magnetic field in $G\texts{eant}4$. The code is structured in such a way that you implement a detector geometry, a magnetic field and a sample. Then, an energy and angle scan is perfomed where electrons are fired at angles from $\theta=0$ (in the direction of the beam) to $\theta=180$ (opposite to the beam). After the angle and energy scan has been run, the asymmetry parameter can be calculated for a specific isotope, with a $\beta$ energy distribution, an initial asymmetry $A$ and polarization $P$. 
+The purpose of this code is to easily be able to calculate the experimental asymmetry parameter for $\beta$-NMR using different samples, detector setups and magnetic field in $G\textsc{eant}4$. The code is structured in such a way that you implement a detector geometry, a magnetic field and a sample. Then, an energy and angle scan is perfomed where electrons are fired at angles from $\theta=0$ (in the direction of the beam) to $\theta=180$ (opposite to the beam). After the angle and energy scan has been run, the asymmetry parameter can be calculated for a specific isotope, with a $\beta$ energy distribution, an initial asymmetry $A$ and polarization $P$. 
 
 
 ### Compiling
