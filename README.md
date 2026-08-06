@@ -25,6 +25,7 @@ How to implement a new magnetic field (add option in detectorConstruction and ma
 ### Calculating the Asymmetry
 - include beta energy spectra in EnergySpectras
 - Read this file into calculateAsym.py
+- Set the initial asymmetry $A$ and the polarization $P$. Note that the angle $\theta$ in the equation $W(\theta) = 1+\frac{v}{c}PA\cos(\theta)$ is defined as the angle relative to the polarization axis. If your polarization is pointing in the -z direction, you must define the angle as 180-$\theta$.
 
 ### Other Comments
 Comment on any specific processes: for example that particles are killed if they live for more than 1s and that backscatter is removed. 
