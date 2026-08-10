@@ -1,19 +1,29 @@
 #!/bin/bash
-numberOfParticles=100   #Nr of particles fired per step
+numberOfParticles=10  #Nr of particles fired per step
 
-sampleType=solid_MgO #solid_KCl         #Either solid_MgO, solid_KCl or liquid
-sampleThickness=0.5 #2          #Thickness of solid sample (solid) or mica disc (liquid) in mm
+sampleType=solid_MgO         #Either solid_MgO, solid_KCl or liquid
+# sampleThickness=2.0          #Thickness of solid sample (solid) or mica disc (liquid) in mm
+sampleThickness=${1:-2.0}
 liquidThickness=0.01         #Liquid sample thickness in mm
-sampleDiameter=8.0  #20.0          #Sample diameter in mm
+sampleDiameter=8.0          #Sample diameter in mm
 
-detector=default #devitoCircle2024             #Choose default,devito, devitoCircle2023, devitoCircle2024
+detector=default ##OBSOBSOBS changed devitoCircle2024 radius to 26 mm!!!        
+#Choose default,devito2023, devito2024, devitoCircle2023, devitoCircle2024
 magField=vito              #Choose vito, devito
 
+theta_start=0
+theta_stop=180
+n_steps=180
+
+energy_min=0
+energy_max=14
+n_energy_steps=100
+
+mag_field=minus
 
 
 
-
-runTag="${sampleType}_${sampleThickness}mm_${numberOfParticles}p_${detector}"
+runTag="${sampleType}_${sampleThickness}mm_${numberOfParticles}p_${detector}_${mag_field}"
 timestamp=$(date +%Y%m%d_%H%M%S)
 runDir="$(cd .. && pwd)/Results/${runTag}_${timestamp}"
 mkdir -p "$runDir"
@@ -24,8 +34,15 @@ sampleType=$sampleType
 sampleThickness=$sampleThickness
 liquidThickness=$liquidThickness
 detector=$detector
+theta_start=$theta_start
+theta_stop=$theta_stop
+n_steps=$n_steps
+energy_min=$energy_min
+energy_max=$energy_max
+n_energy_steps=$n_energy_steps
+mag_field=$mag_field
 timestamp=$timestamp
-gitCommit=$(git rev-parse HEAD 2>/dev/null || echo "n/a")
+
 EOF
 
 python3 - <<'PYEOF' >> "${runDir}/params.txt"
@@ -51,7 +68,7 @@ cd ..
 cmake ..
 make 
 cd runScripts
-python make_macro.py $numberOfParticles $sampleType $sampleThickness $liquidThickness $sampleDiameter
+python make_macro.py $numberOfParticles $sampleType $sampleThickness $liquidThickness $sampleDiameter $theta_start $theta_stop $n_steps $energy_min $energy_max $n_energy_steps
 cd ..
 ./ISOLDE $sampleType $sampleThickness $liquidThickness $sampleDiameter $detector $magField #--gui
 

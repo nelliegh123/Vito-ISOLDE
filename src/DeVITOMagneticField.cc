@@ -212,15 +212,15 @@ void DeVITOMagneticField::GetFieldValue(const G4double Point[4], G4double* Bfiel
     // This undoes a +90 deg rotation about Y that we want to APPLY to the field.
     // local = R(-90, Y) * world
     
-    // //Pointing in -z direction
-    // double x = -zw;
-    // double y =  yw;
-    // double z =  xw;
+    //Pointing in -z direction
+    double x = -zw;
+    double y =  yw;
+    double z =  xw;
 
-    //Pointing in +z direction
-    double x = zw;
-    double y = yw;
-    double z = -xw;
+    // //Pointing in +z direction
+    // double x = zw;
+    // double y = yw;
+    // double z = -xw;
 
     // Check bounds (in local/native frame)
     if (x < fXMin || x > fXMax || y < fYMin || y > fYMax || z < fZMin || z > fZMax) {
@@ -300,15 +300,15 @@ void DeVITOMagneticField::GetFieldValue(const G4double Point[4], G4double* Bfiel
     double bz_local = interpolate(fBz);
 
     // --- Rotate the field VECTOR back from local frame into world frame ---
-    // //Field pointing -z
-    // double bx_world =  bz_local;
-    // double by_world =  by_local;
-    // double bz_world = -bx_local;
+    //Field pointing -z
+    double bx_world =  bz_local;
+    double by_world =  by_local;
+    double bz_world = -bx_local;
 
-    //Field pointing +z
-    double bx_world = -bz_local;
-    double by_world = by_local;
-    double bz_world = bx_local;
+    // //Field pointing +z
+    // double bx_world = -bz_local;
+    // double by_world = by_local;
+    // double bz_world = bx_local;
 
     // Convert field values from Tesla (T) to Geant4 internal units
     Bfield[0] = bx_world * CLHEP::tesla;

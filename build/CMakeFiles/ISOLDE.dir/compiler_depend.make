@@ -5006,9 +5006,70 @@ CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.o: /home/ngustafs/ISOLDE/src
   /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Geometry/Transform3D.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Geometry/Vector3D.h \
   /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Geometry/defs.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/DRand48Engine.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/DualRand.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/Hurd160Engine.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/Hurd288Engine.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/JamesRandom.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/MTwistEngine.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/MixMaxRng.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandBinomial.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandBinomial.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandBit.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandBit.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandBreitWigner.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandBreitWigner.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandChiSquare.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandChiSquare.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandEngine.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandExpZiggurat.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandExponential.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandExponential.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandFlat.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandFlat.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandGamma.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandGamma.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandGauss.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandGauss.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandGaussQ.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandGaussQ.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandGaussT.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandGaussT.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandGaussZiggurat.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandGeneral.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandGeneral.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandLandau.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandLandau.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandPoisson.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandPoisson.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandPoissonQ.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandPoissonQ.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandPoissonT.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandPoissonT.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandSkewNormal.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandSkewNormal.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandStudentT.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandStudentT.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/Random.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/Random.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandomEngine.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RandomEngine.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/Randomize.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RanecuEngine.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/Ranlux64Engine.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RanluxEngine.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RanluxppEngine.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/RanshiEngine.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/Stat.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/TripleRand.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Random/defs.h \
   /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Units/PhysicalConstants.h \
   /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Units/SystemOfUnits.h \
   /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Units/defs.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Utility/defs.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Utility/memory.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Utility/noncopyable.h \
+  /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Utility/thread_local.h \
   /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/AxisAngle.h \
   /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/AxisAngle.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/CLHEP/Vector/LorentzVector.h \
@@ -5132,6 +5193,7 @@ CMakeFiles/ISOLDE.dir/src/primaryGeneratorAction.cc.o: /home/ngustafs/ISOLDE/src
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VoxelNavigation.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VoxelNavigation.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ios.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/Randomize.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/evtdefs.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/geomdefs.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/geomwdefs.hh \
@@ -6550,10 +6612,17 @@ CMakeFiles/ISOLDE.dir/src/steppingAction.cc.o: /home/ngustafs/ISOLDE/src/steppin
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AffineTransform.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Allocator.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AllocatorPool.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AnalysisManager.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AnalysisManagerState.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AnalysisUtilities.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AnalysisVerbose.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ApplicationState.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AutoLock.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AuxiliaryNavServices.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4AuxiliaryNavServices.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4BaseAnalysisManager.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4BaseFileManager.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4BinScheme.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4BlockingList.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4BlockingList.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ClassificationOfNewTrack.hh \
@@ -6572,11 +6641,18 @@ CMakeFiles/ISOLDE.dir/src/steppingAction.cc.o: /home/ngustafs/ISOLDE/src/steppin
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4EventManager.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Exception.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ExceptionSeverity.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Fcn.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ForceCondition.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GPILSelection.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GenericAnalysisManager.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GenericAnalysisManager.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GenericFileManager.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GenericFileManager.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GeomSplitter.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4GlobalConfig.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4HCofThisEvent.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4HnInformation.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4HnManager.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4IonisParamElm.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4IonisParamMat.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Isotope.hh \
@@ -6603,6 +6679,8 @@ CMakeFiles/ISOLDE.dir/src/steppingAction.cc.o: /home/ngustafs/ISOLDE/src/steppin
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NoProcess.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NormalNavigation.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NormalNavigation.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NtupleBookingManager.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4NtupleBookingManager.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4OrderedTable.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4PDefManager.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ParameterisedNavigation.hh \
@@ -6660,8 +6738,22 @@ CMakeFiles/ISOLDE.dir/src/steppingAction.cc.o: /home/ngustafs/ISOLDE/src/steppin
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4String.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SubEvent.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4SubEventTrackStack.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TH1ToolsManager.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TH2ToolsManager.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TH3ToolsManager.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4THnManager.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4THnManager.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4THnMessenger.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4THnMessenger.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4THnToolsManager.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4THnToolsManager.icc \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TP1ToolsManager.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TP2ToolsManager.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Threading.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ThreeVector.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4Tokenizer.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ToolsAnalysisManager.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4ToolsAnalysisManager.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TouchableHandle.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TouchableHistory.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4TouchableHistory.icc \
@@ -6683,10 +6775,14 @@ CMakeFiles/ISOLDE.dir/src/steppingAction.cc.o: /home/ngustafs/ISOLDE/src/steppin
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UserStackingAction.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UserSteppingAction.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4UserTrackingAction.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VAnalysisManager.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VAnalysisManager.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VDigiCollection.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VExternalNavigation.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VFileManager.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VHitsCollection.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VNavigation.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VNtupleManager.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VPVParameterisation.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VParticleChange.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VParticleChange.icc \
@@ -6696,6 +6792,8 @@ CMakeFiles/ISOLDE.dir/src/steppingAction.cc.o: /home/ngustafs/ISOLDE/src/steppin
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VSolid.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VSolid.icc \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VSteppingVerbose.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VTBaseHnManager.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VTHnFileManager.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VTouchable.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VTrajectory.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/G4VUserEventInformation.hh \
@@ -6713,6 +6811,30 @@ CMakeFiles/ISOLDE.dir/src/steppingAction.cc.o: /home/ngustafs/ISOLDE/src/steppin
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/rundefs.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/templates.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tls.hh \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/cid \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/cids \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/eqT \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/forit \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/axes \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/axis \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/b1 \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/b2 \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/b3 \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/base_histo \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/h1 \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/h1d \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/h2 \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/h2d \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/h3 \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/h3d \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/histo_data \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/p1 \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/p1d \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/p2 \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/p2d \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/histo/profile_data \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/ntuple_booking \
+  /home/ngustafs/miniforge3/envs/geant4/include/Geant4/tools/typedefs \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/trkdefs.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/Geant4/trkgdefs.hh \
   /home/ngustafs/miniforge3/envs/geant4/include/RConfigure.h \
