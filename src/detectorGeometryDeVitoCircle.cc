@@ -75,13 +75,11 @@ void DetectorGeometryDeVITOCircle::Build(G4LogicalVolume* logicWorld)
  
  
  
- 
+    //--------------------------OBSOBSOBS changed from 35 mm to 26 mm---------------------------
     else if(fDetector == "devitoCircle2024") {
-    //Defining the front detector
-    G4Tubs *solidDetector1 = new G4Tubs("solidDetector1", 10.*mm, 35*mm, 2.5*mm,
-                                          0.*cm, 360.*cm);
-    //Defining the back detector                                  
-    G4Tubs *solidDetector2 = new G4Tubs("solidDetector2", 5.*mm, 35*mm, 3.15*mm,
+    G4Tubs *solidDetector1 = new G4Tubs("solidDetector1", 10.*mm, 26*mm, 2.5*mm,
+                                          0.*cm, 360.*cm);                                 
+    G4Tubs *solidDetector2 = new G4Tubs("solidDetector2", 5.*mm, 26*mm, 3.15*mm,
                                           0.*cm, 360.*cm);
     G4LogicalVolume *logicDetector1 = new G4LogicalVolume(solidDetector1, ej204, "logicDetector1");
     G4LogicalVolume *logicDetector2 = new G4LogicalVolume(solidDetector2, ej200, "logicDetector2");

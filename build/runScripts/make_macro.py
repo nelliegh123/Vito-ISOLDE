@@ -1,9 +1,6 @@
 import numpy as np
 import sys 
 
-theta_start, theta_stop, n_steps = 0, 180, 20
-energy_min, energy_max, n_energy_steps = 0, 20, 20
-
 if len(sys.argv) > 1:
     numberOfParticles = int(sys.argv[1])
 else:
@@ -12,7 +9,12 @@ sampleType = str(sys.argv[2])
 sampleThickness = float(sys.argv[3])
 liquidThickness = float(sys.argv[4])
 sampleDiameter = float(sys.argv[5])
-
+theta_start = int(sys.argv[6])
+theta_stop = int(sys.argv[7])
+n_steps = int(sys.argv[8])
+energy_min = int(sys.argv[9])
+energy_max = int(sys.argv[10])
+n_energy_steps = int(sys.argv[11])
 
 with open("run_commands.mac", "w") as f:
     if sampleType=="solid_MgO":
@@ -49,7 +51,7 @@ with open("run_commands.mac", "w") as f:
     f.write("/analysis/openFile output.root\n")
 
 
-    f.write("/run/printProgress 10000\n")
+    f.write("/run/printProgress 100000\n")
 
 
     f.write("/mygen/scanMode true\n")

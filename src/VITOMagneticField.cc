@@ -293,15 +293,15 @@ void VITOMagneticField::GetFieldValue(const G4double Point[4], G4double* Bfield)
     // 1. Transform world coordinates into rotated field frame (180 deg around Y-axis)
     // x_field = -x_world, y_field = y_world, z_field = -z_world
 
-    // // Field pointing -z 
-    // double x_m = -Point[0] / CLHEP::m;
-    // double y_m =  Point[1] / CLHEP::m;
-    // double z_m = -Point[2] / CLHEP::m;
-
-    //Field pointing +z
-    double x_m = Point[0] / CLHEP::m;
+    // Field pointing -z 
+    double x_m = -Point[0] / CLHEP::m;
     double y_m =  Point[1] / CLHEP::m;
-    double z_m = Point[2] / CLHEP::m;
+    double z_m = -Point[2] / CLHEP::m;
+
+    // //Field pointing +z
+    // double x_m = Point[0] / CLHEP::m;
+    // double y_m =  Point[1] / CLHEP::m;
+    // double z_m = Point[2] / CLHEP::m;
 
     double r_m = std::sqrt(x_m * x_m + y_m * y_m);
     
@@ -345,16 +345,16 @@ void VITOMagneticField::GetFieldValue(const G4double Point[4], G4double* Bfield)
 
         
 
-        // // Field pointing -z 
-        // Bfield[0] = -Bx_field;
-        // Bfield[1] =  By_field;
-        // Bfield[2] = -Bz_internal;
+        // Field pointing -z 
+        Bfield[0] = -Bx_field;
+        Bfield[1] =  By_field;
+        Bfield[2] = -Bz_internal;
 
-        // Field pointing +z
-        else {
-            Bfield[0] = 0.0;
-            Bfield[1] = 0.0;
-        }
-        Bfield[2] = Bz_internal;
+        // // Field pointing +z
+        // else {
+        //     Bfield[0] = 0.0;
+        //     Bfield[1] = 0.0;
+        // }
+        // Bfield[2] = Bz_internal;
     }
 }

@@ -3,6 +3,7 @@
 #include "G4SPSEneDistribution.hh"
 #include "G4SPSAngDistribution.hh"
 #include "G4SingleParticleSource.hh"
+#include "Randomize.hh"
 
 
 MyPrimaryGenerator::MyPrimaryGenerator() 
@@ -26,6 +27,7 @@ MyPrimaryGenerator::MyPrimaryGenerator()
     fMessenger->DeclareProperty("thetaMax", fThetaMax, "Max angle in degrees");
     fMessenger->DeclareProperty("energyMin", fEnergyMin, "Min energy in MeV");
     fMessenger->DeclareProperty("energyMax", fEnergyMax, "Max energy in MeV");
+
 
     fGPS = new G4GeneralParticleSource();   
 }
@@ -55,8 +57,24 @@ void MyPrimaryGenerator::GeneratePrimaries(G4Event *anEvent)
 
         fGPS->GetCurrentSource()->GetEneDist()->SetMonoEnergy(energy_MeV * MeV);
 
+
+        // G4double theta_rad = theta_deg * CLHEP::deg;
+        // G4ThreeVector dir(0.0, std::sin(theta_rad), std::cos(theta_rad));
+        // fGPS->GetCurrentSource()->GetAngDist()->SetParticleMomentumDirection(dir);
+
+
+
+
         G4double theta_rad = theta_deg * CLHEP::deg;
-        G4ThreeVector dir(0.0, std::sin(theta_rad), std::cos(theta_rad));
+        G4double phi_rad = 2.0 * CLHEP::pi * G4UniformRand();
+
+        G4double sinTheta = std::sin(theta_rad);
+        G4double dx = sinTheta * std::cos(phi_rad);
+        G4double dy = sinTheta * std::sin(phi_rad);
+        G4double dz = std::cos(theta_rad);
+        G4ThreeVector dir(dx, dy, dz);
+
+
         fGPS->GetCurrentSource()->GetAngDist()->SetParticleMomentumDirection(dir);
     }
 

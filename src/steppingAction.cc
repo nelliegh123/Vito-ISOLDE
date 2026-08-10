@@ -1,6 +1,7 @@
 #include "steppingAction.hh"
 #include "eventAction.hh"
 
+#include "G4AnalysisManager.hh"
 #include "G4Step.hh"
 #include "G4Track.hh"
 #include "G4RunManager.hh"
@@ -38,6 +39,15 @@ void steppingAction::UserSteppingAction(const G4Step* step)
                << "  Emission angle: " << angle << " deg\n"
                << "  Emission energy: " << energy << " MeV"
                << G4endl;
+        
+        // auto analysisManager = G4AnalysisManager::Instance();
+        // analysisManager->FillNtupleDColumn(1, 0, pos.x());
+        // analysisManager->FillNtupleDColumn(1, 1, pos.y());
+        // analysisManager->FillNtupleDColumn(1, 2, pos.Z());
+        // analysisManager->FillNtupleDColumn(1, 3, angle);
+        // analysisManager->FillNtupleDColumn(1, 4, energy);
+        // analysisManager->AddNtupleRow(1);
+        
 
         step->GetTrack()->SetTrackStatus(fStopAndKill);
         G4RunManager::GetRunManager()->AbortEvent();
