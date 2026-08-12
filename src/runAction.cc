@@ -14,13 +14,13 @@ runAction::runAction() {
     analysisManager->CreateNtupleDColumn("rmEnergy"); 
     analysisManager->FinishNtuple();    
 
-    // analysisManager->CreateNtuple("removed", "Removed data");
-    // analysisManager->CreateNtupleDColumn("rmPosX");
-    // analysisManager->CreateNtupleDColumn("rmPosY");
-    // analysisManager->CreateNtupleDColumn("rmPosZ");
-    // analysisManager->CreateNtupleDColumn("rmAngle");
-    // analysisManager->CreateNtupleDColumn("rmEnergy");
-    // analysisManager->FinishNtuple();   // ntuple id 1
+    analysisManager->CreateNtuple("removed", "Removed data");
+    analysisManager->CreateNtupleDColumn("rmPosX");
+    analysisManager->CreateNtupleDColumn("rmPosY");
+    analysisManager->CreateNtupleDColumn("rmPosZ");
+    analysisManager->CreateNtupleDColumn("rmAngle");
+    analysisManager->CreateNtupleDColumn("rmEnergy");
+    analysisManager->FinishNtuple();   // ntuple id 1
 }       
 
 

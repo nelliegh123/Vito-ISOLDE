@@ -3,15 +3,15 @@
 angle=110
 energy=10
 
-numberOfParticles=100  #Nr of particles fired per step
+numberOfParticles=10  #Nr of particles fired per step
 
-sampleType=solid_KCl         #Either solid_MgO, solid_KCl or liquid
-sampleThickness=0.1          #Thickness of solid sample (solid) or mica disc (liquid) in mm
+sampleType=solid_MgO         #Either solid_MgO, solid_KCl or liquid
+sampleThickness=0.0        #Thickness of solid sample (solid) or mica disc (liquid) in mm
 liquidThickness=0.01         #Liquid sample thickness in mm
 sampleDiameter=12.0          #Sample diameter in mm
 
 detector=devitoCircle2024    #Choose default,devito, devitoCircle2023, devitoCircle2024
-magField=devito              #Choose vito, devito
+magField=vito              #Choose vito, devito
 
 
 # outputFile="oneEnergyOneAngle.root"

@@ -39,7 +39,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 
 
 
-    if(fSampleType == "solid_MgO"){
+    if(fSampleType == "solid_MgO" && fSampleThickness != 0.0){
     //====================================================================================
     //                              Defining Solid Sample
     //====================================================================================
@@ -53,8 +53,9 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     }
 
     //---------------KCl----------------------
-    else if (fSampleType == "solid_KCl") {
+    else if (fSampleType == "solid_KCl" && fSampleThickness != 0.0) {
         G4cout << "----------------------KCl-----------------" << G4endl;
+        
         G4Element* K = nist->FindOrBuildElement("K");
         G4Element* Cl = nist->FindOrBuildElement("Cl");
         G4double density = 1.984 * g/cm3;  
@@ -66,7 +67,8 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
         G4LogicalVolume *logicSampleCylinder = new G4LogicalVolume(solidSampleCylinder, KCl, 
                                                                 "logicSampleCylinder");
         G4VPhysicalVolume *solidCylinder = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), logicSampleCylinder, 
-                                                                "solidCylinder", logicWorld, false, 0, true);
+                                                            "solidCylinder", logicWorld, false, 0, true);
+        
     }
     
     
@@ -124,6 +126,10 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
         G4VPhysicalVolume *liquidEMIM = new G4PVPlacement(fRot, G4ThreeVector(0., y, z), logicSampleEMIM, 
                                                                     "liquidEMIM", logicWorld, false, 0, true);
 
+    }
+
+    else if (fSampleThickness == 0.0) {
+        G4cout << "------------------There is no sample------------------" << G4endl;
     }
 
     else {

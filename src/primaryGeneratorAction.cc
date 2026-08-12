@@ -57,14 +57,6 @@ void MyPrimaryGenerator::GeneratePrimaries(G4Event *anEvent)
 
         fGPS->GetCurrentSource()->GetEneDist()->SetMonoEnergy(energy_MeV * MeV);
 
-
-        // G4double theta_rad = theta_deg * CLHEP::deg;
-        // G4ThreeVector dir(0.0, std::sin(theta_rad), std::cos(theta_rad));
-        // fGPS->GetCurrentSource()->GetAngDist()->SetParticleMomentumDirection(dir);
-
-
-
-
         G4double theta_rad = theta_deg * CLHEP::deg;
         G4double phi_rad = 2.0 * CLHEP::pi * G4UniformRand();
 
