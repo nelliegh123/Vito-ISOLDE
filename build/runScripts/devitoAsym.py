@@ -2,128 +2,129 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.interpolate import interp1d
 import ROOT
-
 ROOT.gROOT.SetBatch(True)
+ 
+DATA_DIR = "/home/ngustafs/ISOLDE/build"
+ 
+def load_hits(path, columns=("energy", "angle", "detector")):
+    f = ROOT.TFile(path)
+    df = ROOT.RDataFrame("hits", f)
+    data = df.AsNumpy(columns=list(columns))
+    return data["energy"], data["angle"], data["detector"]
+ 
+P_plus, P_minus = 0.15, -0.15
+# E_plus, theta_plus, det_plus = load_hits(f"{DATA_DIR}/Results/devito/solid_KCl_2.0mm_1000p_devito2024_plus_20260810_211315/output.root")
+# E_minus, theta_minus, det_minus = load_hits(f"{DATA_DIR}/Results/devito/solid_KCl_2.0mm_1000p_devito2024_minus_20260810_204238/output.root")
 
-# # # #------------------------Magnetic field pointing +z----------------------------------
-P_plus = 0.15    #Polarization factor
-f_plus = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/devito/solid_KCl_2.0mm_1000p_devitoCircle2024_plus_20260807_111307/output.root")
-# f_plus = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/devito/solid_KCl_0.5mm_1000p_devitoCircle2023_plus_20260807_115654/output.root")
+#=============Testing=============
+# E_plus, theta_plus, det_plus = load_hits(f"{DATA_DIR}/Results/devitoTest/solid_KCl_0.0mm_10p_devito2024_plus_20260812_103517/output.root")
+# E_minus, theta_minus, det_minus = load_hits(f"{DATA_DIR}/Results/devitoTest/solid_KCl_0.0mm_10p_devito2024_minus_20260812_095433/output.root")
 
-df_plus = ROOT.RDataFrame("hits", f_plus)
-data_plus = df_plus.AsNumpy(columns=["energy", "angle", "detector"])
-E_plus, theta_plus, det_plus = data_plus["energy"], data_plus["angle"], data_plus["detector"]
+# E_plus, theta_plus, det_plus = load_hits(f"{DATA_DIR}/Results/devitoTest/solid_KCl_0.5mm_100p_devito2024_plus_20260812_102804/output.root")
+# E_minus, theta_minus, det_minus = load_hits(f"{DATA_DIR}/Results/devitoTest/solid_KCl_0.5mm_100p_devito2024_minus_20260812_101928/output.root")
 
+# E_plus, theta_plus, det_plus = load_hits(f"{DATA_DIR}/Results/devitoTest/solid_KCl_1.0mm_100p_devito2024_plus_20260812_102942/output.root")
+# E_minus, theta_minus, det_minus = load_hits(f"{DATA_DIR}/Results/devitoTest/solid_KCl_1.0mm_100p_devito2024_minus_20260812_102106/output.root")
 
-
-# ------------------------Magnetic field pointing -z----------------------------------
-P_minus = -0.15    #Polarization factor
-# f_minus = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/devito/solid_KCl_2.0mm_1000p_devitoCircle2024_minus_20260807_105611/output.root")
-# f_minus = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/devito/solid_KCl_0.5mm_1000p_devitoCircle2023_minus_20260807_130020/output.root")
-
-
-
-
-
-
-#----------------------------------------------------------------
-#            THESE ARE JUST FOR TESTING PURPOSES
-#----------------------------------------------------------------
-# #100 particles, normal
-# f_minus = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/test/solid_KCl_2.0mm_100p_devitoCircle2024_minus_20260807_152720/output.root")
-## A_minus = 0.39537672566722004 0.4561144899028587
-
-# #100 particles, front detector 5 mm larger radius
-# f_minus = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/test/solid_KCl_2.0mm_100p_devitoCircle2024_minus_20260807_154316/output.root")
-## A_minus = 0.45526901780722495 and 0.5113529576866451
-
-# #100 particles, both detectors 5 mm larger radius
-# f_minus = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/test/solid_KCl_2.0mm_100p_devitoCircle2024_minus_20260807_154956/output.root")
-## A_minus = 0.4136526498011403 and 0.4723104671483723
+E_plus, theta_plus, det_plus = load_hits(f"{DATA_DIR}/Results/devitoTest/solid_KCl_2.0mm_100p_devito2024_plus_20260812_103120/output.root")
+E_minus, theta_minus, det_minus = load_hits(f"{DATA_DIR}/Results/devitoTest/solid_KCl_2.0mm_100p_devito2024_minus_20260812_102244/output.root")
+#=============Testing=============
 
 
-# #100 particles, using devito2024 (cut corners) with no rotation 
-# f_minus = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/test/solid_KCl_2.0mm_100p_devito2024_minus_20260807_155556/output.root")
-# ## A_minus = 0.3731488729036506 and 0.4352334138162951
-
-# #100 particles, both detectors 26 mm larger radius (i.e "flat sides" of devito detector)
-# f_minus = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/test/solid_KCl_2.0mm_100p_devitoCircle2024_minus_20260807_155951/output.root")
-# ## A_minus = 0.3488552301245087 and 0.41456153883414504
-#----------------------------------------------------------------
-#                         END OF TEST
-#----------------------------------------------------------------
-
-
-
-
-
-df_minus = ROOT.RDataFrame("hits", f_minus)
-data_minus = df_minus.AsNumpy(columns=["energy", "angle", "detector"])
-E_minus, theta_minus, det_minus = data_minus["energy"], data_minus["angle"], data_minus["detector"]
-
-
-
-
-#-------------------------Transitions----------------------------------
-A_2599 = -0.67     #Asymmetry parameter for 2599 transition in K47
-E_data2599, dNdE_data2599, _ = np.loadtxt("/home/ngustafs/ISOLDE/build/EnergyDistributions/K47_2599.txt", unpack=True)
-
-A_2578 = 0.33    #Asymmetry parameter for 2578 transition in K47
-E_data2578, dNdE_data2578, _ = np.loadtxt("/home/ngustafs/ISOLDE/build/EnergyDistributions/K47_2578.txt", unpack=True)
-
-
-
-
+TRANSITIONS = {
+    2599: {"A": -0.67, "file": f"{DATA_DIR}/EnergyDistributions/K47_2599.txt"},
+    2578: {"A": 0.33,  "file": f"{DATA_DIR}/EnergyDistributions/K47_2578.txt"},
+}
+for t in TRANSITIONS.values():
+    E_data, dNdE_data, _ = np.loadtxt(t["file"], unpack=True)
+    t["interp"] = interp1d(E_data, dNdE_data, kind="cubic", bounds_error=False, fill_value=0.0)
+ 
+ 
 def W(E, theta, A, P):
-    vc = np.sqrt(1-((0.511)/(E+0.511))**2)
-    return 1 + vc*A*P*np.cos(np.radians(theta))
-
-
+    """Angular distribution weight."""
+    vc = np.sqrt(1 - (0.511 / (E + 0.511)) ** 2)
+    return 1 + vc * A * P * np.cos(np.radians(theta))
+ 
+ 
 def S(E, transition):
-    if transition==2599:
-        func = interp1d(E_data2599, dNdE_data2599, kind="cubic", bounds_error=False, fill_value=0.0)
-    else:
-        func = interp1d(E_data2578, dNdE_data2578, kind="cubic", bounds_error=False, fill_value=0.0)
-    return(func(E*1000))      #I take E*1000 since data is in keV
+    """Energy-distribution weight (data is stored in keV, E is in MeV)."""
+    return TRANSITIONS[transition]["interp"](E * 1000)
+ 
+ 
+def asymmetry_np(E, theta, P, det, transition):
+    """
+    Returns:
+        asymmetry (float): (NF - NR) / (NF + NR)
+        NF, NR (float): summed weights in front/rear detectors
+        front_weight, back_weight (array): per-event weights, front/back detector
+        front_E, back_E (array): energies matching front_weight/back_weight
+    """
+    A = TRANSITIONS[transition]["A"]
+    weight = W(E, theta, A, P) * S(E, transition) * np.sin(np.radians(theta))
+ 
+    front_mask, back_mask = det == 0, det == 1
+    NF, NR = weight[front_mask].sum(), weight[back_mask].sum()
+    asymmetry = (NF - NR) / (NF + NR)
+ 
+    return (asymmetry, NF, NR,
+            weight[front_mask], weight[back_mask],
+            E[front_mask], E[back_mask])
+ 
+ 
+results = {}
+for transition in TRANSITIONS:
+    for label, (E, theta, det, P) in {
+        "plus":  (E_plus,  theta_plus,  det_plus,  P_plus),
+        "minus": (E_minus, theta_minus, det_minus, P_minus),
+    }.items():
+        asym, NF, NR, front_w, back_w, front_E, back_E = asymmetry_np(E, theta, P, det, transition)
+        results[(transition, label)] = {
+            "asymmetry": asym, "NF": NF, "NR": NR,
+            "front_weight": front_w, "back_weight": back_w,
+            "front_E": front_E, "back_E": back_E,
+        }
+ 
+POLARITY_SIGN = {"plus": "+z", "minus": "-z"}
 
 
-def asymmetry_np(E, theta, A, P, det, transition):
-    theta_rad = np.radians(theta)
-    w = W(E, theta, A, P)
-    s = S(E, transition)
-
-    weight = w * s * np.sin(theta_rad)
-
-    NF = weight[det == 0].sum()
-    NR = weight[det == 1].sum()
-    return (NF - NR) / (NF + NR), NF, NR
-
-
-
-
-
-A_plus = asymmetry_np(E_plus, theta_plus, A_2599, P_plus, det_plus, 2599)
-A_minus = asymmetry_np(E_minus, theta_minus, A_2599, P_minus, det_minus, 2599)
-print()
-print("-----------------------------2024--------------------------")
-print("Transition = 2599, magnetic field = +z")
-print("The ratio of counts (front/back) are ", A_plus[1]/A_plus[2])
-print("The experimental asymmetry parameter is", A_plus[0])
-print()
-print("Transition = 2599, magnetic field = -z")
-print("The ratio of counts (front/back) are ", A_minus[1]/A_minus[2])
-print("The experimental asymmetry parameter is", A_minus[0])
-print()
+#======================================================================
+#               Prints asymmetry parameters for 2024
+#======================================================================
+# print()
+# print("-----------------------------2024--0.5mm--------------------------")
+# for transition in TRANSITIONS:
+#     for label in ("plus", "minus"):
+#         r = results[(transition, label)]
+#         print(f"Transition = {transition}, magnetic field = {POLARITY_SIGN[label]}")
+#         print("The ratio of counts (front/back) are ", r["NF"] / r["NR"])
+#         print("The experimental asymmetry parameter is", r["asymmetry"])
+#         print()
+ 
 
 
-A_plus = asymmetry_np(E_plus, theta_plus, A_2578, P_plus, det_plus, 2578)
-A_minus = asymmetry_np(E_minus, theta_minus, A_2578, P_minus, det_minus, 2578)
-print()
-print("Transition = 2578, magnetic field = +z")
-print("The ratio of counts (front/back) are ", A_plus[1]/A_plus[2])
-print("The experimental asymmetry parameter is", A_plus[0])
-print()
-print("Transition = 2578, magnetic field = -z")
-print("The ratio of counts (front/back) are ", A_minus[1]/A_minus[2])
-print("The experimental asymmetry parameter is", A_minus[0])
-print()
+#====================================================================
+#            Plots histograms for combinations of 2024
+#====================================================================
+# ---- Plot front + back histograms for all 4 combos ----
+fig, axes = plt.subplots(2, 2, figsize=(11, 8), sharex=True)
+ 
+for ax, (transition, label) in zip(axes.flat, results.keys()):
+    r = results[(transition, label)]
+    bins = np.linspace(
+        min(r["front_E"].min(), r["back_E"].min()),
+        max(r["front_E"].max(), r["back_E"].max()),
+        100,
+    )
+    ax.hist(r["front_E"], bins=bins, weights=r["front_weight"], alpha=0.5, label="Front")
+    ax.hist(r["back_E"], bins=bins, weights=r["back_weight"], alpha=0.5, label="Back")
+    
+    ax.set_title(f"{transition}, B({POLARITY_SIGN[label]}), 2.0 mm")
+    ax.set_xlabel("Energy (MeV)")
+    ax.set_ylabel("Counts")
+    # ax.set_yscale("log")
+    ax.legend()
+ 
+fig.tight_layout()
+plt.savefig("detector_counts_2mm")
+plt.show()
+ 

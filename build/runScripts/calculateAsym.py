@@ -6,22 +6,17 @@ import ROOT
 A = -1/3 #Asymmetry parameter for Li8
 # A = -0.67 #Asymmetry parameter for 2599 transition in K47
 # A = 0.33 #Asymmetry parameter for 2578 transition in K47
-
 P = 1    #Polarization factor
 
 ROOT.gROOT.SetBatch(True) 
 
 
-# f = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/default/solid_MgO_0.5mm_1000p_default_minus_20260807_162637/output.root")
-# f = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/default/solid_MgO_1.0mm_1000p_default_minus_20260807_181730/output.root")
-# f = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/default/solid_MgO_2.0mm_1000p_default_minus_20260807_200846/output.root")
-
-f = ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/solid_MgO_2.0mm_100p_default_minus_20260810_160619/output.root")
-
-
-df = ROOT.RDataFrame("hits", f)
-data = df.AsNumpy(columns=["energy", "angle", "detector"])
-E, theta, det = data["energy"], data["angle"], data["detector"]
+f = [ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/default/solid_MgO_0.01mm_1000p_default_minus_20260810_215051/output.root"),
+    ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/default/solid_MgO_0.5mm_1000p_default_minus_20260810_234341/output.root"),
+    ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/default/solid_MgO_1.0mm_1000p_default_minus_20260811_013336/output.root"),
+    ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/default/solid_MgO_1.5mm_1000p_default_minus_20260811_032456/output.root"),
+    ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/default/solid_MgO_2.0mm_1000p_default_minus_20260811_051508/output.root"),
+    ROOT.TFile("/home/ngustafs/ISOLDE/build/Results/default/solid_MgO_2.5mm_1000p_default_minus_20260811_070433/output.root")]
 
 
 def W(E, theta, A, P):
@@ -40,14 +35,39 @@ def asymmetry_np(A):
     s = S(E)
 
     weight = w * s
+    front, back = weight[det == 0], weight[det==1]
 
     NF = weight[det == 0].sum()
     NR = weight[det == 1].sum()
-    return (NF - NR) / (NF + NR), NF, NR
+    return (NF - NR) / (NF + NR), NF, NR, front, back
 
-# for A in np.linspace(-1, 1, 21):
-print(f)
-print()
-# print("The counts are ", asymmetry_np(A)[1], "in the front detector and", asymmetry_np(A)[2], "in the back detector")
-# print()
-print("The experimental asymmetry parameter is", asymmetry_np(A)[0])
+# plt.plot(E_data, asymmetry_np(A)[3])
+
+for i in range(len(f)):
+    file = f[i]
+
+    df = ROOT.RDataFrame("hits", file)
+    data = df.AsNumpy(columns=["energy", "angle", "detector"])
+    E, theta, det = data["energy"], data["angle"], data["detector"]
+    print()
+    print(file)
+    print("The experimental asymmetry parameter is", asymmetry_np(A)[0])
+
+
+
+df = ROOT.RDataFrame("hits", f[1])
+data = df.AsNumpy(columns=["energy", "angle", "detector"])
+E, theta, det = data["energy"], data["angle"], data["detector"]
+
+
+#========================================
+#    Detector Counts vs beta energy
+#========================================
+E_front, E_back = E[det == 0], E[det == 1]
+# plt.hist(E, bins=97, weights=S(E))
+plt.hist(E_back, bins=97, weights=asymmetry_np(A)[4], label="Rear Detector")
+plt.hist(E_front, bins=97, weights=asymmetry_np(A)[3], alpha=0.7, label="Front Detector")
+plt.legend()
+plt.show()
+
+print(len(E))

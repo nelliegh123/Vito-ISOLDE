@@ -49,16 +49,16 @@ void eventAction::EndOfEventAction(const G4Event* event) {
     }
 
     if (nHit1 > 0) {
-        analysisManager->FillNtupleDColumn(0, energy);
-        analysisManager->FillNtupleDColumn(1, angle);
-        analysisManager->FillNtupleIColumn(2, 0);
+        analysisManager->FillNtupleDColumn(0, 0, energy);
+        analysisManager->FillNtupleDColumn(0, 1, angle);
+        analysisManager->FillNtupleIColumn(0, 2, 0);
         analysisManager->AddNtupleRow();
     }
     
     if (nHit2 > 0) {
-        analysisManager->FillNtupleDColumn(0, energy);
-        analysisManager->FillNtupleDColumn(1, angle);
-        analysisManager->FillNtupleIColumn(2, 1);
+        analysisManager->FillNtupleDColumn(0, 0, energy);
+        analysisManager->FillNtupleDColumn(0, 1, angle);
+        analysisManager->FillNtupleIColumn(0, 2, 1);
         analysisManager->AddNtupleRow();
     }
 
