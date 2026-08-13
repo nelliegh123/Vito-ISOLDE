@@ -1,8 +1,8 @@
 #!/bin/bash
 numberOfParticles=1          #Nr of particles fired per step
 
-sampleType=solid_KCl         #Either solid_MgO, solid_KCl or liquid
-sampleThickness=2.0          #Thickness of solid sample (solid) or mica disc (liquid) in mm
+sampleType=solid_MgO         #Either solid_MgO, solid_KCl or liquid
+sampleThickness=10.0          #Thickness of solid sample (solid) or mica disc (liquid) in mm
 # sampleThickness=${1:-2.0}
 liquidThickness=0.01         ## OBS LIQUID need flipping due to flidded detector geom #Liquid sample thickness in mm
 sampleDiameter=20.0          #Sample diameter in mm

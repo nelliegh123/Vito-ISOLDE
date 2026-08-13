@@ -146,11 +146,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
         detectorGeom = std::make_unique<DetectorGeometryDefault>();
     }
 
-    // else if (fDetector == "devito") {
-    //     detectorGeom = std::make_unique<DetectorGeometryDeVITO>();
-    // }
-
-    else if (fDetector == "devito2023" || fDetector == "devito2024" || fDetector == "devitoCircle2023" || fDetector == "devitoCircle2024") {
+    else if (fDetector == "devito2023" || fDetector == "devito2024") {
         detectorGeom = std::make_unique<DetectorGeometryDeVito>(fDetector);
     }
 
