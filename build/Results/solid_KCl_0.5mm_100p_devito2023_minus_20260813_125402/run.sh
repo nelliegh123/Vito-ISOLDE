@@ -18,7 +18,7 @@ energy_min=0
 energy_max=5
 n_energy_steps=100
 
-mag_field=plus
+mag_field=minus
 
 
 
