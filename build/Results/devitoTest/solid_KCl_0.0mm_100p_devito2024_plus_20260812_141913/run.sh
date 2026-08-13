@@ -1,5 +1,5 @@
 #!/bin/bash
-numberOfParticles=10  #Nr of particles fired per step
+numberOfParticles=100  #Nr of particles fired per step
 
 sampleType=solid_KCl        #Either solid_MgO, solid_KCl or liquid
 sampleThickness=0.0         #Thickness of solid sample (solid) or mica disc (liquid) in mm

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-angle=110
+angle=0
 energy=10
 
 numberOfParticles=10  #Nr of particles fired per step
@@ -10,8 +10,8 @@ sampleThickness=0.0        #Thickness of solid sample (solid) or mica disc (liqu
 liquidThickness=0.01         #Liquid sample thickness in mm
 sampleDiameter=12.0          #Sample diameter in mm
 
-detector=devitoCircle2024    #Choose default,devito, devitoCircle2023, devitoCircle2024
-magField=vito              #Choose vito, devito
+detector=devito2024    #Choose default,devito, devitoCircle2023, devitoCircle2024
+magField=devito              #Choose vito, devito
 
 
 # outputFile="oneEnergyOneAngle.root"

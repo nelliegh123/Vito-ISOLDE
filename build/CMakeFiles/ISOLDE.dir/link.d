@@ -7,8 +7,7 @@ ISOLDE: \
   CMakeFiles/ISOLDE.dir/src/VITOMagneticField.cc.o \
   CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.o \
   CMakeFiles/ISOLDE.dir/src/detectorConstruction.cc.o \
-  CMakeFiles/ISOLDE.dir/src/detectorGeometryDeVITO.cc.o \
-  CMakeFiles/ISOLDE.dir/src/detectorGeometryDeVitoCircle.cc.o \
+  CMakeFiles/ISOLDE.dir/src/detectorGeometryDeVito.cc.o \
   CMakeFiles/ISOLDE.dir/src/detectorGeometryDefault.cc.o \
   CMakeFiles/ISOLDE.dir/src/eventAction.cc.o \
   CMakeFiles/ISOLDE.dir/src/physicsList.cc.o \
@@ -105,9 +104,7 @@ CMakeFiles/ISOLDE.dir/src/actionInitialization.cc.o:
 
 CMakeFiles/ISOLDE.dir/src/detectorConstruction.cc.o:
 
-CMakeFiles/ISOLDE.dir/src/detectorGeometryDeVITO.cc.o:
-
-CMakeFiles/ISOLDE.dir/src/detectorGeometryDeVitoCircle.cc.o:
+CMakeFiles/ISOLDE.dir/src/detectorGeometryDeVito.cc.o:
 
 CMakeFiles/ISOLDE.dir/src/detectorGeometryDefault.cc.o:
 
