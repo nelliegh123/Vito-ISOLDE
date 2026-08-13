@@ -1,7 +1,6 @@
 #include "detectorConstruction.hh"
 #include "detectorGeometryDefault.hh"
-#include "detectorGeometryDeVITO.hh"
-#include "detectorGeometryDeVITOCircle.hh"
+#include "detectorGeometryDeVito.hh"
 #include "DeVITOMagneticField.hh"
 
 #include "G4RotationMatrix.hh"
@@ -152,7 +151,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     // }
 
     else if (fDetector == "devito2023" || fDetector == "devito2024" || fDetector == "devitoCircle2023" || fDetector == "devitoCircle2024") {
-        detectorGeom = std::make_unique<DetectorGeometryDeVITOCircle>(fDetector);
+        detectorGeom = std::make_unique<DetectorGeometryDeVito>(fDetector);
     }
 
     else {G4Exception("MyDetectorConstruction::Construct()",
