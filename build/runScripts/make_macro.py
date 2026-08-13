@@ -19,12 +19,12 @@ n_energy_steps = int(sys.argv[11])
 with open("run_commands.mac", "w") as f:
     if sampleType=="solid_MgO":
         f.write("/gps/pos/type Plane\n")
-        f.write(f"/gps/pos/centre 0 0 -{sampleThickness/2.0:.6f} mm\n")
+        f.write(f"/gps/pos/centre 0 0 {sampleThickness/2.0:.6f} mm\n")
         f.write("/gps/pos/shape Circle\n")
 
     elif sampleType=="solid_KCl":
             f.write("/gps/pos/type Plane\n")
-            f.write(f"/gps/pos/centre 0 0 -{sampleThickness/2.0:.6f} mm\n")
+            f.write(f"/gps/pos/centre 0 0 {sampleThickness/2.0:.6f} mm\n")
             f.write("/gps/pos/shape Circle\n")
 
     elif sampleType=="liquid":

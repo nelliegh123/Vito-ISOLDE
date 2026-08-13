@@ -14,7 +14,7 @@ def load_hits(path, columns=("rmPosX", "rmPosY", "rmPosZ", "rmAngle", "rmEnergy"
 
 
 #=============Testing=============
-x_plus, y_plus, z_plus, theta_plus, E_plus = load_hits(f"{DATA_DIR}/Results/devitoTest/solid_KCl_0.0mm_10p_devito2024_plus_20260812_103517/output.root")
+x_plus, y_plus, z_plus, theta_plus, E_plus = load_hits(f"{DATA_DIR}/Results/devitoTest/solid_KCl_0.0mm_100p_devito2024_plus_20260812_141913/output.root")
 x_minus, y_minus, z_minus, theta_minus, E_minus = load_hits(f"{DATA_DIR}/Results/devitoTest/solid_KCl_0.0mm_10p_devito2024_minus_20260812_095433/output.root")
 
 # x_plus, y_plus, z_plus, theta_plus, E_plus = load_hits(f"{DATA_DIR}/Results/devitoTest/solid_KCl_0.5mm_100p_devito2024_plus_20260812_102804/output.root")
@@ -41,5 +41,5 @@ x_minus, y_minus, z_minus, theta_minus, E_minus = load_hits(f"{DATA_DIR}/Results
 # plt.show()
 
 
-plt.plot(theta_plus, E_plus)
-plt.show()
+# plt.hist(E_plus, weigh)
+# plt.show()
