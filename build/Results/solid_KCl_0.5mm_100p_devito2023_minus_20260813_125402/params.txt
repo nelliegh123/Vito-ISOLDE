@@ -1,0 +1,14 @@
+numberOfParticles=100
+sampleType=solid_KCl
+sampleThickness=0.5
+liquidThickness=0.01
+detector=devito2023
+theta_start=0
+theta_stop=180
+n_steps=180
+energy_min=0
+energy_max=5
+n_energy_steps=100
+mag_field=minus
+timestamp=20260813_125402
+

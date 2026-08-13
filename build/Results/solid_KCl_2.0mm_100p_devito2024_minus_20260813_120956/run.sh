@@ -2,12 +2,12 @@
 numberOfParticles=100          #Nr of particles fired per step
 
 sampleType=solid_KCl         #Either solid_MgO, solid_KCl or liquid
-sampleThickness=0.5          #Thickness of solid sample (solid) or mica disc (liquid) in mm
+sampleThickness=2.0          #Thickness of solid sample (solid) or mica disc (liquid) in mm
 # sampleThickness=${1:-2.0}
 liquidThickness=0.01         ## OBS LIQUID need flipping due to flidded detector geom #Liquid sample thickness in mm
-sampleDiameter=12.0          #Sample diameter in mm
+sampleDiameter=20.0          #Sample diameter in mm
 
-detector=devito2023          #Choose default,devito2023, devito2024,
+detector=devito2024          #Choose default,devito2023, devito2024,
 magField=devito              #Choose vito, devito
 
 theta_start=0
@@ -18,7 +18,7 @@ energy_min=0
 energy_max=5
 n_energy_steps=100
 
-mag_field=plus
+mag_field=minus
 
 
 

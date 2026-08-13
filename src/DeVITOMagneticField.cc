@@ -305,7 +305,7 @@ void DeVITOMagneticField::GetFieldValue(const G4double Point[4], G4double* Bfiel
     // double by_world =  by_local;
     // double bz_world = -bx_local;
 
-    //Field pointing +z
+    // Field pointing +z
     double bx_world = -bz_local;
     double by_world = by_local;
     double bz_world = bx_local;
