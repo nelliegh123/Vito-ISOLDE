@@ -1,18 +1,18 @@
 #!/bin/bash
-numberOfParticles=100          #Nr of particles fired per step
+numberOfParticles=1          #Nr of particles fired per step
 
 sampleType=solid_KCl         #Either solid_MgO, solid_KCl or liquid
-sampleThickness=0.5          #Thickness of solid sample (solid) or mica disc (liquid) in mm
+sampleThickness=2.0          #Thickness of solid sample (solid) or mica disc (liquid) in mm
 # sampleThickness=${1:-2.0}
 liquidThickness=0.01         ## OBS LIQUID need flipping due to flidded detector geom #Liquid sample thickness in mm
-sampleDiameter=12.0          #Sample diameter in mm
+sampleDiameter=20.0          #Sample diameter in mm
 
-detector=devito2023          #Choose default,devito2023, devito2024,
+detector=devito2024          #Choose default,devito2023, devito2024,
 magField=devito              #Choose vito, devito
 
-theta_start=0
-theta_stop=180
-n_steps=180
+theta_start=45 #0
+theta_stop=45 #180
+n_steps=1 #180
 
 energy_min=0
 energy_max=5
@@ -69,7 +69,7 @@ make
 cd runScripts
 python make_macro.py $numberOfParticles $sampleType $sampleThickness $liquidThickness $sampleDiameter $theta_start $theta_stop $n_steps $energy_min $energy_max $n_energy_steps
 cd ..
-./ISOLDE $sampleType $sampleThickness $liquidThickness $sampleDiameter $detector $magField #--gui
+./ISOLDE $sampleType $sampleThickness $liquidThickness $sampleDiameter $detector $magField --gui
 
 mv output.root "$runDir/output.root"
 echo "Run complete. Results in $runDir"
