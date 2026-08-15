@@ -43,15 +43,15 @@ def asymmetry_np(A):
 
 # plt.plot(E_data, asymmetry_np(A)[3])
 
-for i in range(len(f)):
-    file = f[i]
+# for i in range(len(f)):
+#     file = f[i]
 
-    df = ROOT.RDataFrame("hits", file)
-    data = df.AsNumpy(columns=["energy", "angle", "detector"])
-    E, theta, det = data["energy"], data["angle"], data["detector"]
-    print()
-    print(file)
-    print("The experimental asymmetry parameter is", asymmetry_np(A)[0])
+#     df = ROOT.RDataFrame("hits", file)
+#     data = df.AsNumpy(columns=["energy", "angle", "detector"])
+#     E, theta, det = data["energy"], data["angle"], data["detector"]
+#     print()
+#     print(file)
+#     print("The experimental asymmetry parameter is", asymmetry_np(A)[0])
 
 
 
@@ -63,11 +63,40 @@ E, theta, det = data["energy"], data["angle"], data["detector"]
 #========================================
 #    Detector Counts vs beta energy
 #========================================
-E_front, E_back = E[det == 0], E[det == 1]
-# plt.hist(E, bins=97, weights=S(E))
-plt.hist(E_back, bins=97, weights=asymmetry_np(A)[4], label="Rear Detector")
-plt.hist(E_front, bins=97, weights=asymmetry_np(A)[3], alpha=0.7, label="Front Detector")
-plt.legend()
-plt.show()
+# E_front, E_back = E[det == 0], E[det == 1]
+# # plt.hist(E, bins=97, weights=S(E))
+# plt.hist(E_back, bins=97, weights=asymmetry_np(A)[4], label="Rear Detector")
+# plt.hist(E_front, bins=97, weights=asymmetry_np(A)[3], alpha=0.7, label="Front Detector")
+# plt.legend()
+# plt.show()
 
-print(len(E))
+# print(len(E))
+
+
+x = np.linspace(0, 13, 100)
+# plt.plot(x, S(x))
+# plt.ylabel("dN/dE")
+# plt.xlabel("Energy [MeV]")
+# plt.yticks([])
+# plt.show()
+
+ax = plt.gca()
+ax.plot(x, S(x), label=r"$\beta^-$", color="black")
+ax.spines['top'].set_visible(False)
+ax.spines['right'].set_visible(False)
+ax.tick_params(
+    axis='y',
+    which='both',
+    left=False,
+    right=False,
+    labelleft=False)
+ax.spines['left'].set_position('zero')
+ax.spines['bottom'].set_position('zero')
+ax.spines['left'].set_capstyle('butt')
+ax.spines['bottom'].set_capstyle('butt')
+ax.set_xlim(left=0)
+ax.set_ylim(bottom=0)
+ax.set_xlabel("Energy [MeV]")
+ax.set_ylabel("N(E)")
+ax.legend()
+plt.show()
