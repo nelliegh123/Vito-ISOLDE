@@ -6,12 +6,12 @@ The purpose of this code is to easily be able to calculate the experimental asym
 Running the project requires Geant4, CMake, GNU Make, and Python 3. 
 
 1. Clone the repository from GitHub "git@github.com:nelliegh123/Vito-ISOLDE.git"
-2. Go into the runScripts directory
+2. Go into the runScripts directory, and open the file _run.sh_. 
 ```bash
    cd build/runScripts
    code run.sh
 ```
-3. Change
+3. Set your run-parameters:
 ```bash
    numberOfParticles=1          #Nr of particles fired per step
    sampleType=solid_KCl         #solid_MgO, solid_KCl, liquid
