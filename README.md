@@ -27,11 +27,12 @@ Running the project requires Geant4, CMake, GNU Make, and Python 3. Running the 
    energy_max=5                 #MeV 
    n_energy_steps=100
 ```
-4. Make the file executable, and run it as
+4. Make the file executable, and run it as:
 ```bash
    chmod +x run.sh
    ./run.sh
 ```
+5. Voilà! You now have a ROOT file named output.root located in build/Results. 
 
 
 ## New Detector Geometry
