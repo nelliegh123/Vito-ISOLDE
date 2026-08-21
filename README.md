@@ -38,6 +38,14 @@ else if (fDetector == "new") {
     }
 
    ```
+2. In make_macro.py you add
+```python
+elif sampleType=="new_sample":
+            f.write("/gps/pos/type Plane\n")
+            f.write(f"/gps/pos/centre 0 0 {sampleThickness/2.0:.6f} mm\n")
+            f.write("/gps/pos/shape Circle\n")
+```
+
 How to implement a new sample (add option on detectorConstruction with a new sample, and modify make_macro.py to get the right shape of the emitted particles)
 
 ## New Magnetic Field
