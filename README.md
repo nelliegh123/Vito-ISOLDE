@@ -54,7 +54,8 @@ else if (fDetector == "new") {
   and you new geometry should be used.   
 
 ## New Sample
-1. In _detecorConstruction.cc_ you add a new instance
+If you want to define a new sample type, you do it in the following way:
+1. Add a new instance in _detecorConstruction.cc_ 
    ```cpp
    else if(fSampleType == "new_sample" && fSampleThickness != 0.0) {
         G4Material *solidSampleMat = nist->FindOrBuildMaterial("G4_MAGNESIUM_OXIDE");
