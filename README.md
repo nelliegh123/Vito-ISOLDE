@@ -11,6 +11,25 @@ Running the project requires Geant4, CMake, GNU Make, and Python 3.
    cd build/runScripts
    code run.sh
 ```
+3. Change
+```bash
+   numberOfParticles=1          #Nr of particles fired per step
+   sampleType=solid_KCl         #solid_MgO, solid_KCl, liquid
+   sampleThickness=2.0          #Thickness of solid sample (solid) or mica disc (liquid) in mm
+   liquidThickness=0.01         #Liquid sample thickness in mm
+   sampleDiameter=20.0          #Sample diameter in mm
+   detector=devito2024          #Choose default, devito2023, devito2024,
+   magField=devito              #Choose vito, devito
+   theta_start=45 #0            #Degrees
+   theta_stop=45 #180           #Degrees
+   n_steps=1 #180               
+   energy_min=0                 #MeV 
+   energy_max=5                 #MeV 
+   n_energy_steps=100
+```
+
+
+
 
 What to change for runs, for example set the magnetic field, the sample type, thickness and size. Write that if you set a solid sample to a certain diameter the particles will immediately be emitted uniformly from that diameter in make_macros.py. Same with volume distribution in liquid sample.  
 
