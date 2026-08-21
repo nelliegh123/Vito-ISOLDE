@@ -75,7 +75,7 @@ elif sampleType=="new_sample":
             f.write(f"/gps/pos/centre 0 0 {sampleThickness/2.0:.6f} mm\n")
             f.write("/gps/pos/shape Circle\n")
 ```
-
+3. In _run.h_ you should now be able to set "sampleType=new_sample"
 
 ## New Magnetic Field
 If you want to implement a new magnetic field, you do:
