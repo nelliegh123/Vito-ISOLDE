@@ -27,11 +27,12 @@ Running the project requires Geant4, CMake, GNU Make, and Python 3. Running the 
    energy_max=5                 #MeV 
    n_energy_steps=100
 ```
+4. Make the file executable, and run it as
+```bash
+   chmod +x run.sh
+   ./run.sh
+```
 
-
-
-
-What to change for runs, for example set the magnetic field, the sample type, thickness and size. Write that if you set a solid sample to a certain diameter the particles will immediately be emitted uniformly from that diameter in make_macros.py. Same with volume distribution in liquid sample.  
 
 ## New Detector Geometry
 1. Make new files _detectorGeometryNew.cc_ and _detectorGeometryNew.hh_ in src and include directories. Define the detector geometry as normal (you can look at _detectorGeometryDeVITO_ for inspiration). 
