@@ -11,8 +11,12 @@ How to compile the project
 What to change for runs, for example set the magnetic field, the sample type, thickness and size. Write that if you set a solid sample to a certain diameter the particles will immediately be emitted uniformly from that diameter in make_macros.py. Same with volume distribution in liquid sample.  
 
 ### New Detector Geometry
-- Make new files _detectorGeometryNew.cc_ and _detectorGeometryNew.hh_ in src and include directories. Define the detector geometry (you can look at _detectorGeometryDeVITO_ for inspiration). 
-- In detectorConstruction.cc you include your new header file and call your new function.
+- Make new files _detectorGeometryNew.cc_ and _detectorGeometryNew.hh_ in src and include directories. Define the detector geometry as normal (you can look at _detectorGeometryDeVITO_ for inspiration). 
+- In detectorConstruction.cc you include your new header file. You then add an instance and call your new function. It may look like:
+```cpp
+else if (fDetector == "devito") {
+        detectorGeom = std::make_unique<DetectorGeometryDeVito>(fDetector);
+}```
 - Update run.sh to use your new geometry. 
 - Run as normal. 
 
