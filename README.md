@@ -25,6 +25,18 @@ else if (fDetector == "new") {
   and you new geometry should be used.   
 
 ## New Sample
+1. In _detecorConstruction.cc_ you add a new instance
+   ```cpp
+   else if(fSampleType == "new_sample" && fSampleThickness != 0.0) {
+        G4Material *solidSampleMat = nist->FindOrBuildMaterial("G4_MAGNESIUM_OXIDE");
+        G4Tubs *solidSampleCylinder = new G4Tubs("solidSampleCylinder", 0., fSampleDiameter/2.0*mm, fSampleThickness/2.0*mm, 0.*deg,         360.*deg);
+        G4LogicalVolume *logicSampleCylinder = new G4LogicalVolume(solidSampleCylinder, solidSampleMat, 
+                                                                "logicSampleCylinder");
+        G4VPhysicalVolume *solidCylinder = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), logicSampleCylinder, 
+                                                                "solidCylinder", logicWorld, false, 0, true);                        
+    }
+
+   ```
 How to implement a new sample (add option on detectorConstruction with a new sample, and modify make_macro.py to get the right shape of the emitted particles)
 
 ## New Magnetic Field
