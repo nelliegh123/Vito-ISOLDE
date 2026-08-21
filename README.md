@@ -2,8 +2,9 @@
 The purpose of this code is to easily be able to calculate the experimental asymmetry parameter for $\beta$-NMR using different samples, detector setups and magnetic field in Geant4. The code is structured in such a way that you implement a detector geometry, a magnetic field, and a sample. Then, an energy and angle scan is performed where electrons are fired at angles from $\theta=0$ to $\theta=180$, and a chosen range of energies (for example 0-14 MeV). This produces a ROOT file _output.root_ with the simulated hits in the front and rear detector. After the angle and energy scan has been run, the code in the directory git@github.com:nelliegh123/VITO-Analysis.git can be used to calculate the asymmetry parameter for a specific nuclei. 
 
 
-## Compiling
-How to compile the project
+## Installing and Compiling
+Running the project requires Geant4, CMake, GNU Make, and Python 3. 
+Clone the repository from GitHub "git@github.com:nelliegh123/Vito-ISOLDE.git"
 
 What to change for runs, for example set the magnetic field, the sample type, thickness and size. Write that if you set a solid sample to a certain diameter the particles will immediately be emitted uniformly from that diameter in make_macros.py. Same with volume distribution in liquid sample.  
 
