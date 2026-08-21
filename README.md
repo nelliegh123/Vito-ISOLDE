@@ -16,7 +16,8 @@ What to change for runs, for example set the magnetic field, the sample type, th
 ```cpp
 else if (fDetector == "devito") {
         detectorGeom = std::make_unique<DetectorGeometryDeVito>(fDetector);
-}```
+}
+```
 - Update run.sh to use your new geometry. 
 - Run as normal. 
 
