@@ -29,7 +29,8 @@ else if (fDetector == "new") {
    ```cpp
    else if(fSampleType == "new_sample" && fSampleThickness != 0.0) {
         G4Material *solidSampleMat = nist->FindOrBuildMaterial("G4_MAGNESIUM_OXIDE");
-        G4Tubs *solidSampleCylinder = new G4Tubs("solidSampleCylinder", 0., fSampleDiameter/2.0*mm, fSampleThickness/2.0*mm, 0.*deg,         360.*deg);
+        G4Tubs *solidSampleCylinder = new G4Tubs("solidSampleCylinder", 0., fSampleDiameter/2.0*mm,
+        fSampleThickness/2.0*mm, 0.*deg, 360.*deg);
         G4LogicalVolume *logicSampleCylinder = new G4LogicalVolume(solidSampleCylinder, solidSampleMat, 
                                                                 "logicSampleCylinder");
         G4VPhysicalVolume *solidCylinder = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), logicSampleCylinder, 
