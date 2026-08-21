@@ -80,9 +80,18 @@ elif sampleType=="new_sample":
 ## New Magnetic Field
 How to implement a new magnetic field (add option in detectorConstruction and make a new MagneticField.cc and hh file)
 If you want to implement a new magnetic field, you do:
-1. Make new source and header files _NewMagneticField.cc_ and _NewMagneticField.hh_ in src and include directories. 
-
-
+1. Make new source and header files _NewMagneticField.cc_ and _NewMagneticField.hh_ in src and include directories.
+2. Upload your field map to build/Field
+3. In _detectorConstruction.cc_, scroll down to the bottom and add
+```cpp   
+   else if (fMagField == "new") {
+           G4MagneticField* magField = new NewMagneticField("Field/Field-Map_New.txt");
+           fField.Put(magField);
+           G4FieldManager* pFieldMgr = G4TransportationManager::GetTransportationManager()->GetFieldManager();
+           pFieldMgr->SetDetectorField(fField.Get());
+           pFieldMgr->CreateChordFinder(fField.Get());
+       }
+ ```
 ### Calculating the Asymmetry
 - include beta energy spectra in EnergySpectras
 - Read this file into calculateAsym.py
