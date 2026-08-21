@@ -12,7 +12,7 @@ What to change for runs, for example set the magnetic field, the sample type, th
 
 ### New Detector Geometry
 1. Make new files _detectorGeometryNew.cc_ and _detectorGeometryNew.hh_ in src and include directories. Define the detector geometry as normal (you can look at _detectorGeometryDeVITO_ for inspiration). 
-2. In detectorConstruction.cc you include your new header file as _#include "detectorGeometryDeVito.hh"_. Scoll down to _Defining Detector_ and call your new function. It may look like:
+2. In detectorConstruction.cc you include your new header file as _#include "detectorGeometryNew.hh"_. Scoll down to the section _Defining Detector_ and call your new function. It may look like:
 ```cpp
 else if (fDetector == "new") {
         detectorGeom = std::make_unique<DetectorGeometryNew>(fDetector);
