@@ -78,10 +78,9 @@ elif sampleType=="new_sample":
 
 
 ## New Magnetic Field
-How to implement a new magnetic field (add option in detectorConstruction and make a new MagneticField.cc and hh file)
 If you want to implement a new magnetic field, you do:
-1. Make new source and header files _NewMagneticField.cc_ and _NewMagneticField.hh_ in src and include directories.
-2. Upload your field map to build/Field
+1. Make new source and header files _NewMagneticField.cc_ and _NewMagneticField.hh_ in src and include directories. Here you include information such as interpolation of the field values.
+2. Upload your .txt field map to build/Field
 3. In _detectorConstruction.cc_, scroll down to the bottom and add
 ```cpp   
    else if (fMagField == "new") {
@@ -92,10 +91,8 @@ If you want to implement a new magnetic field, you do:
            pFieldMgr->CreateChordFinder(fField.Get());
        }
  ```
-### Calculating the Asymmetry
-- include beta energy spectra in EnergySpectras
-- Read this file into calculateAsym.py
-- Set the initial asymmetry $A$ and the polarization $P$. Note that the angle $\theta$ in the equation $W(\theta) = 1+\frac{v}{c}PA\cos(\theta)$ is defined as the angle relative to the polarization axis. If your polarization is pointing in the -z direction, you must define the angle as 180-$\theta$.
+4. In _run.h_ you should now be able to set "magField=new"
+
 
 ## Other Comments
 Comment on any specific processes: for example that particles are killed if they live for more than 1s and that backscatter is removed. 
