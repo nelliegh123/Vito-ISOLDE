@@ -4,7 +4,13 @@ The purpose of this code is to easily be able to calculate the experimental asym
 
 ## Installing and Compiling
 Running the project requires Geant4, CMake, GNU Make, and Python 3. 
-Clone the repository from GitHub "git@github.com:nelliegh123/Vito-ISOLDE.git"
+
+1. Clone the repository from GitHub "git@github.com:nelliegh123/Vito-ISOLDE.git"
+2. Go into the runScripts directory
+```bash
+   cd build/runScripts
+   code run.sh
+```
 
 What to change for runs, for example set the magnetic field, the sample type, thickness and size. Write that if you set a solid sample to a certain diameter the particles will immediately be emitted uniformly from that diameter in make_macros.py. Same with volume distribution in liquid sample.  
 
