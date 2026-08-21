@@ -36,8 +36,12 @@ Running the project requires Geant4, CMake, GNU Make, and Python 3. Running the 
 
 
 ## New Detector Geometry
-1. Make new files _detectorGeometryNew.cc_ and _detectorGeometryNew.hh_ in src and include directories. Define the detector geometry as normal (you can look at _detectorGeometryDeVITO_ for inspiration). 
-2. In detectorConstruction.cc you include your new header file as _#include "detectorGeometryNew.hh"_. Scoll down to the section _Defining Detector_ and call your new function. It may look like:
+If you want to implment a new detector geometry, you should do it in the following way:
+1. Make new source and header files _detectorGeometryNew.cc_ and _detectorGeometryNew.hh_ in src and include directories. Define the detector geometry as normal (you can look at _detectorGeometryDeVITO_ for inspiration). Your new class should inherit from detectorGeometryDefault
+```cpp
+   class DetectorGeometryDeVito : public DetectorGeometryDefault
+```
+3. In detectorConstruction.cc you include your new header file as _#include "detectorGeometryNew.hh"_. Scoll down to the section _Defining Detector_ and call your new function. It may look like:
 ```cpp
 else if (fDetector == "new") {
         detectorGeom = std::make_unique<DetectorGeometryNew>(fDetector);
