@@ -18,12 +18,11 @@ else if (fDetector == "new") {
         detectorGeom = std::make_unique<DetectorGeometryNew>(fDetector);
 }
 ```
-- In _run.sh_ you can now call
+3, In _run.sh_ you can now set
   ```bash
-  detector=devito2024
+  detector=new
   ```
-  and you new geometry should be used.  
-- Compile and run as normal. 
+  and you new geometry should be used.   
 
 ## New Sample
 How to implement a new sample (add option on detectorConstruction with a new sample, and modify make_macro.py to get the right shape of the emitted particles)
