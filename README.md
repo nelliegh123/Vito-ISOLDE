@@ -41,13 +41,13 @@ If you want to implment a new detector geometry, you should do it in the followi
 ```cpp
    class DetectorGeometryNew : public DetectorGeometryDefault
 ```
-3. In detectorConstruction.cc you include your new header file as _#include "detectorGeometryNew.hh"_. Scoll down to the section _Defining Detector_ and call your new function. It may look like:
+2. In detectorConstruction.cc you include your new header file as _#include "detectorGeometryNew.hh"_. Scoll down to the section _Defining Detector_ and call your new function. It may look like:
 ```cpp
 else if (fDetector == "new") {
         detectorGeom = std::make_unique<DetectorGeometryNew>(fDetector);
 }
 ```
-3, In _run.sh_ you can now set
+3. In _run.sh_ you can now set
   ```bash
   detector=new
   ```
@@ -76,10 +76,12 @@ elif sampleType=="new_sample":
             f.write("/gps/pos/shape Circle\n")
 ```
 
-How to implement a new sample (add option on detectorConstruction with a new sample, and modify make_macro.py to get the right shape of the emitted particles)
 
 ## New Magnetic Field
 How to implement a new magnetic field (add option in detectorConstruction and make a new MagneticField.cc and hh file)
+If you want to implement a new magnetic field, you do:
+1. Make new source and header files _NewMagneticField.cc_ and _NewMagneticField.hh_ in src and include directories. 
+
 
 ### Calculating the Asymmetry
 - include beta energy spectra in EnergySpectras
