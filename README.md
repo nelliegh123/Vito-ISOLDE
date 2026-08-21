@@ -81,7 +81,7 @@ elif sampleType=="new_sample":
 If you want to implement a new magnetic field, you do:
 1. Make new source and header files _NewMagneticField.cc_ and _NewMagneticField.hh_ in src and include directories. Here you include information such as interpolation of the field values.
 2. Upload your .txt field map to build/Field
-3. In _detectorConstruction.cc_, scroll down to the bottom and add
+3. In _detectorConstruction.cc_, scroll down to the bottom and under the section _Activating the Magnetic Field_ you add
 ```cpp   
    else if (fMagField == "new") {
            G4MagneticField* magField = new NewMagneticField("Field/Field-Map_New.txt");
