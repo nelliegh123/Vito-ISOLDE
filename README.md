@@ -95,4 +95,7 @@ If you want to implement a new magnetic field, you do:
 
 
 ## Other Comments
-Comment on any specific processes: for example that particles are killed if they live for more than 1s and that backscatter is removed. 
+- The file _Field-Map_DeVITO.txt_ in build/Fields is really large. If you do not need it, consider deleting it.
+- The ROOT file _output.root_ contains all the hits registered in the front and rear detector in the columns _Energy_, _Angle_ and _Detector ID_ (0 for front and 1 for rear). In the simulation, if an event runs for more than 1 second (usually because it gets stuck in the magnetic field), it is automatically killed. The ROOT file stores information about the removed events in the columns _rmPosX_, _rmPosY_, _rmPosZ_, _rmAngle_, and _rmEnergy_.
+- A detector hit is defined as coming from primary electrons. Backscattering is removed by checking if this is a particles first interaction with a detector. If not, the particle is killed. 
+- If a particle lives for more than one second, it is killed.
