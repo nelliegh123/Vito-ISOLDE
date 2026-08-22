@@ -9,7 +9,7 @@ Running the project requires Geant4, CMake, GNU Make, and Python 3. Running the 
 2. Go into the runScripts directory, and open the file _run.sh_. 
 ```bash
    cd build/runScripts
-   code run.sh
+   code run.sh (or vim run.sh, or whatever you prefer)
 ```
 3. Set your run-parameters:
 ```bash
