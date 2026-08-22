@@ -20,9 +20,9 @@ Running the project requires Geant4, CMake, GNU Make, and Python 3. Running the 
    sampleDiameter=20.0          #Sample diameter in mm
    detector=devito2024          #Choose default, devito2023, devito2024,
    magField=devito              #Choose vito, devito
-   theta_start=45 #0            #Degrees
-   theta_stop=45 #180           #Degrees
-   n_steps=1 #180               
+   theta_start=0                #Degrees
+   theta_stop=180               #Degrees
+   n_steps=180               
    energy_min=0                 #MeV 
    energy_max=5                 #MeV 
    n_energy_steps=100
