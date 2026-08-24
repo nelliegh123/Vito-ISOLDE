@@ -1,11 +1,11 @@
 # Purpose:
-The purpose of this code is to easily be able to calculate the experimental asymmetry parameter for $\beta$-NMR using different samples, detector setups and magnetic field in Geant4. The code is structured in such a way that you implement a detector geometry, a magnetic field, and a sample. Then, an energy and angle scan is performed where electrons are fired at angles from $\theta=0$ to $\theta=180$, and a chosen range of energies (for example 0-14 MeV). This produces a ROOT file _output.root_ with the simulated hits in the front and rear detector. After the angle and energy scan has been run, the code in the directory _git@github.com:nelliegh123/VITO-Analysis.git_ can be used to calculate the asymmetry parameter for a specific nuclei. 
+The purpose of this code is to easily be able to calculate the experimental asymmetry parameter for $\beta$-NMR using different samples, detector setups and magnetic field in Geant4. The code is structured in such a way that you implement a detector geometry, a magnetic field, and a sample. Then, an energy and angle scan is performed where electrons are fired at angles from $\theta=0$ to $\theta=180$, and a chosen range of energies (for example 0-14 MeV). This produces a ROOT file _output.root_ with the simulated hits in the front and rear detector. After the angle and energy scan has been run, the code in the directory "nelliegh123/VITO-Analysis.git" can be used to calculate the asymmetry parameter for a specific nuclei. 
 
 
 ## Installing and Compiling
 Running the project requires Geant4, CMake, GNU Make, and Python 3. Running the program is done in the following way:
 
-1. Clone the repository from GitHub "git@github.com:nelliegh123/Vito-ISOLDE.git"
+1. Clone the repository from GitHub "nelliegh123/Vito-ISOLDE.git"
 2. Go into the runScripts directory, and open the file _run.sh_. 
 ```bash
    cd build/runScripts
