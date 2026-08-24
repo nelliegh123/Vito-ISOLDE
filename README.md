@@ -11,7 +11,7 @@ Running the project requires Geant4, CMake, GNU Make, and Python 3. Running the 
    cd build/runScripts
    code run.sh (or vim run.sh, or whatever you prefer)
 ```
-3. Set your run-parameters:
+3.  To make compiling easy, _run.sh_ runs "cmake .." and "make", before calling the python file _make_macro.py_ with your run parameters as arguments. This script creates a macro _run_commands.mac_, which contains all the information about how the particles will be fired in the simulations (how many, at what angles and energies etc). So all you have to do is set your run-parameters:
 ```bash
    numberOfParticles=1          #Nr of particles fired per step
    sampleType=solid_KCl         #solid_MgO, solid_KCl, liquid
@@ -34,7 +34,7 @@ Running the project requires Geant4, CMake, GNU Make, and Python 3. Running the 
 ```
 5. Voilà! You now have a ROOT file named output.root located in a directory named based on your run parameters, insidebuild/Results.
 
-To make compiling easy, the file _run.sh_ runs "cmake .." and "make", before calling the python file _make_macro.py_ with your run parameters as arguments. This script creates a macro _run_commands.mac_, which contains all the information about how the particles will be fired in the simulations (how many, at what angles and energies etc). 
+
 
 
 ## New Detector Geometry
