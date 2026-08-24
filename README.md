@@ -32,7 +32,7 @@ Running the project requires Geant4, CMake, GNU Make, and Python 3. Running the 
    chmod +x run.sh
    ./run.sh
 ```
-5. Voilà! You now have a ROOT file named output.root located in a directory named based on your run parameters, insidebuild/Results.
+5. Voilà! You now have a ROOT file named output.root located in a directory named based on your run parameters, inside build/Results.
 
 
 
