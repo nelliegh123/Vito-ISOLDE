@@ -65,7 +65,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
         G4Tubs *solidSampleCylinder = new G4Tubs("solidSampleCylinder", 0., fSampleDiameter/2.0*mm, fSampleThickness/2.0*mm, 0.*deg, 360.*deg);
         G4LogicalVolume *logicSampleCylinder = new G4LogicalVolume(solidSampleCylinder, KCl, 
                                                                 "logicSampleCylinder");
-        G4VPhysicalVolume *solidCylinder = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), logicSampleCylinder, 
+        G4VPhysicalVolume *solidCylinder = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.*mm), logicSampleCylinder, 
                                                             "solidCylinder", logicWorld, false, 0, true);
         
     }

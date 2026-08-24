@@ -38,11 +38,7 @@ G4bool DeVITOMagneticField::LoadFieldFile(const G4String& filename) {
 
     // NOTE: empirically, this field-map format stores the header
     // dimensions in REVERSE order: "NZ NY NX format_id", not
-    // "NX NY NZ format_id". Confirmed by cross-checking where each
-    // coordinate actually changes value in the data:
-    //   - Z changes every line               -> Z count = 1st header number
-    //   - Y changes every (1st number) lines  -> Y count = 2nd header number
-    //   - X changes every (1st*2nd) lines     -> X count = 3rd header number
+    // "NX NY NZ format_id".
     size_t nx = 0, ny = 0, nz = 0;
     int format_id = 0;
     if (std::sscanf(line_buf, "%zu %zu %zu %d", &nz, &ny, &nx, &format_id) < 3) {
@@ -51,7 +47,6 @@ G4bool DeVITOMagneticField::LoadFieldFile(const G4String& filename) {
         return false;
     }
 
-    // Skip lines until we find the "0" line
     G4bool found_header_end = false;
     while (std::fgets(line_buf, sizeof(line_buf), file)) {
         // Trim leading space
@@ -110,11 +105,7 @@ G4bool DeVITOMagneticField::LoadFieldFile(const G4String& filename) {
         size_t j = (m / nz) % ny;
         size_t k = m % nz;
 
-        // FIX 2: instead of blindly trusting that the file order matches the
-        // assumed X-slowest / Y / Z-fastest layout, verify it. On the first
-        // occurrence of each index we record the coordinate; on every later
-        // occurrence we check the point actually matches, and abort loudly
-        // if the file's ordering doesn't match what the code assumes.
+
         if (j == 0 && k == 0) {
             fXCoords[i] = x;
         } else if (std::abs(fXCoords[i] - x) > kCoordTol) {
@@ -194,6 +185,14 @@ G4bool DeVITOMagneticField::LoadFieldFile(const G4String& filename) {
     return true;
 }
 
+
+// void DeVITOMagneticField::GetFieldValue(const G4double Point[4], G4double* Bfield) const
+// {
+//     Bfield[0] = 0.0;
+//     Bfield[1] = 0.0;
+//     Bfield[2] = 0.0;
+// }
+
 void DeVITOMagneticField::GetFieldValue(const G4double Point[4], G4double* Bfield) const {
     Bfield[0] = 0.0;
     Bfield[1] = 0.0;
@@ -211,16 +210,16 @@ void DeVITOMagneticField::GetFieldValue(const G4double Point[4], G4double* Bfiel
     // --- Rotate point from world frame into the field's native (local) frame ---
     // This undoes a +90 deg rotation about Y that we want to APPLY to the field.
     // local = R(-90, Y) * world
-    
-    // //Pointing in -z direction
-    // double x = -zw;
-    // double y =  yw;
-    // double z =  xw;
 
-    //Pointing in +z direction
-    double x = zw;
-    double y = yw;
-    double z = -xw;
+    // Pointing in -z direction
+    double x = -zw;
+    double y =  yw;
+    double z =  xw;
+
+    // //Pointing in +z direction
+    // double x = zw;
+    // double y = yw;
+    // double z = -xw;
 
     // Check bounds (in local/native frame)
     if (x < fXMin || x > fXMax || y < fYMin || y > fYMax || z < fZMin || z > fZMax) {
@@ -299,16 +298,16 @@ void DeVITOMagneticField::GetFieldValue(const G4double Point[4], G4double* Bfiel
     double by_local = interpolate(fBy);
     double bz_local = interpolate(fBz);
 
-    // --- Rotate the field VECTOR back from local frame into world frame ---
-    // //Field pointing -z
-    // double bx_world =  bz_local;
-    // double by_world =  by_local;
-    // double bz_world = -bx_local;
+    // // // --- Rotate the field VECTOR back from local frame into world frame ---
+    //Field pointing -z
+    double bx_world =  bz_local;
+    double by_world =  by_local;
+    double bz_world = -bx_local;
 
-    // Field pointing +z
-    double bx_world = -bz_local;
-    double by_world = by_local;
-    double bz_world = bx_local;
+    // // Field pointing +z
+    // double bx_world = -bz_local;
+    // double by_world = by_local;
+    // double bz_world = bx_local;
 
     // Convert field values from Tesla (T) to Geant4 internal units
     Bfield[0] = bx_world * CLHEP::tesla;
