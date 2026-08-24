@@ -32,11 +32,13 @@ Running the project requires Geant4, CMake, GNU Make, and Python 3. Running the 
    chmod +x run.sh
    ./run.sh
 ```
-5. Voilà! You now have a ROOT file named output.root located in build/Results. 
+5. Voilà! You now have a ROOT file named output.root located in a directory named based on your run parameters, insidebuild/Results.
+
+To make compiling easy, the file _run.sh_ runs "cmake .." and "make", before calling the python file _make_macro.py_ with your run parameters as arguments. This script creates a macro _run_commands.mac_, which contains all the information about how the particles will be fired in the simulations (how many, at what angles and energies etc). 
 
 
 ## New Detector Geometry
-If you want to implment a new detector geometry, you should do it in the following way:
+If you want to implement a new detector geometry, you should do it in the following way:
 1. Make new source and header files _detectorGeometryNew.cc_ and _detectorGeometryNew.hh_ in src and include directories. Define the detector geometry as normal (you can look at _detectorGeometryDeVITO_ for inspiration). Your new class should inherit from detectorGeometryDefault
 ```cpp
    class DetectorGeometryNew : public DetectorGeometryDefault
