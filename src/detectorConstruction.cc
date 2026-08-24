@@ -38,11 +38,12 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 
 
 
-    if(fSampleType == "solid_MgO" && fSampleThickness != 0.0){
+    
     //====================================================================================
     //                              Defining Solid Sample
     //====================================================================================
-    //---------------MgO---------------------------
+    //---------------------------------------MgO------------------------------------------
+    if(fSampleType == "solid_MgO" && fSampleThickness != 0.0){
         G4Material *solidSampleMat = nist->FindOrBuildMaterial("G4_MAGNESIUM_OXIDE");
         G4Tubs *solidSampleCylinder = new G4Tubs("solidSampleCylinder", 0., fSampleDiameter/2.0*mm, fSampleThickness/2.0*mm, 0.*deg, 360.*deg);
         G4LogicalVolume *logicSampleCylinder = new G4LogicalVolume(solidSampleCylinder, solidSampleMat, 
@@ -51,10 +52,8 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
                                                                 "solidCylinder", logicWorld, false, 0, true);                                                      
     }
 
-    //---------------KCl----------------------
-    else if (fSampleType == "solid_KCl" && fSampleThickness != 0.0) {
-        G4cout << "----------------------KCl-----------------" << G4endl;
-        
+    //----------------------------------------KCl------------------------------------------
+    else if (fSampleType == "solid_KCl" && fSampleThickness != 0.0) {     
         G4Element* K = nist->FindOrBuildElement("K");
         G4Element* Cl = nist->FindOrBuildElement("Cl");
         G4double density = 1.984 * g/cm3;  
@@ -74,7 +73,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     //====================================================================================
     //                              Defining Liquid Sample
     //====================================================================================
-    //-------------Make muscovite mica disc------------------
+    //--------------------------------Muscovite mica disc---------------------------------
     else if(fSampleType == "liquid"){
         G4Element* K = nist->FindOrBuildElement("K");
         G4Element* Al = nist->FindOrBuildElement("Al");
@@ -105,7 +104,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
                                                                     "liquidDisc", logicWorld, false, 0, true);
 
 
-        //-------------Make EMIM mica disc------------------
+        //----------------------------------Make EMIMDCA disc-----------------------------------
         G4Element* C = nist->FindOrBuildElement("C");
         G4Element* N = nist->FindOrBuildElement("N");
         
