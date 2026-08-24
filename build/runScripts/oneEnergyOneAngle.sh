@@ -3,10 +3,10 @@
 angle=45
 energy=10
 
-numberOfParticles=10  #Nr of particles fired per step
+numberOfParticles=100  #Nr of particles fired per step
 
 sampleType=solid_KCl         #Either solid_MgO, solid_KCl or liquid
-sampleThickness=10.0        #Thickness of solid sample (solid) or mica disc (liquid) in mm
+sampleThickness=2.0        #Thickness of solid sample (solid) or mica disc (liquid) in mm
 liquidThickness=0.01         #Liquid sample thickness in mm
 sampleDiameter=12.0          #Sample diameter in mm
 
