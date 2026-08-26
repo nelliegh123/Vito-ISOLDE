@@ -39,8 +39,8 @@ Running the project requires Geant4, CMake, GNU Make, and Python 3. Running the 
 If you want to define a new sample type, you do it in the following way:
 1. Add a new instance in _detecorConstruction.cc_ 
    ```cpp
-   else if(fSampleType == "**new_sample**" && fSampleThickness != 0.0) {
-        G4Material *solidSampleMat = nist->FindOrBuildMaterial("**NEW_MATERIAL**");
+   else if(fSampleType == "new_sample" && fSampleThickness != 0.0) {
+        G4Material *solidSampleMat = nist->FindOrBuildMaterial("NEW_MATERIAL");
         G4Tubs *solidSampleCylinder = new G4Tubs("solidSampleCylinder", 0., fSampleDiameter/2.0*mm,
         fSampleThickness/2.0*mm, 0.*deg, 360.*deg);
         G4LogicalVolume *logicSampleCylinder = new G4LogicalVolume(solidSampleCylinder, solidSampleMat, 
