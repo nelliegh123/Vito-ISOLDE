@@ -35,26 +35,6 @@ Running the project requires Geant4, CMake, GNU Make, and Python 3. Running the 
 5. Voilà! You now have a ROOT file named output.root located in a directory named based on your run parameters, inside build/Results.
 
 
-
-
-## New Detector Geometry
-If you want to implement a new detector geometry, you should do it in the following way:
-1. Make new source and header files _detectorGeometryNew.cc_ and _detectorGeometryNew.hh_ in src and include directories. Define the detector geometry as normal (you can look at _detectorGeometryDeVITO_ for inspiration). Your new class should inherit from detectorGeometryDefault
-```cpp
-   class DetectorGeometryNew : public DetectorGeometryDefault
-```
-2. In detectorConstruction.cc you include your new header file as _#include "detectorGeometryNew.hh"_. Scoll down to the section _Defining Detector_ and call your new function. It may look like:
-```cpp
-else if (fDetector == "new") {
-        detectorGeom = std::make_unique<DetectorGeometryNew>(fDetector);
-}
-```
-3. In _run.sh_ you can now set
-  ```bash
-  detector=new
-  ```
-  and you new geometry should be used.   
-
 ## New Sample
 If you want to define a new sample type, you do it in the following way:
 1. Add a new instance in _detecorConstruction.cc_ 
@@ -78,6 +58,26 @@ elif sampleType=="new_sample":
             f.write("/gps/pos/shape Circle\n")
 ```
 3. In _run.h_ you should now be able to set "sampleType=new_sample"
+
+
+## New Detector Geometry
+If you want to implement a new detector geometry, you should do it in the following way:
+1. Make new source and header files _detectorGeometryNew.cc_ and _detectorGeometryNew.hh_ in src and include directories. Define the detector geometry as normal (you can look at _detectorGeometryDeVITO_ for inspiration). Your new class should inherit from detectorGeometryDefault
+```cpp
+   class DetectorGeometryNew : public DetectorGeometryDefault
+```
+2. In detectorConstruction.cc you include your new header file as _#include "detectorGeometryNew.hh"_. Scoll down to the section _Defining Detector_ and call your new function. It may look like:
+```cpp
+else if (fDetector == "new") {
+        detectorGeom = std::make_unique<DetectorGeometryNew>(fDetector);
+}
+```
+3. In _run.sh_ you can now set
+  ```bash
+  detector=new
+  ```
+  and you new geometry should be used.   
+
 
 ## New Magnetic Field
 If you want to implement a new magnetic field, you do:
