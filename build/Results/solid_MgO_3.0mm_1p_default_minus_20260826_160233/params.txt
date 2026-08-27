@@ -1,0 +1,15 @@
+numberOfParticles=1
+sampleType=solid_MgO
+sampleThickness=3.0
+liquidThickness=0.01
+detector=default
+theta_start=0
+theta_stop=180
+n_steps=180
+energy_min=0
+energy_max=14
+n_energy_steps=100
+mag_field=minus
+timestamp=20260826_160233
+
+
