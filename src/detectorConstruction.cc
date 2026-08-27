@@ -165,7 +165,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     //====================================================================================
     
     if (fMagField == "vito") {
-        G4MagneticField* magField = new VITOMagneticField("Field/field1Axial.txt",
+        G4MagneticField* magField = new VITOMagneticField("../run/Field/field1Axial.txt",
                                                       "Field/field1Radial.txt", 
                                                       "Field/field2Axial.txt", 
                                                       "Field/field2Radial.txt");
@@ -178,7 +178,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 
 
     else if (fMagField == "devito") {
-        G4MagneticField* magField = new DeVITOMagneticField("Field/Field-Map_DeVITO.txt");
+        G4MagneticField* magField = new DeVITOMagneticField("../run/Field/Field-Map_DeVITO.txt");
         fField.Put(magField);
 
         G4FieldManager* pFieldMgr = G4TransportationManager::GetTransportationManager()->GetFieldManager();

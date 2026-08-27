@@ -1,3 +1,0 @@
-/home/ngustafs/ISOLDE/build/CMakeFiles/ISOLDE.dir
-/home/ngustafs/ISOLDE/build/CMakeFiles/edit_cache.dir
-/home/ngustafs/ISOLDE/build/CMakeFiles/rebuild_cache.dir

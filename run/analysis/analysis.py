@@ -5,9 +5,10 @@ import ROOT
 ROOT.gROOT.SetBatch(True) 
 
 #-------------------------------Modify here---------------------------------------------
-A = 1/3 #Your theoretical asymmetry parameter
+A = 1/3   #Your theoretical asymmetry parameter
 P = -1    #Your polarization factor
 
+DATA_DIR = "/home/ngustafs/ISOLDE/run/Results" #CHANGE TO YOUR PATH
 f = ROOT.TFile("data_file/INSERT_YOUR_FILENAME_HERE/output.root")
 E_data, dNdE_data, _ = np.loadtxt("energy_dist/INSERT_YOUR_FILENAME_HERE", unpack=True)
 #----------------------------------------------------------------------------------------

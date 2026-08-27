@@ -7,13 +7,13 @@
 /analysis/openFile output.root
 /run/printProgress 100000
 /mygen/scanMode true
-/mygen/numParticlesPerPoint 1
+/mygen/numParticlesPerPoint 10
 /mygen/nAngleSteps 180
 /mygen/nEnergySteps 100
 /mygen/thetaMin 0
 /mygen/thetaMax 180
 /mygen/energyMin 0
 /mygen/energyMax 5
-/run/beamOn 18000
+/run/beamOn 180000
 /analysis/write
 /analysis/closeFile

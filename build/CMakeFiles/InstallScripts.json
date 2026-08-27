@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/ngustafs/ISOLDE/build/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
