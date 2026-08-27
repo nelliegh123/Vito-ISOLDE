@@ -1,25 +1,24 @@
 #!/bin/bash
-numberOfParticles=1        #Nr of particles fired per step
-sampleType=solid_KCl        #Either solid_MgO, solid_KCl or liquid
-sampleThickness=2.0         #Thickness of solid sample (solid) or mica disc (liquid) in mm
-liquidThickness=0.01        ## OBS LIQUID need flipping due to flidded detector geom #Liquid sample thickness in mm
-sampleDiameter=12.0          #Sample diameter in mm
-detector=devito2023            #Choose default, devito2023, devito2024,
-magField=devito               #Choose vito, devito
+# set -e   # stop on first error instead of continuing with a broken state
+
+numberOfParticles=10
+sampleType=solid_KCl
+sampleThickness=2.0
+liquidThickness=0.01
+sampleDiameter=12.0
+detector=devito2023
+magField=devito
 theta_start=0
 theta_stop=180
 n_steps=180
 energy_min=0
 energy_max=5
 n_energy_steps=100
-
 mag_field=plus
-
-
 
 runTag="${sampleType}_${sampleThickness}mm_${numberOfParticles}p_${detector}_${mag_field}"
 timestamp=$(date +%Y%m%d_%H%M%S)
-runDir="$(cd .. && pwd)/Results/${runTag}_${timestamp}"
+runDir="$(cd ../Results && pwd)/${runTag}_${timestamp}"
 mkdir -p "$runDir"
 
 cat > "${runDir}/params.txt" <<EOF
@@ -36,13 +35,10 @@ energy_max=$energy_max
 n_energy_steps=$n_energy_steps
 mag_field=$mag_field
 timestamp=$timestamp
-
-
 EOF
 
 python3 - <<'PYEOF' >> "${runDir}/params.txt"
 import re
-
 with open("make_macro.py") as f:
     src = f.read()
 ns = {}
@@ -56,16 +52,15 @@ for k in ["theta_start", "theta_stop", "n_steps",
           "energy_min", "energy_max", "n_energy_steps"]:
     print(f"{k}={ns[k]}")
 PYEOF
+
 cp "$0" "$runDir/"
-
-
-cd ..
+cd ../../build
 cmake ..
-make 
-cd runScripts
+make
+cd ../run/runScripts
 python make_macro.py $numberOfParticles $sampleType $sampleThickness $liquidThickness $sampleDiameter $theta_start $theta_stop $n_steps $energy_min $energy_max $n_energy_steps
-cd ..
+cp run_commands.mac ../../build/
+cd ../../build
 ./ISOLDE $sampleType $sampleThickness $liquidThickness $sampleDiameter $detector $magField #--gui
-
 mv output.root "$runDir/output.root"
 echo "Run complete. Results in $runDir"
