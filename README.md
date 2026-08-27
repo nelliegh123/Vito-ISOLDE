@@ -8,7 +8,7 @@ Running the project requires Geant4, CMake, GNU Make, and Python 3. Running the 
 1. Clone the repository from GitHub "nelliegh123/Vito-ISOLDE.git"
 2. Go into the run/runScripts directory, and open the file _run.sh_. 
 ```bash
-   cd build/runScripts
+   cd run/runScripts
    code run.sh (or vim run.sh, or whatever you prefer)
 ```
 3.  To make compiling easy, _run.sh_ runs "cmake .." and "make", before calling the python file _make_macro.py_ with your run parameters as arguments. This script creates a macro _run_commands.mac_, which contains all the information about how the particles will be fired in the simulations (how many, at what angles and energies etc). So all you have to do is set your run-parameters:
