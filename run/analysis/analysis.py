@@ -89,5 +89,5 @@ def asymmetry_np(E, theta, A, P):
 A = asymmetry_np(E, theta, A, P)[0]
 R =  asymmetry_np(E, theta, A, P)[1]  
 
-print("The experimental asymmetry parameter is:", A)
+print("The experimental asymmetry is:", A)
 print("The ratio of counts in the front and rear detector are:", R)
