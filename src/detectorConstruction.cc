@@ -95,10 +95,10 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
                                                                     "logicSampleDisc");
 
         fRot = new G4RotationMatrix();
-        fRot->rotateX(-45.*deg);
+        fRot->rotateX(45.*deg);                // flip rotation sign
         G4double d = fSampleThickness/2.0 + fLiquidThickness/2.0;
-        G4double y = d * std::sin(45.*deg);
-        G4double z = -d * std::cos(45.*deg);
+        G4double y = d * std::sin(45.*deg);    // unchanged
+        G4double z = d * std::cos(45.*deg);    // drop the minus sign -> 45° from +z
         
         G4VPhysicalVolume *liquidDisc = new G4PVPlacement(fRot, G4ThreeVector(0., 0., 0.), logicSampleDisc, 
                                                                     "liquidDisc", logicWorld, false, 0, true);

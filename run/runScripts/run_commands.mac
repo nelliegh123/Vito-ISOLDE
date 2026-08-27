@@ -1,6 +1,9 @@
-/gps/pos/type Plane
-/gps/pos/centre 0 0 1.000000 mm
-/gps/pos/shape Circle
+/gps/pos/type Volume
+/gps/pos/shape Cylinder
+/gps/pos/centre 0 0.883883 0.883883 mm
+/gps/pos/halfz 0.250000 mm
+/gps/pos/rot1 1 0 0
+/gps/pos/rot2 0 0.707107 -0.707107
 /gps/particle e-
 /gps/pos/radius 6.000000 mm
 /gps/ene/type Mono
@@ -8,12 +11,12 @@
 /run/printProgress 100000
 /mygen/scanMode true
 /mygen/numParticlesPerPoint 10
-/mygen/nAngleSteps 180
+/mygen/nAngleSteps 1
 /mygen/nEnergySteps 100
-/mygen/thetaMin 0
-/mygen/thetaMax 180
+/mygen/thetaMin 10
+/mygen/thetaMax 10
 /mygen/energyMin 0
 /mygen/energyMax 5
-/run/beamOn 180000
+/run/beamOn 1000
 /analysis/write
 /analysis/closeFile

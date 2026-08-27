@@ -38,6 +38,7 @@ MyPrimaryGenerator::~MyPrimaryGenerator()
     delete fGPS;
 }
 
+
 void MyPrimaryGenerator::GeneratePrimaries(G4Event *anEvent)
 {
     if (fScanMode) {
@@ -54,22 +55,21 @@ void MyPrimaryGenerator::GeneratePrimaries(G4Event *anEvent)
         if (fNEnergySteps > 1) {
             energy_MeV += energyIdx * (fEnergyMax - fEnergyMin) / (fNEnergySteps - 1);
         }
-
         fGPS->GetCurrentSource()->GetEneDist()->SetMonoEnergy(energy_MeV * MeV);
-
         G4double theta_rad = theta_deg * CLHEP::deg;
         G4double phi_rad = 2.0 * CLHEP::pi * G4UniformRand();
-
         G4double sinTheta = std::sin(theta_rad);
         G4double dx = sinTheta * std::cos(phi_rad);
         G4double dy = sinTheta * std::sin(phi_rad);
         G4double dz = std::cos(theta_rad);
         G4ThreeVector dir(dx, dy, dz);
 
+        // Rotate into the tilted disc's frame so theta=0 follows the disc's
+        // actual outward normal (45 deg from world z), matching fRot in
+        // detectorConstruction.cc, instead of firing along raw world z.
+        // dir.rotateX(-45.*CLHEP::deg);
 
         fGPS->GetCurrentSource()->GetAngDist()->SetParticleMomentumDirection(dir);
     }
-
     fGPS->GeneratePrimaryVertex(anEvent);
 }
-
