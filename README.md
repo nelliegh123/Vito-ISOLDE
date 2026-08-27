@@ -6,7 +6,7 @@ The purpose of this code is to easily be able to calculate the experimental asym
 Running the project requires Geant4, CMake, GNU Make, and Python 3. Running the program is done in the following way:
 
 1. Clone the repository from GitHub "nelliegh123/Vito-ISOLDE.git"
-2. Go into the runScripts directory, and open the file _run.sh_. 
+2. Go into the run/runScripts directory, and open the file _run.sh_. 
 ```bash
    cd build/runScripts
    code run.sh (or vim run.sh, or whatever you prefer)
@@ -32,7 +32,7 @@ Running the project requires Geant4, CMake, GNU Make, and Python 3. Running the 
    chmod +x run.sh
    ./run.sh
 ```
-5. Voilà! You now have a ROOT file named output.root located in a directory named based on your run parameters, inside build/Results.
+5. Voilà! You now have a ROOT file named output.root located in a directory named based on your run parameters, inside run/Results.
 
 
 ## New Sample
@@ -97,7 +97,8 @@ If you want to implement a new magnetic field, you do:
 
 
 ## Other Comments
-- The file _Field-Map_DeVITO.txt_ in build/Fields is really large. If you do not need it, consider deleting it.
+- The file _Field-Map_DeVITO.txt_ in run/Fields is really large. If you do not need it, consider deleting it.
 - The ROOT file _output.root_ contains all the hits registered in the front and rear detector in the columns _Energy_, _Angle_ and _Detector ID_ (0 for front and 1 for rear). In the simulation, if an event runs for more than 1 second (usually because it gets stuck in the magnetic field), it is automatically killed. The ROOT file stores information about the removed events in the columns _rmPosX_, _rmPosY_, _rmPosZ_, _rmAngle_, and _rmEnergy_.
 - A detector hit is defined as coming from primary electrons. Backscattering is removed by checking if this is a particles first interaction with a detector. If not, the particle is killed. 
 - If a particle lives for more than one second, it is killed.
+- To turn off the magnetic field. or change direction, you need to go into the file itself and change it. Setting "magField=plus" in run.sh only affects the name of the directory that contains the output file. 
