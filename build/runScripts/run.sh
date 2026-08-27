@@ -1,19 +1,19 @@
 #!/bin/bash
-numberOfParticles=1         #Nr of particles fired per step
-sampleType=solid_MgO        #Either solid_MgO, solid_KCl or liquid
+numberOfParticles=1        #Nr of particles fired per step
+sampleType=solid_KCl        #Either solid_MgO, solid_KCl or liquid
 sampleThickness=2.0         #Thickness of solid sample (solid) or mica disc (liquid) in mm
 liquidThickness=0.01        ## OBS LIQUID need flipping due to flidded detector geom #Liquid sample thickness in mm
-sampleDiameter=8.0          #Sample diameter in mm
-detector=default            #Choose default, devito2023, devito2024,
-magField=vito               #Choose vito, devito
+sampleDiameter=12.0          #Sample diameter in mm
+detector=devito2023            #Choose default, devito2023, devito2024,
+magField=devito               #Choose vito, devito
 theta_start=0
 theta_stop=180
 n_steps=180
 energy_min=0
-energy_max=14
+energy_max=5
 n_energy_steps=100
 
-mag_field=minus
+mag_field=plus
 
 
 
