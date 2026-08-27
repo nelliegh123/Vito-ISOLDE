@@ -30,8 +30,8 @@ with open("run_commands.mac", "w") as f:
     elif sampleType=="liquid":
         z_center = -(sampleThickness / 2.0 + liquidThickness / 2.0)
         theta = np.radians(45.0)
-        y_new = -z_center * np.sin(theta)
-        z_new = z_center * np.cos(theta)
+        y_new = -z_center * np.sin(theta)      
+        z_new = -z_center * np.cos(theta)       
 
         f.write("/gps/pos/type Volume\n")
         f.write("/gps/pos/shape Cylinder\n")
@@ -40,7 +40,7 @@ with open("run_commands.mac", "w") as f:
         f.write(f"/gps/pos/halfz {liquidThickness/2.0:.6f} mm\n")
 
         f.write("/gps/pos/rot1 1 0 0\n")
-        f.write("/gps/pos/rot2 0 0.707107 0.707107\n")
+        f.write("/gps/pos/rot2 0 0.707107 -0.707107\n")
     
     else:
         raise ValueError("Wrong sample-type, use liquid or solid!")
