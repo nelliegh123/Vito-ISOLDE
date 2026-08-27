@@ -2,7 +2,7 @@
 /gps/pos/centre 0 0 1.000000 mm
 /gps/pos/shape Circle
 /gps/particle e-
-/gps/pos/radius 4.000000 mm
+/gps/pos/radius 6.000000 mm
 /gps/ene/type Mono
 /analysis/openFile output.root
 /run/printProgress 100000
@@ -13,7 +13,7 @@
 /mygen/thetaMin 0
 /mygen/thetaMax 180
 /mygen/energyMin 0
-/mygen/energyMax 14
+/mygen/energyMax 5
 /run/beamOn 18000
 /analysis/write
 /analysis/closeFile
