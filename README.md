@@ -5,8 +5,12 @@ The purpose of this code is to easily be able to calculate the experimental asym
 ## Installing and Compiling
 Running the project requires Geant4, CMake, GNU Make, and Python 3. Running the program is done in the following way:
 
-1. Clone the repository from GitHub "nelliegh123/Vito-ISOLDE.git"
-2. Go into the run/runScripts directory, and open the file _run.sh_. 
+1. Clone the repository from GitHub "nelliegh123/Vito-ISOLDE.git"'
+2. Make a build-folder
+```bash
+   mkdir build
+``` 
+4. Go into the run/runScripts directory, and open the file _run.sh_. 
 ```bash
    cd run/runScripts
    code run.sh (or vim run.sh, or whatever you prefer)
