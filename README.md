@@ -90,7 +90,7 @@ If you want to implement a new magnetic field, you do:
 3. In _detectorConstruction.cc_, scroll down to the bottom and under the section _Activating the Magnetic Field_ you add
 ```cpp   
    else if (fMagField == "new") {
-           G4MagneticField* magField = new NewMagneticField("Field/Field-Map_New.txt");
+           G4MagneticField* magField = new NewMagneticField("../run/Field/Field-Map_New.txt");
            fField.Put(magField);
            G4FieldManager* pFieldMgr = G4TransportationManager::GetTransportationManager()->GetFieldManager();
            pFieldMgr->SetDetectorField(fField.Get());
